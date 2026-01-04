@@ -1,96 +1,129 @@
+@import "@fontsource/ibm-plex-mono/400.css";
+@import "@fontsource/ibm-plex-mono/500.css";
+@import "@fontsource/ibm-plex-mono/600.css";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/inter/700.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core palette - Professional slate/navy */
+    --background: 220 20% 97%;
+    --foreground: 222 47% 11%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 222 47% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 222 47% 11%;
 
-    --primary: 222.2 47.4% 11.2%;
+    /* Deep navy - trust & authority */
+    --primary: 222 47% 15%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Muted slate for secondary UI */
+    --secondary: 220 14% 92%;
+    --secondary-foreground: 222 47% 11%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 14% 95%;
+    --muted-foreground: 220 9% 46%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Amber accent - action & attention */
+    --accent: 38 92% 50%;
+    --accent-foreground: 222 47% 11%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 13% 88%;
+    --input: 220 13% 88%;
+    --ring: 222 47% 15%;
 
-    --radius: 0.5rem;
+    --radius: 0.375rem;
 
-    --sidebar-background: 0 0% 98%;
+    /* Status colors - semantic, unambiguous */
+    --status-success: 142 71% 45%;
+    --status-success-foreground: 0 0% 100%;
+    --status-warning: 38 92% 50%;
+    --status-warning-foreground: 222 47% 11%;
+    --status-error: 0 72% 51%;
+    --status-error-foreground: 0 0% 100%;
+    --status-pending: 220 9% 46%;
+    --status-pending-foreground: 0 0% 100%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    /* Workflow states */
+    --workflow-unresolved: 38 92% 50%;
+    --workflow-confirmed: 142 71% 45%;
+    --workflow-flagged: 0 72% 51%;
+    --workflow-locked: 222 47% 15%;
 
-    --sidebar-primary: 240 5.9% 10%;
+    /* Data display */
+    --data-positive: 142 71% 45%;
+    --data-negative: 0 72% 51%;
+    --data-neutral: 220 9% 46%;
 
-    --sidebar-primary-foreground: 0 0% 98%;
+    /* Evidence states */
+    --evidence-present: 142 71% 45%;
+    --evidence-missing: 0 72% 51%;
+    --evidence-pending: 38 92% 50%;
 
-    --sidebar-accent: 240 4.8% 95.9%;
+    /* Sidebar */
+    --sidebar-background: 222 47% 11%;
+    --sidebar-foreground: 220 14% 92%;
+    --sidebar-primary: 38 92% 50%;
+    --sidebar-primary-foreground: 222 47% 11%;
+    --sidebar-accent: 222 47% 18%;
+    --sidebar-accent-foreground: 220 14% 92%;
+    --sidebar-border: 222 30% 20%;
+    --sidebar-ring: 38 92% 50%;
 
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Fonts */
+    --font-sans: "Inter", system-ui, sans-serif;
+    --font-mono: "IBM Plex Mono", monospace;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 222 47% 8%;
+    --foreground: 220 14% 92%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 222 47% 11%;
+    --card-foreground: 220 14% 92%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 222 47% 11%;
+    --popover-foreground: 220 14% 92%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 38 92% 50%;
+    --primary-foreground: 222 47% 11%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 222 30% 20%;
+    --secondary-foreground: 220 14% 92%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 222 30% 15%;
+    --muted-foreground: 220 9% 60%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 38 92% 50%;
+    --accent-foreground: 222 47% 11%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 222 30% 20%;
+    --input: 222 30% 20%;
+    --ring: 38 92% 50%;
+
+    --sidebar-background: 222 47% 6%;
+    --sidebar-foreground: 220 14% 92%;
+    --sidebar-primary: 38 92% 50%;
+    --sidebar-primary-foreground: 222 47% 11%;
+    --sidebar-accent: 222 47% 12%;
+    --sidebar-accent-foreground: 220 14% 92%;
+    --sidebar-border: 222 30% 15%;
+    --sidebar-ring: 38 92% 50%;
   }
 }
 
@@ -100,6 +133,125 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-sans);
   }
+
+  /* Monospace for all numeric/financial data */
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+
+  /* Financial data styling */
+  .data-amount {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.02em;
+  }
+
+  .data-positive {
+    @apply text-[hsl(var(--data-positive))];
+  }
+
+  .data-negative {
+    @apply text-[hsl(var(--data-negative))];
+  }
+}
+
+@layer components {
+  /* Status badges */
+  .status-badge {
+    @apply inline-flex items-center px-2 py-0.5 rounded text-xs font-medium;
+  }
+
+  .status-badge-success {
+    @apply bg-[hsl(var(--status-success)/0.15)] text-[hsl(var(--status-success))];
+  }
+
+  .status-badge-warning {
+    @apply bg-[hsl(var(--status-warning)/0.15)] text-[hsl(var(--status-warning))];
+  }
+
+  .status-badge-error {
+    @apply bg-[hsl(var(--status-error)/0.15)] text-[hsl(var(--status-error))];
+  }
+
+  .status-badge-pending {
+    @apply bg-[hsl(var(--status-pending)/0.15)] text-[hsl(var(--status-pending))];
+  }
+
+  /* Workflow indicators */
+  .workflow-dot {
+    @apply w-2 h-2 rounded-full;
+  }
+
+  .workflow-dot-unresolved {
+    @apply bg-[hsl(var(--workflow-unresolved))];
+  }
+
+  .workflow-dot-confirmed {
+    @apply bg-[hsl(var(--workflow-confirmed))];
+  }
+
+  .workflow-dot-flagged {
+    @apply bg-[hsl(var(--workflow-flagged))];
+  }
+
+  .workflow-dot-locked {
+    @apply bg-[hsl(var(--workflow-locked))];
+  }
+
+  /* Evidence indicators */
+  .evidence-indicator {
+    @apply w-1.5 h-1.5 rounded-full;
+  }
+
+  .evidence-present {
+    @apply bg-[hsl(var(--evidence-present))];
+  }
+
+  .evidence-missing {
+    @apply bg-[hsl(var(--evidence-missing))];
+  }
+
+  .evidence-pending {
+    @apply bg-[hsl(var(--evidence-pending))];
+  }
+
+  /* Data table cells */
+  .cell-amount {
+    @apply text-right font-mono tabular-nums;
+  }
+
+  .cell-date {
+    @apply font-mono text-muted-foreground text-sm;
+  }
+
+  /* Audit trail styling */
+  .audit-entry {
+    @apply border-l-2 border-border pl-3 py-1;
+  }
+
+  .audit-entry-source {
+    @apply text-xs text-muted-foreground font-mono;
+  }
+}
+
+/* Scrollbar styling for data-heavy views */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground));
 }
