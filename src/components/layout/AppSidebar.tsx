@@ -9,7 +9,8 @@ import {
   Lock,
   Settings,
   BarChart3,
-  Building2
+  Building2,
+  Link as LinkIcon
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useTaxYear } from '@/contexts/TaxYearContext';
@@ -35,6 +36,7 @@ const navSections: { title: string; items: NavItem[] }[] = [
     items: [
       { icon: FileText, label: 'Documents', href: '/documents' },
       { icon: Receipt, label: 'Transactions', href: '/transactions' },
+      { icon: LinkIcon, label: 'Reconciliation', href: '/reconciliation' },
     ],
   },
   {
@@ -97,10 +99,18 @@ export function AppSidebar({ currentPath, onNavigate }: AppSidebarProps) {
             {yearConfig?.isLocked && (
               <Lock className="w-4 h-4 text-sidebar-foreground/40" />
             )}
+            {yearConfig?.status === 'finalized' && !yearConfig.isLocked && (
+              <span className="text-xs text-sidebar-foreground/60">v{yearConfig.version}</span>
+            )}
           </div>
         ) : (
           <div className="text-sm text-sidebar-foreground/40 italic">
             Not selected
+          </div>
+        )}
+        {yearConfig?.status && yearConfig.status !== 'draft' && (
+          <div className="text-xs text-sidebar-foreground/60 mt-1 capitalize">
+            Status: {yearConfig.status}
           </div>
         )}
       </div>

@@ -1,4 +1,5 @@
 import { useTaxYear } from '@/contexts/TaxYearContext';
+import { useWorkflow } from '@/contexts/WorkflowContext';
 import { TaxYearSelector } from '@/components/dashboard/TaxYearSelector';
 import { WorkflowStatusCard } from '@/components/dashboard/WorkflowStatusCard';
 import { SourceHierarchyCard } from '@/components/dashboard/SourceHierarchyCard';
@@ -12,13 +13,27 @@ import {
   Building2,
   AlertTriangle,
   Shield,
-  FileWarning
+  FileWarning,
+  Link as LinkIcon
 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 
 export function Dashboard() {
   const { currentYear, isYearSelected, yearConfig } = useTaxYear();
+  const { workflowState, documents, transactions, discrepancies, evidence, incomeReconciliations } = useWorkflow();
+
+  const yearDocs = documents.filter(d => d.taxYear === currentYear);
+  const yearTxns = transactions.filter(t => t.taxYear === currentYear);
+  const yearDiscs = discrepancies.filter(d => d.taxYear === currentYear);
+  const yearEvidence = evidence.filter(e => e.taxYear === currentYear);
+  const yearRecs = incomeReconciliations.filter(r => r.taxYear === currentYear);
+
+  const unresolvedTxns = yearTxns.filter(t => t.state === 'requires_decision');
+  const deductibleTxns = yearTxns.filter(t => t.state === 'deductible');
+  const missingEvidence = deductibleTxns.filter(t => t.evidenceStatus === 'missing');
+  const unresolvedDiscs = yearDiscs.filter(d => !d.resolution);
+  const unreconciledRecs = yearRecs.filter(r => !r.isReconciled);
 
   return (
     <div className="p-6 space-y-6">
@@ -65,60 +80,64 @@ export function Dashboard() {
                 title="Documents"
                 description="Source documents and forms"
                 icon={FileText}
-                status="unresolved"
+                status={yearDocs.length > 0 ? 'confirmed' : 'unresolved'}
                 stats={[
-                  { label: 'Uploaded', value: 0 },
-                  { label: 'Parsed', value: 0 },
+                  { label: 'Uploaded', value: yearDocs.length },
+                  { label: 'Verified', value: yearDocs.filter(d => d.verificationStatus === 'verified').length },
                 ]}
               />
               <WorkflowStatusCard
                 title="Transactions"
                 description="Bank & processor transactions"
                 icon={Receipt}
-                status="unresolved"
+                status={unresolvedTxns.length > 0 ? 'flagged' : yearTxns.length > 0 ? 'confirmed' : 'unresolved'}
                 stats={[
-                  { label: 'Total', value: 0 },
-                  { label: 'Unresolved', value: 0, type: 'warning' },
+                  { label: 'Total', value: yearTxns.length },
+                  { label: 'Unresolved', value: unresolvedTxns.length, type: unresolvedTxns.length > 0 ? 'warning' : undefined },
+                ]}
+              />
+              <WorkflowStatusCard
+                title="Reconciliation"
+                description="Income to deposits matching"
+                icon={LinkIcon}
+                status={unreconciledRecs.length > 0 ? 'flagged' : yearRecs.length > 0 ? 'confirmed' : 'unresolved'}
+                stats={[
+                  { label: 'Sources', value: yearRecs.length },
+                  { label: 'Pending', value: unreconciledRecs.length, type: unreconciledRecs.length > 0 ? 'warning' : undefined },
                 ]}
               />
               <WorkflowStatusCard
                 title="Evidence Locker"
                 description="Receipts and substantiation"
                 icon={FolderArchive}
-                status="unresolved"
+                status={missingEvidence.length > 0 ? 'flagged' : yearEvidence.length > 0 ? 'confirmed' : 'unresolved'}
                 stats={[
-                  { label: 'Attached', value: 0 },
-                  { label: 'Missing', value: 0, type: 'error' },
+                  { label: 'Attached', value: yearEvidence.length },
+                  { label: 'Missing', value: missingEvidence.length, type: missingEvidence.length > 0 ? 'error' : undefined },
                 ]}
               />
               <WorkflowStatusCard
                 title="Federal Return"
                 description="Form 1040 and schedules"
                 icon={Calculator}
-                status="unresolved"
+                status={
+                  workflowState.federalStatus === 'blocked' ? 'flagged' :
+                  workflowState.federalStatus === 'ready' || workflowState.federalStatus === 'finalized' ? 'confirmed' :
+                  workflowState.federalStatus === 'locked' ? 'locked' : 'unresolved'
+                }
                 stats={[
-                  { label: 'Forms', value: 0 },
-                  { label: 'Complete', value: '0%' },
-                ]}
-              />
-              <WorkflowStatusCard
-                title="State Returns"
-                description="State income tax returns"
-                icon={Building2}
-                status={yearConfig?.states.length === 0 ? 'flagged' : 'unresolved'}
-                stats={[
-                  { label: 'States', value: yearConfig?.states.length || 0 },
-                  { label: 'Configured', value: yearConfig?.states.length === 0 ? 'None' : 'Yes' },
+                  { label: 'Status', value: workflowState.federalStatus.charAt(0).toUpperCase() + workflowState.federalStatus.slice(1) },
+                  { label: 'Blockers', value: workflowState.blockedReasons.length, type: workflowState.blockedReasons.length > 0 ? 'error' : undefined },
                 ]}
               />
               <WorkflowStatusCard
                 title="Discrepancies"
                 description="Conflicts requiring resolution"
                 icon={AlertTriangle}
-                status="unresolved"
+                status={unresolvedDiscs.length > 0 ? 'flagged' : yearDiscs.length > 0 ? 'confirmed' : 'unresolved'}
                 stats={[
-                  { label: 'Open', value: 0 },
-                  { label: 'Resolved', value: 0 },
+                  { label: 'Open', value: unresolvedDiscs.length, type: unresolvedDiscs.length > 0 ? 'error' : undefined },
+                  { label: 'Resolved', value: yearDiscs.filter(d => d.resolution).length },
                 ]}
               />
             </div>
