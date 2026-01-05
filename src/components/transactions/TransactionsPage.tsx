@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import { useTaxYear } from '@/contexts/TaxYearContext';
+import { useWorkflow } from '@/contexts/WorkflowContext';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { Separator } from '@/components/ui/separator';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Textarea } from '@/components/ui/textarea';
 import {
   Table,
   TableBody,
@@ -14,6 +15,22 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table';
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from '@/components/ui/dialog';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select';
+import { Label } from '@/components/ui/label';
 import { 
   AlertTriangle, 
   Check, 
@@ -23,28 +40,54 @@ import {
   Search,
   Filter,
   ChevronDown,
+  ChevronRight,
   FileText,
-  Link as LinkIcon
+  Plus,
+  Split,
+  AlertCircle,
+  Paperclip
 } from 'lucide-react';
-import { Transaction, TransactionState } from '@/types/tax';
+import { Transaction, TransactionState, SplitAllocation, EvidenceStatus } from '@/types/tax';
 import { DataAmount } from '@/components/ui/DataAmount';
 import { cn } from '@/lib/utils';
 
-const stateConfig: Record<TransactionState, { icon: typeof Check; label: string; color: string }> = {
-  deductible: { icon: Check, label: 'Deductible', color: 'text-status-success' },
-  requires_decision: { icon: HelpCircle, label: 'Requires Decision', color: 'text-status-warning' },
-  non_deductible: { icon: X, label: 'Non-Deductible', color: 'text-status-error' },
-  not_expense: { icon: ArrowLeftRight, label: 'Not an Expense', color: 'text-muted-foreground' },
+const stateConfig: Record<TransactionState, { icon: typeof Check; label: string; color: string; bg: string }> = {
+  deductible: { icon: Check, label: 'Deductible', color: 'text-status-success', bg: 'bg-status-success/10' },
+  requires_decision: { icon: HelpCircle, label: 'Requires Decision', color: 'text-status-warning', bg: 'bg-status-warning/10' },
+  non_deductible: { icon: X, label: 'Non-Deductible', color: 'text-status-error', bg: 'bg-status-error/10' },
+  not_expense: { icon: ArrowLeftRight, label: 'Not an Expense', color: 'text-muted-foreground', bg: 'bg-muted' },
 };
 
-// Mock transactions for demonstration
-const mockTransactions: Transaction[] = [];
+const evidenceStatusConfig: Record<EvidenceStatus, { label: string; color: string }> = {
+  present: { label: 'Present', color: 'text-status-success' },
+  missing: { label: 'Missing', color: 'text-status-error' },
+  pending: { label: 'Pending', color: 'text-status-warning' },
+  not_required: { label: 'Not Required', color: 'text-muted-foreground' },
+};
 
 export function TransactionsPage() {
   const { currentYear, isYearSelected } = useTaxYear();
-  const [transactions, setTransactions] = useState<Transaction[]>(mockTransactions);
+  const { transactions, addTransaction, updateTransaction, categories, evidence, addEvidence } = useWorkflow();
   const [searchTerm, setSearchTerm] = useState('');
   const [filterState, setFilterState] = useState<TransactionState | 'all'>('all');
+  const [selectedTransaction, setSelectedTransaction] = useState<Transaction | null>(null);
+  const [classifyDialogOpen, setClassifyDialogOpen] = useState(false);
+  const [splitDialogOpen, setSplitDialogOpen] = useState(false);
+  const [addDialogOpen, setAddDialogOpen] = useState(false);
+  
+  // Form states for classification
+  const [newState, setNewState] = useState<TransactionState>('requires_decision');
+  const [selectedCategory, setSelectedCategory] = useState<string>('');
+  const [businessPurpose, setBusinessPurpose] = useState('');
+  const [rationale, setRationale] = useState('');
+
+  // Form state for adding transaction
+  const [newTransaction, setNewTransaction] = useState({
+    date: '',
+    description: '',
+    amount: '',
+    source: '',
+  });
 
   if (!isYearSelected) {
     return (
@@ -62,33 +105,109 @@ export function TransactionsPage() {
     );
   }
 
-  const filteredTransactions = transactions.filter(t => {
+  const yearTransactions = transactions.filter(t => t.taxYear === currentYear);
+  
+  const filteredTransactions = yearTransactions.filter(t => {
     const matchesSearch = t.description.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesFilter = filterState === 'all' || t.state === filterState;
     return matchesSearch && matchesFilter;
   });
 
   const stats = {
-    total: transactions.length,
-    deductible: transactions.filter(t => t.state === 'deductible').length,
-    requiresDecision: transactions.filter(t => t.state === 'requires_decision').length,
-    nonDeductible: transactions.filter(t => t.state === 'non_deductible').length,
-    notExpense: transactions.filter(t => t.state === 'not_expense').length,
+    total: yearTransactions.length,
+    deductible: yearTransactions.filter(t => t.state === 'deductible').length,
+    requiresDecision: yearTransactions.filter(t => t.state === 'requires_decision').length,
+    nonDeductible: yearTransactions.filter(t => t.state === 'non_deductible').length,
+    notExpense: yearTransactions.filter(t => t.state === 'not_expense').length,
+    missingEvidence: yearTransactions.filter(t => t.state === 'deductible' && t.evidenceStatus === 'missing').length,
+  };
+
+  const totalDeductible = yearTransactions
+    .filter(t => t.state === 'deductible')
+    .reduce((sum, t) => sum + Math.abs(t.amount), 0);
+
+  const handleClassify = (txn: Transaction) => {
+    setSelectedTransaction(txn);
+    setNewState(txn.state);
+    setSelectedCategory(txn.categoryId || '');
+    setBusinessPurpose(txn.businessPurpose || '');
+    setRationale(txn.rationale || '');
+    setClassifyDialogOpen(true);
+  };
+
+  const handleConfirmClassification = () => {
+    if (!selectedTransaction) return;
+
+    const category = categories.find(c => c.id === selectedCategory);
+    const requiresEvidence = category?.evidenceRequired ?? true;
+    const requiresPurpose = category?.requiresBusinessPurpose ?? false;
+
+    // Validate business purpose if required
+    if (newState === 'deductible' && requiresPurpose && !businessPurpose.trim()) {
+      alert('Business purpose is required for this category');
+      return;
+    }
+
+    // Validate rationale
+    if (!rationale.trim()) {
+      alert('Rationale is required for all classifications');
+      return;
+    }
+
+    updateTransaction(selectedTransaction.id, {
+      state: newState,
+      categoryId: selectedCategory || undefined,
+      scheduleCLine: category?.scheduleCLine,
+      businessPurpose: businessPurpose || undefined,
+      rationale,
+      evidenceStatus: newState === 'deductible' && requiresEvidence ? 'missing' : 'not_required',
+      requiresBusinessPurpose: requiresPurpose,
+      confirmedAt: new Date(),
+    });
+
+    setClassifyDialogOpen(false);
+    setSelectedTransaction(null);
+  };
+
+  const handleAddTransaction = () => {
+    if (!currentYear) return;
+
+    const txn: Transaction = {
+      id: `txn_${Date.now()}`,
+      date: new Date(newTransaction.date),
+      description: newTransaction.description,
+      amount: parseFloat(newTransaction.amount),
+      source: newTransaction.source,
+      state: 'requires_decision',
+      evidenceStatus: 'pending',
+      requiresBusinessPurpose: false,
+      taxYear: currentYear,
+    };
+
+    addTransaction(txn);
+    setAddDialogOpen(false);
+    setNewTransaction({ date: '', description: '', amount: '', source: '' });
   };
 
   return (
     <div className="p-6 space-y-6">
-      <div>
-        <h1 className="text-2xl font-semibold text-foreground">
-          Transaction Engine
-        </h1>
-        <p className="text-muted-foreground mt-1">
-          Categorize and resolve all transactions for tax year {currentYear}
-        </p>
+      <div className="flex items-center justify-between">
+        <div>
+          <h1 className="text-2xl font-semibold text-foreground">
+            Transaction Engine
+          </h1>
+          <p className="text-muted-foreground mt-1">
+            Categorize and resolve all transactions for tax year {currentYear}
+          </p>
+        </div>
+        <Button onClick={() => setAddDialogOpen(true)}>
+          <Plus className="w-4 h-4 mr-2" />
+          Add Transaction
+        </Button>
       </div>
 
       {/* Stats */}
-      <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-6 gap-4">
         <Card>
           <CardContent className="p-4 text-center">
             <div className="text-2xl font-mono font-semibold">{stats.total}</div>
@@ -119,7 +238,33 @@ export function TransactionsPage() {
             <div className="text-xs text-muted-foreground uppercase tracking-wider">Transfers</div>
           </CardContent>
         </Card>
+        <Card className="border-accent/50">
+          <CardContent className="p-4 text-center">
+            <div className="text-2xl font-mono font-semibold text-accent">
+              ${totalDeductible.toLocaleString()}
+            </div>
+            <div className="text-xs text-muted-foreground uppercase tracking-wider">Deductible $</div>
+          </CardContent>
+        </Card>
       </div>
+
+      {/* Missing Evidence Warning */}
+      {stats.missingEvidence > 0 && (
+        <Card className="border-status-error/50 bg-status-error/5">
+          <CardContent className="py-4">
+            <div className="flex items-start gap-3">
+              <AlertCircle className="w-5 h-5 text-status-error mt-0.5" />
+              <div>
+                <p className="font-medium text-sm">Evidence Required</p>
+                <p className="text-sm text-muted-foreground mt-1">
+                  {stats.missingEvidence} deductible expense(s) are missing required evidence. 
+                  These will be excluded from totals until evidence is attached.
+                </p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      )}
 
       {/* Terminal States Reference */}
       <Card>
@@ -134,17 +279,24 @@ export function TransactionsPage() {
             {(Object.entries(stateConfig) as [TransactionState, typeof stateConfig[TransactionState]][]).map(
               ([state, config]) => {
                 const Icon = config.icon;
+                const count = state === 'deductible' ? stats.deductible :
+                              state === 'requires_decision' ? stats.requiresDecision :
+                              state === 'non_deductible' ? stats.nonDeductible : stats.notExpense;
                 return (
                   <div
                     key={state}
                     className={cn(
-                      'flex items-center gap-2 p-2 rounded border cursor-pointer transition-colors',
-                      filterState === state && 'ring-2 ring-accent'
+                      'flex items-center justify-between p-2 rounded border cursor-pointer transition-colors',
+                      filterState === state && 'ring-2 ring-accent',
+                      config.bg
                     )}
                     onClick={() => setFilterState(filterState === state ? 'all' : state)}
                   >
-                    <Icon className={cn('w-4 h-4', config.color)} />
-                    <span className="text-sm">{config.label}</span>
+                    <div className="flex items-center gap-2">
+                      <Icon className={cn('w-4 h-4', config.color)} />
+                      <span className="text-sm">{config.label}</span>
+                    </div>
+                    <Badge variant="secondary" className="text-xs">{count}</Badge>
                   </div>
                 );
               }
@@ -167,11 +319,12 @@ export function TransactionsPage() {
               className="pl-9"
             />
           </div>
-          <Button variant="outline" size="sm">
-            <Filter className="w-4 h-4 mr-2" />
-            Filters
-            <ChevronDown className="w-4 h-4 ml-2" />
-          </Button>
+          {filterState !== 'all' && (
+            <Button variant="ghost" size="sm" onClick={() => setFilterState('all')}>
+              Clear filter
+              <X className="w-4 h-4 ml-1" />
+            </Button>
+          )}
         </div>
 
         {filteredTransactions.length === 0 ? (
@@ -180,7 +333,7 @@ export function TransactionsPage() {
               <ArrowLeftRight className="w-12 h-12 text-muted-foreground/30 mx-auto mb-4" />
               <h3 className="text-lg font-medium text-muted-foreground">No Transactions</h3>
               <p className="text-sm text-muted-foreground mt-1">
-                Upload bank statements or payment processor exports from the Documents section
+                Upload bank statements or payment processor exports from the Documents section, or add manually
               </p>
             </CardContent>
           </Card>
@@ -193,47 +346,72 @@ export function TransactionsPage() {
                   <TableHead>Description</TableHead>
                   <TableHead>Source</TableHead>
                   <TableHead className="text-right">Amount</TableHead>
-                  <TableHead className="w-[140px]">State</TableHead>
+                  <TableHead className="w-[160px]">State</TableHead>
+                  <TableHead className="w-[120px]">Category</TableHead>
                   <TableHead className="w-[80px]">Evidence</TableHead>
-                  <TableHead className="w-[80px]"></TableHead>
+                  <TableHead className="w-[100px]"></TableHead>
                 </TableRow>
               </TableHeader>
               <TableBody>
                 {filteredTransactions.map((txn) => {
                   const config = stateConfig[txn.state];
                   const Icon = config.icon;
+                  const category = categories.find(c => c.id === txn.categoryId);
+                  const evConfig = evidenceStatusConfig[txn.evidenceStatus];
                   
                   return (
                     <TableRow key={txn.id}>
                       <TableCell className="cell-date">
                         {txn.date.toLocaleDateString()}
                       </TableCell>
-                      <TableCell className="font-medium">{txn.description}</TableCell>
+                      <TableCell>
+                        <div className="font-medium">{txn.description}</div>
+                        {txn.businessPurpose && (
+                          <div className="text-xs text-muted-foreground mt-0.5">
+                            Purpose: {txn.businessPurpose}
+                          </div>
+                        )}
+                      </TableCell>
                       <TableCell className="text-muted-foreground text-sm">{txn.source}</TableCell>
                       <TableCell>
                         <DataAmount value={txn.amount} />
                       </TableCell>
                       <TableCell>
-                        <Badge variant="outline" className={cn('text-xs', config.color)}>
+                        <Badge variant="outline" className={cn('text-xs', config.color, config.bg)}>
                           <Icon className="w-3 h-3 mr-1" />
                           {config.label}
                         </Badge>
                       </TableCell>
                       <TableCell>
-                        {txn.evidenceStatus === 'present' && (
-                          <span className="evidence-indicator evidence-present inline-block" />
-                        )}
-                        {txn.evidenceStatus === 'missing' && (
-                          <span className="evidence-indicator evidence-missing inline-block" />
-                        )}
-                        {txn.evidenceStatus === 'pending' && (
-                          <span className="evidence-indicator evidence-pending inline-block" />
+                        {category ? (
+                          <span className="text-xs text-muted-foreground">
+                            Line {category.scheduleCLine}
+                          </span>
+                        ) : (
+                          <span className="text-xs text-muted-foreground">—</span>
                         )}
                       </TableCell>
                       <TableCell>
-                        <Button variant="ghost" size="sm">
-                          <ChevronDown className="w-4 h-4" />
-                        </Button>
+                        {txn.state === 'deductible' && (
+                          <span className={cn('text-xs', evConfig.color)}>
+                            {txn.evidenceStatus === 'present' && (
+                              <Paperclip className="w-3 h-3 inline mr-1" />
+                            )}
+                            {evConfig.label}
+                          </span>
+                        )}
+                      </TableCell>
+                      <TableCell>
+                        <div className="flex items-center gap-1">
+                          <Button 
+                            variant="ghost" 
+                            size="sm"
+                            onClick={() => handleClassify(txn)}
+                          >
+                            Classify
+                            <ChevronRight className="w-4 h-4 ml-1" />
+                          </Button>
+                        </div>
                       </TableCell>
                     </TableRow>
                   );
@@ -253,9 +431,187 @@ export function TransactionsPage() {
           <p>• Every expense must map directly to Schedule C lines</p>
           <p>• Transaction splitting and percentage allocations require rationale and confirmation</p>
           <p>• AI may suggest categories but may not auto-claim fact-dependent deductions</p>
-          <p>• Evidence must be attached before expense can be marked deductible</p>
+          <p>• Evidence must be attached before expense can be included in totals</p>
+          <p>• Business purpose is required for meals, travel, and gifts categories</p>
         </CardContent>
       </Card>
+
+      {/* Classification Dialog */}
+      <Dialog open={classifyDialogOpen} onOpenChange={setClassifyDialogOpen}>
+        <DialogContent className="max-w-lg">
+          <DialogHeader>
+            <DialogTitle>Classify Transaction</DialogTitle>
+            <DialogDescription>
+              Assign a terminal state to this transaction. This action requires rationale.
+            </DialogDescription>
+          </DialogHeader>
+          
+          {selectedTransaction && (
+            <div className="space-y-4 py-4">
+              <div className="p-3 bg-secondary rounded-lg">
+                <div className="font-medium">{selectedTransaction.description}</div>
+                <div className="text-sm text-muted-foreground mt-1">
+                  {selectedTransaction.date.toLocaleDateString()} • <DataAmount value={selectedTransaction.amount} />
+                </div>
+              </div>
+
+              <div className="space-y-2">
+                <Label>Terminal State</Label>
+                <Select value={newState} onValueChange={(v) => setNewState(v as TransactionState)}>
+                  <SelectTrigger>
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="deductible">
+                      <div className="flex items-center gap-2">
+                        <Check className="w-4 h-4 text-status-success" />
+                        Deductible Business Expense
+                      </div>
+                    </SelectItem>
+                    <SelectItem value="requires_decision">
+                      <div className="flex items-center gap-2">
+                        <HelpCircle className="w-4 h-4 text-status-warning" />
+                        Requires Decision (Review Later)
+                      </div>
+                    </SelectItem>
+                    <SelectItem value="non_deductible">
+                      <div className="flex items-center gap-2">
+                        <X className="w-4 h-4 text-status-error" />
+                        Non-Deductible / Personal
+                      </div>
+                    </SelectItem>
+                    <SelectItem value="not_expense">
+                      <div className="flex items-center gap-2">
+                        <ArrowLeftRight className="w-4 h-4 text-muted-foreground" />
+                        Not an Expense (Transfer/Refund)
+                      </div>
+                    </SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+
+              {newState === 'deductible' && (
+                <>
+                  <div className="space-y-2">
+                    <Label>Schedule C Category</Label>
+                    <Select value={selectedCategory} onValueChange={setSelectedCategory}>
+                      <SelectTrigger>
+                        <SelectValue placeholder="Select category..." />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {categories.map(cat => (
+                          <SelectItem key={cat.id} value={cat.id}>
+                            Line {cat.scheduleCLine}: {cat.name}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                    {selectedCategory && (
+                      <div className="text-xs text-muted-foreground p-2 bg-muted rounded">
+                        {categories.find(c => c.id === selectedCategory)?.deductibilityRules}
+                      </div>
+                    )}
+                  </div>
+
+                  {categories.find(c => c.id === selectedCategory)?.requiresBusinessPurpose && (
+                    <div className="space-y-2">
+                      <Label>Business Purpose (Required)</Label>
+                      <Textarea
+                        value={businessPurpose}
+                        onChange={(e) => setBusinessPurpose(e.target.value)}
+                        placeholder="Describe the business purpose..."
+                        rows={2}
+                      />
+                    </div>
+                  )}
+                </>
+              )}
+
+              <div className="space-y-2">
+                <Label>Rationale (Required)</Label>
+                <Textarea
+                  value={rationale}
+                  onChange={(e) => setRationale(e.target.value)}
+                  placeholder="Explain why this classification is correct..."
+                  rows={2}
+                />
+              </div>
+            </div>
+          )}
+
+          <DialogFooter>
+            <Button variant="outline" onClick={() => setClassifyDialogOpen(false)}>
+              Cancel
+            </Button>
+            <Button 
+              onClick={handleConfirmClassification}
+              disabled={!rationale.trim() || (newState === 'deductible' && !selectedCategory)}
+            >
+              Confirm Classification
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      {/* Add Transaction Dialog */}
+      <Dialog open={addDialogOpen} onOpenChange={setAddDialogOpen}>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Add Transaction</DialogTitle>
+            <DialogDescription>
+              Manually add a transaction for tax year {currentYear}
+            </DialogDescription>
+          </DialogHeader>
+          
+          <div className="space-y-4 py-4">
+            <div className="space-y-2">
+              <Label>Date</Label>
+              <Input
+                type="date"
+                value={newTransaction.date}
+                onChange={(e) => setNewTransaction(prev => ({ ...prev, date: e.target.value }))}
+              />
+            </div>
+            <div className="space-y-2">
+              <Label>Description</Label>
+              <Input
+                value={newTransaction.description}
+                onChange={(e) => setNewTransaction(prev => ({ ...prev, description: e.target.value }))}
+                placeholder="Transaction description..."
+              />
+            </div>
+            <div className="space-y-2">
+              <Label>Amount</Label>
+              <Input
+                type="number"
+                value={newTransaction.amount}
+                onChange={(e) => setNewTransaction(prev => ({ ...prev, amount: e.target.value }))}
+                placeholder="0.00"
+              />
+            </div>
+            <div className="space-y-2">
+              <Label>Source</Label>
+              <Input
+                value={newTransaction.source}
+                onChange={(e) => setNewTransaction(prev => ({ ...prev, source: e.target.value }))}
+                placeholder="e.g., Chase Checking, PayPal..."
+              />
+            </div>
+          </div>
+
+          <DialogFooter>
+            <Button variant="outline" onClick={() => setAddDialogOpen(false)}>
+              Cancel
+            </Button>
+            <Button 
+              onClick={handleAddTransaction}
+              disabled={!newTransaction.date || !newTransaction.description || !newTransaction.amount}
+            >
+              Add Transaction
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
