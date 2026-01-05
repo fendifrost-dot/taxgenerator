@@ -4,10 +4,14 @@ import { Dashboard } from '@/components/dashboard/Dashboard';
 import { YearConfiguration } from '@/components/config/YearConfiguration';
 import { DocumentsPage } from '@/components/documents/DocumentsPage';
 import { TransactionsPage } from '@/components/transactions/TransactionsPage';
+import { EvidencePage } from '@/components/evidence/EvidencePage';
 import { InvoicesPage } from '@/components/invoices/InvoicesPage';
+import { ReconciliationPage } from '@/components/reconciliation/ReconciliationPage';
+import { FederalReturnPage } from '@/components/federal/FederalReturnPage';
+import { StateReturnsPage } from '@/components/states/StateReturnsPage';
 import { DiscrepanciesPage } from '@/components/discrepancies/DiscrepanciesPage';
+import { ReportsPage } from '@/components/reports/ReportsPage';
 import { FinalizationPage } from '@/components/finalization/FinalizationPage';
-import { NotImplementedPage } from '@/components/common/NotImplementedPage';
 
 const Index = () => {
   const [currentPath, setCurrentPath] = useState('/');
@@ -23,43 +27,19 @@ const Index = () => {
       case '/transactions':
         return <TransactionsPage />;
       case '/evidence':
-        return (
-          <NotImplementedPage
-            title="Evidence Locker"
-            description="Attach receipts, invoices, and supporting documentation to substantiate expenses"
-            blocksDownstream={['Federal Return generation for deductible expenses']}
-          />
-        );
+        return <EvidencePage />;
       case '/invoices':
         return <InvoicesPage />;
+      case '/reconciliation':
+        return <ReconciliationPage />;
       case '/federal':
-        return (
-          <NotImplementedPage
-            title="Federal Return"
-            description="Prepare Form 1040 and associated schedules"
-            blocksDownstream={['State Returns (federal must finalize first)']}
-            requiredGates={['All transactions resolved', 'Required forms uploaded', 'No material discrepancies']}
-          />
-        );
+        return <FederalReturnPage />;
       case '/states':
-        return (
-          <NotImplementedPage
-            title="State Returns"
-            description="Prepare state income tax returns derived from federal data"
-            blocksDownstream={['Audit pack generation']}
-            requiredGates={['Federal return finalized', 'State forms uploaded']}
-          />
-        );
+        return <StateReturnsPage />;
       case '/discrepancies':
         return <DiscrepanciesPage />;
       case '/reports':
-        return (
-          <NotImplementedPage
-            title="Reports & P&L"
-            description="Generate monthly, quarterly, and annual profit & loss statements"
-            blocksDownstream={['Audit pack export']}
-          />
-        );
+        return <ReportsPage />;
       case '/finalize':
         return <FinalizationPage />;
       default:
