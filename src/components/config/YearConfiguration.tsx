@@ -90,6 +90,7 @@ export function YearConfiguration() {
       stateName: state.name,
       residencyStatus,
       hasBusinessNexus,
+      status: 'not_started',
     });
 
     setSelectedState('');
