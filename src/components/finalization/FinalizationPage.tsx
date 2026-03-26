@@ -41,10 +41,8 @@ export function FinalizationPage() {
     await finalizeYear();
   };
 
-  const handleLock = () => {
-    if (lockYear()) {
-      // Success
-    }
+  const handleLock = async () => {
+    await lockYear();
   };
 
   return (
