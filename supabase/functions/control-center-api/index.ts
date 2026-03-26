@@ -26,12 +26,12 @@ serve(async (req: Request) => {
     if (action === "get_workflow_status") {
       let q = supabase.from("workflow_states").select("*").order("tax_year", { ascending: false }).limit(1);
       if (tax_year) q = q.eq("tax_year", tax_year);
-      const { data, error } = await q.single(); if (error) throw error;
+const { data, error } = await q.maybeSingle(); if (error) throw error;
       result = { workflow_status: data };
     } else if (action === "get_year_config") {
       let q = supabase.from("tax_year_configs").select("*, state_configs(*)").order("year", { ascending: false }).limit(1);
       if (tax_year) q = q.eq("year", tax_year);
-      const { data, error } = await q.single(); if (error) throw error;
+      const { data, error } = await q.maybeSingle(); if (error) throw error;
       result = { year_config: data };
     } else if (action === "get_documents") {
       let q = supabase.from("documents").select("id,type,file_name,uploaded_at,tax_year,verification_status,verification_errors").order("uploaded_at", { ascending: false }).limit(limit);
@@ -75,7 +75,7 @@ serve(async (req: Request) => {
     } else if (action === "get_pl_report") {
       let q = supabase.from("pl_reports").select("*").order("generated_at", { ascending: false }).limit(1);
       if (tax_year) q = q.eq("tax_year", tax_year);
-      const { data, error } = await q.single(); if (error) throw error;
+const { data, error } = await q.maybeSingle(); if (error) throw error;
       result = { pl_report: data };
     } else {
       result = { error: `Unknown action: ${action}` };
