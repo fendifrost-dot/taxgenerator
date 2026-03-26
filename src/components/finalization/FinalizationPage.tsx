@@ -37,16 +37,12 @@ export function FinalizationPage() {
 
   const { gates, blockedReasons } = workflowState;
 
-  const handleFinalize = () => {
-    if (finalizeYear()) {
-      // Success
-    }
+  const handleFinalize = async () => {
+    await finalizeYear();
   };
 
-  const handleLock = () => {
-    if (lockYear()) {
-      // Success
-    }
+  const handleLock = async () => {
+    await lockYear();
   };
 
   return (
