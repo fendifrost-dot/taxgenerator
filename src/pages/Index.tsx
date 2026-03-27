@@ -3,7 +3,7 @@ import { AppLayout } from '@/components/layout/AppLayout';
 import { Dashboard } from '@/components/dashboard/Dashboard';
 import { YearConfiguration } from '@/components/config/YearConfiguration';
 import { DocumentsPage } from '@/components/documents/DocumentsPage';
-import { TransactionsPage } from '@/components/transactions/TransactionsPage';
+import { TransactionsPage } from '@/compnents/transactions/TransactionsPage';
 import { EvidencePage } from '@/components/evidence/EvidencePage';
 import { InvoicesPage } from '@/components/invoices/InvoicesPage';
 import { ReconciliationPage } from '@/components/reconciliation/ReconciliationPage';
@@ -12,6 +12,7 @@ import { StateReturnsPage } from '@/components/states/StateReturnsPage';
 import { DiscrepanciesPage } from '@/components/discrepancies/DiscrepanciesPage';
 import { ReportsPage } from '@/components/reports/ReportsPage';
 import { FinalizationPage } from '@/components/finalization/FinalizationPage';
+import { TaxCalculatorPage } from '@/components/calculator/TaxCalculatorPage';
 
 const Index = () => {
   const [currentPath, setCurrentPath] = useState('/');
@@ -42,6 +43,8 @@ const Index = () => {
         return <ReportsPage />;
       case '/finalize':
         return <FinalizationPage />;
+      case '/calculator':
+                return <TaxCalculatorPage />;
       default:
         return <Dashboard />;
     }
