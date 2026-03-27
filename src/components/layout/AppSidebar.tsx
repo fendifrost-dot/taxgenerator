@@ -10,6 +10,7 @@ import {
   Settings,
   BarChart3,
   Building2,
+    DollarSign,
   Link as LinkIcon
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -51,6 +52,7 @@ const navSections: { title: string; items: NavItem[] }[] = [
     items: [
       { icon: Calculator, label: 'Federal Return', href: '/federal' },
       { icon: Building2, label: 'State Returns', href: '/states' },
+      { icon: DollarSign, label: 'Tax Calculator', href: '/calculator' },
     ],
   },
   {
