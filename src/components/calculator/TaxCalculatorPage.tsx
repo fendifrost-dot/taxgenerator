@@ -154,7 +154,7 @@ function generateTips(data, calc) {
 
 // ─── UI Components ───
 
-function CurrencyInput({ label, value, onChange, placeholder = "0", helpText }: { label: any; value: any; onChange: any; placeholder?: string; helpText?: string }) {
+function CurrencyInput({ label, value, onChange, placeholder = "0", helpText }) {
   return (
     <div className="mb-4">
       <label className="block text-sm font-medium text-gray-700 mb-1">{label}</label>
