@@ -3,7 +3,7 @@ import { AppLayout } from '@/components/layout/AppLayout';
 import { Dashboard } from '@/components/dashboard/Dashboard';
 import { YearConfiguration } from '@/components/config/YearConfiguration';
 import { DocumentsPage } from '@/components/documents/DocumentsPage';
-import { TransactionsPage } from '@/compnents/transactions/TransactionsPage';
+import { TransactionsPage } from '@/components/transactions/TransactionsPage';
 import { EvidencePage } from '@/components/evidence/EvidencePage';
 import { InvoicesPage } from '@/components/invoices/InvoicesPage';
 import { ReconciliationPage } from '@/components/reconciliation/ReconciliationPage';
