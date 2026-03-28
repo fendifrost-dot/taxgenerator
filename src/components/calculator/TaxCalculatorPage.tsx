@@ -70,11 +70,15 @@ function calcAOC(expenses) {
   return { total: Math.round(total), nonrefundable, refundable };
 }
 
+// ─── NaN-safe number coercion ───
+const num = (v: any): number => { const n = Number(v); return isNaN(n) ? 0 : n; };
+
 // ─── Currency Formatter ───
-const fmt = (n) => {
-  const abs = Math.abs(Math.round(n));
+const fmt = (n: any) => {
+  const safe = num(n);
+  const abs = Math.abs(Math.round(safe));
   const str = "$" + abs.toLocaleString("en-US");
-  return n < 0 ? `(${str})` : str;
+  return safe < 0 ? `(${str})` : str;
 };
 
 // ─── Tip Engine ───
