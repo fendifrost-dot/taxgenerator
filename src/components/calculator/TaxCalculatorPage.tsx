@@ -129,11 +129,11 @@ function generateTips(data, calc) {
   }
 
   // Education tips
-  if (data.educationExpenses > 0) {
-    const aoc = calcAOC(data.educationExpenses);
-    tips.push({ type: "success", section: "credits", title: "American Opportunity Credit", message: `Your ${fmt(data.educationExpenses)} in education expenses generate a ${fmt(aoc.total)} credit: ${fmt(aoc.nonrefundable)} nonrefundable + ${fmt(aoc.refundable)} refundable. The refundable portion is paid to you even if you owe $0 in tax!` });
-    if (data.educationExpenses < AOC_MAX_EXPENSES) {
-      tips.push({ type: "info", section: "credits", title: "Maximize Education Credit", message: `You can claim up to $4,000 in education expenses. Adding ${fmt(AOC_MAX_EXPENSES - data.educationExpenses)} more would increase your credit by up to ${fmt(Math.round((AOC_MAX_EXPENSES - data.educationExpenses) * 0.25))}.` });
+  if (num(data.educationExpenses) > 0) {
+    const aoc = calcAOC(num(data.educationExpenses));
+    tips.push({ type: "success", section: "credits", title: "American Opportunity Credit", message: `Your ${fmt(num(data.educationExpenses))} in education expenses generate a ${fmt(aoc.total)} credit: ${fmt(aoc.nonrefundable)} nonrefundable + ${fmt(aoc.refundable)} refundable. The refundable portion is paid to you even if you owe $0 in tax!` });
+    if (num(data.educationExpenses) < AOC_MAX_EXPENSES) {
+      tips.push({ type: "info", section: "credits", title: "Maximize Education Credit", message: `You can claim up to $4,000 in education expenses. Adding ${fmt(AOC_MAX_EXPENSES - num(data.educationExpenses))} more would increase your credit by up to ${fmt(Math.round((AOC_MAX_EXPENSES - num(data.educationExpenses)) * 0.25))}.` });
     }
   }
 
