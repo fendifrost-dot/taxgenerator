@@ -7,7 +7,7 @@ import {
   TrendingDown,
   Lightbulb,
   X,
-  CheckCircle,
+  CheckCircle,X
   AlertTriangle,
   Building2,
   GraduationCap,
