@@ -506,7 +506,7 @@ function Step7_Summary({ data, calc, tips }) {
           {data.taxableInterest > 0 && <div className="flex justify-between"><span className="text-gray-600">Taxable Interest</span><span>{fmt(data.taxableInterest)}</span></div>}
           {data.ordinaryDividends > 0 && <div className="flex justify-between"><span className="text-gray-600">Ordinary Dividends</span><span>{fmt(data.ordinaryDividends)}</span></div>}
           {data.capitalGains !== 0 && <div className="flex justify-between"><span className="text-gray-600">Capital Gains/(Losses)</span><span>{fmt(data.capitalGains)}</span></div>}
-          {data.hasBusiness && <div className="flex justify-between"><span className="text-gray-600">Schedule C Net</span><span>{fmt(netBiz)}</span></div>}
+          {data.hasBusiness && <div className="flex justify-between"><span className="text-gray-600">Schedule C Net ({data.businessName || "Business"})</span><span>{fmt(calc.netBiz)}</span></div>}
           <div className="flex justify-between border-t pt-2 font-semibold"><span>Total Income</span><span>{fmt(calc.totalIncome)}</span></div>
           {calc.aboveLineAdj > 0 && <div className="flex justify-between"><span className="text-gray-600">Above-Line Adjustments</span><span>({fmt(calc.aboveLineAdj)})</span></div>}
           <div className="flex justify-between font-semibold"><span>Adjusted Gross Income</span><span>{fmt(calc.agi)}</span></div>
