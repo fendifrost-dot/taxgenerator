@@ -87,24 +87,24 @@ function generateTips(data, calc) {
   const fs = data.filingStatus;
 
   // Income tips
-  if (data.wages > 0 && data.fedWithheld / Math.max(data.wages, 1) < 0.05) {
-    tips.push({ type: "warning", section: "income", title: "Low W-2 Withholding", message: `Your federal withholding rate is only ${(data.fedWithheld / Math.max(data.wages, 1) * 100).toFixed(1)}%. Consider updating your W-4 to avoid underpayment penalties next year.` });
+  if (num(data.wages) > 0 && num(data.fedWithheld) / Math.max(num(data.wages), 1) < 0.05) {
+    tips.push({ type: "warning", section: "income", title: "Low W-2 Withholding", message: `Your federal withholding rate is only ${(num(data.fedWithheld) / Math.max(num(data.wages), 1) * 100).toFixed(1)}%. Consider updating your W-4 to avoid underpayment penalties next year.` });
   }
 
   // Dividend tips
-  if (data.qualDividends > 0) {
+  if (num(data.qualDividends) > 0) {
     const threshold = QUAL_DIV_THRESHOLDS[fs] || 47025;
     if (calc.taxableIncome <= threshold) {
-      tips.push({ type: "success", section: "income", title: "0% Qualified Dividend Rate", message: `Your taxable income (${fmt(calc.taxableIncome)}) is below the ${fmt(threshold)} threshold. All ${fmt(data.qualDividends)} in qualified dividends are taxed at 0%!` });
+      tips.push({ type: "success", section: "income", title: "0% Qualified Dividend Rate", message: `Your taxable income (${fmt(calc.taxableIncome)}) is below the ${fmt(threshold)} threshold. All ${fmt(num(data.qualDividends))} in qualified dividends are taxed at 0%!` });
     } else {
       tips.push({ type: "info", section: "income", title: "Consider Tax-Loss Harvesting", message: `Some of your qualified dividends may be taxed at 15%. Consider harvesting capital losses to reduce taxable income below ${fmt(threshold)}.` });
     }
   }
 
   // Business tips
-  if (data.grossReceipts > 0 || data.cogs > 0 || data.bizExpenses > 0) {
-    const netBiz = data.grossReceipts - data.cogs - data.bizExpenses;
-    if (netBiz < 0 && Math.abs(netBiz) > data.grossReceipts * 3) {
+  if (num(data.grossReceipts) > 0 || num(data.cogs) > 0 || num(data.bizExpenses) > 0) {
+    const netBiz = num(data.grossReceipts) - num(data.cogs) - num(data.bizExpenses);
+    if (netBiz < 0 && Math.abs(netBiz) > num(data.grossReceipts) * 3) {
       tips.push({ type: "warning", section: "business", title: "Hobby Loss Risk (IRC §183)", message: `Your business loss (${fmt(netBiz)}) is much larger than revenue. The IRS requires a profit motive — document your business plan, marketing efforts, and steps toward profitability. A business must show profit in 3 of 5 years.` });
     }
     if (netBiz > 0) {
@@ -113,11 +113,11 @@ function generateTips(data, calc) {
     if (netBiz > 0 && calc.qbiDeduction > 0) {
       tips.push({ type: "success", section: "business", title: "QBI Deduction Available", message: `You qualify for a ${fmt(calc.qbiDeduction)} Qualified Business Income deduction (20% of net business income), reducing your taxable income.` });
     }
-    if (data.qbiLossCarryforward > 0) {
-      tips.push({ type: "info", section: "business", title: "QBI Loss Carryforward", message: `You have a ${fmt(data.qbiLossCarryforward)} QBI loss carryforward that will offset future business profits before any QBI deduction applies.` });
+    if (num(data.qbiLossCarryforward) > 0) {
+      tips.push({ type: "info", section: "business", title: "QBI Loss Carryforward", message: `You have a ${fmt(num(data.qbiLossCarryforward))} QBI loss carryforward that will offset future business profits before any QBI deduction applies.` });
     }
-    if (data.beginInventory > 10000 && data.grossReceipts < data.beginInventory * 0.1) {
-      tips.push({ type: "warning", section: "business", title: "High Inventory vs. Low Sales", message: `Beginning inventory (${fmt(data.beginInventory)}) greatly exceeds sales. Consider the §471 small business exception to simplify accounting, or document why inventory levels are appropriate.` });
+    if (num(data.beginInventory) > 10000 && num(data.grossReceipts) < num(data.beginInventory) * 0.1) {
+      tips.push({ type: "warning", section: "business", title: "High Inventory vs. Low Sales", message: `Beginning inventory (${fmt(num(data.beginInventory))}) greatly exceeds sales. Consider the §471 small business exception to simplify accounting, or document why inventory levels are appropriate.` });
     }
   }
 
