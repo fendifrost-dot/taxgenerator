@@ -70,15 +70,11 @@ function calcAOC(expenses) {
   return { total: Math.round(total), nonrefundable, refundable };
 }
 
-// ─── NaN-safe number coercion ───
-const num = (v: any): number => { const n = Number(v); return isNaN(n) ? 0 : n; };
-
 // ─── Currency Formatter ───
-const fmt = (n: any) => {
-  const safe = num(n);
-  const abs = Math.abs(Math.round(safe));
+const fmt = (n) => {
+  const abs = Math.abs(Math.round(n));
   const str = "$" + abs.toLocaleString("en-US");
-  return safe < 0 ? `(${str})` : str;
+  return n < 0 ? `(${str})` : str;
 };
 
 // ─── Tip Engine ───
@@ -87,24 +83,24 @@ function generateTips(data, calc) {
   const fs = data.filingStatus;
 
   // Income tips
-  if (num(data.wages) > 0 && num(data.fedWithheld) / Math.max(num(data.wages), 1) < 0.05) {
-    tips.push({ type: "warning", section: "income", title: "Low W-2 Withholding", message: `Your federal withholding rate is only ${(num(data.fedWithheld) / Math.max(num(data.wages), 1) * 100).toFixed(1)}%. Consider updating your W-4 to avoid underpayment penalties next year.` });
+  if (data.wages > 0 && data.fedWithheld / Math.max(data.wages, 1) < 0.05) {
+    tips.push({ type: "warning", section: "income", title: "Low W-2 Withholding", message: `Your federal withholding rate is only ${(data.fedWithheld / Math.max(data.wages, 1) * 100).toFixed(1)}%. Consider updating your W-4 to avoid underpayment penalties next year.` });
   }
 
   // Dividend tips
-  if (num(data.qualDividends) > 0) {
+  if (data.qualDividends > 0) {
     const threshold = QUAL_DIV_THRESHOLDS[fs] || 47025;
     if (calc.taxableIncome <= threshold) {
-      tips.push({ type: "success", section: "income", title: "0% Qualified Dividend Rate", message: `Your taxable income (${fmt(calc.taxableIncome)}) is below the ${fmt(threshold)} threshold. All ${fmt(num(data.qualDividends))} in qualified dividends are taxed at 0%!` });
+      tips.push({ type: "success", section: "income", title: "0% Qualified Dividend Rate", message: `Your taxable income (${fmt(calc.taxableIncome)}) is below the ${fmt(threshold)} threshold. All ${fmt(data.qualDividends)} in qualified dividends are taxed at 0%!` });
     } else {
       tips.push({ type: "info", section: "income", title: "Consider Tax-Loss Harvesting", message: `Some of your qualified dividends may be taxed at 15%. Consider harvesting capital losses to reduce taxable income below ${fmt(threshold)}.` });
     }
   }
 
   // Business tips
-  if (num(data.grossReceipts) > 0 || num(data.cogs) > 0 || num(data.bizExpenses) > 0) {
-    const netBiz = num(data.grossReceipts) - num(data.cogs) - num(data.bizExpenses);
-    if (netBiz < 0 && Math.abs(netBiz) > num(data.grossReceipts) * 3) {
+  if (data.grossReceipts > 0 || data.cogs > 0 || data.bizExpenses > 0) {
+    const netBiz = data.grossReceipts - data.cogs - data.bizExpenses;
+    if (netBiz < 0 && Math.abs(netBiz) > data.grossReceipts * 3) {
       tips.push({ type: "warning", section: "business", title: "Hobby Loss Risk (IRC §183)", message: `Your business loss (${fmt(netBiz)}) is much larger than revenue. The IRS requires a profit motive — document your business plan, marketing efforts, and steps toward profitability. A business must show profit in 3 of 5 years.` });
     }
     if (netBiz > 0) {
@@ -113,11 +109,11 @@ function generateTips(data, calc) {
     if (netBiz > 0 && calc.qbiDeduction > 0) {
       tips.push({ type: "success", section: "business", title: "QBI Deduction Available", message: `You qualify for a ${fmt(calc.qbiDeduction)} Qualified Business Income deduction (20% of net business income), reducing your taxable income.` });
     }
-    if (num(data.qbiLossCarryforward) > 0) {
-      tips.push({ type: "info", section: "business", title: "QBI Loss Carryforward", message: `You have a ${fmt(num(data.qbiLossCarryforward))} QBI loss carryforward that will offset future business profits before any QBI deduction applies.` });
+    if (data.qbiLossCarryforward > 0) {
+      tips.push({ type: "info", section: "business", title: "QBI Loss Carryforward", message: `You have a ${fmt(data.qbiLossCarryforward)} QBI loss carryforward that will offset future business profits before any QBI deduction applies.` });
     }
-    if (num(data.beginInventory) > 10000 && num(data.grossReceipts) < num(data.beginInventory) * 0.1) {
-      tips.push({ type: "warning", section: "business", title: "High Inventory vs. Low Sales", message: `Beginning inventory (${fmt(num(data.beginInventory))}) greatly exceeds sales. Consider the §471 small business exception to simplify accounting, or document why inventory levels are appropriate.` });
+    if (data.beginInventory > 10000 && data.grossReceipts < data.beginInventory * 0.1) {
+      tips.push({ type: "warning", section: "business", title: "High Inventory vs. Low Sales", message: `Beginning inventory (${fmt(data.beginInventory)}) greatly exceeds sales. Consider the §471 small business exception to simplify accounting, or document why inventory levels are appropriate.` });
     }
   }
 
@@ -129,11 +125,11 @@ function generateTips(data, calc) {
   }
 
   // Education tips
-  if (num(data.educationExpenses) > 0) {
-    const aoc = calcAOC(num(data.educationExpenses));
-    tips.push({ type: "success", section: "credits", title: "American Opportunity Credit", message: `Your ${fmt(num(data.educationExpenses))} in education expenses generate a ${fmt(aoc.total)} credit: ${fmt(aoc.nonrefundable)} nonrefundable + ${fmt(aoc.refundable)} refundable. The refundable portion is paid to you even if you owe $0 in tax!` });
-    if (num(data.educationExpenses) < AOC_MAX_EXPENSES) {
-      tips.push({ type: "info", section: "credits", title: "Maximize Education Credit", message: `You can claim up to $4,000 in education expenses. Adding ${fmt(AOC_MAX_EXPENSES - num(data.educationExpenses))} more would increase your credit by up to ${fmt(Math.round((AOC_MAX_EXPENSES - num(data.educationExpenses)) * 0.25))}.` });
+  if (data.educationExpenses > 0) {
+    const aoc = calcAOC(data.educationExpenses);
+    tips.push({ type: "success", section: "credits", title: "American Opportunity Credit", message: `Your ${fmt(data.educationExpenses)} in education expenses generate a ${fmt(aoc.total)} credit: ${fmt(aoc.nonrefundable)} nonrefundable + ${fmt(aoc.refundable)} refundable. The refundable portion is paid to you even if you owe $0 in tax!` });
+    if (data.educationExpenses < AOC_MAX_EXPENSES) {
+      tips.push({ type: "info", section: "credits", title: "Maximize Education Credit", message: `You can claim up to $4,000 in education expenses. Adding ${fmt(AOC_MAX_EXPENSES - data.educationExpenses)} more would increase your credit by up to ${fmt(Math.round((AOC_MAX_EXPENSES - data.educationExpenses) * 0.25))}.` });
     }
   }
 
@@ -158,7 +154,7 @@ function generateTips(data, calc) {
 
 // ─── UI Components ───
 
-function CurrencyInput({ label, value, onChange, placeholder = "0", helpText }: { label: string; value: any; onChange: (v: any) => any; placeholder?: string; helpText?: string }) {
+function CurrencyInput({ label, value, onChange, placeholder = "0", helpText }) {
   return (
     <div className="mb-4">
       <label className="block text-sm font-medium text-gray-700 mb-1">{label}</label>
@@ -578,11 +574,11 @@ export function TaxCalculatorPage() {
 
   const calc = useMemo(() => {
     const fs = data.filingStatus;
-    const cogs = Math.max(0, num(data.beginInventory) + num(data.costLabor) + num(data.otherCOGS) - num(data.endInventory));
-    const bizExpenses = num(data.bizAdvertising) + num(data.bizOffice) + num(data.bizRepairs) + num(data.bizTravel) + num(data.bizMeals) + num(data.bizOther);
-    const netBiz = data.hasBusiness ? num(data.grossReceipts) - cogs - bizExpenses : 0;
+    const cogs = Math.max(0, data.beginInventory + data.costLabor + data.otherCOGS - data.endInventory);
+    const bizExpenses = data.bizAdvertising + data.bizOffice + data.bizRepairs + data.bizTravel + data.bizMeals + data.bizOther;
+    const netBiz = data.hasBusiness ? data.grossReceipts - cogs - bizExpenses : 0;
 
-    const totalIncome = num(data.wages) + num(data.taxableInterest) + num(data.ordinaryDividends) + num(data.capitalGains) + netBiz;
+    const totalIncome = data.wages + data.taxableInterest + data.ordinaryDividends + data.capitalGains + netBiz;
 
     // Self-employment tax & above-line deduction
     const seTax = data.hasBusiness ? calcSETax(Math.max(0, netBiz)) : 0;
@@ -593,34 +589,34 @@ export function TaxCalculatorPage() {
 
     // Deductions
     const stdDed = STANDARD_DEDUCTION[fs] || 14600;
-    const medAllowable = Math.max(0, num(data.medicalExpenses) - agi * 0.075);
-    const saltCapped = Math.min(num(data.saltDeduction), 10000);
-    const itemizedTotal = medAllowable + saltCapped + num(data.mortgageInterest) + num(data.charitableContrib);
+    const medAllowable = Math.max(0, data.medicalExpenses - agi * 0.075);
+    const saltCapped = Math.min(data.saltDeduction, 10000);
+    const itemizedTotal = medAllowable + saltCapped + data.mortgageInterest + data.charitableContrib;
     const useItemized = itemizedTotal > stdDed;
     const deduction = useItemized ? itemizedTotal : stdDed;
 
     // QBI deduction
     let qbiDeduction = 0;
     if (data.hasBusiness && netBiz > 0) {
-      const qbiAfterCarryforward = Math.max(0, netBiz - num(data.qbiLossCarryforward));
+      const qbiAfterCarryforward = Math.max(0, netBiz - data.qbiLossCarryforward);
       qbiDeduction = Math.round(qbiAfterCarryforward * 0.20);
     }
 
     const taxableIncome = Math.max(0, agi - deduction - qbiDeduction);
 
     // Tax computation with qualified dividends
-    const ordinaryIncome = Math.max(0, taxableIncome - num(data.qualDividends));
-    const incomeTax = calcFederalTax(ordinaryIncome, fs) + calcQualDivTax(num(data.qualDividends), taxableIncome, fs);
+    const ordinaryIncome = Math.max(0, taxableIncome - data.qualDividends);
+    const incomeTax = calcFederalTax(ordinaryIncome, fs) + calcQualDivTax(data.qualDividends, taxableIncome, fs);
 
     // Credits
-    const aoc = data.hasEducation ? calcAOC(num(data.educationExpenses)) : { total: 0, nonrefundable: 0, refundable: 0 };
-    const totalNonrefundableCredits = Math.min(incomeTax, aoc.nonrefundable + num(data.childTaxCredit) + num(data.otherCredits));
+    const aoc = data.hasEducation ? calcAOC(data.educationExpenses) : { total: 0, nonrefundable: 0, refundable: 0 };
+    const totalNonrefundableCredits = Math.min(incomeTax, aoc.nonrefundable + data.childTaxCredit + data.otherCredits);
     const taxAfterCredits = Math.max(0, incomeTax - totalNonrefundableCredits);
     const totalTax = taxAfterCredits + seTax;
 
     // Payments
-    const totalWithholding = num(data.fedWithheld) + num(data.otherWithheld);
-    const totalRefundableCredits = aoc.refundable + num(data.otherRefundableCredits);
+    const totalWithholding = data.fedWithheld + data.otherWithheld;
+    const totalRefundableCredits = aoc.refundable + (data.otherRefundableCredits || 0);
     const totalPayments = totalWithholding + totalRefundableCredits;
 
     const refund = Math.max(0, totalPayments - totalTax);
@@ -630,8 +626,8 @@ export function TaxCalculatorPage() {
     const ilExemption = IL_EXEMPTION[fs] || 2425;
     const ilTaxableIncome = Math.max(0, agi - ilExemption);
     const ilTax = Math.round(ilTaxableIncome * IL_TAX_RATE);
-    const ilRefund = Math.max(0, num(data.stateWithheld) - ilTax);
-    const ilBalanceDue = Math.max(0, ilTax - num(data.stateWithheld));
+    const ilRefund = Math.max(0, data.stateWithheld - ilTax);
+    const ilBalanceDue = Math.max(0, ilTax - data.stateWithheld);
 
     return {
       cogs, bizExpenses: bizExpenses, netBiz, totalIncome, seTax, seDeduction, aboveLineAdj, agi,
