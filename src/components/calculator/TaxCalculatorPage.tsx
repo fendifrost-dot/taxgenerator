@@ -578,11 +578,11 @@ export function TaxCalculatorPage() {
 
   const calc = useMemo(() => {
     const fs = data.filingStatus;
-    const cogs = Math.max(0, data.beginInventory + data.costLabor + data.otherCOGS - data.endInventory);
-    const bizExpenses = data.bizAdvertising + data.bizOffice + data.bizRepairs + data.bizTravel + data.bizMeals + data.bizOther;
-    const netBiz = data.hasBusiness ? data.grossReceipts - cogs - bizExpenses : 0;
+    const cogs = Math.max(0, num(data.beginInventory) + num(data.costLabor) + num(data.otherCOGS) - num(data.endInventory));
+    const bizExpenses = num(data.bizAdvertising) + num(data.bizOffice) + num(data.bizRepairs) + num(data.bizTravel) + num(data.bizMeals) + num(data.bizOther);
+    const netBiz = data.hasBusiness ? num(data.grossReceipts) - cogs - bizExpenses : 0;
 
-    const totalIncome = data.wages + data.taxableInterest + data.ordinaryDividends + data.capitalGains + netBiz;
+    const totalIncome = num(data.wages) + num(data.taxableInterest) + num(data.ordinaryDividends) + num(data.capitalGains) + netBiz;
 
     // Self-employment tax & above-line deduction
     const seTax = data.hasBusiness ? calcSETax(Math.max(0, netBiz)) : 0;
@@ -593,34 +593,34 @@ export function TaxCalculatorPage() {
 
     // Deductions
     const stdDed = STANDARD_DEDUCTION[fs] || 14600;
-    const medAllowable = Math.max(0, data.medicalExpenses - agi * 0.075);
-    const saltCapped = Math.min(data.saltDeduction, 10000);
-    const itemizedTotal = medAllowable + saltCapped + data.mortgageInterest + data.charitableContrib;
+    const medAllowable = Math.max(0, num(data.medicalExpenses) - agi * 0.075);
+    const saltCapped = Math.min(num(data.saltDeduction), 10000);
+    const itemizedTotal = medAllowable + saltCapped + num(data.mortgageInterest) + num(data.charitableContrib);
     const useItemized = itemizedTotal > stdDed;
     const deduction = useItemized ? itemizedTotal : stdDed;
 
     // QBI deduction
     let qbiDeduction = 0;
     if (data.hasBusiness && netBiz > 0) {
-      const qbiAfterCarryforward = Math.max(0, netBiz - data.qbiLossCarryforward);
+      const qbiAfterCarryforward = Math.max(0, netBiz - num(data.qbiLossCarryforward));
       qbiDeduction = Math.round(qbiAfterCarryforward * 0.20);
     }
 
     const taxableIncome = Math.max(0, agi - deduction - qbiDeduction);
 
     // Tax computation with qualified dividends
-    const ordinaryIncome = Math.max(0, taxableIncome - data.qualDividends);
-    const incomeTax = calcFederalTax(ordinaryIncome, fs) + calcQualDivTax(data.qualDividends, taxableIncome, fs);
+    const ordinaryIncome = Math.max(0, taxableIncome - num(data.qualDividends));
+    const incomeTax = calcFederalTax(ordinaryIncome, fs) + calcQualDivTax(num(data.qualDividends), taxableIncome, fs);
 
     // Credits
-    const aoc = data.hasEducation ? calcAOC(data.educationExpenses) : { total: 0, nonrefundable: 0, refundable: 0 };
-    const totalNonrefundableCredits = Math.min(incomeTax, aoc.nonrefundable + data.childTaxCredit + data.otherCredits);
+    const aoc = data.hasEducation ? calcAOC(num(data.educationExpenses)) : { total: 0, nonrefundable: 0, refundable: 0 };
+    const totalNonrefundableCredits = Math.min(incomeTax, aoc.nonrefundable + num(data.childTaxCredit) + num(data.otherCredits));
     const taxAfterCredits = Math.max(0, incomeTax - totalNonrefundableCredits);
     const totalTax = taxAfterCredits + seTax;
 
     // Payments
-    const totalWithholding = data.fedWithheld + data.otherWithheld;
-    const totalRefundableCredits = aoc.refundable + (data.otherRefundableCredits || 0);
+    const totalWithholding = num(data.fedWithheld) + num(data.otherWithheld);
+    const totalRefundableCredits = aoc.refundable + num(data.otherRefundableCredits);
     const totalPayments = totalWithholding + totalRefundableCredits;
 
     const refund = Math.max(0, totalPayments - totalTax);
@@ -630,8 +630,8 @@ export function TaxCalculatorPage() {
     const ilExemption = IL_EXEMPTION[fs] || 2425;
     const ilTaxableIncome = Math.max(0, agi - ilExemption);
     const ilTax = Math.round(ilTaxableIncome * IL_TAX_RATE);
-    const ilRefund = Math.max(0, data.stateWithheld - ilTax);
-    const ilBalanceDue = Math.max(0, ilTax - data.stateWithheld);
+    const ilRefund = Math.max(0, num(data.stateWithheld) - ilTax);
+    const ilBalanceDue = Math.max(0, ilTax - num(data.stateWithheld));
 
     return {
       cogs, bizExpenses: bizExpenses, netBiz, totalIncome, seTax, seDeduction, aboveLineAdj, agi,
