@@ -7,7 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Separator } from '@/components/ui/separator';
-import {
+import 
   Dialog,
   DialogContent,
   DialogDescription,
@@ -342,7 +342,7 @@ export function InvoicesPage() {
                   </SelectTrigger>
                   <SelectContent>
                     {availableDeposits.length === 0 ? (
-                      <SelectItem value="" disabled>No unlinked deposits available</SelectItem>
+                      <SelectItem value="__none__" disabled>No unlinked deposits available</SelectItem>
                     ) : (
                       availableDeposits.map(dep => (
                         <SelectItem key={dep.id} value={dep.id}>
