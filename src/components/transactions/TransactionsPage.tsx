@@ -271,7 +271,7 @@ export function TransactionsPage() {
         <CardHeader className="pb-2">
           <CardTitle className="text-sm">Transaction Terminal States (Mandatory)</CardTitle>
           <CardDescription className="text-xs">
-            Every transaction must terminate in exactly one of these four states. No "miscellaneous" allowed.
+            Every transaction must terminate in exactly one of these four states. No \"miscellaneous\" allowed.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -388,7 +388,7 @@ export function TransactionsPage() {
                             Line {category.scheduleCLine}
                           </span>
                         ) : (
-                          <span className="text-xs text-muted-foreground">—</span>
+                          <span className="text-xs text-muted-foreground">\u2014</span>
                         )}
                       </TableCell>
                       <TableCell>
@@ -428,11 +428,11 @@ export function TransactionsPage() {
           <CardTitle className="text-sm">Categorization Rules</CardTitle>
         </CardHeader>
         <CardContent className="text-xs text-muted-foreground space-y-1.5">
-          <p>• Every expense must map directly to Schedule C lines</p>
-          <p>• Transaction splitting and percentage allocations require rationale and confirmation</p>
-          <p>• AI may suggest categories but may not auto-claim fact-dependent deductions</p>
-          <p>• Evidence must be attached before expense can be included in totals</p>
-          <p>• Business purpose is required for meals, travel, and gifts categories</p>
+          <p>\u2022 Every expense must map directly to Schedule C lines</p>
+          <p>\u2022 Transaction splitting and percentage allocations require rationale and confirmation</p>
+          <p>\u2022 AI may suggest categories but may not auto-claim fact-dependent deductions</p>
+          <p>\u2022 Evidence must be attached before expense can be included in totals</p>
+          <p>\u2022 Business purpose is required for meals, travel, and gifts categories</p>
         </CardContent>
       </Card>
 
@@ -451,7 +451,7 @@ export function TransactionsPage() {
               <div className="p-3 bg-secondary rounded-lg">
                 <div className="font-medium">{selectedTransaction.description}</div>
                 <div className="text-sm text-muted-foreground mt-1">
-                  {selectedTransaction.date.toLocaleDateString()} • <DataAmount value={selectedTransaction.amount} />
+                  {selectedTransaction.date.toLocaleDateString()} \u2022 <DataAmount value={selectedTransaction.amount} />
                 </div>
               </div>
 
@@ -494,7 +494,10 @@ export function TransactionsPage() {
                 <>
                   <div className="space-y-2">
                     <Label>Schedule C Category</Label>
-                    <Select value={selectedCategory} onValueChange={setSelectedCategory}>
+                    <Select
+                      value={selectedCategory || undefined}
+                      onValueChange={setSelectedCategory}
+                    >
                       <SelectTrigger>
                         <SelectValue placeholder="Select category..." />
                       </SelectTrigger>
