@@ -20,6 +20,12 @@ import { useTaxYear } from './TaxYearContext';
 import { supabase } from '@/integrations/supabase/client';
 import { toast } from 'sonner';
 
+/** Non-UUID UI sentinels (e.g. Manual Entry) must not be sent to `source_document_id` (UUID column). */
+function reconciliationSourceDocumentIdForDb(sourceDocumentId: string | undefined): string | null {
+  if (!sourceDocumentId || sourceDocumentId === 'manual') return null;
+  return sourceDocumentId;
+}
+
 interface WorkflowContextType {
   workflowState: WorkflowState;
   documents: Document[];
@@ -39,7 +45,7 @@ interface WorkflowContextType {
   addReconciliation: (rec: IncomeReconciliation) => void;
   updateReconciliation: (id: string, updates: Partial<IncomeReconciliation>) => void;
   evidence: Evidence[];
-  addEvidence: (ev: Evidence) => void;
+  addEvidence: (ev: Evidence) => Promise<Evidence | null>;
   invoices: Invoice[];
   addInvoice: (inv: Invoice) => void;
   categories: ExpenseCategory[];
@@ -190,10 +196,22 @@ export function WorkflowProvider({ children }: { children: ReactNode }) {
       ]);
 
       setDocuments((docsRes.data || []).map(mapDbDocument));
-      setTransactions((txnRes.data || []).map(mapDbTransaction));
+      const evidenceRows = (evRes.data || []).map(mapDbEvidence);
+      const evidenceIdsByTxn = new Map<string, string[]>();
+      for (const e of evidenceRows) {
+        const list = evidenceIdsByTxn.get(e.transactionId) ?? [];
+        list.push(e.id);
+        evidenceIdsByTxn.set(e.transactionId, list);
+      }
+      setTransactions(
+        (txnRes.data || []).map(mapDbTransaction).map((t) => ({
+          ...t,
+          evidenceIds: evidenceIdsByTxn.get(t.id) ?? [],
+        })),
+      );
       setDiscrepancies((discRes.data || []).map(mapDbDiscrepancy));
       setIncomeReconciliations((recRes.data || []).map(mapDbReconciliation));
-      setEvidence((evRes.data || []).map(mapDbEvidence));
+      setEvidence(evidenceRows);
       setInvoices((invRes.data || []).map(mapDbInvoice));
     } catch (err) {
       console.error('Failed to load workflow data:', err);
@@ -259,10 +277,13 @@ export function WorkflowProvider({ children }: { children: ReactNode }) {
     const materialDiscs = unresolvedDiscs.filter(d => d.severity === 'critical' || d.severity === 'material');
     const unreconciledRecs = incomeReconciliations.filter(r => !r.isReconciled);
     const missingRequiredForms = requiredForms.filter(f => f.isRequired && !f.isVerified);
+    const incomeReconciled =
+      incomeReconciliations.length > 0 && unreconciledRecs.length === 0;
 
     const counts: UnresolvedCounts = {
       missingDocuments: 0, missingBlankForms: missingRequiredForms.length,
-      unresolvedTransactions: unresolvedTxns.length, unreconciledDeposits: unreconciledRecs.length,
+      unresolvedTransactions: unresolvedTxns.length,
+      unreconciledDeposits: incomeReconciliations.length === 0 ? 1 : unreconciledRecs.length,
       missingEvidence: missingEvidenceTxns.length, unresolvedDiscrepancies: unresolvedDiscs.length,
     };
 
@@ -272,7 +293,7 @@ export function WorkflowProvider({ children }: { children: ReactNode }) {
       requiredFormsUploaded: missingRequiredForms.length === 0,
       noUnresolvedTransactions: unresolvedTxns.length === 0,
       noMaterialDiscrepancies: materialDiscs.length === 0,
-      incomeReconciled: unreconciledRecs.length === 0 || incomeReconciliations.length === 0,
+      incomeReconciled,
       evidenceComplete: missingEvidenceTxns.length === 0,
       federalValidated: false,
       federalFinalized: yearConfig?.status === 'finalized' || yearConfig?.status === 'locked',
@@ -284,7 +305,13 @@ export function WorkflowProvider({ children }: { children: ReactNode }) {
     if (!gates.requiredFormsUploaded) blockedReasons.push(`${missingRequiredForms.length} required form(s) not uploaded`);
     if (!gates.noUnresolvedTransactions) blockedReasons.push(`${unresolvedTxns.length} transaction(s) require decision`);
     if (!gates.noMaterialDiscrepancies) blockedReasons.push(`${materialDiscs.length} material discrepancy(ies) unresolved`);
-    if (!gates.incomeReconciled) blockedReasons.push(`${unreconciledRecs.length} income source(s) not reconciled`);
+    if (!gates.incomeReconciled) {
+      if (incomeReconciliations.length === 0) {
+        blockedReasons.push('Add at least one income source in Income Reconciliation');
+      } else {
+        blockedReasons.push(`${unreconciledRecs.length} income source(s) not reconciled`);
+      }
+    }
     if (!gates.evidenceComplete) blockedReasons.push(`${missingEvidenceTxns.length} deductible expense(s) missing evidence`);
 
     let federalStatus: FederalStatus = 'draft';
@@ -429,7 +456,8 @@ export function WorkflowProvider({ children }: { children: ReactNode }) {
   const addReconciliation = useCallback(async (rec: IncomeReconciliation) => {
     try {
       const { data, error } = await supabase.from('income_reconciliations').insert({
-        source_type: rec.sourceType, source_document_id: rec.sourceDocumentId || null,
+        source_type: rec.sourceType,
+        source_document_id: reconciliationSourceDocumentIdForDb(rec.sourceDocumentId),
         source_description: rec.sourceDescription, gross_amount: rec.grossAmount,
         fees: rec.fees, refunds_chargebacks: rec.refundsChargebacks,
         net_amount: rec.netAmount, matched_deposit_ids: rec.matchedDepositIds,
@@ -463,17 +491,27 @@ export function WorkflowProvider({ children }: { children: ReactNode }) {
     }
   }, []);
 
-  const addEvidence = useCallback(async (ev: Evidence) => {
+  const addEvidence = useCallback(async (ev: Evidence): Promise<Evidence | null> => {
     try {
       const { data, error } = await supabase.from('evidence').insert({
         transaction_id: ev.transactionId, type: ev.type, file_name: ev.fileName,
         business_purpose_note: ev.businessPurposeNote, tax_year: ev.taxYear,
       }).select().single();
       if (error) throw error;
-      setEvidence(prev => [...prev, mapDbEvidence(data)]);
+      const mapped = mapDbEvidence(data);
+      setEvidence(prev => [...prev, mapped]);
+      setTransactions(prev =>
+        prev.map(t =>
+          t.id === mapped.transactionId
+            ? { ...t, evidenceIds: [...(t.evidenceIds || []), mapped.id] }
+            : t,
+        ),
+      );
+      return mapped;
     } catch (err: any) {
       console.error('Failed to add evidence:', err);
       toast.error('Failed to add evidence');
+      return null;
     }
   }, []);
 
