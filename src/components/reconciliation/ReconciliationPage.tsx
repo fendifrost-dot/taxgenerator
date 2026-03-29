@@ -354,8 +354,8 @@ export function ReconciliationPage() {
 
             <div className="space-y-2">
               <Label>Source Document</Label>
-              <Select 
-                value={formData.sourceDocumentId} 
+              <Select
+                value={formData.sourceDocumentId || undefined}
                 onValueChange={(v) => setFormData(prev => ({ ...prev, sourceDocumentId: v }))}
               >
                 <SelectTrigger>
