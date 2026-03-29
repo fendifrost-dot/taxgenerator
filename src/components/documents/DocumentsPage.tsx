@@ -277,11 +277,11 @@ export function DocumentsPage() {
                         <div>
                           <div className="font-medium text-sm">{doc.fileName}</div>
                           <div className="text-xs text-muted-foreground">
-                            {config.label} • Uploaded {doc.uploadedAt.toLocaleDateString()}
+                            {config.label} \u2022 Uploaded {doc.uploadedAt.toLocaleDateString()}
                           </div>
                           {hasMismatch && (
                             <div className="text-xs text-status-warning mt-1">
-                              ⚠ Detected year: {doc.detectedTaxYear}
+                              \u26A0 Detected year: {doc.detectedTaxYear}
                               {doc.yearMismatchConfirmed && ' (confirmed)'}
                             </div>
                           )}
@@ -373,7 +373,7 @@ export function DocumentsPage() {
                         <div>
                           <div className="font-medium text-sm">{form.formName}</div>
                           <div className="text-xs text-muted-foreground">
-                            {form.jurisdiction === 'federal' ? 'Federal' : form.jurisdiction} • {form.reason}
+                            {form.jurisdiction === 'federal' ? 'Federal' : form.jurisdiction} \u2022 {form.reason}
                           </div>
                         </div>
                       </div>
@@ -428,8 +428,8 @@ export function DocumentsPage() {
                       <div>
                         <div className="font-medium text-sm">{form.formName}</div>
                         <div className="text-xs text-muted-foreground">
-                          {form.jurisdiction === 'federal' ? 'Federal' : form.jurisdiction} • 
-                          Year {form.taxYear} • 
+                          {form.jurisdiction === 'federal' ? 'Federal' : form.jurisdiction} \u2022 
+                          Year {form.taxYear} \u2022 
                           Uploaded {form.uploadedAt.toLocaleDateString()}
                         </div>
                       </div>
@@ -574,8 +574,8 @@ export function DocumentsPage() {
             {formUpload.jurisdiction !== 'federal' && (
               <div className="space-y-2">
                 <Label>Residency Version</Label>
-                <Select 
-                  value={formUpload.residencyVersion || ''} 
+                <Select
+                  value={formUpload.residencyVersion || undefined}
                   onValueChange={(v) => setFormUpload(prev => ({ ...prev, residencyVersion: v }))}
                 >
                   <SelectTrigger>
