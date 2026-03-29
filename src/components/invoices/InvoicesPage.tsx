@@ -186,7 +186,7 @@ export function InvoicesPage() {
           </div>
           <div className="flex items-start gap-2">
             <Check className="w-4 h-4 text-status-success mt-0.5 shrink-0" />
-            <span>Must display "Created after payment" flag</span>
+            <span>Must display \"Created after payment\" flag</span>
           </div>
           <div className="flex items-start gap-2">
             <Check className="w-4 h-4 text-status-success mt-0.5 shrink-0" />
@@ -253,7 +253,7 @@ export function InvoicesPage() {
                           )}
                         </div>
                         <div className="text-sm text-muted-foreground mt-1">
-                          {inv.clientName} • {inv.description}
+                          {inv.clientName} \u2022 {inv.description}
                         </div>
                         {inv.linkedTransactionId && (
                           <div className="text-xs text-muted-foreground mt-1 flex items-center gap-1">
@@ -333,9 +333,18 @@ export function InvoicesPage() {
             {invoiceType === 'memorialized' && (
               <div className="space-y-2">
                 <Label>Linked Deposit (Required)</Label>
-                <Select 
-                  value={formData.linkedDepositId} 
-                  onValueChange={(v) => setFormData(prev => ({ ...prev, linkedDepositId: v }))}
+                <Select
+                  value={
+                    availableDeposits.length === 0
+                      ? formData.linkedDepositId || '__none__'
+                      : formData.linkedDepositId || undefined
+                  }
+                  onValueChange={(v) =>
+                    setFormData((prev) => ({
+                      ...prev,
+                      linkedDepositId: v === '__none__' ? '' : v,
+                    }))
+                  }
                 >
                   <SelectTrigger>
                     <SelectValue placeholder="Select a deposit..." />
