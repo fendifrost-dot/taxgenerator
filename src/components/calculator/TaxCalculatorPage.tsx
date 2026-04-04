@@ -417,7 +417,7 @@ function ClientDashboard({ onSelectClient, onNewClient }) {
                 const reader = new FileReader();
                 reader.onload = (ev) => {
                   try {
-                    const imported = JSON.parse(ev.target?.result);
+                    const imported = JSON.parse(ev.target?.result as string);
                     if (!Array.isArray(imported)) { alert("Invalid file format"); return; }
                     const existing = loadClients();
                     const existingIds = new Set(existing.map(c => c.id));
