@@ -184,7 +184,7 @@ function CurrencyInput({ label, value, onChange, placeholder = "0", helpText = "
   );
 }
 
-function TextInput({ label, value, onChange, placeholder = "", helpText }) {
+function TextInput({ label, value, onChange, placeholder = "", helpText = "" }: { label: string; value: any; onChange: (v: any) => any; placeholder?: string; helpText?: string }) {
   return (
     <div className="mb-4">
       <label className="block text-sm font-medium text-gray-700 mb-1">{label}</label>
