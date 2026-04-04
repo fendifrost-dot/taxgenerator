@@ -170,7 +170,7 @@ function generateTips(data, calc) {
 // âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 // SECTION 4: UI COMPONENTS
 // âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
-function CurrencyInput({ label, value, onChange, placeholder = "0", helpText }) {
+function CurrencyInput({ label, value, onChange, placeholder = "0", helpText = "" }: { label: string; value: any; onChange: (v: any) => any; placeholder?: string; helpText?: string }) {
   return (
     <div className="mb-4">
       <label className="block text-sm font-medium text-gray-700 mb-1">{label}</label>
