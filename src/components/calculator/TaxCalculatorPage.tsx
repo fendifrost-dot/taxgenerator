@@ -170,7 +170,7 @@ function generateTips(data, calc) {
 // âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 // SECTION 4: UI COMPONENTS
 // âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
-function CurrencyInput({ label, value, onChange, placeholder = "0", helpText }) {
+function CurrencyInput({ label, value, onChange, placeholder = "0", helpText = "" }: { label: string; value: any; onChange: (v: any) => any; placeholder?: string; helpText?: string }) {
   return (
     <div className="mb-4">
       <label className="block text-sm font-medium text-gray-700 mb-1">{label}</label>
@@ -184,7 +184,7 @@ function CurrencyInput({ label, value, onChange, placeholder = "0", helpText }) 
   );
 }
 
-function TextInput({ label, value, onChange, placeholder = "", helpText }) {
+function TextInput({ label, value, onChange, placeholder = "", helpText = "" }: { label: string; value: any; onChange: (v: any) => any; placeholder?: string; helpText?: string }) {
   return (
     <div className="mb-4">
       <label className="block text-sm font-medium text-gray-700 mb-1">{label}</label>
@@ -417,7 +417,7 @@ function ClientDashboard({ onSelectClient, onNewClient }) {
                 const reader = new FileReader();
                 reader.onload = (ev) => {
                   try {
-                    const imported = JSON.parse(ev.target?.result);
+                    const imported = JSON.parse(ev.target?.result as string);
                     if (!Array.isArray(imported)) { alert("Invalid file format"); return; }
                     const existing = loadClients();
                     const existingIds = new Set(existing.map(c => c.id));
@@ -452,7 +452,7 @@ function ClientDashboard({ onSelectClient, onNewClient }) {
               <Briefcase size={18} className="text-blue-500" /> {name}
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-              {yearClients.sort((a, b) => (b.taxYear || 0) - (a.taxYear || 0)).map(client => {
+              {(yearClients as any[]).sort((a: any, b: any) => (b.taxYear || 0) - (a.taxYear || 0)).map((client: any) => {
                 // Quick calc for display
                 const totalWages = (client.w2s || []).reduce((s, w) => s + (w.wages || 0), 0);
                 const totalIncome = totalWages + (client.ordinaryDividends || 0) + (client.capitalGains || 0) + (client.grossReceipts || 0);
