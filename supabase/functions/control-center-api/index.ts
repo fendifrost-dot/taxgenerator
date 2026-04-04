@@ -16,7 +16,7 @@ serve(async (req: Request) => {
   }
 
   const body = await req.json().catch(() => ({}));
-  const { action, tax_year, status_filter, limit = 20 } = body;
+  const { action, tax_year, status_filter, limit = 200 } = body;
   if (!action) return new Response(JSON.stringify({ error: "action required" }), { status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" } });
 
   const supabase = createClient(Deno.env.get("SUPABASE_URL") ?? "", Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? "");
@@ -34,7 +34,7 @@ const { data, error } = await q.maybeSingle(); if (error) throw error;
       const { data, error } = await q.maybeSingle(); if (error) throw error;
       result = { year_config: data };
     } else if (action === "get_documents") {
-      let q = supabase.from("documents").select("id,type,file_name,uploaded_at,tax_year,verification_status,verification_errors").order("uploaded_at", { ascending: false }).limit(limit);
+      let q = supabase.from("documents").select("id,type,file_name,uploaded_at,tax_year,verification_status,verification_errors,extracted_data").order("uploaded_at", { ascending: false }).limit(limit);
       if (tax_year) q = q.eq("tax_year", tax_year);
       if (status_filter) q = q.eq("verification_status", status_filter);
       const { data, error } = await q; if (error) throw error;
