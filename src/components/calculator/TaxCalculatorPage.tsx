@@ -452,7 +452,7 @@ function ClientDashboard({ onSelectClient, onNewClient }) {
               <Briefcase size={18} className="text-blue-500" /> {name}
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-              {yearClients.sort((a, b) => (b.taxYear || 0) - (a.taxYear || 0)).map(client => {
+              {(yearClients as any[]).sort((a: any, b: any) => (b.taxYear || 0) - (a.taxYear || 0)).map((client: any) => {
                 // Quick calc for display
                 const totalWages = (client.w2s || []).reduce((s, w) => s + (w.wages || 0), 0);
                 const totalIncome = totalWages + (client.ordinaryDividends || 0) + (client.capitalGains || 0) + (client.grossReceipts || 0);
