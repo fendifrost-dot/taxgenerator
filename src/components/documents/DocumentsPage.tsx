@@ -48,6 +48,15 @@ const documentTypeConfig: Record<DocumentType, { icon: typeof FileText; label: s
   receipt: { icon: Receipt, label: 'Receipt', description: 'Expense receipts' },
   identification: { icon: FileText, label: 'Identification', description: 'ID/SS for autofill verification' },
   blank_form: { icon: FileCheck, label: 'Blank Form', description: 'Blank tax forms for filling' },
+  '1099_b': { icon: FileSpreadsheet, label: '1099-B', description: 'Proceeds from broker/barter exchange' },
+  '1099_k': { icon: FileSpreadsheet, label: '1099-K', description: 'Payment card / third-party network transactions' },
+  '1099_misc': { icon: FileSpreadsheet, label: '1099-MISC', description: 'Miscellaneous income' },
+  '1099_r': { icon: FileSpreadsheet, label: '1099-R', description: 'IRA/pension/annuity distributions' },
+  '1099_s': { icon: FileSpreadsheet, label: '1099-S', description: 'Proceeds from real estate transactions' },
+  k1_1065: { icon: FileText, label: 'K-1 (1065)', description: 'Partnership / LLC Schedule K-1' },
+  k1_1120s: { icon: FileText, label: 'K-1 (1120-S)', description: 'S Corporation Schedule K-1' },
+  k1_1041: { icon: FileText, label: 'K-1 (1041)', description: 'Estate or Trust Schedule K-1' },
+  schedule_d: { icon: FileSpreadsheet, label: 'Schedule D', description: 'Brokerage consolidated / Schedule D import' },
 };
 
 export function DocumentsPage() {

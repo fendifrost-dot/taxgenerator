@@ -204,7 +204,7 @@ export function buildOptimizerInput(
         carryforwardCapitalLoss  = Number(amounts['carryforwardCapitalLoss'] ?? 0);
         break;
       case 'payment_processor': {
-        const bizName    = String(pd.payer ?? 'Business');
+        const bizName    = String((pd as any).payer ?? 'Business');
         const grossIncome = Number(amounts['totalIncome'] ?? 0);
         totalScheduleCIncome += grossIncome;
         if (!businessMap.has(bizName)) {
