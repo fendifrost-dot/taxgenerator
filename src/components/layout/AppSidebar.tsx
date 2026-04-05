@@ -1,7 +1,7 @@
-import { 
-  LayoutDashboard, 
-  FileText, 
-  Receipt, 
+import {
+  LayoutDashboard,
+  FileText,
+  Receipt,
   FolderArchive,
   FileCheck,
   Calculator,
@@ -10,11 +10,23 @@ import {
   Settings,
   BarChart3,
   Building2,
-    DollarSign,
-  Link as LinkIcon
+  Link as LinkIcon,
+  ScanSearch,
+  Users,
+  Sparkles,
+  LogOut,
+  History,
+  Briefcase,
+  SendToBack,
+  FilePen,
+  CalendarClock,
+  UserCog,
+  DollarSign,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useTaxYear } from '@/contexts/TaxYearContext';
+import { useAuth } from '@/contexts/AuthContext';
+import { isSupabaseConfigured } from '@/lib/supabaseClient';
 
 interface NavItem {
   icon: React.ComponentType<{ className?: string }>;
@@ -26,6 +38,15 @@ interface NavItem {
 
 const navSections: { title: string; items: NavItem[] }[] = [
   {
+    title: 'Clients',
+    items: [
+      { icon: Users,    label: 'Client List',          href: '/clients'    },
+      { icon: Sparkles, label: 'Optimization',          href: '/optimize'   },
+      { icon: History,   label: 'Prior Year Builder',    href: '/prior-year'   },
+      { icon: Briefcase, label: 'Business Entity Return', href: '/entity-return' },
+    ],
+  },
+  {
     title: 'Overview',
     items: [
       { icon: LayoutDashboard, label: 'Dashboard', href: '/' },
@@ -36,6 +57,7 @@ const navSections: { title: string; items: NavItem[] }[] = [
     title: 'Ingestion',
     items: [
       { icon: FileText, label: 'Documents', href: '/documents' },
+      { icon: ScanSearch, label: 'Document Parser', href: '/parse' },
       { icon: Receipt, label: 'Transactions', href: '/transactions' },
       { icon: LinkIcon, label: 'Reconciliation', href: '/reconciliation' },
     ],
@@ -63,6 +85,20 @@ const navSections: { title: string; items: NavItem[] }[] = [
       { icon: Lock, label: 'Finalization', href: '/finalize' },
     ],
   },
+  {
+    title: 'Filing',
+    items: [
+      { icon: SendToBack,    label: 'Filing Center',      href: '/filing'          },
+      { icon: FilePen,       label: 'Amendments',          href: '/amendments'      },
+      { icon: CalendarClock, label: 'Estimated Tax (ES)',  href: '/estimated-tax'   },
+    ],
+  },
+  {
+    title: 'Practice',
+    items: [
+      { icon: UserCog, label: 'Preparer Settings', href: '/preparer-settings' },
+    ],
+  },
 ];
 
 interface AppSidebarProps {
@@ -72,6 +108,8 @@ interface AppSidebarProps {
 
 export function AppSidebar({ currentPath, onNavigate }: AppSidebarProps) {
   const { currentYear, yearConfig } = useTaxYear();
+  const { user, signOut } = useAuth();
+  const supabaseOn = isSupabaseConfigured();
 
   return (
     <aside className="w-64 bg-sidebar text-sidebar-foreground flex flex-col h-screen fixed left-0 top-0">
@@ -127,7 +165,9 @@ export function AppSidebar({ currentPath, onNavigate }: AppSidebarProps) {
             <ul className="space-y-0.5">
               {section.items.map((item) => {
                 const isActive = currentPath === item.href;
-                const isDisabled = !currentYear && item.href !== '/' && item.href !== '/config';
+                // Amendments and filing center work without a current-year selection
+                const yearFreeRoutes = ['/', '/config', '/amendments', '/clients', '/preparer-settings'];
+                const isDisabled = !currentYear && !yearFreeRoutes.includes(item.href);
                 
                 return (
                   <li key={item.href}>
@@ -158,10 +198,21 @@ export function AppSidebar({ currentPath, onNavigate }: AppSidebarProps) {
       </nav>
 
       {/* Footer */}
-      <div className="p-4 border-t border-sidebar-border">
+      <div className="p-4 border-t border-sidebar-border space-y-2">
+        {supabaseOn && user && (
+          <div className="flex items-center justify-between">
+            <p className="text-xs text-sidebar-foreground/50 truncate">{user.email}</p>
+            <button
+              onClick={() => signOut()}
+              className="text-sidebar-foreground/40 hover:text-sidebar-foreground/80 transition-colors"
+              title="Sign out"
+            >
+              <LogOut className="w-3.5 h-3.5" />
+            </button>
+          </div>
+        )}
         <p className="text-xs text-sidebar-foreground/40 text-center">
-          Not for commercial use<br />
-          No e-file • Print only
+          Mail • TXF • Amendments • 1040-ES
         </p>
       </div>
     </aside>

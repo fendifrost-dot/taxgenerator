@@ -31,29 +31,39 @@ export type ResidencyStatus =
   | 'part_year' 
   | 'nonresident';
 
-export type DocumentType = 
-  | 'prior_return' 
-  | 'w2' 
-  | '1099_nec' 
-  | '1099_int' 
-  | '1099_div' 
-  | 'bank_statement' 
-  | 'payment_processor' 
-  | 'invoice' 
-  | 'receipt' 
+export type DocumentType =
+  | 'prior_return'
+  | 'w2'
+  | '1099_nec'
+  | '1099_int'
+  | '1099_div'
+  | '1099_r'        // IRA/pension/annuity distributions
+  | '1099_b'        // Brokerage — proceeds from broker/barter exchange transactions
+  | '1099_s'        // Proceeds from real estate transactions
+  | '1099_k'        // Payment card / third-party network transactions
+  | '1099_misc'     // Miscellaneous income (rents, prizes, royalties, etc.)
+  | 'k1_1065'       // Schedule K-1 (Form 1065) — partnership / LLC / LLLP
+  | 'k1_1120s'      // Schedule K-1 (Form 1120-S) — S Corporation
+  | 'k1_1041'       // Schedule K-1 (Form 1041) — Estate or Trust
+  | 'schedule_d'    // Brokerage 1099-B consolidated / Schedule D import
+  | 'bank_statement'
+  | 'payment_processor'
+  | 'invoice'
+  | 'receipt'
   | 'identification'
   | 'blank_form';
 
-export type FormType = 
+export type FormType =
   | '1040'
   | 'schedule_c'
+  | 'schedule_d'
   | 'schedule_se'
   | 'schedule_1'
   | 'schedule_2'
   | 'schedule_3'
   | 'state_return';
 
-export type DiscrepancySeverity = 'critical' | 'material' | 'minor';
+export type DiscrepancySeverity = 'critical' | 'material' | 'minor' | 'informational';
 
 export type InvoiceType = 'formal' | 'memorialized';
 
@@ -252,9 +262,14 @@ export interface Invoice {
 }
 
 // ===== INCOME RECONCILIATION =====
+export type ReconciliationMethod =
+  | 'bank_match'            // Matched to one or more bank deposit transactions
+  | 'accepted_without_bank' // No bank statement available — accepted as stated per source doc
+  | 'direct_entry';         // Manually entered income (no supporting document)
+
 export interface IncomeReconciliation {
   id: string;
-  sourceType: '1099' | 'processor_summary' | 'bank_deposit';
+  sourceType: '1099' | '1099_k' | 'capital_gains' | 'processor_summary' | 'bank_deposit';
   sourceDocumentId: string;
   sourceDescription: string;
   grossAmount: number;
@@ -264,6 +279,10 @@ export interface IncomeReconciliation {
   matchedDepositIds: string[];
   matchedTransactionIds: string[];
   isReconciled: boolean;
+  /** How this entry was resolved. Set when isReconciled becomes true. */
+  reconciliationMethod?: ReconciliationMethod;
+  /** Free-text note recorded when accepting without bank statement. */
+  acceptanceNote?: string;
   discrepancyAmount?: number;
   discrepancyNote?: string;
   taxYear: TaxYear;
@@ -272,7 +291,7 @@ export interface IncomeReconciliation {
 // ===== DISCREPANCIES =====
 export interface Discrepancy {
   id: string;
-  type: 'name' | 'ssn' | 'address' | 'amount' | 'date' | 'missing_doc' | 'year_mismatch' | 'unmatched_deposit';
+  type: 'name' | 'ssn' | 'address' | 'amount' | 'date' | 'missing_doc' | 'year_mismatch' | 'unmatched_deposit' | 'classification';
   severity: DiscrepancySeverity;
   description: string;
   source1: string;
@@ -425,4 +444,37 @@ export interface ScheduleCLineTotal {
   line: string;
   description: string;
   amount: number;
+}
+
+/** Custom categories for reassignment from "Other Expenses" and user-defined groups */
+export interface CustomCategory {
+  id: string;
+  name: string;
+  scheduleCLine: string;
+  parentCategoryId?: string;
+  deductibilityRules: string;
+  evidenceExpectations: string;
+  evidenceRequired: boolean;
+  requiresBusinessPurpose: boolean;
+  createdAt: Date;
+  createdBy: string;
+}
+
+/** Traceable calculation results for rule engine */
+export interface CalculationResult {
+  lineNumber: string;
+  description: string;
+  value: number;
+  sourceType: 'document' | 'calculation' | 'aggregation';
+  sourceReferences: string[];
+  calculationPath: string;
+  ruleReference: string;
+  timestamp: Date;
+}
+
+export interface CalculationEngine {
+  results: CalculationResult[];
+  isValid: boolean;
+  validationErrors: string[];
+  generatedAt: Date;
 }

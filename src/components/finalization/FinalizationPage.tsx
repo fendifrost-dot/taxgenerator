@@ -2,7 +2,6 @@ import { useTaxYear } from '@/contexts/TaxYearContext';
 import { useWorkflow } from '@/contexts/WorkflowContext';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
 import { Separator } from '@/components/ui/separator';
 import { 
   AlertTriangle,
@@ -10,14 +9,13 @@ import {
   Check,
   XCircle,
   FileCheck,
-  Archive,
   Clock
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 export function FinalizationPage() {
   const { currentYear, isYearSelected, yearConfig, finalizeYear, lockYear, canFinalize, canLock } = useTaxYear();
-  const { workflowState, canGenerateFederalReturn } = useWorkflow();
+  const { workflowState, canFinalizeYear } = useWorkflow();
 
   if (!isYearSelected) {
     return (
@@ -37,12 +35,14 @@ export function FinalizationPage() {
 
   const { gates, blockedReasons } = workflowState;
 
-  const handleFinalize = async () => {
-    await finalizeYear();
+  const handleFinalize = () => {
+    finalizeYear(gates);
   };
 
-  const handleLock = async () => {
-    await lockYear();
+  const handleLock = () => {
+    if (lockYear()) {
+      // Success
+    }
   };
 
   return (
@@ -99,6 +99,7 @@ export function FinalizationPage() {
             { key: 'requiredFormsUploaded', label: 'Required forms uploaded', passed: gates.requiredFormsUploaded },
             { key: 'noUnresolvedTransactions', label: 'All transactions resolved', passed: gates.noUnresolvedTransactions },
             { key: 'noMaterialDiscrepancies', label: 'No material discrepancies', passed: gates.noMaterialDiscrepancies },
+            { key: 'incomeReconciled', label: 'Income reconciled to deposits', passed: gates.incomeReconciled },
             { key: 'evidenceComplete', label: 'Evidence complete', passed: gates.evidenceComplete },
           ].map(gate => (
             <div key={gate.key} className="flex items-center gap-3">
@@ -150,11 +151,11 @@ export function FinalizationPage() {
           <CardContent>
             <Button 
               onClick={handleFinalize}
-              disabled={!canFinalize || !canGenerateFederalReturn}
+              disabled={!canFinalize || !canFinalizeYear}
             >
               Finalize Tax Year {currentYear}
             </Button>
-            {!canGenerateFederalReturn && (
+            {!canFinalizeYear && (
               <p className="text-xs text-status-warning mt-2">
                 Resolve all blocking issues before finalizing
               </p>

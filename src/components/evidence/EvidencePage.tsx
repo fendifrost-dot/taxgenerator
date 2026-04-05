@@ -35,8 +35,9 @@ import {
   Eye,
   Trash2
 } from 'lucide-react';
-import { Evidence } from '@/types/tax';
+import { Evidence, Transaction } from '@/types/tax';
 import { DataAmount } from '@/components/ui/DataAmount';
+import { cn } from '@/lib/utils';
 
 export function EvidencePage() {
   const { currentYear, isYearSelected } = useTaxYear();
@@ -74,7 +75,7 @@ export function EvidencePage() {
 
   const yearEvidence = evidence.filter(e => e.taxYear === currentYear);
 
-  const handleAttachEvidence = async () => {
+  const handleAttachEvidence = () => {
     if (!selectedTransactionId || !fileName) return;
 
     const newEvidence: Evidence = {
@@ -87,10 +88,13 @@ export function EvidencePage() {
       taxYear: currentYear!,
     };
 
-    const created = await addEvidence(newEvidence);
-    if (!created) return;
-
-    await updateTransaction(created.transactionId, { evidenceStatus: 'present' });
+    addEvidence(newEvidence);
+    
+    // Update transaction evidence status
+    updateTransaction(selectedTransactionId, {
+      evidenceStatus: 'present',
+      evidenceIds: [...(transactions.find(t => t.id === selectedTransactionId)?.evidenceIds || []), newEvidence.id],
+    });
 
     setUploadDialogOpen(false);
     setSelectedTransactionId('');
@@ -115,15 +119,7 @@ export function EvidencePage() {
             Attach receipts, invoices, and supporting documentation for tax year {currentYear}
           </p>
         </div>
-        <Button
-          onClick={() => openUploadDialog()}
-          disabled={deductibleTxns.length === 0}
-          title={
-            deductibleTxns.length === 0
-              ? 'No deductible transactions to attach evidence to'
-              : undefined
-          }
-        >
+        <Button onClick={() => openUploadDialog()}>
           <Upload className="w-4 h-4 mr-2" />
           Attach Evidence
         </Button>
@@ -230,12 +226,12 @@ export function EvidencePage() {
                         <div>
                           <div className="font-medium">{txn.description}</div>
                           <div className="text-sm text-muted-foreground">
-                            {txn.date.toLocaleDateString()} \u2022 
+                            {txn.date.toLocaleDateString()} • 
                             {category && ` Line ${category.scheduleCLine}: ${category.name}`}
                           </div>
                           {txn.requiresBusinessPurpose && !txn.businessPurpose && (
                             <div className="text-xs text-status-warning mt-1">
-                              \u26A0 Business purpose also required
+                              ⚠ Business purpose also required
                             </div>
                           )}
                         </div>
@@ -286,7 +282,7 @@ export function EvidencePage() {
                         <div>
                           <div className="font-medium">{ev.fileName}</div>
                           <div className="text-sm text-muted-foreground">
-                            {ev.type} \u2022 Uploaded {ev.uploadedAt.toLocaleDateString()}
+                            {ev.type} • Uploaded {ev.uploadedAt.toLocaleDateString()}
                           </div>
                           {linkedTxn && (
                             <div className="text-xs text-muted-foreground mt-1 flex items-center gap-1">
@@ -329,29 +325,21 @@ export function EvidencePage() {
           <div className="space-y-4 py-4">
             <div className="space-y-2">
               <Label>Transaction</Label>
-              {deductibleTxns.length === 0 ? (
-                <p className="text-sm text-muted-foreground rounded-md border border-dashed p-3">
-                  There are no deductible transactions for this year. Classify expenses as deductible in
-                  the Transaction Engine first.
-                </p>
-              ) : (
-                <Select
-                  value={selectedTransactionId || undefined}
-                  onValueChange={setSelectedTransactionId}
-                >
-                  <SelectTrigger>
-                    <SelectValue placeholder="Select a transaction..." />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {deductibleTxns.map((txn) => (
-                      <SelectItem key={txn.id} value={txn.id}>
-                        {txn.date.toLocaleDateString()} - {txn.description} ($
-                        {Math.abs(txn.amount).toFixed(2)})
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              )}
+              <Select 
+                value={selectedTransactionId} 
+                onValueChange={setSelectedTransactionId}
+              >
+                <SelectTrigger>
+                  <SelectValue placeholder="Select a transaction..." />
+                </SelectTrigger>
+                <SelectContent>
+                  {deductibleTxns.map(txn => (
+                    <SelectItem key={txn.id} value={txn.id}>
+                      {txn.date.toLocaleDateString()} - {txn.description} (${Math.abs(txn.amount).toFixed(2)})
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
             </div>
 
             <div className="space-y-2">
@@ -400,11 +388,9 @@ export function EvidencePage() {
             <Button variant="outline" onClick={() => setUploadDialogOpen(false)}>
               Cancel
             </Button>
-            <Button
-              onClick={() => void handleAttachEvidence()}
-              disabled={
-                deductibleTxns.length === 0 || !selectedTransactionId || !fileName
-              }
+            <Button 
+              onClick={handleAttachEvidence}
+              disabled={!selectedTransactionId || !fileName}
             >
               Attach Evidence
             </Button>

@@ -34,6 +34,7 @@ import {
 } from '@/components/ui/dialog';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { DocumentExtractionPoc } from '@/components/documents/DocumentExtractionPoc';
 
 const documentTypeConfig: Record<DocumentType, { icon: typeof FileText; label: string; description: string }> = {
   prior_return: { icon: FileText, label: 'Prior Year Return', description: 'Previous tax returns for carryforward reference' },
@@ -155,6 +156,7 @@ export function DocumentsPage() {
       <Tabs defaultValue="source" className="space-y-4">
         <TabsList>
           <TabsTrigger value="source">Source Documents</TabsTrigger>
+          <TabsTrigger value="extract">AI Extraction</TabsTrigger>
           <TabsTrigger value="forms">
             Blank Forms
             {requiredForms.filter(f => !f.isVerified).length > 0 && (
@@ -277,11 +279,11 @@ export function DocumentsPage() {
                         <div>
                           <div className="font-medium text-sm">{doc.fileName}</div>
                           <div className="text-xs text-muted-foreground">
-                            {config.label} \u2022 Uploaded {doc.uploadedAt.toLocaleDateString()}
+                            {config.label} • Uploaded {doc.uploadedAt.toLocaleDateString()}
                           </div>
                           {hasMismatch && (
                             <div className="text-xs text-status-warning mt-1">
-                              \u26A0 Detected year: {doc.detectedTaxYear}
+                              ⚠ Detected year: {doc.detectedTaxYear}
                               {doc.yearMismatchConfirmed && ' (confirmed)'}
                             </div>
                           )}
@@ -332,6 +334,10 @@ export function DocumentsPage() {
           </div>
         </TabsContent>
 
+        <TabsContent value="extract" className="space-y-6">
+          <DocumentExtractionPoc />
+        </TabsContent>
+
         <TabsContent value="forms" className="space-y-6">
           {/* Required Forms */}
           <div>
@@ -373,7 +379,7 @@ export function DocumentsPage() {
                         <div>
                           <div className="font-medium text-sm">{form.formName}</div>
                           <div className="text-xs text-muted-foreground">
-                            {form.jurisdiction === 'federal' ? 'Federal' : form.jurisdiction} \u2022 {form.reason}
+                            {form.jurisdiction === 'federal' ? 'Federal' : form.jurisdiction} • {form.reason}
                           </div>
                         </div>
                       </div>
@@ -428,8 +434,8 @@ export function DocumentsPage() {
                       <div>
                         <div className="font-medium text-sm">{form.formName}</div>
                         <div className="text-xs text-muted-foreground">
-                          {form.jurisdiction === 'federal' ? 'Federal' : form.jurisdiction} \u2022 
-                          Year {form.taxYear} \u2022 
+                          {form.jurisdiction === 'federal' ? 'Federal' : form.jurisdiction} • 
+                          Year {form.taxYear} • 
                           Uploaded {form.uploadedAt.toLocaleDateString()}
                         </div>
                       </div>
@@ -574,8 +580,8 @@ export function DocumentsPage() {
             {formUpload.jurisdiction !== 'federal' && (
               <div className="space-y-2">
                 <Label>Residency Version</Label>
-                <Select
-                  value={formUpload.residencyVersion || undefined}
+                <Select 
+                  value={formUpload.residencyVersion || ''} 
                   onValueChange={(v) => setFormUpload(prev => ({ ...prev, residencyVersion: v }))}
                 >
                   <SelectTrigger>

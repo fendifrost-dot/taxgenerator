@@ -7,7 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Separator } from '@/components/ui/separator';
-import  {
+import {
   Dialog,
   DialogContent,
   DialogDescription,
@@ -36,6 +36,7 @@ import {
 import { Invoice, InvoiceType } from '@/types/tax';
 import { DataAmount } from '@/components/ui/DataAmount';
 import { cn } from '@/lib/utils';
+import { toast } from 'sonner';
 
 export function InvoicesPage() {
   const { currentYear, isYearSelected } = useTaxYear();
@@ -87,7 +88,7 @@ export function InvoicesPage() {
 
     // For memorialized invoices, must have a linked deposit
     if (invoiceType === 'memorialized' && !formData.linkedDepositId) {
-      alert('Memorialized invoices must be linked to an actual deposit');
+      toast.error('Memorialized invoices must be linked to an actual deposit');
       return;
     }
 
@@ -186,7 +187,7 @@ export function InvoicesPage() {
           </div>
           <div className="flex items-start gap-2">
             <Check className="w-4 h-4 text-status-success mt-0.5 shrink-0" />
-            <span>Must display \"Created after payment\" flag</span>
+            <span>Must display "Created after payment" flag</span>
           </div>
           <div className="flex items-start gap-2">
             <Check className="w-4 h-4 text-status-success mt-0.5 shrink-0" />
@@ -253,7 +254,7 @@ export function InvoicesPage() {
                           )}
                         </div>
                         <div className="text-sm text-muted-foreground mt-1">
-                          {inv.clientName} \u2022 {inv.description}
+                          {inv.clientName} • {inv.description}
                         </div>
                         {inv.linkedTransactionId && (
                           <div className="text-xs text-muted-foreground mt-1 flex items-center gap-1">
@@ -333,25 +334,16 @@ export function InvoicesPage() {
             {invoiceType === 'memorialized' && (
               <div className="space-y-2">
                 <Label>Linked Deposit (Required)</Label>
-                <Select
-                  value={
-                    availableDeposits.length === 0
-                      ? formData.linkedDepositId || '__none__'
-                      : formData.linkedDepositId || undefined
-                  }
-                  onValueChange={(v) =>
-                    setFormData((prev) => ({
-                      ...prev,
-                      linkedDepositId: v === '__none__' ? '' : v,
-                    }))
-                  }
+                <Select 
+                  value={formData.linkedDepositId} 
+                  onValueChange={(v) => setFormData(prev => ({ ...prev, linkedDepositId: v }))}
                 >
                   <SelectTrigger>
                     <SelectValue placeholder="Select a deposit..." />
                   </SelectTrigger>
                   <SelectContent>
                     {availableDeposits.length === 0 ? (
-                      <SelectItem value="__none__" disabled>No unlinked deposits available</SelectItem>
+                      <SelectItem value="" disabled>No unlinked deposits available</SelectItem>
                     ) : (
                       availableDeposits.map(dep => (
                         <SelectItem key={dep.id} value={dep.id}>

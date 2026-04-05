@@ -149,10 +149,7 @@ export function YearConfiguration() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   <div className="space-y-2">
                     <Label className="text-xs">State</Label>
-                    <Select
-                      value={selectedState || undefined}
-                      onValueChange={setSelectedState}
-                    >
+                    <Select value={selectedState} onValueChange={setSelectedState}>
                       <SelectTrigger>
                         <SelectValue placeholder="Select state..." />
                       </SelectTrigger>

@@ -50,6 +50,8 @@ import {
 import { Transaction, TransactionState, SplitAllocation, EvidenceStatus } from '@/types/tax';
 import { DataAmount } from '@/components/ui/DataAmount';
 import { cn } from '@/lib/utils';
+import { toast } from 'sonner';
+import { analyzeOtherExpenses, suggestCategoryReassignment } from '@/lib/otherExpenseGuard';
 
 const stateConfig: Record<TransactionState, { icon: typeof Check; label: string; color: string; bg: string }> = {
   deductible: { icon: Check, label: 'Deductible', color: 'text-status-success', bg: 'bg-status-success/10' },
@@ -67,13 +69,16 @@ const evidenceStatusConfig: Record<EvidenceStatus, { label: string; color: strin
 
 export function TransactionsPage() {
   const { currentYear, isYearSelected } = useTaxYear();
-  const { transactions, addTransaction, updateTransaction, categories, evidence, addEvidence } = useWorkflow();
+  const { transactions, addTransaction, updateTransaction, categories, evidence, addEvidence, addCustomCategory } = useWorkflow();
   const [searchTerm, setSearchTerm] = useState('');
   const [filterState, setFilterState] = useState<TransactionState | 'all'>('all');
   const [selectedTransaction, setSelectedTransaction] = useState<Transaction | null>(null);
   const [classifyDialogOpen, setClassifyDialogOpen] = useState(false);
   const [splitDialogOpen, setSplitDialogOpen] = useState(false);
   const [addDialogOpen, setAddDialogOpen] = useState(false);
+  const [createCategoryOpen, setCreateCategoryOpen] = useState(false);
+  const [newCustomName, setNewCustomName] = useState('');
+  const [newCustomLine, setNewCustomLine] = useState('27a');
   
   // Form states for classification
   const [newState, setNewState] = useState<TransactionState>('requires_decision');
@@ -126,9 +131,34 @@ export function TransactionsPage() {
     .filter(t => t.state === 'deductible')
     .reduce((sum, t) => sum + Math.abs(t.amount), 0);
 
+  const otherExpenseWarnings = analyzeOtherExpenses(yearTransactions, categories, currentYear!);
+
+  const handleCreateCustomCategory = () => {
+    const name = newCustomName.trim();
+    if (!name) {
+      toast.error('Enter a category name');
+      return;
+    }
+    const id = `custom_${Date.now()}`;
+    addCustomCategory({
+      id,
+      name,
+      scheduleCLine: newCustomLine.trim() || '27a',
+      deductibilityRules: `User-defined: ${name}`,
+      evidenceExpectations: 'Receipt or invoice with business context',
+      evidenceRequired: true,
+      requiresBusinessPurpose: true,
+    });
+    setSelectedCategory(id);
+    setCreateCategoryOpen(false);
+    setNewCustomName('');
+    setNewCustomLine('27a');
+    toast.success('Category created');
+  };
+
   const handleClassify = (txn: Transaction) => {
     setSelectedTransaction(txn);
-    setNewState(txn.state);
+    setNewState(txn.state === 'requires_decision' ? 'deductible' : txn.state);
     setSelectedCategory(txn.categoryId || '');
     setBusinessPurpose(txn.businessPurpose || '');
     setRationale(txn.rationale || '');
@@ -138,19 +168,24 @@ export function TransactionsPage() {
   const handleConfirmClassification = () => {
     if (!selectedTransaction) return;
 
+    if (newState === 'requires_decision') {
+      toast.error('Choose a terminal classification (deductible, non-deductible, or not an expense).');
+      return;
+    }
+
     const category = categories.find(c => c.id === selectedCategory);
     const requiresEvidence = category?.evidenceRequired ?? true;
     const requiresPurpose = category?.requiresBusinessPurpose ?? false;
 
     // Validate business purpose if required
     if (newState === 'deductible' && requiresPurpose && !businessPurpose.trim()) {
-      alert('Business purpose is required for this category');
+      toast.error('Business purpose is required for this category');
       return;
     }
 
     // Validate rationale
     if (!rationale.trim()) {
-      alert('Rationale is required for all classifications');
+      toast.error('Rationale is required for all classifications');
       return;
     }
 
@@ -172,9 +207,15 @@ export function TransactionsPage() {
   const handleAddTransaction = () => {
     if (!currentYear) return;
 
+    const txnDate = new Date(newTransaction.date);
+    if (Number.isNaN(txnDate.getTime()) || txnDate.getFullYear() !== currentYear) {
+      toast.error(`Transaction date must fall within tax year ${currentYear} (Jan 1 – Dec 31).`);
+      return;
+    }
+
     const txn: Transaction = {
       id: `txn_${Date.now()}`,
-      date: new Date(newTransaction.date),
+      date: txnDate,
       description: newTransaction.description,
       amount: parseFloat(newTransaction.amount),
       source: newTransaction.source,
@@ -266,12 +307,31 @@ export function TransactionsPage() {
         </Card>
       )}
 
+      {otherExpenseWarnings.length > 0 && (
+        <Card className="border-status-warning/50 bg-status-warning/5">
+          <CardContent className="py-4">
+            <div className="flex items-start gap-3">
+              <AlertTriangle className="w-5 h-5 text-status-warning mt-0.5" />
+              <div>
+                <p className="font-medium text-sm">Other Expenses Review</p>
+                {otherExpenseWarnings.map((w, i) => (
+                  <p key={i} className="text-sm text-muted-foreground mt-1">{w.message}</p>
+                ))}
+                <p className="text-xs text-muted-foreground mt-2">
+                  Use the Classify button to reassign transactions to specific categories or create a new expense group.
+                </p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      )}
+
       {/* Terminal States Reference */}
       <Card>
         <CardHeader className="pb-2">
           <CardTitle className="text-sm">Transaction Terminal States (Mandatory)</CardTitle>
           <CardDescription className="text-xs">
-            Every transaction must terminate in exactly one of these four states. No \"miscellaneous\" allowed.
+            Every transaction must terminate in exactly one of these four states. No "miscellaneous" allowed.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -388,7 +448,7 @@ export function TransactionsPage() {
                             Line {category.scheduleCLine}
                           </span>
                         ) : (
-                          <span className="text-xs text-muted-foreground">\u2014</span>
+                          <span className="text-xs text-muted-foreground">—</span>
                         )}
                       </TableCell>
                       <TableCell>
@@ -428,11 +488,11 @@ export function TransactionsPage() {
           <CardTitle className="text-sm">Categorization Rules</CardTitle>
         </CardHeader>
         <CardContent className="text-xs text-muted-foreground space-y-1.5">
-          <p>\u2022 Every expense must map directly to Schedule C lines</p>
-          <p>\u2022 Transaction splitting and percentage allocations require rationale and confirmation</p>
-          <p>\u2022 AI may suggest categories but may not auto-claim fact-dependent deductions</p>
-          <p>\u2022 Evidence must be attached before expense can be included in totals</p>
-          <p>\u2022 Business purpose is required for meals, travel, and gifts categories</p>
+          <p>• Every expense must map directly to Schedule C lines</p>
+          <p>• Transaction splitting and percentage allocations require rationale and confirmation</p>
+          <p>• AI may suggest categories but may not auto-claim fact-dependent deductions</p>
+          <p>• Evidence must be attached before expense can be included in totals</p>
+          <p>• Business purpose is required for meals, travel, and gifts categories</p>
         </CardContent>
       </Card>
 
@@ -451,7 +511,7 @@ export function TransactionsPage() {
               <div className="p-3 bg-secondary rounded-lg">
                 <div className="font-medium">{selectedTransaction.description}</div>
                 <div className="text-sm text-muted-foreground mt-1">
-                  {selectedTransaction.date.toLocaleDateString()} \u2022 <DataAmount value={selectedTransaction.amount} />
+                  {selectedTransaction.date.toLocaleDateString()} • <DataAmount value={selectedTransaction.amount} />
                 </div>
               </div>
 
@@ -466,12 +526,6 @@ export function TransactionsPage() {
                       <div className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-status-success" />
                         Deductible Business Expense
-                      </div>
-                    </SelectItem>
-                    <SelectItem value="requires_decision">
-                      <div className="flex items-center gap-2">
-                        <HelpCircle className="w-4 h-4 text-status-warning" />
-                        Requires Decision (Review Later)
                       </div>
                     </SelectItem>
                     <SelectItem value="non_deductible">
@@ -494,10 +548,7 @@ export function TransactionsPage() {
                 <>
                   <div className="space-y-2">
                     <Label>Schedule C Category</Label>
-                    <Select
-                      value={selectedCategory || undefined}
-                      onValueChange={setSelectedCategory}
-                    >
+                    <Select value={selectedCategory} onValueChange={setSelectedCategory}>
                       <SelectTrigger>
                         <SelectValue placeholder="Select category..." />
                       </SelectTrigger>
@@ -509,6 +560,37 @@ export function TransactionsPage() {
                         ))}
                       </SelectContent>
                     </Select>
+                    <Button
+                      type="button"
+                      variant="outline"
+                      size="sm"
+                      className="w-full mt-1"
+                      onClick={() => setCreateCategoryOpen(true)}
+                    >
+                      Create new category…
+                    </Button>
+                    {selectedTransaction?.scheduleCLine === '27a' && selectedCategory === 'other_expenses' && (
+                      (() => {
+                        const suggestions = suggestCategoryReassignment(selectedTransaction, categories);
+                        return suggestions.length > 0 ? (
+                          <div className="p-2 bg-status-warning/10 rounded text-xs">
+                            <p className="font-medium text-status-warning">Suggested reassignment:</p>
+                            {suggestions.map(s => (
+                              <Button
+                                key={s.id}
+                                type="button"
+                                variant="ghost"
+                                size="sm"
+                                className="text-xs mt-1 block h-auto py-1"
+                                onClick={() => setSelectedCategory(s.id)}
+                              >
+                                → Line {s.scheduleCLine}: {s.name}
+                              </Button>
+                            ))}
+                          </div>
+                        ) : null;
+                      })()
+                    )}
                     {selectedCategory && (
                       <div className="text-xs text-muted-foreground p-2 bg-muted rounded">
                         {categories.find(c => c.id === selectedCategory)?.deductibilityRules}
@@ -552,6 +634,41 @@ export function TransactionsPage() {
             >
               Confirm Classification
             </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      <Dialog open={createCategoryOpen} onOpenChange={setCreateCategoryOpen}>
+        <DialogContent className="max-w-md">
+          <DialogHeader>
+            <DialogTitle>New expense category</DialogTitle>
+            <DialogDescription>
+              Define a custom Schedule C group (often Line 27a) instead of using the generic Other bucket.
+            </DialogDescription>
+          </DialogHeader>
+          <div className="space-y-3 py-2">
+            <div className="space-y-2">
+              <Label>Name</Label>
+              <Input
+                value={newCustomName}
+                onChange={e => setNewCustomName(e.target.value)}
+                placeholder="e.g., Software subscriptions"
+              />
+            </div>
+            <div className="space-y-2">
+              <Label>Schedule C line</Label>
+              <Input
+                value={newCustomLine}
+                onChange={e => setNewCustomLine(e.target.value)}
+                placeholder="27a"
+              />
+            </div>
+          </div>
+          <DialogFooter>
+            <Button variant="outline" onClick={() => setCreateCategoryOpen(false)}>
+              Cancel
+            </Button>
+            <Button onClick={handleCreateCustomCategory}>Create and use</Button>
           </DialogFooter>
         </DialogContent>
       </Dialog>

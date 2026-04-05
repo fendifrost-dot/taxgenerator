@@ -1,3 +1,17 @@
+/**
+ * ReconciliationPage.tsx
+ *
+ * Income reconciliation with two resolution paths:
+ *
+ *   1. Bank match  — user links income to one or more bank deposit transactions.
+ *   2. Accept as stated — no bank statement available; income is accepted based
+ *      on the source document (1099, processor summary, etc.) alone.
+ *
+ * Bank statements are OPTIONAL. A return can be generated from W-2s, 1099s,
+ * and business income summaries without any bank statement on file.
+ * The workflow gate only blocks when there are *unresolved* reconciliation entries.
+ */
+
 import { useState } from 'react';
 import { useTaxYear } from '@/contexts/TaxYearContext';
 import { useWorkflow } from '@/contexts/WorkflowContext';
@@ -23,33 +37,65 @@ import {
   SelectValue,
 } from '@/components/ui/select';
 import { Label } from '@/components/ui/label';
-import { 
+import {
   AlertTriangle,
   Check,
-  XCircle,
   Link as LinkIcon,
   Plus,
-  ArrowRight,
   DollarSign,
-  AlertCircle
+  AlertCircle,
+  FileCheck,
+  Info,
+  CheckCircle2,
 } from 'lucide-react';
-import { IncomeReconciliation } from '@/types/tax';
-import { DataAmount } from '@/components/ui/DataAmount';
+import { IncomeReconciliation, ReconciliationMethod } from '@/types/tax';
 import { cn } from '@/lib/utils';
+import { toast } from 'sonner';
+
+// ─── Reconciliation method badge ──────────────────────────────────────────────
+
+function MethodBadge({ method }: { method?: ReconciliationMethod }) {
+  if (!method) return null;
+  if (method === 'bank_match') {
+    return (
+      <Badge variant="outline" className="text-xs bg-green-50 text-green-700 border-green-200">
+        <LinkIcon className="w-3 h-3 mr-1" />
+        Bank matched
+      </Badge>
+    );
+  }
+  if (method === 'accepted_without_bank') {
+    return (
+      <Badge variant="outline" className="text-xs bg-blue-50 text-blue-700 border-blue-200">
+        <FileCheck className="w-3 h-3 mr-1" />
+        Accepted — no bank stmt
+      </Badge>
+    );
+  }
+  return (
+    <Badge variant="outline" className="text-xs bg-slate-50 text-slate-600">
+      Direct entry
+    </Badge>
+  );
+}
+
+// ─── Main component ───────────────────────────────────────────────────────────
 
 export function ReconciliationPage() {
   const { currentYear, isYearSelected } = useTaxYear();
-  const { 
-    incomeReconciliations, 
-    addReconciliation, 
+  const {
+    incomeReconciliations,
+    addReconciliation,
     updateReconciliation,
     documents,
-    transactions 
+    transactions,
   } = useWorkflow();
+
   const [createDialogOpen, setCreateDialogOpen] = useState(false);
-  const [matchDialogOpen, setMatchDialogOpen] = useState(false);
-  const [selectedRecId, setSelectedRecId] = useState<string>('');
-  
+  const [acceptDialogOpen, setAcceptDialogOpen] = useState(false);
+  const [acceptTargetId, setAcceptTargetId] = useState<string>('');
+  const [acceptNote, setAcceptNote] = useState('');
+
   const [formData, setFormData] = useState({
     sourceType: '1099' as IncomeReconciliation['sourceType'],
     sourceDocumentId: '',
@@ -75,28 +121,29 @@ export function ReconciliationPage() {
     );
   }
 
-  const yearRecs = incomeReconciliations.filter(r => r.taxYear === currentYear);
-  const reconciled = yearRecs.filter(r => r.isReconciled);
-  const unreconciled = yearRecs.filter(r => !r.isReconciled);
+  const yearRecs = incomeReconciliations.filter((r) => r.taxYear === currentYear);
+  const reconciled = yearRecs.filter((r) => r.isReconciled);
+  const unreconciled = yearRecs.filter((r) => !r.isReconciled);
 
-  // Get income documents (1099s, processor exports)
-  const incomeDocuments = documents.filter(d => 
-    d.taxYear === currentYear && 
-    (d.type === '1099_nec' || d.type === '1099_int' || d.type === '1099_div' || d.type === 'payment_processor')
+  const incomeDocuments = documents.filter(
+    (d) =>
+      d.taxYear === currentYear &&
+      (d.type === '1099_nec' ||
+        d.type === '1099_int' ||
+        d.type === '1099_div' ||
+        d.type === 'payment_processor'),
   );
 
-  // Get deposits (positive transactions)
-  const deposits = transactions.filter(t => 
-    t.taxYear === currentYear && t.amount > 0
-  );
+  const deposits = transactions.filter((t) => t.taxYear === currentYear && t.amount > 0);
 
   const totalGross = yearRecs.reduce((sum, r) => sum + r.grossAmount, 0);
   const totalFees = yearRecs.reduce((sum, r) => sum + r.fees, 0);
   const totalNet = yearRecs.reduce((sum, r) => sum + r.netAmount, 0);
 
+  // ── Handlers ────────────────────────────────────────────────────────────────
+
   const handleCreateReconciliation = () => {
     if (!currentYear) return;
-
     const gross = parseFloat(formData.grossAmount) || 0;
     const fees = parseFloat(formData.fees) || 0;
     const refunds = parseFloat(formData.refundsChargebacks) || 0;
@@ -107,7 +154,7 @@ export function ReconciliationPage() {
       sourceDocumentId: formData.sourceDocumentId,
       sourceDescription: formData.sourceDescription,
       grossAmount: gross,
-      fees: fees,
+      fees,
       refundsChargebacks: refunds,
       netAmount: gross - fees - refunds,
       matchedDepositIds: [],
@@ -126,27 +173,59 @@ export function ReconciliationPage() {
       fees: '',
       refundsChargebacks: '',
     });
+    toast.success('Income source added');
   };
 
-  const handleMarkReconciled = (id: string) => {
-    updateReconciliation(id, { isReconciled: true });
+  /** Bank-match path: mark reconciled with method = bank_match */
+  const handleMarkBankMatched = (id: string) => {
+    const rec = incomeReconciliations.find((r) => r.id === id);
+    if (!rec) return;
+    const hasMatch = rec.matchedDepositIds.length > 0 || rec.matchedTransactionIds.length > 0;
+    const hasVarianceNote =
+      Boolean(rec.discrepancyNote?.trim()) &&
+      rec.discrepancyAmount !== undefined &&
+      !Number.isNaN(rec.discrepancyAmount);
+
+    if (!hasMatch && !hasVarianceNote) {
+      toast.error(
+        'Link to at least one deposit or record a discrepancy amount before marking as bank-matched.',
+      );
+      return;
+    }
+    updateReconciliation(id, { isReconciled: true, reconciliationMethod: 'bank_match' });
+    toast.success('Income source marked as bank-matched');
   };
 
-  const handleAddDiscrepancyNote = (id: string, note: string, amount: number) => {
-    updateReconciliation(id, { 
+  /** Accept-without-bank path: opens the confirmation dialog */
+  const openAcceptDialog = (id: string) => {
+    setAcceptTargetId(id);
+    setAcceptNote('');
+    setAcceptDialogOpen(true);
+  };
+
+  const handleAcceptWithoutBank = () => {
+    if (!acceptTargetId) return;
+    updateReconciliation(acceptTargetId, {
       isReconciled: true,
-      discrepancyNote: note,
-      discrepancyAmount: amount,
+      reconciliationMethod: 'accepted_without_bank',
+      acceptanceNote: acceptNote.trim() || 'Accepted as stated — no bank statement on file.',
     });
+    toast.success('Income accepted as stated without bank statement');
+    setAcceptDialogOpen(false);
+    setAcceptTargetId('');
+    setAcceptNote('');
   };
+
+  // ── Render ──────────────────────────────────────────────────────────────────
 
   return (
     <div className="p-6 space-y-6">
+      {/* Header */}
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-2xl font-semibold text-foreground">Income Reconciliation</h1>
           <p className="text-muted-foreground mt-1">
-            Match income documents to bank deposits for tax year {currentYear}
+            Confirm income sources for tax year {currentYear} — bank statements optional
           </p>
         </div>
         <Button onClick={() => setCreateDialogOpen(true)}>
@@ -155,7 +234,21 @@ export function ReconciliationPage() {
         </Button>
       </div>
 
-      {/* Summary Stats */}
+      {/* Bank-optional notice */}
+      <Card className="border-blue-200 bg-blue-50/40">
+        <CardContent className="py-3 px-4">
+          <div className="flex items-start gap-3">
+            <Info className="w-4 h-4 text-blue-600 mt-0.5 shrink-0" />
+            <p className="text-sm text-blue-800">
+              <strong>Bank statements are optional.</strong> Each income source can be confirmed via
+              bank deposit matching <em>or</em> accepted as stated from its source document (1099,
+              processor summary, business record). Use whichever documentation is available.
+            </p>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Summary stats */}
       <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
         <Card>
           <CardContent className="p-4 text-center">
@@ -166,7 +259,7 @@ export function ReconciliationPage() {
         <Card className="border-status-success/30">
           <CardContent className="p-4 text-center">
             <div className="text-2xl font-mono font-semibold text-status-success">{reconciled.length}</div>
-            <div className="text-xs text-muted-foreground uppercase tracking-wider">Reconciled</div>
+            <div className="text-xs text-muted-foreground uppercase tracking-wider">Confirmed</div>
           </CardContent>
         </Card>
         <Card className="border-status-warning/30">
@@ -188,22 +281,25 @@ export function ReconciliationPage() {
             <div className="text-lg font-mono font-semibold">
               ${totalNet.toLocaleString()}
             </div>
-            <div className="text-xs text-muted-foreground uppercase tracking-wider">Net Deposits</div>
+            <div className="text-xs text-muted-foreground uppercase tracking-wider">Net Amount</div>
           </CardContent>
         </Card>
       </div>
 
-      {/* Unreconciled Warning */}
+      {/* Unresolved warning */}
       {unreconciled.length > 0 && (
         <Card className="border-status-warning/50 bg-status-warning/5">
           <CardContent className="py-4">
             <div className="flex items-start gap-3">
-              <AlertCircle className="w-5 h-5 text-status-warning mt-0.5" />
+              <AlertCircle className="w-5 h-5 text-status-warning mt-0.5 shrink-0" />
               <div>
-                <p className="font-medium text-sm">Reconciliation Required</p>
+                <p className="font-medium text-sm">
+                  {unreconciled.length} source(s) need confirmation before return generation
+                </p>
                 <p className="text-sm text-muted-foreground mt-1">
-                  {unreconciled.length} income source(s) have not been reconciled to bank deposits.
-                  All income must be reconciled before return generation.
+                  Match each to a bank deposit <strong>or</strong> use{' '}
+                  <strong>Accept Without Bank Statement</strong> to confirm from the source
+                  document alone. Either path clears this gate.
                 </p>
               </div>
             </div>
@@ -211,34 +307,36 @@ export function ReconciliationPage() {
         </Card>
       )}
 
-      {/* Reconciliation Process */}
+      {/* Process reference */}
       <Card>
         <CardHeader className="pb-2">
-          <CardTitle className="text-sm">Reconciliation Process</CardTitle>
+          <CardTitle className="text-sm">Resolution Paths</CardTitle>
         </CardHeader>
         <CardContent className="text-sm text-muted-foreground space-y-2">
           <div className="flex items-start gap-2">
-            <Check className="w-4 h-4 text-status-success mt-0.5 shrink-0" />
-            <span>Match each income document (1099, processor summary) to bank deposits</span>
+            <LinkIcon className="w-4 h-4 text-green-600 mt-0.5 shrink-0" />
+            <span>
+              <strong>Bank match</strong> — Link income to one or more deposit transactions, account
+              for fees and refunds, explain any variance
+            </span>
           </div>
           <div className="flex items-start gap-2">
-            <Check className="w-4 h-4 text-status-success mt-0.5 shrink-0" />
-            <span>Account for fees, refunds, and chargebacks</span>
-          </div>
-          <div className="flex items-start gap-2">
-            <Check className="w-4 h-4 text-status-success mt-0.5 shrink-0" />
-            <span>Flag and explain any discrepancies</span>
+            <FileCheck className="w-4 h-4 text-blue-600 mt-0.5 shrink-0" />
+            <span>
+              <strong>Accept as stated</strong> — No bank statement available; income confirmed from
+              source document (1099, processor export, business record) with optional note
+            </span>
           </div>
           <div className="flex items-start gap-2">
             <AlertTriangle className="w-4 h-4 text-status-warning mt-0.5 shrink-0" />
-            <span>No automatic resolution - all discrepancies require manual review</span>
+            <span>All discrepancies between documents and deposits require a written explanation</span>
           </div>
         </CardContent>
       </Card>
 
       <Separator />
 
-      {/* Income Sources */}
+      {/* Income source list */}
       <div>
         <h2 className="text-lg font-semibold mb-4">Income Sources ({yearRecs.length})</h2>
         {yearRecs.length === 0 ? (
@@ -247,45 +345,51 @@ export function ReconciliationPage() {
               <DollarSign className="w-12 h-12 text-muted-foreground/30 mx-auto mb-4" />
               <h3 className="text-lg font-medium text-muted-foreground">No Income Sources</h3>
               <p className="text-sm text-muted-foreground mt-1">
-                Add income sources from 1099s, processor exports, or manual entry
+                Upload 1099s or payment processor exports via the Document Parser, or add manually.
+                If income is only from W-2 wages, no entries are needed here.
               </p>
             </CardContent>
           </Card>
         ) : (
           <div className="space-y-3">
-            {yearRecs.map(rec => (
-              <Card key={rec.id} className={cn(
-                !rec.isReconciled && 'border-status-warning/30'
-              )}>
+            {yearRecs.map((rec) => (
+              <Card key={rec.id} className={cn(!rec.isReconciled && 'border-status-warning/30')}>
                 <CardContent className="py-4">
-                  <div className="flex items-start justify-between">
-                    <div className="flex items-start gap-3">
-                      <div className={cn(
-                        'p-2 rounded',
-                        rec.isReconciled ? 'bg-status-success/10' : 'bg-status-warning/10'
-                      )}>
+                  <div className="flex items-start justify-between gap-4">
+                    {/* Status icon + info */}
+                    <div className="flex items-start gap-3 flex-1 min-w-0">
+                      <div
+                        className={cn(
+                          'p-2 rounded shrink-0',
+                          rec.isReconciled ? 'bg-status-success/10' : 'bg-status-warning/10',
+                        )}
+                      >
                         {rec.isReconciled ? (
-                          <Check className="w-4 h-4 text-status-success" />
+                          <CheckCircle2 className="w-4 h-4 text-status-success" />
                         ) : (
                           <AlertCircle className="w-4 h-4 text-status-warning" />
                         )}
                       </div>
-                      <div>
-                        <div className="flex items-center gap-2">
-                          <span className="font-medium">{rec.sourceDescription}</span>
-                          <Badge variant="outline" className="text-xs capitalize">
+                      <div className="flex-1 min-w-0">
+                        {/* Title row */}
+                        <div className="flex flex-wrap items-center gap-2">
+                          <span className="font-medium truncate">{rec.sourceDescription}</span>
+                          <Badge variant="outline" className="text-xs capitalize shrink-0">
                             {rec.sourceType.replace('_', ' ')}
                           </Badge>
                           {rec.isReconciled ? (
-                            <Badge variant="outline" className="text-xs text-status-success">
-                              Reconciled
+                            <Badge variant="outline" className="text-xs text-status-success shrink-0">
+                              Confirmed
                             </Badge>
                           ) : (
-                            <Badge variant="outline" className="text-xs text-status-warning">
+                            <Badge variant="outline" className="text-xs text-status-warning shrink-0">
                               Pending
                             </Badge>
                           )}
+                          <MethodBadge method={rec.reconciliationMethod} />
                         </div>
+
+                        {/* Amounts row */}
                         <div className="text-sm text-muted-foreground mt-2 grid grid-cols-4 gap-4">
                           <div>
                             <span className="text-xs uppercase tracking-wider">Gross</span>
@@ -293,28 +397,68 @@ export function ReconciliationPage() {
                           </div>
                           <div>
                             <span className="text-xs uppercase tracking-wider">Fees</span>
-                            <div className="font-mono text-status-error">-${rec.fees.toLocaleString()}</div>
+                            <div className="font-mono text-status-error">
+                              -${rec.fees.toLocaleString()}
+                            </div>
                           </div>
                           <div>
                             <span className="text-xs uppercase tracking-wider">Refunds</span>
-                            <div className="font-mono text-status-error">-${rec.refundsChargebacks.toLocaleString()}</div>
+                            <div className="font-mono text-status-error">
+                              -${rec.refundsChargebacks.toLocaleString()}
+                            </div>
                           </div>
                           <div>
                             <span className="text-xs uppercase tracking-wider">Net</span>
-                            <div className="font-mono font-semibold">${rec.netAmount.toLocaleString()}</div>
+                            <div className="font-mono font-semibold">
+                              ${rec.netAmount.toLocaleString()}
+                            </div>
                           </div>
                         </div>
+
+                        {/* Acceptance note */}
+                        {rec.acceptanceNote && (
+                          <div className="text-xs text-blue-700 mt-2 p-2 bg-blue-50 rounded">
+                            📄 {rec.acceptanceNote}
+                          </div>
+                        )}
+
+                        {/* Discrepancy note */}
                         {rec.discrepancyNote && (
                           <div className="text-xs text-status-warning mt-2 p-2 bg-status-warning/10 rounded">
-                            Discrepancy (${rec.discrepancyAmount?.toFixed(2)}): {rec.discrepancyNote}
+                            ⚠ Discrepancy (${rec.discrepancyAmount?.toFixed(2)}): {rec.discrepancyNote}
                           </div>
+                        )}
+
+                        {/* Available deposits for matching (shown when unreconciled) */}
+                        {!rec.isReconciled && deposits.length > 0 && (
+                          <p className="text-xs text-muted-foreground mt-2">
+                            {deposits.length} deposit transaction(s) available to match
+                          </p>
                         )}
                       </div>
                     </div>
+
+                    {/* Action buttons */}
                     {!rec.isReconciled && (
-                      <Button size="sm" onClick={() => handleMarkReconciled(rec.id)}>
-                        Mark Reconciled
-                      </Button>
+                      <div className="flex flex-col gap-2 shrink-0">
+                        <Button
+                          size="sm"
+                          variant="outline"
+                          onClick={() => handleMarkBankMatched(rec.id)}
+                          className="text-xs whitespace-nowrap"
+                        >
+                          <LinkIcon className="w-3 h-3 mr-1" />
+                          Mark Bank Matched
+                        </Button>
+                        <Button
+                          size="sm"
+                          onClick={() => openAcceptDialog(rec.id)}
+                          className="text-xs whitespace-nowrap"
+                        >
+                          <FileCheck className="w-3 h-3 mr-1" />
+                          Accept Without Bank Stmt
+                        </Button>
+                      </div>
                     )}
                   </div>
                 </CardContent>
@@ -324,50 +468,54 @@ export function ReconciliationPage() {
         )}
       </div>
 
-      {/* Create Dialog */}
+      {/* ── Create dialog ── */}
       <Dialog open={createDialogOpen} onOpenChange={setCreateDialogOpen}>
         <DialogContent>
           <DialogHeader>
             <DialogTitle>Add Income Source</DialogTitle>
             <DialogDescription>
-              Add an income source to reconcile for tax year {currentYear}
+              Add an income source for tax year {currentYear}. Bank statements are not required.
             </DialogDescription>
           </DialogHeader>
-          
+
           <div className="space-y-4 py-4">
             <div className="space-y-2">
               <Label>Source Type</Label>
-              <Select 
-                value={formData.sourceType} 
-                onValueChange={(v) => setFormData(prev => ({ ...prev, sourceType: v as any }))}
+              <Select
+                value={formData.sourceType}
+                onValueChange={(v) =>
+                  setFormData((prev) => ({ ...prev, sourceType: v as IncomeReconciliation['sourceType'] }))
+                }
               >
                 <SelectTrigger>
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="1099">1099 Form</SelectItem>
-                  <SelectItem value="processor_summary">Processor Summary</SelectItem>
-                  <SelectItem value="bank_deposit">Bank Deposit</SelectItem>
+                  <SelectItem value="1099">1099 Form (NEC / INT / DIV)</SelectItem>
+                  <SelectItem value="processor_summary">Processor / Business Summary</SelectItem>
+                  <SelectItem value="bank_deposit">Bank Deposit Record</SelectItem>
                 </SelectContent>
               </Select>
             </div>
 
             <div className="space-y-2">
-              <Label>Source Document</Label>
+              <Label>Source Document (optional)</Label>
               <Select
-                value={formData.sourceDocumentId || undefined}
-                onValueChange={(v) => setFormData(prev => ({ ...prev, sourceDocumentId: v }))}
+                value={formData.sourceDocumentId}
+                onValueChange={(v) =>
+                  setFormData((prev) => ({ ...prev, sourceDocumentId: v }))
+                }
               >
                 <SelectTrigger>
-                  <SelectValue placeholder="Select document..." />
+                  <SelectValue placeholder="Select document or leave blank..." />
                 </SelectTrigger>
                 <SelectContent>
-                  {incomeDocuments.map(doc => (
+                  {incomeDocuments.map((doc) => (
                     <SelectItem key={doc.id} value={doc.id}>
                       {doc.fileName}
                     </SelectItem>
                   ))}
-                  <SelectItem value="manual">Manual Entry</SelectItem>
+                  <SelectItem value="manual">Manual Entry (no document)</SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -376,8 +524,10 @@ export function ReconciliationPage() {
               <Label>Description</Label>
               <Input
                 value={formData.sourceDescription}
-                onChange={(e) => setFormData(prev => ({ ...prev, sourceDescription: e.target.value }))}
-                placeholder="e.g., PayPal 2024 Annual Summary"
+                onChange={(e) =>
+                  setFormData((prev) => ({ ...prev, sourceDescription: e.target.value }))
+                }
+                placeholder="e.g., Stripe 2025 Annual Summary, Client ABC 1099-NEC"
               />
             </div>
 
@@ -387,7 +537,9 @@ export function ReconciliationPage() {
                 <Input
                   type="number"
                   value={formData.grossAmount}
-                  onChange={(e) => setFormData(prev => ({ ...prev, grossAmount: e.target.value }))}
+                  onChange={(e) =>
+                    setFormData((prev) => ({ ...prev, grossAmount: e.target.value }))
+                  }
                   placeholder="0.00"
                 />
               </div>
@@ -396,16 +548,21 @@ export function ReconciliationPage() {
                 <Input
                   type="number"
                   value={formData.fees}
-                  onChange={(e) => setFormData(prev => ({ ...prev, fees: e.target.value }))}
+                  onChange={(e) => setFormData((prev) => ({ ...prev, fees: e.target.value }))}
                   placeholder="0.00"
                 />
               </div>
               <div className="space-y-2">
-                <Label>Refunds/Chargebacks</Label>
+                <Label>Refunds / Chargebacks</Label>
                 <Input
                   type="number"
                   value={formData.refundsChargebacks}
-                  onChange={(e) => setFormData(prev => ({ ...prev, refundsChargebacks: e.target.value }))}
+                  onChange={(e) =>
+                    setFormData((prev) => ({
+                      ...prev,
+                      refundsChargebacks: e.target.value,
+                    }))
+                  }
                   placeholder="0.00"
                 />
               </div>
@@ -416,11 +573,68 @@ export function ReconciliationPage() {
             <Button variant="outline" onClick={() => setCreateDialogOpen(false)}>
               Cancel
             </Button>
-            <Button 
+            <Button
               onClick={handleCreateReconciliation}
               disabled={!formData.sourceDescription || !formData.grossAmount}
             >
               Add Income Source
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      {/* ── Accept without bank statement dialog ── */}
+      <Dialog open={acceptDialogOpen} onOpenChange={setAcceptDialogOpen}>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Accept Without Bank Statement</DialogTitle>
+            <DialogDescription>
+              Confirm this income source based on the source document alone. No bank statement is
+              required. An optional note will be recorded for audit transparency.
+            </DialogDescription>
+          </DialogHeader>
+
+          {(() => {
+            const rec = incomeReconciliations.find((r) => r.id === acceptTargetId);
+            if (!rec) return null;
+            return (
+              <div className="space-y-4 py-2">
+                <Card className="bg-secondary/40">
+                  <CardContent className="py-3 px-4 space-y-1 text-sm">
+                    <p className="font-medium">{rec.sourceDescription}</p>
+                    <p className="text-muted-foreground">
+                      Gross: <span className="font-mono">${rec.grossAmount.toLocaleString()}</span>
+                      {rec.fees > 0 && (
+                        <> &nbsp;· Fees: <span className="font-mono">-${rec.fees.toLocaleString()}</span></>
+                      )}
+                      &nbsp;· Net: <span className="font-mono font-semibold">${rec.netAmount.toLocaleString()}</span>
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <div className="space-y-2">
+                  <Label>Acceptance Note (optional)</Label>
+                  <Textarea
+                    value={acceptNote}
+                    onChange={(e) => setAcceptNote(e.target.value)}
+                    placeholder="e.g., 1099-NEC received from payer — no bank statement on file. Amount matches document."
+                    rows={3}
+                  />
+                  <p className="text-xs text-muted-foreground">
+                    This note is recorded on the reconciliation entry for audit trail purposes.
+                  </p>
+                </div>
+              </div>
+            );
+          })()}
+
+          <DialogFooter>
+            <Button variant="outline" onClick={() => setAcceptDialogOpen(false)}>
+              Cancel
+            </Button>
+            <Button onClick={handleAcceptWithoutBank}>
+              <FileCheck className="w-4 h-4 mr-2" />
+              Confirm — Accept as Stated
             </Button>
           </DialogFooter>
         </DialogContent>
