@@ -33,6 +33,7 @@ const severityConfig: Record<DiscrepancySeverity, { label: string; color: string
   critical: { label: 'Critical', color: 'text-status-error', bg: 'bg-status-error/10' },
   material: { label: 'Material', color: 'text-status-warning', bg: 'bg-status-warning/10' },
   minor: { label: 'Minor', color: 'text-muted-foreground', bg: 'bg-muted' },
+  informational: { label: 'Informational', color: 'text-blue-600', bg: 'bg-blue-50' },
 };
 
 // ─── Cure Options Panel ──────────────────────────────────────────────────────
