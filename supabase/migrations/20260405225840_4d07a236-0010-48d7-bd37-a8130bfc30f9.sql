@@ -1,0 +1,1 @@
+ALTER TABLE public.documents ADD COLUMN extracted_data jsonb DEFAULT NULL;

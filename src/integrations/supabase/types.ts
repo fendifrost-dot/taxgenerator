@@ -75,6 +75,7 @@ export type Database = {
         Row: {
           created_at: string | null
           detected_tax_year: number | null
+          extracted_data: Json | null
           file_name: string
           id: string
           source_reference: string | null
@@ -88,6 +89,7 @@ export type Database = {
         Insert: {
           created_at?: string | null
           detected_tax_year?: number | null
+          extracted_data?: Json | null
           file_name: string
           id?: string
           source_reference?: string | null
@@ -101,6 +103,7 @@ export type Database = {
         Update: {
           created_at?: string | null
           detected_tax_year?: number | null
+          extracted_data?: Json | null
           file_name?: string
           id?: string
           source_reference?: string | null
