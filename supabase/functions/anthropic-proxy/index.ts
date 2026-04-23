@@ -38,7 +38,6 @@
  */
 
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
-import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -79,27 +78,13 @@ serve(async (req: Request) => {
   }
 
   // --- Auth ---------------------------------------------------------------
+  // The function relies on Supabase's built-in verify_jwt gate to validate
+  // the Authorization header before this handler runs. We additionally
+  // require the header be present so that callers without any Supabase
+  // credentials at all get an obvious 401 rather than a confusing 500.
   const authHeader = req.headers.get("Authorization") ?? "";
   if (!authHeader.startsWith("Bearer ")) {
     return jsonResponse({ error: "Missing Authorization header" }, 401);
-  }
-
-  const supabaseUrl = Deno.env.get("SUPABASE_URL") ?? "";
-  const supabaseAnonKey = Deno.env.get("SUPABASE_ANON_KEY") ?? "";
-  if (!supabaseUrl || !supabaseAnonKey) {
-    return jsonResponse(
-      { error: "Supabase environment not configured on edge function" },
-      500,
-    );
-  }
-
-  const supabase = createClient(supabaseUrl, supabaseAnonKey, {
-    global: { headers: { Authorization: authHeader } },
-  });
-
-  const { data: userData, error: userErr } = await supabase.auth.getUser();
-  if (userErr || !userData?.user) {
-    return jsonResponse({ error: "Invalid or expired session" }, 401);
   }
 
   // --- Server-side API key ------------------------------------------------
@@ -154,10 +139,7 @@ serve(async (req: Request) => {
       top_p: body.top_p,
       top_k: body.top_k,
       stop_sequences: body.stop_sequences,
-      metadata: {
-        ...(body.metadata ?? {}),
-        user_id: userData.user.id,
-      },
+      metadata: body.metadata,
     }),
   });
 
