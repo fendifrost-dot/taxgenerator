@@ -218,7 +218,6 @@ export function OptimizationInterview({
 }: Props) {
   const { currentYear } = useTaxYear();
   const workflow        = useWorkflow();
-  const apiKey          = (import.meta.env.VITE_ANTHROPIC_API_KEY as string | undefined) ?? '';
 
   const [questions,  setQuestions]  = useState<OptimizationQuestion[]>(initialQuestions ?? []);
   const [responses,  setResponses]  = useState<Record<string, OptimizationResponse>>(initialResponses);
@@ -235,13 +234,12 @@ export function OptimizationInterview({
   };
 
   const handleGenerate = async () => {
-    if (!apiKey) { setError('VITE_ANTHROPIC_API_KEY is not set.'); return; }
     if (!currentYear) { setError('No tax year selected.'); return; }
     setGenerating(true);
     setError(null);
     try {
       const input  = buildOptimizerInput(contextSnap, currentYear);
-      const result = await generateOptimizationQuestions(input, apiKey);
+      const result = await generateOptimizationQuestions(input);
       if (result.error) { setError(result.error); return; }
       setQuestions(result.questions);
       setResponses({});
@@ -319,7 +317,7 @@ export function OptimizationInterview({
               Claude will review all uploaded documents and generate a personalized list of deductions,
               credits, and tax strategies specific to this client.
             </p>
-            <Button onClick={handleGenerate} disabled={generating || !apiKey}>
+            <Button onClick={handleGenerate} disabled={generating}>
               {generating
                 ? <Loader2 className="w-4 h-4 mr-2 animate-spin" />
                 : <Sparkles className="w-4 h-4 mr-2" />

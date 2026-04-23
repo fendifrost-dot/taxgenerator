@@ -32,6 +32,7 @@ import {
   PARTNERSHIP_SE_GUIDANCE,
   C_CORP_TAX_RATE,
 } from '@/lib/businessEntityForms';
+import { callClaudeMessages, extractText, AnthropicProxyError } from '@/lib/anthropicProxy';
 
 // ─── API call ──────────────────────────────────────────────────────────────────
 
@@ -287,22 +288,15 @@ function parseResponse(
 
 export async function buildEntityReturn(
   input: EntityReturnInput,
-  apiKey: string,
 ): Promise<EntityBuilderResult> {
   const start = Date.now();
 
   try {
     const prompt = buildPrompt(input);
 
-    const res = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: {
-        'Content-Type':         'application/json',
-        'x-api-key':            apiKey,
-        'anthropic-version':    '2023-06-01',
-        'anthropic-dangerous-direct-browser-access': 'true',
-      },
-      body: JSON.stringify({
+    let data;
+    try {
+      data = await callClaudeMessages({
         model:      CLAUDE_MODEL,
         max_tokens: MAX_TOKENS,
         messages: [
@@ -311,21 +305,21 @@ export async function buildEntityReturn(
             content: prompt,
           },
         ],
-      }),
-    });
-
-    if (!res.ok) {
-      const errBody = await res.text();
+      });
+    } catch (err) {
+      const message = err instanceof AnthropicProxyError
+        ? `Claude API error ${err.status}: ${err.message}`
+        : err instanceof Error
+          ? err.message
+          : 'Network error';
       return {
         summary:   null,
         elapsedMs: Date.now() - start,
-        error:     `Claude API error ${res.status}: ${errBody}`,
+        error:     message,
       };
     }
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const data: any = await res.json();
-    const raw: string = data?.content?.[0]?.text ?? '';
+    const raw: string = extractText(data);
 
     if (!raw) {
       return {

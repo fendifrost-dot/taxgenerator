@@ -438,7 +438,6 @@ export function DocumentUploadPage() {
 
   const fileRef = useRef<HTMLInputElement>(null);
 
-  const apiKey = (import.meta.env.VITE_ANTHROPIC_API_KEY as string | undefined) ?? '';
 
   // ── Handlers ──────────────────────────────────────────────────────────────
 
@@ -465,11 +464,6 @@ export function DocumentUploadPage() {
     const f = e.target.files?.[0];
     if (!f) return;
 
-    if (!apiKey) {
-      setErrorMsg('Missing VITE_ANTHROPIC_API_KEY — add it to your .env file.');
-      setStep('error');
-      return;
-    }
     if (!currentYear || !selectedKind) return;
 
     setFile(f);
@@ -484,7 +478,7 @@ export function DocumentUploadPage() {
 
     const t0 = Date.now();
     try {
-      const response = await parseDocument(f, selectedKind, apiKey);
+      const response = await parseDocument(f, selectedKind);
       clearInterval(ticker);
       setProgress(100);
       setElapsedS(Number((response.elapsedMs / 1000).toFixed(1)));
@@ -578,17 +572,6 @@ export function DocumentUploadPage() {
         )}
       </div>
 
-      {/* API key warning */}
-      {!apiKey && (
-        <Alert variant="destructive">
-          <AlertTriangle className="h-4 w-4" />
-          <AlertTitle>API Key Missing</AlertTitle>
-          <AlertDescription>
-            Set <code className="font-mono text-xs">VITE_ANTHROPIC_API_KEY</code> in your <code className="font-mono text-xs">.env</code> file to enable AI parsing.
-          </AlertDescription>
-        </Alert>
-      )}
-
       {/* ── Step: Select document type ── */}
       {step === 'select' && (
         <div className="space-y-4">
@@ -601,7 +584,6 @@ export function DocumentUploadPage() {
                 key={cfg.kind}
                 className={cn(
                   'cursor-pointer transition-all hover:shadow-md hover:border-accent',
-                  !apiKey && 'opacity-50 pointer-events-none',
                 )}
                 onClick={() => selectKind(cfg.kind)}
               >

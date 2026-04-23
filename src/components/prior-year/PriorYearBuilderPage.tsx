@@ -274,7 +274,6 @@ function ReturnSummaryView({ summary, onRegenerate }: { summary: PriorYearReturn
 export function PriorYearBuilderPage() {
   const { currentYear } = useTaxYear();
   const workflow = useWorkflow();
-  const apiKey = (import.meta.env.VITE_ANTHROPIC_API_KEY as string | undefined) ?? '';
 
   const availableYears = getAvailablePriorYears(currentYear ?? new Date().getFullYear());
 
@@ -329,14 +328,12 @@ export function PriorYearBuilderPage() {
     if (!targetYear || !differential || !snapshot) return;
     const rules = getRulesForYear(targetYear);
     if (!rules) { setError(`No tax rules found for ${targetYear}.`); return; }
-    if (!apiKey) { setError('VITE_ANTHROPIC_API_KEY is not set.'); return; }
 
     setError(null);
     setStep('generating');
 
     const result = await buildPriorYearReturn(
       { targetYear, rules, currentYearSnapshot: snapshot, differential, preparerNotes },
-      apiKey,
     );
 
     if (result.error || !result.summary) {
@@ -631,16 +628,11 @@ export function PriorYearBuilderPage() {
             </CardContent>
           </Card>
 
-          <Button className="w-full" size="lg" onClick={handleGenerate} disabled={!apiKey}>
+          <Button className="w-full" size="lg" onClick={handleGenerate}>
             <Sparkles className="w-5 h-5 mr-2" />
             Generate {targetYear} Return
           </Button>
 
-          {!apiKey && (
-            <p className="text-xs text-center text-destructive">
-              VITE_ANTHROPIC_API_KEY is not set in .env
-            </p>
-          )}
         </div>
       )}
 

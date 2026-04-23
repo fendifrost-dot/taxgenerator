@@ -300,10 +300,9 @@ interface DataFormProps {
   onChange: (patch: Partial<EntityReturnInput>) => void;
   onGenerate: () => void;
   generating: boolean;
-  apiKey: string;
 }
 
-function DataEntryForm({ input, onChange, onGenerate, generating, apiKey }: DataFormProps) {
+function DataEntryForm({ input, onChange, onGenerate, generating }: DataFormProps) {
   const isPassThrough = PASS_THROUGH_ENTITIES.includes(input.entityType);
   const isSCorp = input.entityType === 's_corp' || input.entityType === 'llc_s_corp';
   const isPartnership = ['partnership', 'llp', 'lllp', 'llc_partnership'].includes(input.entityType);
@@ -586,17 +585,10 @@ function DataEntryForm({ input, onChange, onGenerate, generating, apiKey }: Data
         </CardContent>
       </Card>
 
-      {!apiKey && (
-        <div className="flex items-start gap-2 p-3 bg-amber-50 border border-amber-200 rounded text-sm text-amber-800">
-          <AlertTriangle className="w-4 h-4 shrink-0 mt-0.5" />
-          VITE_ANTHROPIC_API_KEY is not set. Claude generation will not be available.
-        </div>
-      )}
-
       <div className="flex justify-end">
         <Button
           onClick={onGenerate}
-          disabled={generating || !apiKey || !input.entityName || !input.ein}
+          disabled={generating || !input.entityName || !input.ein}
         >
           {generating
             ? <><Loader2 className="w-4 h-4 mr-2 animate-spin" />Generating Return…</>
@@ -851,7 +843,6 @@ type Step = 'pick_entity' | 'data_entry' | 'generating' | 'result';
 
 export function EntityReturnBuilderPage() {
   const { currentYear } = useTaxYear();
-  const apiKey = (import.meta.env.VITE_ANTHROPIC_API_KEY as string | undefined) ?? '';
 
   const [step,       setStep]       = useState<Step>('pick_entity');
   const [entityType, setEntityType] = useState<EntityType | null>(null);
@@ -870,11 +861,11 @@ export function EntityReturnBuilderPage() {
   };
 
   const handleGenerate = async () => {
-    if (!input || !apiKey) return;
+    if (!input) return;
     setError(null);
     setStep('generating');
 
-    const result = await buildEntityReturn(input, apiKey);
+    const result = await buildEntityReturn(input);
 
     if (result.error || !result.summary) {
       setError(result.error ?? 'Unknown error generating return');
@@ -941,7 +932,6 @@ export function EntityReturnBuilderPage() {
           onChange={handlePatch}
           onGenerate={handleGenerate}
           generating={false}
-          apiKey={apiKey}
         />
       )}
 

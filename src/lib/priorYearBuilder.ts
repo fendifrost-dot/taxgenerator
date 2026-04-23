@@ -12,6 +12,7 @@
  */
 
 import { YearTaxRules, formatRulesForPrompt } from './priorYearRules';
+import { callClaudeMessages, extractText, AnthropicProxyError } from '@/lib/anthropicProxy';
 
 // ─── Input types ───────────────────────────────────────────────────────────────
 
@@ -426,36 +427,25 @@ REQUIRED JSON OUTPUT FORMAT — return only valid JSON, no prose, no markdown:
 
 export async function buildPriorYearReturn(
   input: PriorYearBuilderInput,
-  apiKey: string,
 ): Promise<BuilderResult> {
   const t0 = Date.now();
 
   let raw: string;
   try {
-    const res = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: {
-        'x-api-key': apiKey,
-        'anthropic-version': '2023-06-01',
-        'content-type': 'application/json',
-        'anthropic-dangerous-direct-browser-access': 'true',
-      },
-      body: JSON.stringify({
-        model: 'claude-opus-4-5',
-        max_tokens: 8192,
-        system: 'You are a highly accurate tax return preparer. Return only valid JSON with no markdown fences or prose.',
-        messages: [{ role: 'user', content: buildPrompt(input) }],
-      }),
+    const data = await callClaudeMessages({
+      model: 'claude-opus-4-5',
+      max_tokens: 8192,
+      system: 'You are a highly accurate tax return preparer. Return only valid JSON with no markdown fences or prose.',
+      messages: [{ role: 'user', content: buildPrompt(input) }],
     });
-
-    if (!res.ok) {
-      return { summary: null, rawResponse: '', elapsedMs: Date.now() - t0, error: `API error: ${res.status}` };
-    }
-
-    const data = await res.json() as { content: Array<{ type: string; text: string }> };
-    raw = data.content.find(b => b.type === 'text')?.text ?? '';
+    raw = extractText(data);
   } catch (e) {
-    return { summary: null, rawResponse: '', elapsedMs: Date.now() - t0, error: e instanceof Error ? e.message : 'Network error' };
+    const message = e instanceof AnthropicProxyError
+      ? `API error ${e.status}: ${e.message}`
+      : e instanceof Error
+        ? e.message
+        : 'Network error';
+    return { summary: null, rawResponse: '', elapsedMs: Date.now() - t0, error: message };
   }
 
   const cleaned = raw.replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, '').trim();

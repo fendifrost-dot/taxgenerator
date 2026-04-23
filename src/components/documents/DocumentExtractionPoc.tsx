@@ -1,4 +1,5 @@
 import { ChangeEvent, useMemo, useRef, useState } from 'react';
+import { callClaudeMessages } from '@/lib/anthropicProxy';
 import { useTaxYear } from '@/contexts/TaxYearContext';
 import { useWorkflow } from '@/contexts/WorkflowContext';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -89,7 +90,6 @@ export function DocumentExtractionPoc() {
   const [elapsedS, setElapsedS] = useState(0);
   const fileRef = useRef<HTMLInputElement>(null);
 
-  const apiKey = import.meta.env.VITE_ANTHROPIC_API_KEY as string | undefined;
   const transactions = useMemo(() => {
     const rows = (extractedData?.transactions as UnknownRecord[] | undefined) ?? [];
     return rows.map((t) => ({
@@ -114,11 +114,6 @@ export function DocumentExtractionPoc() {
   const onSelectFile = async (e: ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
-    if (!apiKey) {
-      setStatus('error');
-      setError('Missing VITE_ANTHROPIC_API_KEY environment variable');
-      return;
-    }
     if (!currentYear) {
       setStatus('error');
       setError('Select a tax year before running extraction');
@@ -147,27 +142,17 @@ export function DocumentExtractionPoc() {
 
       setStatus('extracting');
       const t0 = Date.now();
-      const response = await fetch('https://api.anthropic.com/v1/messages', {
-        method: 'POST',
-        headers: {
-          'content-type': 'application/json',
-          'x-api-key': apiKey,
-          'anthropic-version': '2023-06-01',
-        },
-        body: JSON.stringify({
-          model: 'claude-sonnet-4-20250514',
-          max_tokens: 8000,
-          messages: [
-            {
-              role: 'user',
-              content: [contentBlock, { type: 'text', text: DOC_TYPE_META[docType].prompt }],
-            },
-          ],
-        }),
-      });
-
-      const payload = (await response.json()) as UnknownRecord;
-      if (!response.ok || payload.error) {
+      const payload = (await callClaudeMessages({
+        model: 'claude-sonnet-4-20250514',
+        max_tokens: 8000,
+        messages: [
+          {
+            role: 'user',
+            content: [contentBlock, { type: 'text', text: DOC_TYPE_META[docType].prompt }],
+          },
+        ],
+      })) as unknown as UnknownRecord;
+      if (payload.error) {
         throw new Error(String((payload.error as UnknownRecord | undefined)?.message ?? 'API error'));
       }
       const text = String(
@@ -282,16 +267,6 @@ export function DocumentExtractionPoc() {
             <p className="text-sm text-muted-foreground">
               File: <span className="font-medium text-foreground">{fileName}</span>
             </p>
-          )}
-
-          {!apiKey && (
-            <Alert variant="destructive">
-              <AlertTriangle className="h-4 w-4" />
-              <AlertTitle>API key missing</AlertTitle>
-              <AlertDescription>
-                Set <code>VITE_ANTHROPIC_API_KEY</code> in your environment to run browser extraction.
-              </AlertDescription>
-            </Alert>
           )}
 
           {status === 'error' && (

@@ -13,6 +13,7 @@
  */
 
 import { OptimizerInput, OptimizationQuestion } from '@/types/client';
+import { callClaudeMessages, extractText, AnthropicProxyError } from '@/lib/anthropicProxy';
 
 export interface OptimizerResult {
   questions: OptimizationQuestion[];
@@ -91,7 +92,6 @@ Return 8–20 questions maximum. Rank by priority (1 = highest potential savings
 
 export async function generateOptimizationQuestions(
   input: OptimizerInput,
-  apiKey: string,
 ): Promise<OptimizerResult> {
   const t0 = Date.now();
 
@@ -99,35 +99,23 @@ export async function generateOptimizationQuestions(
 
   let raw: string;
   try {
-    const res = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: {
-        'x-api-key': apiKey,
-        'anthropic-version': '2023-06-01',
-        'content-type': 'application/json',
-        'anthropic-dangerous-direct-browser-access': 'true',
-      },
-      body: JSON.stringify({
-        model: 'claude-opus-4-5',
-        max_tokens: 4096,
-        system: 'You are a highly accurate tax optimization analyst. Return only valid JSON arrays with no markdown, no prose, no code fences.',
-        messages: [{ role: 'user', content: prompt }],
-      }),
+    const data = await callClaudeMessages({
+      model: 'claude-opus-4-5',
+      max_tokens: 4096,
+      system: 'You are a highly accurate tax optimization analyst. Return only valid JSON arrays with no markdown, no prose, no code fences.',
+      messages: [{ role: 'user', content: prompt }],
     });
-
-    if (!res.ok) {
-      return { questions: [], elapsedMs: Date.now() - t0, error: `API error: ${res.status}` };
-    }
-
-    const data = await res.json() as {
-      content: Array<{ type: string; text: string }>;
-    };
-    raw = data.content.find(b => b.type === 'text')?.text ?? '[]';
+    raw = extractText(data) || '[]';
   } catch (e) {
+    const message = e instanceof AnthropicProxyError
+      ? `API error ${e.status}: ${e.message}`
+      : e instanceof Error
+        ? e.message
+        : 'Network error';
     return {
       questions: [],
       elapsedMs: Date.now() - t0,
-      error: e instanceof Error ? e.message : 'Network error',
+      error: message,
     };
   }
 

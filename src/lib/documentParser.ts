@@ -11,6 +11,8 @@
  *  - No guessing: Claude is instructed to prefer null over speculation.
  */
 
+import { callClaudeMessages, extractText, AnthropicProxyError } from '@/lib/anthropicProxy';
+
 export const CONFIDENCE_THRESHOLD = 0.85;
 
 // ─── Field wrapper ─────────────────────────────────────────────────────────────
@@ -1137,7 +1139,6 @@ function parseClaudeResponse(text: string, kind: DocKind): ParseResult {
 export async function parseDocument(
   file: File,
   kind: DocKind,
-  apiKey: string,
 ): Promise<DocumentParseResponse> {
   const t0 = Date.now();
 
@@ -1162,44 +1163,35 @@ export async function parseDocument(
       ? { type: 'image' as const, source: { type: 'base64' as const, media_type: mediaType, data: base64 } }
       : { type: 'document' as const, source: { type: 'base64' as const, media_type: mediaType, data: base64 } };
 
-    const response = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: {
-        'content-type': 'application/json',
-        'x-api-key': apiKey,
-        'anthropic-version': '2023-06-01',
-      },
-      body: JSON.stringify({
-        model: 'claude-opus-4-5',
-        max_tokens: 4096,
-        system:
-          'You are a highly accurate tax document data extractor. Return only valid JSON objects. Never include explanations, markdown, or commentary outside the JSON.',
-        messages: [
-          {
-            role: 'user',
-            content: [contentBlock, { type: 'text', text: promptForKind(kind) }],
-          },
-        ],
-      }),
+    const payload = await callClaudeMessages({
+      model: 'claude-opus-4-5',
+      max_tokens: 4096,
+      system:
+        'You are a highly accurate tax document data extractor. Return only valid JSON objects. Never include explanations, markdown, or commentary outside the JSON.',
+      messages: [
+        {
+          role: 'user',
+          content: [contentBlock, { type: 'text', text: promptForKind(kind) }],
+        },
+      ],
     });
 
-    type ApiPayload = { content?: Array<{ type: string; text?: string }>; error?: { message?: string } };
-    const payload = (await response.json()) as ApiPayload;
-
-    if (!response.ok || payload.error) {
-      throw new Error(String(payload.error?.message ?? `API error ${response.status}`));
-    }
-
-    const text = payload.content?.find((b) => b.type === 'text')?.text ?? '';
+    const text = extractText(payload);
     if (!text) throw new Error('Empty response from API');
 
     const result = parseClaudeResponse(text, kind);
 
     return { success: true, result, elapsedMs: Date.now() - t0 };
   } catch (err) {
+    const message =
+      err instanceof AnthropicProxyError
+        ? `API error ${err.status}: ${err.message}`
+        : err instanceof Error
+          ? err.message
+          : String(err);
     return {
       success: false,
-      error: err instanceof Error ? err.message : String(err),
+      error: message,
       elapsedMs: Date.now() - t0,
     };
   }
