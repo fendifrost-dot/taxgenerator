@@ -11,7 +11,7 @@
  *  - No guessing: Claude is instructed to prefer null over speculation.
  */
 
-import { callClaudeMessages, extractText, AnthropicProxyError } from '@/lib/anthropicProxy';
+import { callClaudeMessages, extractText, AnthropicProxyError, CLAUDE_MODEL } from '@/lib/anthropicProxy';
 
 export const CONFIDENCE_THRESHOLD = 0.85;
 
@@ -1164,7 +1164,7 @@ export async function parseDocument(
       : { type: 'document' as const, source: { type: 'base64' as const, media_type: mediaType, data: base64 } };
 
     const payload = await callClaudeMessages({
-      model: 'claude-opus-4-5',
+      model: CLAUDE_MODEL,
       max_tokens: 4096,
       system:
         'You are a highly accurate tax document data extractor. Return only valid JSON objects. Never include explanations, markdown, or commentary outside the JSON.',

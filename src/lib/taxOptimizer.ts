@@ -13,7 +13,7 @@
  */
 
 import { OptimizerInput, OptimizationQuestion } from '@/types/client';
-import { callClaudeMessages, extractText, AnthropicProxyError } from '@/lib/anthropicProxy';
+import { callClaudeMessages, extractText, AnthropicProxyError, CLAUDE_MODEL } from '@/lib/anthropicProxy';
 
 export interface OptimizerResult {
   questions: OptimizationQuestion[];
@@ -100,7 +100,7 @@ export async function generateOptimizationQuestions(
   let raw: string;
   try {
     const data = await callClaudeMessages({
-      model: 'claude-opus-4-5',
+      model: CLAUDE_MODEL,
       max_tokens: 4096,
       system: 'You are a highly accurate tax optimization analyst. Return only valid JSON arrays with no markdown, no prose, no code fences.',
       messages: [{ role: 'user', content: prompt }],

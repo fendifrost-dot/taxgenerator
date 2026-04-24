@@ -13,6 +13,13 @@
 
 import { supabase } from '@/integrations/supabase/client';
 
+/**
+ * Centralized Claude model identifier. Update here to change the model used
+ * by every caller (businessEntityBuilder, taxOptimizer, documentParser,
+ * priorYearBuilder, etc.).
+ */
+export const CLAUDE_MODEL = 'claude-opus-4-6';
+
 export interface ClaudeContentBlock {
   type: string;
   text?: string;
