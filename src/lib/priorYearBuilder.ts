@@ -12,7 +12,7 @@
  */
 
 import { YearTaxRules, formatRulesForPrompt } from './priorYearRules';
-import { callClaudeMessages, extractText, AnthropicProxyError } from '@/lib/anthropicProxy';
+import { callClaudeMessages, extractText, AnthropicProxyError, CLAUDE_MODEL } from '@/lib/anthropicProxy';
 
 // ─── Input types ───────────────────────────────────────────────────────────────
 
