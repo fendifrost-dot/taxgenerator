@@ -32,11 +32,10 @@ import {
   PARTNERSHIP_SE_GUIDANCE,
   C_CORP_TAX_RATE,
 } from '@/lib/businessEntityForms';
-import { callClaudeMessages, extractText, AnthropicProxyError } from '@/lib/anthropicProxy';
+import { callClaudeMessages, extractText, AnthropicProxyError, CLAUDE_MODEL } from '@/lib/anthropicProxy';
 
 // ─── API call ──────────────────────────────────────────────────────────────────
 
-const CLAUDE_MODEL = 'claude-opus-4-5';
 const MAX_TOKENS   = 8192;
 
 export interface EntityBuilderResult {
