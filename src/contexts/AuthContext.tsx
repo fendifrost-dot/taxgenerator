@@ -1,29 +1,24 @@
 /**
  * AuthContext.tsx
  *
- * Provides authentication state for the preparer app.
+ * Auth state for the preparer app, backed by the official supabase-js client.
  *
- * - If Supabase is NOT configured → isAuthenticated is always true (local mode).
- * - If Supabase IS configured → shows LoginPage until signed in.
- *
- * This means the app works out of the box with zero config, and gains
- * secure multi-client persistence once Supabase is wired up.
+ * Pattern: subscribe to onAuthStateChange FIRST, then call getSession() to
+ * restore the existing session from localStorage. This avoids a race where
+ * INITIAL_SESSION fires before our listener is attached.
  */
 
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import {
-  isSupabaseConfigured,
-  getSession,
-  signIn as sbSignIn,
-  signOut as sbSignOut,
-  SupabaseUser,
-} from '@/lib/supabaseClient';
+import { supabase } from '@/integrations/supabase/client';
+import { isSupabaseConfigured, SupabaseUser } from '@/lib/supabaseClient';
 
 interface AuthContextValue {
   user: SupabaseUser | null;
   isAuthenticated: boolean;
   isLoading: boolean;
   signIn: (email: string, password: string) => Promise<void>;
+  signUp: (email: string, password: string) => Promise<void>;
+  signInWithGoogle: () => Promise<void>;
   signOut: () => Promise<void>;
   error: string | null;
 }
@@ -34,41 +29,75 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const supabaseEnabled = isSupabaseConfigured();
 
   const [user,      setUser]      = useState<SupabaseUser | null>(null);
-  const [isLoading, setIsLoading] = useState(supabaseEnabled); // only loading when Supabase is configured
+  const [isLoading, setIsLoading] = useState(supabaseEnabled);
   const [error,     setError]     = useState<string | null>(null);
 
-  // Restore session from sessionStorage on mount
   useEffect(() => {
     if (!supabaseEnabled) { setIsLoading(false); return; }
-    const session = getSession();
-    if (session) setUser(session.user);
-    setIsLoading(false);
+
+    // 1. Subscribe FIRST so we don't miss INITIAL_SESSION
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+      const u = session?.user;
+      setUser(u ? { id: u.id, email: u.email ?? '' } : null);
+      setIsLoading(false);
+    });
+
+    // 2. Then bootstrap from storage
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      const u = session?.user;
+      setUser(u ? { id: u.id, email: u.email ?? '' } : null);
+      setIsLoading(false);
+    });
+
+    return () => subscription.unsubscribe();
   }, [supabaseEnabled]);
 
   const signIn = async (email: string, password: string) => {
     setError(null);
-    setIsLoading(true);
-    try {
-      const u = await sbSignIn(email, password);
-      setUser(u);
-    } catch (e) {
-      setError(e instanceof Error ? e.message : 'Sign-in failed.');
-      throw e;
-    } finally {
-      setIsLoading(false);
+    const { data, error: err } = await supabase.auth.signInWithPassword({ email, password });
+    if (err) { setError(err.message); throw err; }
+    if (data.user) setUser({ id: data.user.id, email: data.user.email ?? email });
+  };
+
+  const signUp = async (email: string, password: string) => {
+    setError(null);
+    const { data, error: err } = await supabase.auth.signUp({
+      email,
+      password,
+      options: { emailRedirectTo: `${window.location.origin}/` },
+    });
+    if (err) { setError(err.message); throw err; }
+    if (data.user && data.session) {
+      setUser({ id: data.user.id, email: data.user.email ?? email });
     }
   };
 
+  const signInWithGoogle = async () => {
+    setError(null);
+    const { lovable } = await import('@/integrations/lovable/index');
+    const result = await lovable.auth.signInWithOAuth('google', {
+      redirect_uri: window.location.origin,
+    });
+    if (result.error) {
+      const msg = result.error instanceof Error ? result.error.message : 'Google sign-in failed.';
+      setError(msg);
+      throw result.error;
+    }
+    // If redirected, browser navigates away. If not, session is set already.
+  };
+
   const signOut = async () => {
-    await sbSignOut();
+    await supabase.auth.signOut();
     setUser(null);
   };
 
-  // Local mode: always authenticated, no user object needed
   const isAuthenticated = !supabaseEnabled || user !== null;
 
   return (
-    <AuthContext.Provider value={{ user, isAuthenticated, isLoading, signIn, signOut, error }}>
+    <AuthContext.Provider value={{
+      user, isAuthenticated, isLoading,
+      signIn, signUp, signInWithGoogle, signOut, error,
+    }}>
       {children}
     </AuthContext.Provider>
   );
