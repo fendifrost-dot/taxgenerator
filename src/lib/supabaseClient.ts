@@ -1,27 +1,28 @@
 /**
  * supabaseClient.ts
  *
- * Direct Supabase REST API client using native fetch.
- * NO @supabase/supabase-js package required — calls the REST API directly,
- * the same way documentParser.ts calls the Anthropic API.
+ * Auth + REST helpers for the preparer app.
  *
- * Required .env variables:
- *   VITE_SUPABASE_URL=https://your-project-ref.supabase.co
- *   VITE_SUPABASE_ANON_KEY=your-anon-key
- *   VITE_APP_URL=https://your-deployed-app.com  (for portal links)
+ * Auth is delegated to the official @supabase/supabase-js client
+ * (see src/integrations/supabase/client.ts) — this gives us
+ * persistent sessions in localStorage, automatic token refresh,
+ * and onAuthStateChange events.
+ *
+ * REST helpers below remain raw fetch (used by ingestion / portal pages
+ * that prefer no SDK overhead). They read the current access token from
+ * the official client.
  */
 
-const SUPABASE_URL = (import.meta.env.VITE_SUPABASE_URL as string | undefined) ?? '';
-const SUPABASE_ANON_KEY = (import.meta.env.VITE_SUPABASE_ANON_KEY as string | undefined) ?? '';
+import { supabase } from '@/integrations/supabase/client';
+
+const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL as string;
+const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY as string;
 
 export function isSupabaseConfigured(): boolean {
   return Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
 }
 
-// ─── Auth session ─────────────────────────────────────────────────────────────
-
-let _accessToken: string | null = sessionStorage.getItem('sb_access_token');
-let _refreshToken: string | null = sessionStorage.getItem('sb_refresh_token');
+// ─── Auth types ───────────────────────────────────────────────────────────────
 
 export interface SupabaseUser {
   id: string;
@@ -33,72 +34,59 @@ export interface AuthSession {
   accessToken: string;
 }
 
-export function getSession(): AuthSession | null {
-  if (!_accessToken) return null;
-  const userId = _decodeUserId(_accessToken);
-  if (!userId) return null;
-  return { user: { id: userId, email: '' }, accessToken: _accessToken };
-}
+let _accessToken: string | null = null;
 
-export function setSession(accessToken: string, refreshToken: string): void {
-  _accessToken = accessToken;
-  _refreshToken = refreshToken;
-  sessionStorage.setItem('sb_access_token', accessToken);
-  sessionStorage.setItem('sb_refresh_token', refreshToken);
-}
-
-export function clearSession(): void {
-  _accessToken = null;
-  _refreshToken = null;
-  sessionStorage.removeItem('sb_access_token');
-  sessionStorage.removeItem('sb_refresh_token');
-}
+// Keep the cached access token in sync with the official client so that the
+// REST helpers below send the correct bearer.
+supabase.auth.getSession().then(({ data }) => {
+  _accessToken = data.session?.access_token ?? null;
+});
+supabase.auth.onAuthStateChange((_event, session) => {
+  _accessToken = session?.access_token ?? null;
+});
 
 export function getCurrentUserId(): string | null {
-  return _accessToken ? _decodeUserId(_accessToken) : null;
-}
-
-function _decodeUserId(token: string): string | null {
+  // Synchronous best-effort: derived from the cached access token.
+  if (!_accessToken) return null;
   try {
-    const parts = token.split('.');
-    if (parts.length !== 3) return null;
-    const payload = JSON.parse(atob(parts[1])) as { sub?: string; exp?: number };
-    if (payload.exp && payload.exp * 1000 < Date.now()) {
-      clearSession();
-      return null;
-    }
+    const payload = JSON.parse(atob(_accessToken.split('.')[1])) as { sub?: string };
     return payload.sub ?? null;
   } catch {
     return null;
   }
 }
 
-// ─── Auth API ─────────────────────────────────────────────────────────────────
+// ─── Auth API (thin wrapper around the official client) ──────────────────────
 
 export async function signIn(email: string, password: string): Promise<SupabaseUser> {
-  if (!isSupabaseConfigured()) throw new Error('Supabase is not configured.');
-  const res = await fetch(`${SUPABASE_URL}/auth/v1/token?grant_type=password`, {
-    method: 'POST',
-    headers: { apikey: SUPABASE_ANON_KEY, 'Content-Type': 'application/json' },
-    body: JSON.stringify({ email, password }),
+  const { data, error } = await supabase.auth.signInWithPassword({ email, password });
+  if (error) throw new Error(error.message);
+  if (!data.user) throw new Error('Sign-in failed.');
+  return { id: data.user.id, email: data.user.email ?? email };
+}
+
+export async function signUp(email: string, password: string): Promise<SupabaseUser> {
+  const { data, error } = await supabase.auth.signUp({
+    email,
+    password,
+    options: { emailRedirectTo: `${window.location.origin}/` },
   });
-  if (!res.ok) {
-    const err = await res.json().catch(() => ({})) as { error_description?: string; msg?: string };
-    throw new Error(err.error_description ?? err.msg ?? 'Sign-in failed.');
-  }
-  const data = await res.json() as { access_token: string; refresh_token: string; user: SupabaseUser };
-  setSession(data.access_token, data.refresh_token);
-  return data.user;
+  if (error) throw new Error(error.message);
+  if (!data.user) throw new Error('Sign-up failed.');
+  return { id: data.user.id, email: data.user.email ?? email };
 }
 
 export async function signOut(): Promise<void> {
-  if (_accessToken) {
-    await fetch(`${SUPABASE_URL}/auth/v1/logout`, {
-      method: 'POST',
-      headers: { apikey: SUPABASE_ANON_KEY, Authorization: `Bearer ${_accessToken}` },
-    }).catch(() => {});
-  }
-  clearSession();
+  await supabase.auth.signOut();
+}
+
+// Legacy synchronous getter kept for AuthContext bootstrap.
+// Prefer supabase.auth.getSession() / onAuthStateChange in new code.
+export function getSession(): AuthSession | null {
+  if (!_accessToken) return null;
+  const userId = getCurrentUserId();
+  if (!userId) return null;
+  return { user: { id: userId, email: '' }, accessToken: _accessToken };
 }
 
 // ─── REST helpers ─────────────────────────────────────────────────────────────
