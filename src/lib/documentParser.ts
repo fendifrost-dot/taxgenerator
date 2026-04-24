@@ -11,7 +11,7 @@
  *  - No guessing: Claude is instructed to prefer null over speculation.
  */
 
-import { callClaudeMessages, extractText, AnthropicProxyError } from '@/lib/anthropicProxy';
+import { callClaudeMessages, extractText, AnthropicProxyError, CLAUDE_MODEL } from '@/lib/anthropicProxy';
 
 export const CONFIDENCE_THRESHOLD = 0.85;
 
