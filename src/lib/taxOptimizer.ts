@@ -13,7 +13,7 @@
  */
 
 import { OptimizerInput, OptimizationQuestion } from '@/types/client';
-import { callClaudeMessages, extractText, AnthropicProxyError } from '@/lib/anthropicProxy';
+import { callClaudeMessages, extractText, AnthropicProxyError, CLAUDE_MODEL } from '@/lib/anthropicProxy';
 
 export interface OptimizerResult {
   questions: OptimizationQuestion[];
