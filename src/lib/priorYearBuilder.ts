@@ -433,7 +433,7 @@ export async function buildPriorYearReturn(
   let raw: string;
   try {
     const data = await callClaudeMessages({
-      model: 'claude-opus-4-5',
+      model: CLAUDE_MODEL,
       max_tokens: 8192,
       system: 'You are a highly accurate tax return preparer. Return only valid JSON with no markdown fences or prose.',
       messages: [{ role: 'user', content: buildPrompt(input) }],
