@@ -126,6 +126,7 @@ function getStandardDeduction(input: Form1040Input, rules: YearTaxRules): number
 const SS_WAGE_BASES: Record<number, number> = {
   2019: 132_900, 2020: 137_700, 2021: 142_800,
   2022: 147_000, 2023: 160_200, 2024: 168_600,
+  2025: 176_100,
 };
 
 function computeScheduleSE(
@@ -152,8 +153,11 @@ function computeScheduleSE(
   const seTax   = ssTax + medTax;
   const halfSE  = seTax / 2;
 
-  // Additional Medicare 0.9% on combined wages + SE > threshold
-  const threshold = (filingStatus === 'married_filing_jointly') ? 250_000 : 200_000;
+  // Additional Medicare 0.9% on combined wages + SE > threshold (see Form 8959)
+  const threshold =
+    filingStatus === 'married_filing_jointly' ? 250_000
+    : filingStatus === 'married_filing_separately' ? 125_000
+    : 200_000;
   const additionalMedicareTax = Math.max(0, scheduleSeIncome - threshold) * 0.009;
 
   return {
@@ -253,7 +257,11 @@ function computeItemizedDeductions(input: Form1040Input, agi: number, rules: Yea
 
 // ─── Social security taxable portion ─────────────────────────────────────────
 
-function computeTaxableSSB(totalSSBenefits: number, provisionalIncome: number, filingStatus: FilingStatus): number {
+export function computeTaxableSSB(
+  totalSSBenefits: number,
+  provisionalIncome: number,
+  filingStatus: FilingStatus,
+): number {
   if (totalSSBenefits === 0) return 0;
   const threshold1 = (filingStatus === 'married_filing_jointly') ? 32_000 : 25_000;
   const threshold2 = (filingStatus === 'married_filing_jointly') ? 44_000 : 34_000;

@@ -1,0 +1,763 @@
+{
+  "form": "1040s2",
+  "year": 2025,
+  "pdfFilename": "1040s2_2025.pdf",
+  "fields": {
+    "form1_0_Page1_0_f1_01_0": {
+      "id": "form1[0].Page1[0].f1_01[0]",
+      "page": 1,
+      "rect": [
+        36.0,
+        93.9990234375,
+        445.6499938964844,
+        108.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page1_0_f1_01_0)"
+    },
+    "form1_0_Page1_0_f1_02_0": {
+      "id": "form1[0].Page1[0].f1_02[0]",
+      "page": 1,
+      "rect": [
+        447.3999938964844,
+        93.9990234375,
+        576.0,
+        108.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page1_0_f1_02_0)"
+    },
+    "form1_0_Page1_0_Line1a_ReadOrder_0_f1_03_0": {
+      "id": "form1[0].Page1[0].Line1a_ReadOrder[0].f1_03[0]",
+      "page": 1,
+      "rect": [
+        410.3999938964844,
+        144.0,
+        481.6499938964844,
+        155.9990234375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page1_0_Line1a_ReadOrder_0_f1_03_0)"
+    },
+    "form1_0_Page1_0_f1_04_0": {
+      "id": "form1[0].Page1[0].f1_04[0]",
+      "page": 1,
+      "rect": [
+        410.3999938964844,
+        186.0009765625,
+        481.6499938964844,
+        198.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page1_0_f1_04_0)"
+    },
+    "form1_0_Page1_0_f1_05_0": {
+      "id": "form1[0].Page1[0].f1_05[0]",
+      "page": 1,
+      "rect": [
+        410.3999938964844,
+        227.9990234375,
+        481.6499938964844,
+        239.99798583984375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page1_0_f1_05_0)"
+    },
+    "form1_0_Page1_0_f1_06_0": {
+      "id": "form1[0].Page1[0].f1_06[0]",
+      "page": 1,
+      "rect": [
+        410.3999938964844,
+        245.9990234375,
+        481.6499938964844,
+        257.99798583984375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page1_0_f1_06_0)"
+    },
+    "form1_0_Page1_0_Line1e_ReadOrder_0_c1_1_0": {
+      "id": "form1[0].Page1[0].Line1e_ReadOrder[0].c1_1[0]",
+      "page": 1,
+      "rect": [
+        86.4000015258789,
+        289.9989929199219,
+        94.4000015258789,
+        297.9989929199219
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (form1_0_Page1_0_Line1e_ReadOrder_0_c1_1_0)"
+    },
+    "form1_0_Page1_0_Line1e_ReadOrder_0_c1_1_1": {
+      "id": "form1[0].Page1[0].Line1e_ReadOrder[0].c1_1[1]",
+      "page": 1,
+      "rect": [
+        201.60000610351562,
+        289.9989929199219,
+        209.60000610351562,
+        297.9989929199219
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (form1_0_Page1_0_Line1e_ReadOrder_0_c1_1_1)"
+    },
+    "form1_0_Page1_0_Line1e_ReadOrder_0_c1_1_2": {
+      "id": "form1[0].Page1[0].Line1e_ReadOrder[0].c1_1[2]",
+      "page": 1,
+      "rect": [
+        86.4000015258789,
+        301.99798583984375,
+        94.4000015258789,
+        309.99798583984375
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (form1_0_Page1_0_Line1e_ReadOrder_0_c1_1_2)"
+    },
+    "form1_0_Page1_0_Line1e_ReadOrder_0_c1_1_3": {
+      "id": "form1[0].Page1[0].Line1e_ReadOrder[0].c1_1[3]",
+      "page": 1,
+      "rect": [
+        201.60000610351562,
+        301.99798583984375,
+        209.60000610351562,
+        309.99798583984375
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (form1_0_Page1_0_Line1e_ReadOrder_0_c1_1_3)"
+    },
+    "form1_0_Page1_0_f1_07_0": {
+      "id": "form1[0].Page1[0].f1_07[0]",
+      "page": 1,
+      "rect": [
+        410.3999938964844,
+        299.9989929199219,
+        481.6499938964844,
+        311.99798583984375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page1_0_f1_07_0)"
+    },
+    "form1_0_Page1_0_Line1f_ReadOrder_0_c1_2_0": {
+      "id": "form1[0].Page1[0].Line1f_ReadOrder[0].c1_2[0]",
+      "page": 1,
+      "rect": [
+        86.4000015258789,
+        343.9989929199219,
+        94.4000015258789,
+        351.9989929199219
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (form1_0_Page1_0_Line1f_ReadOrder_0_c1_2_0)"
+    },
+    "form1_0_Page1_0_Line1f_ReadOrder_0_c1_2_1": {
+      "id": "form1[0].Page1[0].Line1f_ReadOrder[0].c1_2[1]",
+      "page": 1,
+      "rect": [
+        201.60000610351562,
+        343.9989929199219,
+        209.60000610351562,
+        351.9989929199219
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (form1_0_Page1_0_Line1f_ReadOrder_0_c1_2_1)"
+    },
+    "form1_0_Page1_0_Line1f_ReadOrder_0_c1_2_2": {
+      "id": "form1[0].Page1[0].Line1f_ReadOrder[0].c1_2[2]",
+      "page": 1,
+      "rect": [
+        86.4000015258789,
+        355.99798583984375,
+        94.4000015258789,
+        363.99798583984375
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (form1_0_Page1_0_Line1f_ReadOrder_0_c1_2_2)"
+    },
+    "form1_0_Page1_0_Line1f_ReadOrder_0_c1_2_3": {
+      "id": "form1[0].Page1[0].Line1f_ReadOrder[0].c1_2[3]",
+      "page": 1,
+      "rect": [
+        201.60000610351562,
+        355.99798583984375,
+        209.60000610351562,
+        363.99798583984375
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (form1_0_Page1_0_Line1f_ReadOrder_0_c1_2_3)"
+    },
+    "form1_0_Page1_0_f1_08_0": {
+      "id": "form1[0].Page1[0].f1_08[0]",
+      "page": 1,
+      "rect": [
+        410.3999938964844,
+        353.9989929199219,
+        481.6499938964844,
+        365.99798583984375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page1_0_f1_08_0)"
+    },
+    "form1_0_Page1_0_f1_09_0": {
+      "id": "form1[0].Page1[0].f1_09[0]",
+      "page": 1,
+      "rect": [
+        230.39999389648438,
+        372.0010070800781,
+        381.6000061035156,
+        384.0010070800781
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page1_0_f1_09_0)"
+    },
+    "form1_0_Page1_0_f1_10_0": {
+      "id": "form1[0].Page1[0].f1_10[0]",
+      "page": 1,
+      "rect": [
+        410.3999938964844,
+        371.9989929199219,
+        481.6499938964844,
+        383.99798583984375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page1_0_f1_10_0)"
+    },
+    "form1_0_Page1_0_f1_11_0": {
+      "id": "form1[0].Page1[0].f1_11[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        389.9989929199219,
+        576.0,
+        401.99798583984375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page1_0_f1_11_0)"
+    },
+    "form1_0_Page1_0_f1_12_0": {
+      "id": "form1[0].Page1[0].f1_12[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        407.9989929199219,
+        576.0,
+        419.99798583984375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page1_0_f1_12_0)"
+    },
+    "form1_0_Page1_0_f1_13_0": {
+      "id": "form1[0].Page1[0].f1_13[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        425.9989929199219,
+        576.0,
+        437.99798583984375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page1_0_f1_13_0)"
+    },
+    "form1_0_Page1_0_Line4_ReadOrder_0_c1_3_0": {
+      "id": "form1[0].Page1[0].Line4_ReadOrder[0].c1_3[0]",
+      "page": 1,
+      "rect": [
+        79.19999694824219,
+        469.9989929199219,
+        87.19999694824219,
+        477.9989929199219
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (form1_0_Page1_0_Line4_ReadOrder_0_c1_3_0)"
+    },
+    "form1_0_Page1_0_Line4_ReadOrder_0_c1_4_0": {
+      "id": "form1[0].Page1[0].Line4_ReadOrder[0].c1_4[0]",
+      "page": 1,
+      "rect": [
+        158.39999389648438,
+        469.9989929199219,
+        166.39999389648438,
+        477.9989929199219
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (form1_0_Page1_0_Line4_ReadOrder_0_c1_4_0)"
+    },
+    "form1_0_Page1_0_Line4_ReadOrder_0_c1_5_0": {
+      "id": "form1[0].Page1[0].Line4_ReadOrder[0].c1_5[0]",
+      "page": 1,
+      "rect": [
+        237.60000610351562,
+        469.9989929199219,
+        245.60000610351562,
+        477.9989929199219
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (form1_0_Page1_0_Line4_ReadOrder_0_c1_5_0)"
+    },
+    "form1_0_Page1_0_Line4_ReadOrder_0_f1_14_0": {
+      "id": "form1[0].Page1[0].Line4_ReadOrder[0].f1_14[0]",
+      "page": 1,
+      "rect": [
+        252.0,
+        468.0,
+        324.0,
+        479.9989929199219
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page1_0_Line4_ReadOrder_0_f1_14_0)"
+    },
+    "form1_0_Page1_0_f1_15_0": {
+      "id": "form1[0].Page1[0].f1_15[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        468.0,
+        576.0,
+        479.9989929199219
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page1_0_f1_15_0)"
+    },
+    "form1_0_Page1_0_f1_16_0": {
+      "id": "form1[0].Page1[0].f1_16[0]",
+      "page": 1,
+      "rect": [
+        410.3999938964844,
+        486.0,
+        481.6499938964844,
+        497.9989929199219
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page1_0_f1_16_0)"
+    },
+    "form1_0_Page1_0_f1_17_0": {
+      "id": "form1[0].Page1[0].f1_17[0]",
+      "page": 1,
+      "rect": [
+        410.3999938964844,
+        504.0,
+        481.6499938964844,
+        515.9990234375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page1_0_f1_17_0)"
+    },
+    "form1_0_Page1_0_f1_18_0": {
+      "id": "form1[0].Page1[0].f1_18[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        522.0,
+        576.0,
+        533.9990234375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page1_0_f1_18_0)"
+    },
+    "form1_0_Page1_0_Line8_ReadOrder_0_c1_6_0": {
+      "id": "form1[0].Page1[0].Line8_ReadOrder[0].c1_6[0]",
+      "page": 1,
+      "rect": [
+        466.79998779296875,
+        553.9979858398438,
+        474.79998779296875,
+        561.9979858398438
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (form1_0_Page1_0_Line8_ReadOrder_0_c1_6_0)"
+    },
+    "form1_0_Page1_0_f1_19_0": {
+      "id": "form1[0].Page1[0].f1_19[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        551.9990234375,
+        576.0,
+        563.9979858398438
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page1_0_f1_19_0)"
+    },
+    "form1_0_Page1_0_f1_20_0": {
+      "id": "form1[0].Page1[0].f1_20[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        569.9990234375,
+        576.0,
+        581.9979858398438
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page1_0_f1_20_0)"
+    },
+    "form1_0_Page1_0_f1_21_0": {
+      "id": "form1[0].Page1[0].f1_21[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        581.9979858398438,
+        576.0,
+        599.9979858398438
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page1_0_f1_21_0)"
+    },
+    "form1_0_Page1_0_f1_22_0": {
+      "id": "form1[0].Page1[0].f1_22[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        605.9990234375,
+        576.0,
+        617.9979858398438
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page1_0_f1_22_0)"
+    },
+    "form1_0_Page1_0_f1_23_0": {
+      "id": "form1[0].Page1[0].f1_23[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        623.9990234375,
+        576.0,
+        635.9979858398438
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page1_0_f1_23_0)"
+    },
+    "form1_0_Page1_0_f1_24_0": {
+      "id": "form1[0].Page1[0].f1_24[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        653.9979858398438,
+        576.0,
+        665.9970092773438
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page1_0_f1_24_0)"
+    },
+    "form1_0_Page1_0_f1_25_0": {
+      "id": "form1[0].Page1[0].f1_25[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        671.9979858398438,
+        576.0,
+        683.9970092773438
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page1_0_f1_25_0)"
+    },
+    "form1_0_Page1_0_f1_26_0": {
+      "id": "form1[0].Page1[0].f1_26[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        689.9979858398438,
+        576.0,
+        701.9970092773438
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page1_0_f1_26_0)"
+    },
+    "form1_0_Page1_0_f1_27_0": {
+      "id": "form1[0].Page1[0].f1_27[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        707.9979858398438,
+        576.0,
+        719.9970092773438
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page1_0_f1_27_0)"
+    },
+    "form1_0_Page2_0_Line17a_ReadOrder_0_Line17_ReadOrder_0_f2_01_0": {
+      "id": "form1[0].Page2[0].Line17a_ReadOrder[0].Line17_ReadOrder[0].f2_01[0]",
+      "page": 2,
+      "rect": [
+        64.80000305175781,
+        96.0009765625,
+        381.6000061035156,
+        108.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page2_0_Line17a_ReadOrder_0_Line17_ReadOrder_0_f2_01_0)"
+    },
+    "form1_0_Page2_0_Line17a_ReadOrder_0_f2_02_0": {
+      "id": "form1[0].Page2[0].Line17a_ReadOrder[0].f2_02[0]",
+      "page": 2,
+      "rect": [
+        410.3999938964844,
+        96.0009765625,
+        481.6499938964844,
+        108.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page2_0_Line17a_ReadOrder_0_f2_02_0)"
+    },
+    "form1_0_Page2_0_f2_03_0": {
+      "id": "form1[0].Page2[0].f2_03[0]",
+      "page": 2,
+      "rect": [
+        410.3999938964844,
+        114.0009765625,
+        481.6499938964844,
+        126.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page2_0_f2_03_0)"
+    },
+    "form1_0_Page2_0_f2_04_0": {
+      "id": "form1[0].Page2[0].f2_04[0]",
+      "page": 2,
+      "rect": [
+        410.3999938964844,
+        132.0009765625,
+        481.6499938964844,
+        144.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page2_0_f2_04_0)"
+    },
+    "form1_0_Page2_0_f2_05_0": {
+      "id": "form1[0].Page2[0].f2_05[0]",
+      "page": 2,
+      "rect": [
+        410.3999938964844,
+        162.0,
+        481.6499938964844,
+        173.9990234375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page2_0_f2_05_0)"
+    },
+    "form1_0_Page2_0_f2_06_0": {
+      "id": "form1[0].Page2[0].f2_06[0]",
+      "page": 2,
+      "rect": [
+        410.3999938964844,
+        180.0,
+        481.6499938964844,
+        191.9990234375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page2_0_f2_06_0)"
+    },
+    "form1_0_Page2_0_f2_07_0": {
+      "id": "form1[0].Page2[0].f2_07[0]",
+      "page": 2,
+      "rect": [
+        410.3999938964844,
+        198.0,
+        481.6499938964844,
+        209.9990234375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page2_0_f2_07_0)"
+    },
+    "form1_0_Page2_0_f2_08_0": {
+      "id": "form1[0].Page2[0].f2_08[0]",
+      "page": 2,
+      "rect": [
+        410.3999938964844,
+        227.9990234375,
+        481.6499938964844,
+        239.99798583984375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page2_0_f2_08_0)"
+    },
+    "form1_0_Page2_0_f2_09_0": {
+      "id": "form1[0].Page2[0].f2_09[0]",
+      "page": 2,
+      "rect": [
+        410.3999938964844,
+        258.0009765625,
+        481.6499938964844,
+        270.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page2_0_f2_09_0)"
+    },
+    "form1_0_Page2_0_f2_10_0": {
+      "id": "form1[0].Page2[0].f2_10[0]",
+      "page": 2,
+      "rect": [
+        410.3999938964844,
+        288.0,
+        481.6499938964844,
+        299.9989929199219
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page2_0_f2_10_0)"
+    },
+    "form1_0_Page2_0_f2_11_0": {
+      "id": "form1[0].Page2[0].f2_11[0]",
+      "page": 2,
+      "rect": [
+        410.3999938964844,
+        306.0,
+        481.6499938964844,
+        317.9989929199219
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page2_0_f2_11_0)"
+    },
+    "form1_0_Page2_0_f2_12_0": {
+      "id": "form1[0].Page2[0].f2_12[0]",
+      "page": 2,
+      "rect": [
+        410.3999938964844,
+        324.0,
+        481.6499938964844,
+        335.9989929199219
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page2_0_f2_12_0)"
+    },
+    "form1_0_Page2_0_f2_13_0": {
+      "id": "form1[0].Page2[0].f2_13[0]",
+      "page": 2,
+      "rect": [
+        410.3999938964844,
+        342.0,
+        481.6499938964844,
+        353.9989929199219
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page2_0_f2_13_0)"
+    },
+    "form1_0_Page2_0_f2_14_0": {
+      "id": "form1[0].Page2[0].f2_14[0]",
+      "page": 2,
+      "rect": [
+        410.3999938964844,
+        360.0,
+        481.6499938964844,
+        371.9989929199219
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page2_0_f2_14_0)"
+    },
+    "form1_0_Page2_0_f2_15_0": {
+      "id": "form1[0].Page2[0].f2_15[0]",
+      "page": 2,
+      "rect": [
+        410.3999938964844,
+        378.0,
+        481.6499938964844,
+        389.9989929199219
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page2_0_f2_15_0)"
+    },
+    "form1_0_Page2_0_f2_16_0": {
+      "id": "form1[0].Page2[0].f2_16[0]",
+      "page": 2,
+      "rect": [
+        410.3999938964844,
+        407.9989929199219,
+        481.6499938964844,
+        419.99798583984375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page2_0_f2_16_0)"
+    },
+    "form1_0_Page2_0_f2_17_0": {
+      "id": "form1[0].Page2[0].f2_17[0]",
+      "page": 2,
+      "rect": [
+        410.3999938964844,
+        438.0010070800781,
+        481.6499938964844,
+        450.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page2_0_f2_17_0)"
+    },
+    "form1_0_Page2_0_f2_18_0": {
+      "id": "form1[0].Page2[0].f2_18[0]",
+      "page": 2,
+      "rect": [
+        410.3999938964844,
+        456.0010070800781,
+        481.6499938964844,
+        468.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page2_0_f2_18_0)"
+    },
+    "form1_0_Page2_0_Line17z_ReadOrder_0_f2_19_0": {
+      "id": "form1[0].Page2[0].Line17z_ReadOrder[0].f2_19[0]",
+      "page": 2,
+      "rect": [
+        64.80000305175781,
+        486.0,
+        381.6000061035156,
+        510.0010070800781
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page2_0_Line17z_ReadOrder_0_f2_19_0)"
+    },
+    "form1_0_Page2_0_f2_20_0": {
+      "id": "form1[0].Page2[0].f2_20[0]",
+      "page": 2,
+      "rect": [
+        410.3999938964844,
+        497.9989929199219,
+        481.6499938964844,
+        509.99798583984375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page2_0_f2_20_0)"
+    },
+    "form1_0_Page2_0_f2_21_0": {
+      "id": "form1[0].Page2[0].f2_21[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        515.9990234375,
+        576.0,
+        527.9979858398438
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page2_0_f2_21_0)"
+    },
+    "form1_0_Page2_0_f2_22_0": {
+      "id": "form1[0].Page2[0].f2_22[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        533.9990234375,
+        576.0,
+        545.9979858398438
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page2_0_f2_22_0)"
+    },
+    "form1_0_Page2_0_f2_23_0": {
+      "id": "form1[0].Page2[0].f2_23[0]",
+      "page": 2,
+      "rect": [
+        410.3999938964844,
+        551.9990234375,
+        481.6499938964844,
+        563.9979858398438
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page2_0_f2_23_0)"
+    },
+    "form1_0_Page2_0_f2_24_0": {
+      "id": "form1[0].Page2[0].f2_24[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        582.0009765625,
+        576.0,
+        594.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (form1_0_Page2_0_f2_24_0)"
+    }
+  }
+}

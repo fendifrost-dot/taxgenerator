@@ -375,6 +375,66 @@ const rules2024: YearTaxRules = {
   ],
 };
 
+// ─── 2025 ──────────────────────────────────────────────────────────────────────
+const rules2025: YearTaxRules = {
+  year: 2025,
+  standardDeduction: {
+    single: 15_000,
+    marriedFilingJointly: 30_000,
+    marriedFilingSeparately: 15_000,
+    headOfHousehold: 22_500,
+    qualifyingWidow: 30_000,
+    additionalBlindOrOver65_single: 2_000,
+    additionalBlindOrOver65_married: 1_600,
+  },
+  taxBrackets_single: [
+    { rate: 0.10, upTo: 11_925 },
+    { rate: 0.12, upTo: 48_475 },
+    { rate: 0.22, upTo: 103_350 },
+    { rate: 0.24, upTo: 197_300 },
+    { rate: 0.32, upTo: 250_525 },
+    { rate: 0.35, upTo: 626_350 },
+    { rate: 0.37, upTo: null },
+  ],
+  taxBrackets_mfj: [
+    { rate: 0.10, upTo: 23_850 },
+    { rate: 0.12, upTo: 96_950 },
+    { rate: 0.22, upTo: 206_700 },
+    { rate: 0.24, upTo: 394_600 },
+    { rate: 0.32, upTo: 501_050 },
+    { rate: 0.35, upTo: 751_600 },
+    { rate: 0.37, upTo: null },
+  ],
+  capitalGains: { rate0_upTo: 48_350, rate15_upTo: 533_400 },
+  traditionalIRA_limit: 7_000,
+  catchUp_IRA_over50: 1_000,
+  k401_limit: 23_500,
+  catchUp_401k_over50: 7_500,
+  sepIRA_limit: 70_000,
+  hsa_limit_individual: 4_300,
+  hsa_limit_family: 8_550,
+  selfEmploymentTaxRate: 0.153,
+  mileageRate_cents: 70,
+  section179_limit: 1_250_000,
+  bonusDepreciation_pct: 40,
+  childTaxCredit_perChild: 2_000,
+  childTaxCredit_refundable_limit: 1_700,
+  childCareDependentCredit_limit1: 3_000,
+  childCareDependentCredit_limit2: 6_000,
+  americanOpportunityCredit_max: 2_500,
+  lifetimeLearningCredit_max: 2_000,
+  earnedIncomeCredit_max_0children: 632,
+  earnedIncomeCredit_max_1child: 4_213,
+  earnedIncomeCredit_max_2children: 6_960,
+  earnedIncomeCredit_max_3plus: 7_830,
+  saltCap: 10_000,
+  mortgageDebtLimit: 750_000,
+  specialProvisions: [
+    'Standard deduction and bracket thresholds indexed for inflation.',
+    'QBI deduction (Section 199A) scheduled to expire after 2025 under current law.',
+  ],
+};
+
 // ─── Registry ─────────────────────────────────────────────────────────────────
 
 const ALL_RULES: Record<number, YearTaxRules> = {
@@ -384,6 +444,7 @@ const ALL_RULES: Record<number, YearTaxRules> = {
   2022: rules2022,
   2023: rules2023,
   2024: rules2024,
+  2025: rules2025,
 };
 
 export function getRulesForYear(year: number): YearTaxRules | null {

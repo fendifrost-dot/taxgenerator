@@ -1,0 +1,883 @@
+{
+  "form": "1040s1",
+  "year": 2025,
+  "pdfFilename": "1040s1_2025.pdf",
+  "fields": {
+    "topmostSubform_0_Page1_0_f1_01_0": {
+      "id": "topmostSubform[0].Page1[0].f1_01[0]",
+      "page": 1,
+      "rect": [
+        36.0,
+        93.9990234375,
+        445.6499938964844,
+        108.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_01_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_02_0": {
+      "id": "topmostSubform[0].Page1[0].f1_02[0]",
+      "page": 1,
+      "rect": [
+        446.3999938964844,
+        93.9990234375,
+        576.0,
+        108.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_02_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_03_0": {
+      "id": "topmostSubform[0].Page1[0].f1_03[0]",
+      "page": 1,
+      "rect": [
+        482.3999938964844,
+        119.9990234375,
+        576.0,
+        131.99798583984375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_03_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_04_0": {
+      "id": "topmostSubform[0].Page1[0].f1_04[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        173.9990234375,
+        576.0,
+        185.99798583984375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_04_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_05_0": {
+      "id": "topmostSubform[0].Page1[0].f1_05[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        186.0009765625,
+        576.0,
+        198.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_05_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_06_0": {
+      "id": "topmostSubform[0].Page1[0].f1_06[0]",
+      "page": 1,
+      "rect": [
+        338.3999938964844,
+        198.0,
+        475.20001220703125,
+        209.9990234375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_06_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_07_0": {
+      "id": "topmostSubform[0].Page1[0].f1_07[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        209.9990234375,
+        576.0,
+        221.99798583984375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_07_0)"
+    },
+    "topmostSubform_0_Page1_0_c1_1_0": {
+      "id": "topmostSubform[0].Page1[0].c1_1[0]",
+      "page": 1,
+      "rect": [
+        273.6000061035156,
+        224.0,
+        281.6000061035156,
+        232.0
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_1_0)"
+    },
+    "topmostSubform_0_Page1_0_c1_2_0": {
+      "id": "topmostSubform[0].Page1[0].c1_2[0]",
+      "page": 1,
+      "rect": [
+        324.0,
+        224.0,
+        332.0,
+        232.0
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_2_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_08_0": {
+      "id": "topmostSubform[0].Page1[0].f1_08[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        222.0009765625,
+        576.0,
+        234.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_08_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_09_0": {
+      "id": "topmostSubform[0].Page1[0].f1_09[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        234.0,
+        576.0,
+        245.9990234375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_09_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_10_0": {
+      "id": "topmostSubform[0].Page1[0].f1_10[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        245.9990234375,
+        576.0,
+        257.99798583984375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_10_0)"
+    },
+    "topmostSubform_0_Page1_0_Line7_ReadOrder_0_c1_3_0": {
+      "id": "topmostSubform[0].Page1[0].Line7_ReadOrder[0].c1_3[0]",
+      "page": 1,
+      "rect": [
+        448.79998779296875,
+        260.0,
+        456.79998779296875,
+        268.0
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_Line7_ReadOrder_0_c1_3_0)"
+    },
+    "topmostSubform_0_Page1_0_Line7_ReadOrder_0_f1_11_0": {
+      "id": "topmostSubform[0].Page1[0].Line7_ReadOrder[0].f1_11[0]",
+      "page": 1,
+      "rect": [
+        151.1999969482422,
+        270.0,
+        223.1999969482422,
+        281.9989929199219
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_Line7_ReadOrder_0_f1_11_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_12_0": {
+      "id": "topmostSubform[0].Page1[0].f1_12[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        270.0,
+        576.0,
+        281.9989929199219
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_12_0)"
+    },
+    "topmostSubform_0_Page1_0_Line8a_ReadOrder_0_f1_13_0": {
+      "id": "topmostSubform[0].Page1[0].Line8a_ReadOrder[0].f1_13[0]",
+      "page": 1,
+      "rect": [
+        414.3999938964844,
+        294.0010070800781,
+        478.3999938964844,
+        306.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_Line8a_ReadOrder_0_f1_13_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_14_0": {
+      "id": "topmostSubform[0].Page1[0].f1_14[0]",
+      "page": 1,
+      "rect": [
+        410.3999938964844,
+        306.0,
+        481.6499938964844,
+        317.9989929199219
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_14_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_15_0": {
+      "id": "topmostSubform[0].Page1[0].f1_15[0]",
+      "page": 1,
+      "rect": [
+        410.3999938964844,
+        317.9989929199219,
+        481.6499938964844,
+        329.99798583984375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_15_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_16_0": {
+      "id": "topmostSubform[0].Page1[0].f1_16[0]",
+      "page": 1,
+      "rect": [
+        414.3999938964844,
+        330.0010070800781,
+        478.3999938964844,
+        342.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_16_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_17_0": {
+      "id": "topmostSubform[0].Page1[0].f1_17[0]",
+      "page": 1,
+      "rect": [
+        410.3999938964844,
+        342.0,
+        481.6499938964844,
+        353.9989929199219
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_17_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_18_0": {
+      "id": "topmostSubform[0].Page1[0].f1_18[0]",
+      "page": 1,
+      "rect": [
+        410.3999938964844,
+        353.9989929199219,
+        481.6499938964844,
+        365.99798583984375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_18_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_19_0": {
+      "id": "topmostSubform[0].Page1[0].f1_19[0]",
+      "page": 1,
+      "rect": [
+        410.3999938964844,
+        366.0010070800781,
+        481.6499938964844,
+        378.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_19_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_20_0": {
+      "id": "topmostSubform[0].Page1[0].f1_20[0]",
+      "page": 1,
+      "rect": [
+        410.3999938964844,
+        378.0,
+        481.6499938964844,
+        389.9989929199219
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_20_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_21_0": {
+      "id": "topmostSubform[0].Page1[0].f1_21[0]",
+      "page": 1,
+      "rect": [
+        410.3999938964844,
+        389.9989929199219,
+        481.6499938964844,
+        401.99798583984375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_21_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_22_0": {
+      "id": "topmostSubform[0].Page1[0].f1_22[0]",
+      "page": 1,
+      "rect": [
+        410.3999938964844,
+        402.0010070800781,
+        481.6499938964844,
+        414.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_22_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_23_0": {
+      "id": "topmostSubform[0].Page1[0].f1_23[0]",
+      "page": 1,
+      "rect": [
+        410.3999938964844,
+        414.0,
+        481.6499938964844,
+        425.9989929199219
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_23_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_24_0": {
+      "id": "topmostSubform[0].Page1[0].f1_24[0]",
+      "page": 1,
+      "rect": [
+        410.3999938964844,
+        438.0010070800781,
+        481.6499938964844,
+        450.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_24_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_25_0": {
+      "id": "topmostSubform[0].Page1[0].f1_25[0]",
+      "page": 1,
+      "rect": [
+        410.3999938964844,
+        450.0,
+        481.6499938964844,
+        461.9989929199219
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_25_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_26_0": {
+      "id": "topmostSubform[0].Page1[0].f1_26[0]",
+      "page": 1,
+      "rect": [
+        410.3999938964844,
+        461.9989929199219,
+        481.6499938964844,
+        473.99798583984375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_26_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_27_0": {
+      "id": "topmostSubform[0].Page1[0].f1_27[0]",
+      "page": 1,
+      "rect": [
+        410.3999938964844,
+        474.0010070800781,
+        481.6499938964844,
+        486.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_27_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_28_0": {
+      "id": "topmostSubform[0].Page1[0].f1_28[0]",
+      "page": 1,
+      "rect": [
+        410.3999938964844,
+        486.0,
+        481.6499938964844,
+        497.9989929199219
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_28_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_29_0": {
+      "id": "topmostSubform[0].Page1[0].f1_29[0]",
+      "page": 1,
+      "rect": [
+        410.3999938964844,
+        497.9989929199219,
+        481.6499938964844,
+        509.99798583984375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_29_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_30_0": {
+      "id": "topmostSubform[0].Page1[0].f1_30[0]",
+      "page": 1,
+      "rect": [
+        410.3999938964844,
+        510.0010070800781,
+        481.6499938964844,
+        522.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_30_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_31_0": {
+      "id": "topmostSubform[0].Page1[0].f1_31[0]",
+      "page": 1,
+      "rect": [
+        414.3999938964844,
+        533.9990234375,
+        478.3999938964844,
+        545.9979858398438
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_31_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_32_0": {
+      "id": "topmostSubform[0].Page1[0].f1_32[0]",
+      "page": 1,
+      "rect": [
+        410.3999938964844,
+        558.0,
+        481.6499938964844,
+        569.9990234375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_32_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_33_0": {
+      "id": "topmostSubform[0].Page1[0].f1_33[0]",
+      "page": 1,
+      "rect": [
+        410.3999938964844,
+        569.9990234375,
+        481.6499938964844,
+        581.9979858398438
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_33_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_34_0": {
+      "id": "topmostSubform[0].Page1[0].f1_34[0]",
+      "page": 1,
+      "rect": [
+        410.3999938964844,
+        594.0,
+        481.6499938964844,
+        605.9990234375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_34_0)"
+    },
+    "topmostSubform_0_Page1_0_Line8z_ReadOrder_0_f1_35_0": {
+      "id": "topmostSubform[0].Page1[0].Line8z_ReadOrder[0].f1_35[0]",
+      "page": 1,
+      "rect": [
+        64.80000305175781,
+        618.0009765625,
+        381.6000061035156,
+        642.0020141601562
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_Line8z_ReadOrder_0_f1_35_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_36_0": {
+      "id": "topmostSubform[0].Page1[0].f1_36[0]",
+      "page": 1,
+      "rect": [
+        410.3999938964844,
+        630.0,
+        481.6499938964844,
+        641.9990234375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_36_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_37_0": {
+      "id": "topmostSubform[0].Page1[0].f1_37[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        641.9990234375,
+        576.0,
+        653.9979858398438
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_37_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_38_0": {
+      "id": "topmostSubform[0].Page1[0].f1_38[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        666.0,
+        576.0,
+        677.9990234375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_38_0)"
+    },
+    "topmostSubform_0_Page2_0_f2_01_0": {
+      "id": "topmostSubform[0].Page2[0].f2_01[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        60.0009765625,
+        576.0,
+        72.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_01_0)"
+    },
+    "topmostSubform_0_Page2_0_f2_02_0": {
+      "id": "topmostSubform[0].Page2[0].f2_02[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        83.9990234375,
+        576.0,
+        95.99798583984375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_02_0)"
+    },
+    "topmostSubform_0_Page2_0_f2_03_0": {
+      "id": "topmostSubform[0].Page2[0].f2_03[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        96.0009765625,
+        576.0,
+        108.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_03_0)"
+    },
+    "topmostSubform_0_Page2_0_c2_1_0": {
+      "id": "topmostSubform[0].Page2[0].c2_1[0]",
+      "page": 2,
+      "rect": [
+        185.8000030517578,
+        121.99798583984375,
+        193.8000030517578,
+        129.99798583984375
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_c2_1_0)"
+    },
+    "topmostSubform_0_Page2_0_f2_04_0": {
+      "id": "topmostSubform[0].Page2[0].f2_04[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        119.9990234375,
+        576.0,
+        131.99798583984375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_04_0)"
+    },
+    "topmostSubform_0_Page2_0_f2_05_0": {
+      "id": "topmostSubform[0].Page2[0].f2_05[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        132.0009765625,
+        576.0,
+        144.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_05_0)"
+    },
+    "topmostSubform_0_Page2_0_f2_06_0": {
+      "id": "topmostSubform[0].Page2[0].f2_06[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        144.0,
+        576.0,
+        155.9990234375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_06_0)"
+    },
+    "topmostSubform_0_Page2_0_f2_07_0": {
+      "id": "topmostSubform[0].Page2[0].f2_07[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        155.9990234375,
+        576.0,
+        167.99798583984375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_07_0)"
+    },
+    "topmostSubform_0_Page2_0_f2_08_0": {
+      "id": "topmostSubform[0].Page2[0].f2_08[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        168.0009765625,
+        576.0,
+        180.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_08_0)"
+    },
+    "topmostSubform_0_Page2_0_f2_09_0": {
+      "id": "topmostSubform[0].Page2[0].f2_09[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        180.0,
+        576.0,
+        191.9990234375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_09_0)"
+    },
+    "topmostSubform_0_Page2_0_Line19b_CombField_0_f2_10_0": {
+      "id": "topmostSubform[0].Page2[0].Line19b_CombField[0].f2_10[0]",
+      "page": 2,
+      "rect": [
+        403.20001220703125,
+        191.9990234375,
+        475.20001220703125,
+        203.99798583984375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Line19b_CombField_0_f2_10_0)"
+    },
+    "topmostSubform_0_Page2_0_f2_11_0": {
+      "id": "topmostSubform[0].Page2[0].f2_11[0]",
+      "page": 2,
+      "rect": [
+        338.3999938964844,
+        204.0009765625,
+        475.20001220703125,
+        216.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_11_0)"
+    },
+    "topmostSubform_0_Page2_0_c2_2_0": {
+      "id": "topmostSubform[0].Page2[0].c2_2[0]",
+      "page": 2,
+      "rect": [
+        185.8000030517578,
+        229.99798583984375,
+        193.8000030517578,
+        237.99798583984375
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_c2_2_0)"
+    },
+    "topmostSubform_0_Page2_0_f2_12_0": {
+      "id": "topmostSubform[0].Page2[0].f2_12[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        227.9990234375,
+        576.0,
+        239.99798583984375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_12_0)"
+    },
+    "topmostSubform_0_Page2_0_f2_13_0": {
+      "id": "topmostSubform[0].Page2[0].f2_13[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        240.0009765625,
+        576.0,
+        252.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_13_0)"
+    },
+    "topmostSubform_0_Page2_0_f2_14_0": {
+      "id": "topmostSubform[0].Page2[0].f2_14[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        252.0,
+        576.0,
+        263.9990234375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_14_0)"
+    },
+    "topmostSubform_0_Page2_0_f2_15_0": {
+      "id": "topmostSubform[0].Page2[0].f2_15[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        263.9990234375,
+        576.0,
+        275.99798583984375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_15_0)"
+    },
+    "topmostSubform_0_Page2_0_Line24a_ReadOrder_0_f2_16_0": {
+      "id": "topmostSubform[0].Page2[0].Line24a_ReadOrder[0].f2_16[0]",
+      "page": 2,
+      "rect": [
+        410.3999938964844,
+        288.0,
+        481.6499938964844,
+        299.9989929199219
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Line24a_ReadOrder_0_f2_16_0)"
+    },
+    "topmostSubform_0_Page2_0_f2_17_0": {
+      "id": "topmostSubform[0].Page2[0].f2_17[0]",
+      "page": 2,
+      "rect": [
+        410.3999938964844,
+        312.0010070800781,
+        481.6499938964844,
+        324.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_17_0)"
+    },
+    "topmostSubform_0_Page2_0_f2_18_0": {
+      "id": "topmostSubform[0].Page2[0].f2_18[0]",
+      "page": 2,
+      "rect": [
+        410.3999938964844,
+        335.9989929199219,
+        481.6499938964844,
+        347.99798583984375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_18_0)"
+    },
+    "topmostSubform_0_Page2_0_f2_19_0": {
+      "id": "topmostSubform[0].Page2[0].f2_19[0]",
+      "page": 2,
+      "rect": [
+        410.3999938964844,
+        348.0010070800781,
+        481.6499938964844,
+        360.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_19_0)"
+    },
+    "topmostSubform_0_Page2_0_f2_20_0": {
+      "id": "topmostSubform[0].Page2[0].f2_20[0]",
+      "page": 2,
+      "rect": [
+        410.3999938964844,
+        371.9989929199219,
+        481.6499938964844,
+        383.99798583984375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_20_0)"
+    },
+    "topmostSubform_0_Page2_0_f2_21_0": {
+      "id": "topmostSubform[0].Page2[0].f2_21[0]",
+      "page": 2,
+      "rect": [
+        410.3999938964844,
+        384.0010070800781,
+        481.6499938964844,
+        396.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_21_0)"
+    },
+    "topmostSubform_0_Page2_0_f2_22_0": {
+      "id": "topmostSubform[0].Page2[0].f2_22[0]",
+      "page": 2,
+      "rect": [
+        410.3999938964844,
+        396.0,
+        481.6499938964844,
+        407.9989929199219
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_22_0)"
+    },
+    "topmostSubform_0_Page2_0_f2_23_0": {
+      "id": "topmostSubform[0].Page2[0].f2_23[0]",
+      "page": 2,
+      "rect": [
+        410.3999938964844,
+        420.0010070800781,
+        481.6499938964844,
+        432.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_23_0)"
+    },
+    "topmostSubform_0_Page2_0_f2_24_0": {
+      "id": "topmostSubform[0].Page2[0].f2_24[0]",
+      "page": 2,
+      "rect": [
+        410.3999938964844,
+        443.9989929199219,
+        481.6499938964844,
+        455.99798583984375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_24_0)"
+    },
+    "topmostSubform_0_Page2_0_f2_25_0": {
+      "id": "topmostSubform[0].Page2[0].f2_25[0]",
+      "page": 2,
+      "rect": [
+        410.3999938964844,
+        456.0010070800781,
+        481.6499938964844,
+        468.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_25_0)"
+    },
+    "topmostSubform_0_Page2_0_f2_26_0": {
+      "id": "topmostSubform[0].Page2[0].f2_26[0]",
+      "page": 2,
+      "rect": [
+        410.3999938964844,
+        468.0,
+        481.6499938964844,
+        479.9989929199219
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_26_0)"
+    },
+    "topmostSubform_0_Page2_0_Line24z_ReadOrder_0_f2_27_0": {
+      "id": "topmostSubform[0].Page2[0].Line24z_ReadOrder[0].f2_27[0]",
+      "page": 2,
+      "rect": [
+        64.80000305175781,
+        492.0010070800781,
+        381.6000061035156,
+        516.0020141601562
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Line24z_ReadOrder_0_f2_27_0)"
+    },
+    "topmostSubform_0_Page2_0_f2_28_0": {
+      "id": "topmostSubform[0].Page2[0].f2_28[0]",
+      "page": 2,
+      "rect": [
+        410.3999938964844,
+        504.0,
+        481.6499938964844,
+        515.9990234375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_28_0)"
+    },
+    "topmostSubform_0_Page2_0_f2_29_0": {
+      "id": "topmostSubform[0].Page2[0].f2_29[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        515.9990234375,
+        576.0,
+        527.9979858398438
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_29_0)"
+    },
+    "topmostSubform_0_Page2_0_f2_30_0": {
+      "id": "topmostSubform[0].Page2[0].f2_30[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        540.0,
+        576.0,
+        551.9990234375
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_30_0)"
+    }
+  }
+}
