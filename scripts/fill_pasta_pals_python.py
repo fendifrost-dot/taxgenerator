@@ -51,6 +51,10 @@ BIZ_ADDRESS = '2828 N Central Ave Ste 1000'
 BIZ_CSZ = 'Phoenix, AZ 85004'
 PRINCIPAL_BUSINESS = 'Design and consulting services'
 NAICS_CODE = '541430'
+# Schedule C questions I/J (1099). Defaults preserve the frozen Pasta Pals output;
+# forms._identity_from_config overrides these per client config.
+MADE_PAYMENTS_1099 = 'yes'
+FILED_1099S = 'no'
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -763,11 +767,19 @@ def fill_1040sc(d):
     page1 += comb_draws(460.8, 547.2, 6, 663.5, NAICS_CODE)     # Box B
     page1 += comb_draws(446.4, 576.0, 9, 638.5, EIN)            # Box D EIN
 
-    # Checkboxes — F Cash, G Yes, I Yes, J No
+    # Checkboxes — F Cash, G Yes, then config-driven 1099 questions I & J.
+    # Columns: Yes x=517 / No x=553.  Rows: question I y=564, question J y=552.
     page1.append((169, 599, 'X', 11))   # F Cash
     page1.append((517, 588, 'X', 11))   # G Yes
-    page1.append((517, 564, 'X', 11))   # I Yes (1099 payments)
-    page1.append((553, 552, 'X', 11))   # J No (didn't file 1099s)
+    if str(MADE_PAYMENTS_1099).lower() == 'yes':
+        page1.append((517, 564, 'X', 11))   # I Yes (made payments requiring 1099)
+        # Question J only applies when I = Yes
+        if str(FILED_1099S).lower() == 'yes':
+            page1.append((517, 552, 'X', 11))   # J Yes (filed required 1099s)
+        else:
+            page1.append((553, 552, 'X', 11))   # J No
+    else:
+        page1.append((553, 564, 'X', 11))   # I No — leave J blank (N/A)
 
     # Income (right column)
     put('p1.L1', fmt(d['gross']), align='right', x_pad=2)

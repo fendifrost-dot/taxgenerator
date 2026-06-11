@@ -44,6 +44,8 @@ def _identity_from_config(cfg):
         'BIZ_CSZ':        sc.get('biz_csz', ''),
         'PRINCIPAL_BUSINESS': sc.get('principal_business', ''),
         'NAICS_CODE':     sc.get('naics_code', ''),
+        'MADE_PAYMENTS_1099': sc.get('made_payments_requiring_1099', 'yes'),
+        'FILED_1099S':    sc.get('filed_required_1099s', 'no'),
     }
 
 

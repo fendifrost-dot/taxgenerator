@@ -29,8 +29,8 @@
     "biz_csz": "",
     "accounting_method": "cash",
     "material_participation": "yes",
-    "made_payments_requiring_1099": "yes",
-    "filed_required_1099s": "no"
+    "made_payments_requiring_1099": "no",
+    "filed_required_1099s": ""
   },
   "other_income": {
     "w2_wages": 0,
