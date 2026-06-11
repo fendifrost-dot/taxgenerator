@@ -1,0 +1,42 @@
+{
+  "client_id": "jacques_potts",
+  "taxpayer": {
+    "name": "Jacques Potts",
+    "ssn": "321-54-9876",
+    "year_of_birth": "1988",
+    "address": "742 Evergreen Terrace",
+    "city": "Chicago",
+    "state": "IL",
+    "zip": "60614",
+    "email": "jacques.potts@example.com",
+    "filing_status": "single"
+  },
+  "filing_status": "single",
+  "w2_wages": 0,
+  "taxable_interest": 0,
+  "ordinary_dividends": 0,
+  "federal_withholding": 0,
+  "estimated_payments": 0,
+  "schedule_c": {
+    "business_name": "Pasta Pals",
+    "gross_receipts": 95000,
+    "returns_allowances": 0,
+    "cogs": 12000,
+    "expenses": {
+      "advertising": 2500,
+      "contract_labor": 18000,
+      "supplies": 8500,
+      "rent": 14400,
+      "utilities": 4200,
+      "insurance": 1800,
+      "meals": 3200,
+      "other": 2649
+    },
+    "net_profit": 2666
+  },
+  "federal_agi": 2666,
+  "amendment_explanation": "Amending 2024 federal and Illinois returns to correct Schedule C (Pasta Pals) business expenses per completed records review. Federal AGI decreased; Illinois base income and tax recomputed from amended federal AGI.",
+  "il": {
+    "total_payments": 0
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "client_id": "jacques_potts",
+  "taxpayer": {
+    "name": "Jacques Potts",
+    "ssn": "321-54-9876",
+    "year_of_birth": "1988",
+    "address": "742 Evergreen Terrace",
+    "city": "Chicago",
+    "state": "IL",
+    "zip": "60614",
+    "email": "jacques.potts@example.com",
+    "filing_status": "single"
+  },
+  "filing_status": "single",
+  "w2_wages": 0,
+  "taxable_interest": 0,
+  "ordinary_dividends": 0,
+  "federal_withholding": 0,
+  "estimated_payments": 0,
+  "schedule_c": {
+    "business_name": "Pasta Pals",
+    "gross_receipts": 95000,
+    "returns_allowances": 0,
+    "cogs": 12000,
+    "expenses": {
+      "advertising": 2500,
+      "contract_labor": 18000,
+      "supplies": 8500,
+      "rent": 14400,
+      "utilities": 4200,
+      "insurance": 1800,
+      "meals": 3200,
+      "other": 35000
+    },
+    "net_profit": 42081
+  },
+  "federal_agi": 42081,
+  "federal_as_filed": {
+    "line11_agi": 42081
+  },
+  "il_as_filed": {
+    "line1_federal_agi": 42081,
+    "line4_total_income": 42081,
+    "line9_il_base_income": 42081,
+    "line10_exemption": 2775,
+    "line11_net_income": 39306,
+    "line12_tax": 1946,
+    "line14_income_tax": 1946,
+    "line23_total_tax": 1946,
+    "total_payments": 0,
+    "overpayment": 0,
+    "amount_owed": 1946
+  }
+}
