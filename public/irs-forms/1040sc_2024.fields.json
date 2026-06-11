@@ -8,9 +8,9 @@
       "page": 1,
       "rect": [
         36.0,
-        93.9990234375,
-        445.6499938964844,
-        108.0
+        684.0,
+        445.65,
+        698.001
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_1_0)"
@@ -19,10 +19,10 @@
       "id": "topmostSubform[0].Page1[0].f1_2[0]",
       "page": 1,
       "rect": [
-        446.3999938964844,
-        93.9990234375,
+        446.4,
+        685.0,
         576.0,
-        107.0
+        698.001
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_2_0)"
@@ -32,9 +32,9 @@
       "page": 1,
       "rect": [
         36.0,
-        118.0,
-        444.3999938964844,
-        132.0009765625
+        659.999,
+        444.4,
+        674.0
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_3_0)"
@@ -43,10 +43,10 @@
       "id": "topmostSubform[0].Page1[0].BComb[0].f1_4[0]",
       "page": 1,
       "rect": [
-        460.79998779296875,
-        119.9990234375,
-        547.2000122070312,
-        130.99798583984375
+        460.8,
+        661.002,
+        547.2,
+        672.001
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_BComb_0_f1_4_0)"
@@ -56,9 +56,9 @@
       "page": 1,
       "rect": [
         36.0,
-        142.0009765625,
-        445.6499938964844,
-        156.00201416015625
+        635.998,
+        445.65,
+        649.999
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_5_0)"
@@ -67,10 +67,10 @@
       "id": "topmostSubform[0].Page1[0].DComb[0].f1_6[0]",
       "page": 1,
       "rect": [
-        446.3999938964844,
-        142.0009765625,
+        446.4,
+        635.998,
         576.0,
-        156.00201416015625
+        649.999
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_DComb_0_f1_6_0)"
@@ -79,10 +79,10 @@
       "id": "topmostSubform[0].Page1[0].f1_7[0]",
       "page": 1,
       "rect": [
-        230.39999389648438,
-        155.9990234375,
+        230.4,
+        624.002,
         576.0,
-        167.99798583984375
+        636.001
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_7_0)"
@@ -91,10 +91,10 @@
       "id": "topmostSubform[0].Page1[0].f1_8[0]",
       "page": 1,
       "rect": [
-        230.39999389648438,
-        168.0009765625,
+        230.4,
+        612.0,
         576.0,
-        180.0
+        623.999
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_8_0)"
@@ -103,10 +103,10 @@
       "id": "topmostSubform[0].Page1[0].c1_1[0]",
       "page": 1,
       "rect": [
-        168.8000030517578,
-        182.9990234375,
-        176.8000030517578,
-        190.9990234375
+        168.8,
+        601.001,
+        176.8,
+        609.001
       ],
       "type": "checkbox",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_1_0)"
@@ -115,10 +115,10 @@
       "id": "topmostSubform[0].Page1[0].c1_1[1]",
       "page": 1,
       "rect": [
-        233.60000610351562,
-        182.9990234375,
-        241.60000610351562,
-        190.9990234375
+        233.6,
+        601.001,
+        241.6,
+        609.001
       ],
       "type": "checkbox",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_1_1)"
@@ -127,10 +127,10 @@
       "id": "topmostSubform[0].Page1[0].c1_1[2]",
       "page": 1,
       "rect": [
-        305.6000061035156,
-        182.9990234375,
-        313.6000061035156,
-        190.9990234375
+        305.6,
+        601.001,
+        313.6,
+        609.001
       ],
       "type": "checkbox",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_1_2)"
@@ -139,10 +139,10 @@
       "id": "topmostSubform[0].Page1[0].f1_9[0]",
       "page": 1,
       "rect": [
-        374.3999938964844,
-        180.0,
+        374.4,
+        600.001,
         576.0,
-        191.9990234375
+        612.0
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_9_0)"
@@ -151,10 +151,10 @@
       "id": "topmostSubform[0].Page1[0].c1_2[0]",
       "page": 1,
       "rect": [
-        514.4000244140625,
-        193.99798583984375,
-        522.4000244140625,
-        201.99798583984375
+        514.4,
+        590.002,
+        522.4,
+        598.002
       ],
       "type": "checkbox",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_2_0)"
@@ -163,10 +163,10 @@
       "id": "topmostSubform[0].Page1[0].c1_2[1]",
       "page": 1,
       "rect": [
-        550.4000244140625,
-        193.99798583984375,
-        558.4000244140625,
-        201.99798583984375
+        550.4,
+        590.002,
+        558.4,
+        598.002
       ],
       "type": "checkbox",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_2_1)"
@@ -175,10 +175,10 @@
       "id": "topmostSubform[0].Page1[0].c1_3[0]",
       "page": 1,
       "rect": [
-        514.4000244140625,
-        206.0,
-        522.4000244140625,
-        214.0
+        514.4,
+        578.0,
+        522.4,
+        586.0
       ],
       "type": "checkbox",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_3_0)"
@@ -187,10 +187,10 @@
       "id": "topmostSubform[0].Page1[0].c1_4[0]",
       "page": 1,
       "rect": [
-        514.4000244140625,
-        217.9990234375,
-        522.4000244140625,
-        225.9990234375
+        514.4,
+        566.001,
+        522.4,
+        574.001
       ],
       "type": "checkbox",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_4_0)"
@@ -199,10 +199,10 @@
       "id": "topmostSubform[0].Page1[0].c1_4[1]",
       "page": 1,
       "rect": [
-        550.4000244140625,
-        217.9990234375,
-        558.4000244140625,
-        225.9990234375
+        550.4,
+        566.001,
+        558.4,
+        574.001
       ],
       "type": "checkbox",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_4_1)"
@@ -211,10 +211,10 @@
       "id": "topmostSubform[0].Page1[0].c1_5[0]",
       "page": 1,
       "rect": [
-        514.4000244140625,
-        229.99798583984375,
-        522.4000244140625,
-        237.99798583984375
+        514.4,
+        554.002,
+        522.4,
+        562.002
       ],
       "type": "checkbox",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_5_0)"
@@ -223,10 +223,10 @@
       "id": "topmostSubform[0].Page1[0].c1_5[1]",
       "page": 1,
       "rect": [
-        550.4000244140625,
-        229.99798583984375,
-        558.4000244140625,
-        237.99798583984375
+        550.4,
+        554.002,
+        558.4,
+        562.002
       ],
       "type": "checkbox",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_5_1)"
@@ -235,10 +235,10 @@
       "id": "topmostSubform[0].Page1[0].c1_6[0]",
       "page": 1,
       "rect": [
-        433.9989929199219,
-        265.99798583984375,
-        441.9989929199219,
-        273.99798583984375
+        433.999,
+        518.002,
+        441.999,
+        526.002
       ],
       "type": "checkbox",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_6_0)"
@@ -247,10 +247,10 @@
       "id": "topmostSubform[0].Page1[0].f1_10[0]",
       "page": 1,
       "rect": [
-        475.20001220703125,
-        263.9990234375,
+        475.2,
+        516.002,
         576.0,
-        275.99798583984375
+        528.001
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_10_0)"
@@ -259,10 +259,10 @@
       "id": "topmostSubform[0].Page1[0].f1_11[0]",
       "page": 1,
       "rect": [
-        475.20001220703125,
-        276.0009765625,
+        475.2,
+        504.0,
         576.0,
-        288.0
+        515.999
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_11_0)"
@@ -271,10 +271,10 @@
       "id": "topmostSubform[0].Page1[0].f1_12[0]",
       "page": 1,
       "rect": [
-        475.20001220703125,
-        288.0,
+        475.2,
+        492.001,
         576.0,
-        299.9989929199219
+        504.0
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_12_0)"
@@ -283,10 +283,10 @@
       "id": "topmostSubform[0].Page1[0].f1_13[0]",
       "page": 1,
       "rect": [
-        475.20001220703125,
-        299.9989929199219,
+        475.2,
+        480.002,
         576.0,
-        311.99798583984375
+        492.001
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_13_0)"
@@ -295,10 +295,10 @@
       "id": "topmostSubform[0].Page1[0].f1_14[0]",
       "page": 1,
       "rect": [
-        475.20001220703125,
-        312.0010070800781,
+        475.2,
+        468.0,
         576.0,
-        324.0
+        479.999
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_14_0)"
@@ -307,10 +307,10 @@
       "id": "topmostSubform[0].Page1[0].f1_15[0]",
       "page": 1,
       "rect": [
-        475.20001220703125,
-        324.0,
+        475.2,
+        456.001,
         576.0,
-        335.9989929199219
+        468.0
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_15_0)"
@@ -319,10 +319,10 @@
       "id": "topmostSubform[0].Page1[0].f1_16[0]",
       "page": 1,
       "rect": [
-        475.20001220703125,
-        335.9989929199219,
+        475.2,
+        444.002,
         576.0,
-        347.99798583984375
+        456.001
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_16_0)"
@@ -331,10 +331,10 @@
       "id": "topmostSubform[0].Page1[0].Lines8-17[0].f1_17[0]",
       "page": 1,
       "rect": [
-        194.39999389648438,
-        360.0,
-        294.45001220703125,
-        371.9989929199219
+        194.4,
+        420.001,
+        294.45,
+        432.0
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_Lines8_17_0_f1_17_0)"
@@ -343,10 +343,10 @@
       "id": "topmostSubform[0].Page1[0].Lines8-17[0].f1_18[0]",
       "page": 1,
       "rect": [
-        194.39999389648438,
-        384.0010070800781,
-        294.45001220703125,
-        396.0
+        194.4,
+        396.0,
+        294.45,
+        407.999
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_Lines8_17_0_f1_18_0)"
@@ -355,10 +355,10 @@
       "id": "topmostSubform[0].Page1[0].Lines8-17[0].f1_19[0]",
       "page": 1,
       "rect": [
-        194.39999389648438,
-        396.0,
-        294.45001220703125,
-        407.9989929199219
+        194.4,
+        384.001,
+        294.45,
+        396.0
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_Lines8_17_0_f1_19_0)"
@@ -367,10 +367,10 @@
       "id": "topmostSubform[0].Page1[0].Lines8-17[0].f1_20[0]",
       "page": 1,
       "rect": [
-        194.39999389648438,
-        407.9989929199219,
-        294.45001220703125,
-        419.99798583984375
+        194.4,
+        372.002,
+        294.45,
+        384.001
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_Lines8_17_0_f1_20_0)"
@@ -379,10 +379,10 @@
       "id": "topmostSubform[0].Page1[0].Lines8-17[0].f1_21[0]",
       "page": 1,
       "rect": [
-        194.39999389648438,
-        420.0010070800781,
-        294.45001220703125,
-        432.0
+        194.4,
+        360.0,
+        294.45,
+        371.999
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_Lines8_17_0_f1_21_0)"
@@ -391,10 +391,10 @@
       "id": "topmostSubform[0].Page1[0].Lines8-17[0].f1_22[0]",
       "page": 1,
       "rect": [
-        194.39999389648438,
-        456.0010070800781,
-        294.45001220703125,
-        468.0
+        194.4,
+        324.0,
+        294.45,
+        335.999
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_Lines8_17_0_f1_22_0)"
@@ -403,10 +403,10 @@
       "id": "topmostSubform[0].Page1[0].Lines8-17[0].f1_23[0]",
       "page": 1,
       "rect": [
-        194.39999389648438,
-        479.9989929199219,
-        294.45001220703125,
-        491.99798583984375
+        194.4,
+        300.002,
+        294.45,
+        312.001
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_Lines8_17_0_f1_23_0)"
@@ -415,10 +415,10 @@
       "id": "topmostSubform[0].Page1[0].Lines8-17[0].f1_24[0]",
       "page": 1,
       "rect": [
-        194.39999389648438,
-        492.0010070800781,
-        294.45001220703125,
-        504.0
+        194.4,
+        288.0,
+        294.45,
+        299.999
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_Lines8_17_0_f1_24_0)"
@@ -427,10 +427,10 @@
       "id": "topmostSubform[0].Page1[0].Lines8-17[0].f1_25[0]",
       "page": 1,
       "rect": [
-        194.39999389648438,
-        515.9990234375,
-        294.45001220703125,
-        527.9979858398438
+        194.4,
+        264.002,
+        294.45,
+        276.001
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_Lines8_17_0_f1_25_0)"
@@ -439,10 +439,10 @@
       "id": "topmostSubform[0].Page1[0].Lines8-17[0].f1_26[0]",
       "page": 1,
       "rect": [
-        194.39999389648438,
-        528.0009765625,
-        294.45001220703125,
-        540.0
+        194.4,
+        252.0,
+        294.45,
+        263.999
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_Lines8_17_0_f1_26_0)"
@@ -451,10 +451,10 @@
       "id": "topmostSubform[0].Page1[0].Lines8-17[0].f1_27[0]",
       "page": 1,
       "rect": [
-        194.39999389648438,
-        540.0,
-        294.45001220703125,
-        551.9990234375
+        194.4,
+        240.001,
+        294.45,
+        252.0
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_Lines8_17_0_f1_27_0)"
@@ -463,10 +463,10 @@
       "id": "topmostSubform[0].Page1[0].Lines18-27[0].f1_28[0]",
       "page": 1,
       "rect": [
-        475.20001220703125,
-        360.0,
+        475.2,
+        420.001,
         576.0,
-        371.9989929199219
+        432.0
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_Lines18_27_0_f1_28_0)"
@@ -475,10 +475,10 @@
       "id": "topmostSubform[0].Page1[0].Lines18-27[0].f1_29[0]",
       "page": 1,
       "rect": [
-        475.20001220703125,
-        371.9989929199219,
+        475.2,
+        408.002,
         576.0,
-        383.99798583984375
+        420.001
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_Lines18_27_0_f1_29_0)"
@@ -487,10 +487,10 @@
       "id": "topmostSubform[0].Page1[0].Lines18-27[0].f1_30[0]",
       "page": 1,
       "rect": [
-        475.20001220703125,
-        396.0,
+        475.2,
+        384.001,
         576.0,
-        407.9989929199219
+        396.0
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_Lines18_27_0_f1_30_0)"
@@ -499,10 +499,10 @@
       "id": "topmostSubform[0].Page1[0].Lines18-27[0].f1_31[0]",
       "page": 1,
       "rect": [
-        475.20001220703125,
-        407.9989929199219,
+        475.2,
+        372.002,
         576.0,
-        419.99798583984375
+        384.001
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_Lines18_27_0_f1_31_0)"
@@ -511,10 +511,10 @@
       "id": "topmostSubform[0].Page1[0].Lines18-27[0].f1_32[0]",
       "page": 1,
       "rect": [
-        475.20001220703125,
-        420.0010070800781,
+        475.2,
+        360.0,
         576.0,
-        432.0
+        371.999
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_Lines18_27_0_f1_32_0)"
@@ -523,10 +523,10 @@
       "id": "topmostSubform[0].Page1[0].Lines18-27[0].f1_33[0]",
       "page": 1,
       "rect": [
-        475.20001220703125,
-        432.0,
+        475.2,
+        348.001,
         576.0,
-        443.9989929199219
+        360.0
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_Lines18_27_0_f1_33_0)"
@@ -535,10 +535,10 @@
       "id": "topmostSubform[0].Page1[0].Lines18-27[0].f1_34[0]",
       "page": 1,
       "rect": [
-        475.20001220703125,
-        443.9989929199219,
+        475.2,
+        336.002,
         576.0,
-        455.99798583984375
+        348.001
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_Lines18_27_0_f1_34_0)"
@@ -547,10 +547,10 @@
       "id": "topmostSubform[0].Page1[0].Lines18-27[0].f1_35[0]",
       "page": 1,
       "rect": [
-        475.20001220703125,
-        468.0,
+        475.2,
+        312.001,
         576.0,
-        479.9989929199219
+        324.0
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_Lines18_27_0_f1_35_0)"
@@ -559,10 +559,10 @@
       "id": "topmostSubform[0].Page1[0].Lines18-27[0].f1_36[0]",
       "page": 1,
       "rect": [
-        475.20001220703125,
-        479.9989929199219,
+        475.2,
+        300.002,
         576.0,
-        491.99798583984375
+        312.001
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_Lines18_27_0_f1_36_0)"
@@ -571,10 +571,10 @@
       "id": "topmostSubform[0].Page1[0].Lines18-27[0].f1_37[0]",
       "page": 1,
       "rect": [
-        475.20001220703125,
-        492.0010070800781,
+        475.2,
+        288.0,
         576.0,
-        504.0
+        299.999
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_Lines18_27_0_f1_37_0)"
@@ -583,10 +583,10 @@
       "id": "topmostSubform[0].Page1[0].Lines18-27[0].f1_38[0]",
       "page": 1,
       "rect": [
-        475.20001220703125,
-        504.0,
+        475.2,
+        276.001,
         576.0,
-        515.9990234375
+        288.0
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_Lines18_27_0_f1_38_0)"
@@ -595,10 +595,10 @@
       "id": "topmostSubform[0].Page1[0].Lines18-27[0].f1_39[0]",
       "page": 1,
       "rect": [
-        475.20001220703125,
-        515.9990234375,
+        475.2,
+        264.002,
         576.0,
-        527.9979858398438
+        276.001
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_Lines18_27_0_f1_39_0)"
@@ -607,10 +607,10 @@
       "id": "topmostSubform[0].Page1[0].Lines18-27[0].f1_40[0]",
       "page": 1,
       "rect": [
-        475.20001220703125,
-        540.0,
+        475.2,
+        240.001,
         576.0,
-        551.9990234375
+        252.0
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_Lines18_27_0_f1_40_0)"
@@ -619,10 +619,10 @@
       "id": "topmostSubform[0].Page1[0].f1_41[0]",
       "page": 1,
       "rect": [
-        475.20001220703125,
-        551.9990234375,
+        475.2,
+        228.002,
         576.0,
-        563.9979858398438
+        240.001
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_41_0)"
@@ -631,10 +631,10 @@
       "id": "topmostSubform[0].Page1[0].f1_42[0]",
       "page": 1,
       "rect": [
-        475.20001220703125,
-        564.0009765625,
+        475.2,
+        216.0,
         576.0,
-        576.0
+        227.999
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_42_0)"
@@ -643,10 +643,10 @@
       "id": "topmostSubform[0].Page1[0].Line30_ReadOrder[0].f1_43[0]",
       "page": 1,
       "rect": [
-        352.79998779296875,
-        600.0009765625,
-        446.3999938964844,
-        612.0
+        352.8,
+        180.0,
+        446.4,
+        191.999
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_Line30_ReadOrder_0_f1_43_0)"
@@ -655,10 +655,10 @@
       "id": "topmostSubform[0].Page1[0].Line30_ReadOrder[0].f1_44[0]",
       "page": 1,
       "rect": [
-        237.60000610351562,
-        612.0,
-        367.20001220703125,
-        623.9990234375
+        237.6,
+        168.001,
+        367.2,
+        180.0
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_Line30_ReadOrder_0_f1_44_0)"
@@ -667,10 +667,10 @@
       "id": "topmostSubform[0].Page1[0].f1_45[0]",
       "page": 1,
       "rect": [
-        475.20001220703125,
-        623.9990234375,
+        475.2,
+        156.002,
         576.0,
-        635.9979858398438
+        168.001
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_45_0)"
@@ -679,10 +679,10 @@
       "id": "topmostSubform[0].Page1[0].f1_46[0]",
       "page": 1,
       "rect": [
-        475.20001220703125,
-        659.9990234375,
+        475.2,
+        120.002,
         576.0,
-        671.9979858398438
+        132.001
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_46_0)"
@@ -691,10 +691,10 @@
       "id": "topmostSubform[0].Page1[0].c1_7[0]",
       "page": 1,
       "rect": [
-        475.20001220703125,
-        710.0009765625,
-        483.20001220703125,
-        718.0009765625
+        475.2,
+        73.999,
+        483.2,
+        81.999
       ],
       "type": "checkbox",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_7_0)"
@@ -703,10 +703,10 @@
       "id": "topmostSubform[0].Page1[0].c1_7[1]",
       "page": 1,
       "rect": [
-        475.20001220703125,
-        722.5,
-        483.20001220703125,
-        730.5
+        475.2,
+        61.5,
+        483.2,
+        69.5
       ],
       "type": "checkbox",
       "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_7_1)"
@@ -715,10 +715,10 @@
       "id": "topmostSubform[0].Page2[0].c2_1[0]",
       "page": 2,
       "rect": [
-        187.1999969482422,
-        86.49798583984375,
-        195.1999969482422,
-        94.49798583984375
+        187.2,
+        697.502,
+        195.2,
+        705.502
       ],
       "type": "checkbox",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_c2_1_0)"
@@ -727,10 +727,10 @@
       "id": "topmostSubform[0].Page2[0].c2_2[0]",
       "page": 2,
       "rect": [
-        259.20001220703125,
-        86.49798583984375,
-        267.20001220703125,
-        94.49798583984375
+        259.2,
+        697.502,
+        267.2,
+        705.502
       ],
       "type": "checkbox",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_c2_2_0)"
@@ -740,9 +740,9 @@
       "page": 2,
       "rect": [
         396.0,
-        86.49798583984375,
+        697.502,
         404.0,
-        94.49798583984375
+        705.502
       ],
       "type": "checkbox",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_c2_3_0)"
@@ -751,10 +751,10 @@
       "id": "topmostSubform[0].Page2[0].c2_4[0]",
       "page": 2,
       "rect": [
-        482.3999938964844,
-        109.4990234375,
-        490.3999938964844,
-        117.4990234375
+        482.4,
+        674.501,
+        490.4,
+        682.501
       ],
       "type": "checkbox",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_c2_4_0)"
@@ -764,9 +764,9 @@
       "page": 2,
       "rect": [
         540.0,
-        109.4990234375,
+        674.501,
         548.0,
-        117.4990234375
+        682.501
       ],
       "type": "checkbox",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_c2_4_1)"
@@ -776,9 +776,9 @@
       "page": 2,
       "rect": [
         468.0,
-        132.0009765625,
+        648.0,
         576.0,
-        144.0
+        659.999
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_1_0)"
@@ -788,9 +788,9 @@
       "page": 2,
       "rect": [
         468.0,
-        155.9990234375,
+        624.002,
         576.0,
-        167.99798583984375
+        636.001
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_2_0)"
@@ -800,9 +800,9 @@
       "page": 2,
       "rect": [
         468.0,
-        180.0,
+        600.001,
         576.0,
-        191.9990234375
+        612.0
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_3_0)"
@@ -812,9 +812,9 @@
       "page": 2,
       "rect": [
         468.0,
-        204.0009765625,
         576.0,
-        216.0
+        576.0,
+        587.999
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_4_0)"
@@ -824,9 +824,9 @@
       "page": 2,
       "rect": [
         468.0,
-        227.9990234375,
+        552.002,
         576.0,
-        239.99798583984375
+        564.001
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_5_0)"
@@ -836,9 +836,9 @@
       "page": 2,
       "rect": [
         468.0,
-        252.0,
+        528.001,
         576.0,
-        263.9990234375
+        540.0
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_6_0)"
@@ -848,9 +848,9 @@
       "page": 2,
       "rect": [
         468.0,
-        276.0009765625,
+        504.0,
         576.0,
-        288.0
+        515.999
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_7_0)"
@@ -860,9 +860,9 @@
       "page": 2,
       "rect": [
         468.0,
-        299.9989929199219,
+        480.002,
         576.0,
-        311.99798583984375
+        492.001
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_8_0)"
@@ -871,10 +871,10 @@
       "id": "topmostSubform[0].Page2[0].f2_9[0]",
       "page": 2,
       "rect": [
-        374.3999938964844,
-        360.0,
-        403.20001220703125,
-        371.9989929199219
+        374.4,
+        420.001,
+        403.2,
+        432.0
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_9_0)"
@@ -883,10 +883,10 @@
       "id": "topmostSubform[0].Page2[0].f2_10[0]",
       "page": 2,
       "rect": [
-        410.3999938964844,
-        360.0,
-        439.20001220703125,
-        371.9989929199219
+        410.4,
+        420.001,
+        439.2,
+        432.0
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_10_0)"
@@ -895,10 +895,10 @@
       "id": "topmostSubform[0].Page2[0].f2_11[0]",
       "page": 2,
       "rect": [
-        446.3999938964844,
-        360.0,
-        475.20001220703125,
-        371.9989929199219
+        446.4,
+        420.001,
+        475.2,
+        432.0
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_11_0)"
@@ -907,10 +907,10 @@
       "id": "topmostSubform[0].Page2[0].f2_12[0]",
       "page": 2,
       "rect": [
-        100.80000305175781,
-        407.9989929199219,
-        201.60000610351562,
-        419.99798583984375
+        100.8,
+        372.002,
+        201.6,
+        384.001
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_12_0)"
@@ -919,10 +919,10 @@
       "id": "topmostSubform[0].Page2[0].f2_13[0]",
       "page": 2,
       "rect": [
-        331.20001220703125,
-        407.9989929199219,
-        424.79998779296875,
-        419.99798583984375
+        331.2,
+        372.002,
+        424.8,
+        384.001
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_13_0)"
@@ -932,9 +932,9 @@
       "page": 2,
       "rect": [
         468.0,
-        407.9989929199219,
+        372.002,
         576.0,
-        419.99798583984375
+        384.001
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_14_0)"
@@ -943,10 +943,10 @@
       "id": "topmostSubform[0].Page2[0].c2_5[0]",
       "page": 2,
       "rect": [
-        489.6000061035156,
-        433.7770080566406,
-        498.04400634765625,
-        442.22100830078125
+        489.6,
+        349.779,
+        498.044,
+        358.223
       ],
       "type": "checkbox",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_c2_5_0)"
@@ -956,9 +956,9 @@
       "page": 2,
       "rect": [
         540.0,
-        433.7770080566406,
-        548.4439697265625,
-        442.22100830078125
+        349.779,
+        548.444,
+        358.223
       ],
       "type": "checkbox",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_c2_5_1)"
@@ -967,10 +967,10 @@
       "id": "topmostSubform[0].Page2[0].c2_6[0]",
       "page": 2,
       "rect": [
-        489.6000061035156,
-        457.77801513671875,
-        498.04400634765625,
-        466.22198486328125
+        489.6,
+        325.778,
+        498.044,
+        334.222
       ],
       "type": "checkbox",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_c2_6_0)"
@@ -980,9 +980,9 @@
       "page": 2,
       "rect": [
         540.0,
-        457.77801513671875,
-        548.4439697265625,
-        466.22198486328125
+        325.778,
+        548.444,
+        334.222
       ],
       "type": "checkbox",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_c2_6_1)"
@@ -991,10 +991,10 @@
       "id": "topmostSubform[0].Page2[0].c2_7[0]",
       "page": 2,
       "rect": [
-        489.6000061035156,
-        481.7760009765625,
-        498.0450134277344,
-        490.22100830078125
+        489.6,
+        301.779,
+        498.045,
+        310.224
       ],
       "type": "checkbox",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_c2_7_0)"
@@ -1004,9 +1004,9 @@
       "page": 2,
       "rect": [
         540.0,
-        481.7760009765625,
-        548.4439697265625,
-        490.2200012207031
+        301.78,
+        548.444,
+        310.224
       ],
       "type": "checkbox",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_c2_7_1)"
@@ -1015,10 +1015,10 @@
       "id": "topmostSubform[0].Page2[0].c2_8[0]",
       "page": 2,
       "rect": [
-        489.6000061035156,
-        505.7770080566406,
-        498.0450134277344,
-        514.2219848632812
+        489.6,
+        277.778,
+        498.045,
+        286.223
       ],
       "type": "checkbox",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_c2_8_0)"
@@ -1028,9 +1028,9 @@
       "page": 2,
       "rect": [
         540.0,
-        505.7770080566406,
-        548.4439697265625,
-        514.2210083007812
+        277.779,
+        548.444,
+        286.223
       ],
       "type": "checkbox",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_c2_8_1)"
@@ -1040,9 +1040,9 @@
       "page": 2,
       "rect": [
         36.0,
-        540.0009765625,
-        460.79998779296875,
-        552.0020141601562
+        239.998,
+        460.8,
+        251.999
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_PartVTable_0_Item1_0_f2_15_0)"
@@ -1052,9 +1052,9 @@
       "page": 2,
       "rect": [
         468.0,
-        540.0009765625,
+        239.998,
         576.0,
-        552.0020141601562
+        251.999
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_PartVTable_0_Item1_0_f2_16_0)"
@@ -1064,9 +1064,9 @@
       "page": 2,
       "rect": [
         36.0,
-        564.0020141601562,
-        460.79998779296875,
-        576.0029907226562
+        215.997,
+        460.8,
+        227.998
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_PartVTable_0_Item2_0_f2_17_0)"
@@ -1076,9 +1076,9 @@
       "page": 2,
       "rect": [
         468.0,
-        564.0020141601562,
+        215.997,
         576.0,
-        576.0029907226562
+        227.998
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_PartVTable_0_Item2_0_f2_18_0)"
@@ -1088,9 +1088,9 @@
       "page": 2,
       "rect": [
         36.0,
-        588.0029907226562,
-        460.79998779296875,
-        600.0040283203125
+        191.996,
+        460.8,
+        203.997
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_PartVTable_0_Item3_0_f2_19_0)"
@@ -1100,9 +1100,9 @@
       "page": 2,
       "rect": [
         468.0,
-        588.0029907226562,
+        191.996,
         576.0,
-        600.0040283203125
+        203.997
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_PartVTable_0_Item3_0_f2_20_0)"
@@ -1112,9 +1112,9 @@
       "page": 2,
       "rect": [
         36.0,
-        612.0040283203125,
-        460.79998779296875,
-        624.0050048828125
+        167.995,
+        460.8,
+        179.996
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_PartVTable_0_Item4_0_f2_21_0)"
@@ -1124,9 +1124,9 @@
       "page": 2,
       "rect": [
         468.0,
-        612.0040283203125,
+        167.995,
         576.0,
-        624.0050048828125
+        179.996
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_PartVTable_0_Item4_0_f2_22_0)"
@@ -1136,9 +1136,9 @@
       "page": 2,
       "rect": [
         36.0,
-        636.0050048828125,
-        460.79998779296875,
-        648.0059814453125
+        143.994,
+        460.8,
+        155.995
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_PartVTable_0_Item5_0_f2_23_0)"
@@ -1148,9 +1148,9 @@
       "page": 2,
       "rect": [
         468.0,
-        636.0050048828125,
+        143.994,
         576.0,
-        648.0059814453125
+        155.995
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_PartVTable_0_Item5_0_f2_24_0)"
@@ -1160,9 +1160,9 @@
       "page": 2,
       "rect": [
         36.0,
-        660.0059814453125,
-        460.79998779296875,
-        672.0070190429688
+        119.993,
+        460.8,
+        131.994
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_PartVTable_0_Item6_0_f2_25_0)"
@@ -1172,9 +1172,9 @@
       "page": 2,
       "rect": [
         468.0,
-        660.0059814453125,
+        119.993,
         576.0,
-        672.0070190429688
+        131.994
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_PartVTable_0_Item6_0_f2_26_0)"
@@ -1184,9 +1184,9 @@
       "page": 2,
       "rect": [
         36.0,
-        684.0070190429688,
-        460.79998779296875,
-        696.0079956054688
+        95.992,
+        460.8,
+        107.993
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_PartVTable_0_Item7_0_f2_27_0)"
@@ -1196,9 +1196,9 @@
       "page": 2,
       "rect": [
         468.0,
-        684.0070190429688,
+        95.992,
         576.0,
-        696.0079956054688
+        107.993
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_PartVTable_0_Item7_0_f2_28_0)"
@@ -1208,9 +1208,9 @@
       "page": 2,
       "rect": [
         36.0,
-        708.0079956054688,
-        460.79998779296875,
-        720.009033203125
+        71.991,
+        460.8,
+        83.992
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_PartVTable_0_Item8_0_f2_29_0)"
@@ -1220,9 +1220,9 @@
       "page": 2,
       "rect": [
         468.0,
-        708.0079956054688,
+        71.991,
         576.0,
-        720.009033203125
+        83.992
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_PartVTable_0_Item8_0_f2_30_0)"
@@ -1232,9 +1232,9 @@
       "page": 2,
       "rect": [
         36.0,
-        732.0089721679688,
-        460.79998779296875,
-        744.010009765625
+        47.99,
+        460.8,
+        59.991
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_PartVTable_0_Item9_0_f2_31_0)"
@@ -1244,9 +1244,9 @@
       "page": 2,
       "rect": [
         468.0,
-        732.0089721679688,
+        47.99,
         576.0,
-        744.010009765625
+        59.991
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_PartVTable_0_Item9_0_f2_32_0)"
@@ -1256,9 +1256,9 @@
       "page": 2,
       "rect": [
         468.0,
-        744.0009765625,
+        36.0,
         576.0,
-        756.0
+        47.999
       ],
       "type": "text",
       "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_33_0)"

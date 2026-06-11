@@ -1,0 +1,140 @@
+{
+  "client_id": "pasta_pals",
+  "display_name": "Pasta Pals LLC / Jenelle Alexandra Elpedes",
+  "filer": {
+    "first_name": "Jenelle Alexandra",
+    "last_name": "Elpedes",
+    "ssn": "594-63-6983",
+    "occupation": "Self-employed designer / consultant",
+    "filing_status": "single"
+  },
+  "spouse": null,
+  "dependents": [],
+  "address": {
+    "street": "2141 W Madison Street",
+    "apt": "",
+    "city": "Phoenix",
+    "state": "AZ",
+    "zip": "85009-5212",
+    "foreign_country": "",
+    "foreign_province": "",
+    "foreign_postal": ""
+  },
+  "schedule_c": {
+    "entity_name": "Pasta Pals LLC",
+    "ein": "41-3677262",
+    "principal_business": "Design and consulting services",
+    "naics_code": "541430",
+    "biz_address": "2828 N Central Ave Ste 1000",
+    "biz_csz": "Phoenix, AZ 85004",
+    "accounting_method": "cash",
+    "material_participation": "yes",
+    "made_payments_requiring_1099": "yes",
+    "filed_required_1099s": "no"
+  },
+  "other_income": {
+    "w2_wages": 0,
+    "taxable_interest": 0,
+    "ordinary_dividends": 0,
+    "qualified_dividends": 0,
+    "ira_distributions": 0,
+    "ira_taxable": 0,
+    "pensions": 0,
+    "pensions_taxable": 0,
+    "social_security": 0,
+    "social_security_taxable": 0,
+    "capital_gain_loss": 0
+  },
+  "payments": {
+    "federal_withholding": 0,
+    "estimated_payments": 0,
+    "earned_income_credit": 0,
+    "child_tax_credit": 0,
+    "qbi_deduction": 0,
+    "additional_deductions_sch1a": 0,
+    "use_itemized_deductions": false,
+    "itemized_deductions_total": 0
+  },
+  "years": {
+    "2024": {
+      "schedule_c": {
+        "gross_receipts": 1500000,
+        "returns_allowances": 0,
+        "cogs": 0,
+        "other_income_business": 0,
+        "advertising": 120000,
+        "car_truck": 0,
+        "commissions": 0,
+        "contract_labor": 250000,
+        "depletion": 0,
+        "depreciation": 30000,
+        "employee_benefits": 0,
+        "insurance": 15000,
+        "interest_mortgage": 0,
+        "interest_other": 0,
+        "legal_professional": 40000,
+        "office": 0,
+        "pension_profit_sharing": 0,
+        "rent_vehicles": 0,
+        "rent_other": 24000,
+        "repairs": 0,
+        "supplies": 5000,
+        "taxes_licenses": 0,
+        "travel": 18000,
+        "meals_50pct": 6000,
+        "utilities": 6000,
+        "wages": 0,
+        "energy_efficient_deduction": 0,
+        "home_office_simplified": 0,
+        "part_v_other": [
+          {"description": "Software & tech subscriptions", "amount": 45000},
+          {"description": "Education / Conferences", "amount": 10000},
+          {"description": "AnytimeMailbox AZ", "amount": 228},
+          {"description": "AnytimeMailbox IL", "amount": 228},
+          {"description": "Domain (Namecheap)", "amount": 12},
+          {"description": "Misc / banking", "amount": 25000}
+        ]
+      }
+    },
+    "2025": {
+      "schedule_c": {
+        "gross_receipts": 1580000,
+        "returns_allowances": 0,
+        "cogs": 0,
+        "other_income_business": 0,
+        "advertising": 160000,
+        "car_truck": 0,
+        "commissions": 0,
+        "contract_labor": 320000,
+        "depletion": 0,
+        "depreciation": 25000,
+        "employee_benefits": 0,
+        "insurance": 20000,
+        "interest_mortgage": 0,
+        "interest_other": 0,
+        "legal_professional": 50000,
+        "office": 0,
+        "pension_profit_sharing": 0,
+        "rent_vehicles": 0,
+        "rent_other": 30000,
+        "repairs": 0,
+        "supplies": 7000,
+        "taxes_licenses": 0,
+        "travel": 22000,
+        "meals_50pct": 6500,
+        "utilities": 8000,
+        "wages": 0,
+        "energy_efficient_deduction": 0,
+        "home_office_simplified": 0,
+        "part_v_other": [
+          {"description": "Software & tech subscriptions", "amount": 55000},
+          {"description": "Education / Conferences", "amount": 10000},
+          {"description": "AnytimeMailbox AZ", "amount": 228},
+          {"description": "AnytimeMailbox IL", "amount": 228},
+          {"description": "Domain (Namecheap)", "amount": 12},
+          {"description": "Misc / banking", "amount": 5000}
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,5287 @@
+{
+  "form": "1065",
+  "year": 2025,
+  "pdfFilename": "1065.pdf",
+  "fields": {
+    "f1_01_0": {
+      "id": "topmostSubform[0].Page1[0].HeaderAddress_ReadOrder[0].CalendarName_ReadOrder[0].f1_01[0]",
+      "page": 1,
+      "rect": [
+        273.6,
+        726.001,
+        338.4,
+        738.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_01[0])"
+    },
+    "f1_02_0": {
+      "id": "topmostSubform[0].Page1[0].HeaderAddress_ReadOrder[0].CalendarName_ReadOrder[0].f1_02[0]",
+      "page": 1,
+      "rect": [
+        388.8,
+        726.001,
+        453.6,
+        738.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_02[0])"
+    },
+    "f1_03_0": {
+      "id": "topmostSubform[0].Page1[0].HeaderAddress_ReadOrder[0].CalendarName_ReadOrder[0].f1_03[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        726.001,
+        482.4,
+        738.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_03[0])"
+    },
+    "f1_04_0": {
+      "id": "topmostSubform[0].Page1[0].HeaderAddress_ReadOrder[0].CalendarName_ReadOrder[0].f1_04[0]",
+      "page": 1,
+      "rect": [
+        123.4,
+        684.0,
+        488.85,
+        696.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_04[0])"
+    },
+    "f1_05_0": {
+      "id": "topmostSubform[0].Page1[0].HeaderAddress_ReadOrder[0].CalendarName_ReadOrder[0].f1_05[0]",
+      "page": 1,
+      "rect": [
+        123.4,
+        659.999,
+        424.05,
+        672.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_05[0])"
+    },
+    "f1_06_0": {
+      "id": "topmostSubform[0].Page1[0].HeaderAddress_ReadOrder[0].CalendarName_ReadOrder[0].f1_06[0]",
+      "page": 1,
+      "rect": [
+        424.8,
+        659.999,
+        489.6,
+        672.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_06[0])"
+    },
+    "f1_07_0": {
+      "id": "topmostSubform[0].Page1[0].HeaderAddress_ReadOrder[0].CalendarName_ReadOrder[0].f1_07[0]",
+      "page": 1,
+      "rect": [
+        123.4,
+        630.0,
+        222.45,
+        641.902
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_07[0])"
+    },
+    "f1_08_0": {
+      "id": "topmostSubform[0].Page1[0].HeaderAddress_ReadOrder[0].CalendarName_ReadOrder[0].f1_08[0]",
+      "page": 1,
+      "rect": [
+        224.2,
+        630.0,
+        323.25,
+        641.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_08[0])"
+    },
+    "f1_09_0": {
+      "id": "topmostSubform[0].Page1[0].HeaderAddress_ReadOrder[0].CalendarName_ReadOrder[0].f1_09[0]",
+      "page": 1,
+      "rect": [
+        325.0,
+        630.0,
+        424.05,
+        641.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_09[0])"
+    },
+    "f1_10_0": {
+      "id": "topmostSubform[0].Page1[0].HeaderAddress_ReadOrder[0].CalendarName_ReadOrder[0].f1_10[0]",
+      "page": 1,
+      "rect": [
+        424.8,
+        630.0,
+        489.6,
+        641.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_10[0])"
+    },
+    "f1_11_0": {
+      "id": "topmostSubform[0].Page1[0].LinesA-C[0].f1_11[0]",
+      "page": 1,
+      "rect": [
+        36.0,
+        684.0,
+        121.65,
+        696.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_11[0])"
+    },
+    "f1_12_0": {
+      "id": "topmostSubform[0].Page1[0].LinesA-C[0].f1_12[0]",
+      "page": 1,
+      "rect": [
+        36.0,
+        659.999,
+        121.65,
+        672.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_12[0])"
+    },
+    "f1_13_0": {
+      "id": "topmostSubform[0].Page1[0].LinesA-C[0].f1_13[0]",
+      "page": 1,
+      "rect": [
+        36.0,
+        630.0,
+        121.65,
+        641.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_13[0])"
+    },
+    "f1_14_0": {
+      "id": "topmostSubform[0].Page1[0].f1_14[0]",
+      "page": 1,
+      "rect": [
+        489.6,
+        678.002,
+        576.0,
+        690.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_14[0])"
+    },
+    "f1_15_0": {
+      "id": "topmostSubform[0].Page1[0].f1_15[0]",
+      "page": 1,
+      "rect": [
+        489.6,
+        653.998,
+        576.0,
+        665.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_15[0])"
+    },
+    "f1_16_0": {
+      "id": "topmostSubform[0].Page1[0].f1_16[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        630.0,
+        576.0,
+        641.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_16[0])"
+    },
+    "c1_1_0": {
+      "id": "topmostSubform[0].Page1[0].c1_1[0]",
+      "page": 1,
+      "rect": [
+        165.6,
+        619.501,
+        173.6,
+        627.501
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c1_1[0])"
+    },
+    "c1_2_0": {
+      "id": "topmostSubform[0].Page1[0].c1_2[0]",
+      "page": 1,
+      "rect": [
+        244.8,
+        619.501,
+        252.8,
+        627.501
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c1_2[0])"
+    },
+    "c1_3_0": {
+      "id": "topmostSubform[0].Page1[0].c1_3[0]",
+      "page": 1,
+      "rect": [
+        324.0,
+        619.501,
+        332.0,
+        627.501
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c1_3[0])"
+    },
+    "c1_4_0": {
+      "id": "topmostSubform[0].Page1[0].c1_4[0]",
+      "page": 1,
+      "rect": [
+        410.4,
+        619.501,
+        418.4,
+        627.501
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c1_4[0])"
+    },
+    "c1_5_0": {
+      "id": "topmostSubform[0].Page1[0].c1_5[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        619.501,
+        512.0,
+        627.501
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c1_5[0])"
+    },
+    "c1_6_0": {
+      "id": "topmostSubform[0].Page1[0].c1_6[0]",
+      "page": 1,
+      "rect": [
+        187.2,
+        607.752,
+        195.2,
+        615.752
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c1_6[0])"
+    },
+    "c1_6_1": {
+      "id": "topmostSubform[0].Page1[0].c1_6[1]",
+      "page": 1,
+      "rect": [
+        252.0,
+        607.752,
+        260.0,
+        615.752
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c1_6[1])"
+    },
+    "c1_6_2": {
+      "id": "topmostSubform[0].Page1[0].c1_6[2]",
+      "page": 1,
+      "rect": [
+        324.0,
+        607.752,
+        332.0,
+        615.752
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c1_6[2])"
+    },
+    "f1_17_0": {
+      "id": "topmostSubform[0].Page1[0].f1_17[0]",
+      "page": 1,
+      "rect": [
+        399.6,
+        606.002,
+        576.0,
+        618.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_17[0])"
+    },
+    "f1_18_0": {
+      "id": "topmostSubform[0].Page1[0].f1_18[0]",
+      "page": 1,
+      "rect": [
+        476.4,
+        594.0,
+        576.0,
+        605.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_18[0])"
+    },
+    "c1_7_0": {
+      "id": "topmostSubform[0].Page1[0].c1_7[0]",
+      "page": 1,
+      "rect": [
+        564.0,
+        583.501,
+        572.0,
+        591.501
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c1_7[0])"
+    },
+    "c1_8_0": {
+      "id": "topmostSubform[0].Page1[0].c1_8[0]",
+      "page": 1,
+      "rect": [
+        144.0,
+        572.252,
+        152.0,
+        580.252
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c1_8[0])"
+    },
+    "c1_9_0": {
+      "id": "topmostSubform[0].Page1[0].c1_9[0]",
+      "page": 1,
+      "rect": [
+        360.0,
+        572.252,
+        368.0,
+        580.252
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c1_9[0])"
+    },
+    "line_1a_gross_receipts_or_sales_b_a": {
+      "id": "topmostSubform[0].Page1[0].f1_19[0]",
+      "page": 1,
+      "rect": [
+        158.4,
+        546.001,
+        230.4,
+        558.0
+      ],
+      "type": "text",
+      "description": "Line 1a: Gross receipts or sales b"
+    },
+    "line_1a_gross_receipts_or_sales_b_b": {
+      "id": "topmostSubform[0].Page1[0].f1_20[0]",
+      "page": 1,
+      "rect": [
+        352.8,
+        546.001,
+        424.8,
+        558.0
+      ],
+      "type": "text",
+      "description": "Line 1a: Gross receipts or sales b"
+    },
+    "line_1a_gross_receipts_or_sales_b_c": {
+      "id": "topmostSubform[0].Page1[0].f1_21[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        546.001,
+        576.0,
+        558.0
+      ],
+      "type": "text",
+      "description": "Line 1a: Gross receipts or sales b"
+    },
+    "line_2_cost_of_goods_sold_attach": {
+      "id": "topmostSubform[0].Page1[0].f1_22[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        534.002,
+        576.0,
+        546.001
+      ],
+      "type": "text",
+      "description": "Line 2: Cost of goods sold (attach"
+    },
+    "line_3_gross_profit_subtract_line_2": {
+      "id": "topmostSubform[0].Page1[0].f1_23[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        522.0,
+        576.0,
+        533.999
+      ],
+      "type": "text",
+      "description": "Line 3: Gross profit. Subtract line 2"
+    },
+    "line_4_ordinary_income_loss_from_other": {
+      "id": "topmostSubform[0].Page1[0].f1_24[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        510.001,
+        576.0,
+        522.0
+      ],
+      "type": "text",
+      "description": "Line 4: Ordinary income (loss) from other"
+    },
+    "line_5_net_farm_profit_loss_attach": {
+      "id": "topmostSubform[0].Page1[0].f1_25[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        498.002,
+        576.0,
+        510.001
+      ],
+      "type": "text",
+      "description": "Line 5: Net farm profit (loss) (attach"
+    },
+    "line_6_net_gain_loss_from_form": {
+      "id": "topmostSubform[0].Page1[0].f1_26[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        486.0,
+        576.0,
+        497.999
+      ],
+      "type": "text",
+      "description": "Line 6: Net gain (loss) from Form"
+    },
+    "line_7_other_income_loss_attach_statement": {
+      "id": "topmostSubform[0].Page1[0].f1_27[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        474.001,
+        576.0,
+        486.0
+      ],
+      "type": "text",
+      "description": "Line 7: Other income (loss) (attach statement)"
+    },
+    "line_8_total_income_loss_combine_lines": {
+      "id": "topmostSubform[0].Page1[0].f1_28[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        462.002,
+        576.0,
+        474.001
+      ],
+      "type": "text",
+      "description": "Line 8: Total income (loss). Combine lines"
+    },
+    "line_9_salaries_and_wages_other_than": {
+      "id": "topmostSubform[0].Page1[0].f1_29[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        450.0,
+        576.0,
+        461.999
+      ],
+      "type": "text",
+      "description": "Line 9: Salaries and wages (other than"
+    },
+    "line_10_guaranteed_payments_to_partners": {
+      "id": "topmostSubform[0].Page1[0].f1_30[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        438.001,
+        576.0,
+        450.0
+      ],
+      "type": "text",
+      "description": "Line 10: Guaranteed payments to partners ."
+    },
+    "line_11_repairs_and_maintenance": {
+      "id": "topmostSubform[0].Page1[0].f1_31[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        426.002,
+        576.0,
+        438.001
+      ],
+      "type": "text",
+      "description": "Line 11: Repairs and maintenance . ."
+    },
+    "line_12_bad_debts": {
+      "id": "topmostSubform[0].Page1[0].f1_32[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        414.0,
+        576.0,
+        425.999
+      ],
+      "type": "text",
+      "description": "Line 12: Bad debts . . ."
+    },
+    "line_13_rent": {
+      "id": "topmostSubform[0].Page1[0].f1_33[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        402.001,
+        576.0,
+        414.0
+      ],
+      "type": "text",
+      "description": "Line 13: Rent . . . ."
+    },
+    "line_14_taxes_and_licenses": {
+      "id": "topmostSubform[0].Page1[0].f1_34[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        390.002,
+        576.0,
+        402.001
+      ],
+      "type": "text",
+      "description": "Line 14: Taxes and licenses . ."
+    },
+    "line_15_interest_see_instructions": {
+      "id": "topmostSubform[0].Page1[0].f1_35[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        378.0,
+        576.0,
+        389.999
+      ],
+      "type": "text",
+      "description": "Line 15: Interest (see instructions) . ."
+    },
+    "line_16a_depreciation_if_required_attach_form": {
+      "id": "topmostSubform[0].Page1[0].f1_36[0]",
+      "page": 1,
+      "rect": [
+        410.4,
+        366.001,
+        481.65,
+        378.0
+      ],
+      "type": "text",
+      "description": "Line 16a: Depreciation (if required, attach Form"
+    },
+    "f1_37_0": {
+      "id": "topmostSubform[0].Page1[0].f1_37[0]",
+      "page": 1,
+      "rect": [
+        410.4,
+        354.002,
+        481.65,
+        366.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_37[0])"
+    },
+    "f1_38_0": {
+      "id": "topmostSubform[0].Page1[0].f1_38[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        354.002,
+        576.0,
+        366.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_38[0])"
+    },
+    "line_17_depletion_do_not_deduct_oil": {
+      "id": "topmostSubform[0].Page1[0].f1_39[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        342.0,
+        576.0,
+        353.999
+      ],
+      "type": "text",
+      "description": "Line 17: Depletion (Do not deduct oil"
+    },
+    "line_18_retirement_plans_etc": {
+      "id": "topmostSubform[0].Page1[0].f1_40[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        330.001,
+        576.0,
+        342.0
+      ],
+      "type": "text",
+      "description": "Line 18: Retirement plans, etc. . ."
+    },
+    "line_19_employee_benefit_programs": {
+      "id": "topmostSubform[0].Page1[0].f1_41[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        318.002,
+        576.0,
+        330.001
+      ],
+      "type": "text",
+      "description": "Line 19: Employee benefit programs . ."
+    },
+    "line_20_energy_efficient_commercial_buildings_deduction": {
+      "id": "topmostSubform[0].Page1[0].f1_42[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        306.0,
+        576.0,
+        317.999
+      ],
+      "type": "text",
+      "description": "Line 20: Energy efficient commercial buildings deduction"
+    },
+    "line_21_other_deductions_attach_statement": {
+      "id": "topmostSubform[0].Page1[0].f1_43[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        294.001,
+        576.0,
+        306.0
+      ],
+      "type": "text",
+      "description": "Line 21: Other deductions (attach statement) ."
+    },
+    "line_22_total_deductions_add_the_amounts": {
+      "id": "topmostSubform[0].Page1[0].f1_44[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        282.002,
+        576.0,
+        294.001
+      ],
+      "type": "text",
+      "description": "Line 22: Total deductions. Add the amounts"
+    },
+    "line_23_ordinary_business_income_loss_subtract": {
+      "id": "topmostSubform[0].Page1[0].f1_45[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        270.0,
+        576.0,
+        281.999
+      ],
+      "type": "text",
+      "description": "Line 23: Ordinary business income (loss). Subtract"
+    },
+    "line_24_interest_due_under_the_look_back": {
+      "id": "topmostSubform[0].Page1[0].f1_46[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        258.001,
+        576.0,
+        270.0
+      ],
+      "type": "text",
+      "description": "Line 24: Interest due under the look-back"
+    },
+    "line_25_interest_due_under_the_look_back": {
+      "id": "topmostSubform[0].Page1[0].f1_47[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        246.002,
+        576.0,
+        258.001
+      ],
+      "type": "text",
+      "description": "Line 25: Interest due under the look-back"
+    },
+    "line_26_bba_aar_imputed_underpayment_see": {
+      "id": "topmostSubform[0].Page1[0].f1_48[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        234.0,
+        576.0,
+        245.999
+      ],
+      "type": "text",
+      "description": "Line 26: BBA AAR imputed underpayment (see"
+    },
+    "line_27_other_taxes_see_instructions": {
+      "id": "topmostSubform[0].Page1[0].f1_49[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        222.001,
+        576.0,
+        234.0
+      ],
+      "type": "text",
+      "description": "Line 27: Other taxes (see instructions) ."
+    },
+    "line_28_total_balance_due_add_lines": {
+      "id": "topmostSubform[0].Page1[0].f1_50[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        210.002,
+        576.0,
+        222.001
+      ],
+      "type": "text",
+      "description": "Line 28: Total balance due. Add lines"
+    },
+    "line_29_elective_payment_election_amount_from": {
+      "id": "topmostSubform[0].Page1[0].f1_51[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        198.0,
+        576.0,
+        209.999
+      ],
+      "type": "text",
+      "description": "Line 29: Elective payment election amount from"
+    },
+    "line_30_payment_see_instructions": {
+      "id": "topmostSubform[0].Page1[0].f1_52[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        186.001,
+        576.0,
+        198.0
+      ],
+      "type": "text",
+      "description": "Line 30: Payment (see instructions) . ."
+    },
+    "line_31_amount_owed_if_the_sum": {
+      "id": "topmostSubform[0].Page1[0].f1_53[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        174.002,
+        576.0,
+        186.001
+      ],
+      "type": "text",
+      "description": "Line 31: Amount owed. If the sum"
+    },
+    "line_32a_overpayment_if_the_sum_of": {
+      "id": "topmostSubform[0].Page1[0].f1_54[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        162.0,
+        576.0,
+        173.999
+      ],
+      "type": "text",
+      "description": "Line 32a: Overpayment. If the sum of"
+    },
+    "f1_55_0": {
+      "id": "topmostSubform[0].Page1[0].RoutingNo[0].f1_55[0]",
+      "page": 1,
+      "rect": [
+        158.4,
+        150.999,
+        288.0,
+        162.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_55[0])"
+    },
+    "c1_10_0": {
+      "id": "topmostSubform[0].Page1[0].c1_10[0]",
+      "page": 1,
+      "rect": [
+        363.0,
+        151.501,
+        371.0,
+        159.501
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c1_10[0])"
+    },
+    "c1_10_1": {
+      "id": "topmostSubform[0].Page1[0].c1_10[1]",
+      "page": 1,
+      "rect": [
+        427.8,
+        151.501,
+        435.8,
+        159.501
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c1_10[1])"
+    },
+    "f1_56_0": {
+      "id": "topmostSubform[0].Page1[0].AccountNo[0].f1_56[0]",
+      "page": 1,
+      "rect": [
+        158.4,
+        137.999,
+        403.2,
+        149.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_56[0])"
+    },
+    "c1_11_0": {
+      "id": "topmostSubform[0].Page1[0].c1_11[0]",
+      "page": 1,
+      "rect": [
+        522.0,
+        87.502,
+        530.0,
+        95.502
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c1_11[0])"
+    },
+    "c1_11_1": {
+      "id": "topmostSubform[0].Page1[0].c1_11[1]",
+      "page": 1,
+      "rect": [
+        550.8,
+        87.502,
+        558.8,
+        95.502
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c1_11[1])"
+    },
+    "f1_57_0": {
+      "id": "topmostSubform[0].Page1[0].f1_57[0]",
+      "page": 1,
+      "rect": [
+        87.4,
+        59.998,
+        236.85,
+        73.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_57[0])"
+    },
+    "c1_12_0": {
+      "id": "topmostSubform[0].Page1[0].c1_12[0]",
+      "page": 1,
+      "rect": [
+        493.599,
+        72.999,
+        501.599,
+        80.999
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c1_12[0])"
+    },
+    "f1_58_0": {
+      "id": "topmostSubform[0].Page1[0].f1_58[0]",
+      "page": 1,
+      "rect": [
+        518.4,
+        59.998,
+        576.0,
+        73.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_58[0])"
+    },
+    "f1_59_0": {
+      "id": "topmostSubform[0].Page1[0].f1_59[0]",
+      "page": 1,
+      "rect": [
+        144.0,
+        48.002,
+        460.05,
+        60.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_59[0])"
+    },
+    "f1_60_0": {
+      "id": "topmostSubform[0].Page1[0].f1_60[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        48.002,
+        576.0,
+        60.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_60[0])"
+    },
+    "f1_61_0": {
+      "id": "topmostSubform[0].Page1[0].f1_61[0]",
+      "page": 1,
+      "rect": [
+        144.0,
+        36.0,
+        460.05,
+        47.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_61[0])"
+    },
+    "f1_62_0": {
+      "id": "topmostSubform[0].Page1[0].f1_62[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        36.0,
+        576.0,
+        47.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_62[0])"
+    },
+    "c2_1_0": {
+      "id": "topmostSubform[0].Page2[0].c2_1[0]",
+      "page": 2,
+      "rect": [
+        64.8,
+        704.0,
+        72.8,
+        712.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c2_1[0])"
+    },
+    "c2_1_1": {
+      "id": "topmostSubform[0].Page2[0].c2_1[1]",
+      "page": 2,
+      "rect": [
+        266.4,
+        704.0,
+        274.4,
+        712.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c2_1[1])"
+    },
+    "c2_1_2": {
+      "id": "topmostSubform[0].Page2[0].c2_1[2]",
+      "page": 2,
+      "rect": [
+        64.8,
+        692.001,
+        72.8,
+        700.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c2_1[2])"
+    },
+    "c2_1_3": {
+      "id": "topmostSubform[0].Page2[0].c2_1[3]",
+      "page": 2,
+      "rect": [
+        266.4,
+        692.001,
+        274.4,
+        700.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c2_1[3])"
+    },
+    "c2_1_4": {
+      "id": "topmostSubform[0].Page2[0].c2_1[4]",
+      "page": 2,
+      "rect": [
+        64.8,
+        680.252,
+        72.8,
+        688.252
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c2_1[4])"
+    },
+    "c2_1_5": {
+      "id": "topmostSubform[0].Page2[0].c2_1[5]",
+      "page": 2,
+      "rect": [
+        266.4,
+        680.252,
+        274.4,
+        688.252
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c2_1[5])"
+    },
+    "f2_01_0": {
+      "id": "topmostSubform[0].Page2[0].f2_01[0]",
+      "page": 2,
+      "rect": [
+        306.0,
+        680.002,
+        525.6,
+        690.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_01[0])"
+    },
+    "c2_2_0": {
+      "id": "topmostSubform[0].Page2[0].c2_2[0]",
+      "page": 2,
+      "rect": [
+        537.6,
+        624.002,
+        549.6,
+        636.002
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c2_2[0])"
+    },
+    "c2_2_1": {
+      "id": "topmostSubform[0].Page2[0].c2_2[1]",
+      "page": 2,
+      "rect": [
+        559.2,
+        624.002,
+        571.2,
+        636.002
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c2_2[1])"
+    },
+    "c2_3_0": {
+      "id": "topmostSubform[0].Page2[0].c2_3[0]",
+      "page": 2,
+      "rect": [
+        537.6,
+        600.001,
+        549.6,
+        612.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c2_3[0])"
+    },
+    "c2_3_1": {
+      "id": "topmostSubform[0].Page2[0].c2_3[1]",
+      "page": 2,
+      "rect": [
+        559.2,
+        600.001,
+        571.2,
+        612.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c2_3[1])"
+    },
+    "c2_4_0": {
+      "id": "topmostSubform[0].Page2[0].c2_4[0]",
+      "page": 2,
+      "rect": [
+        537.6,
+        552.002,
+        549.6,
+        564.002
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c2_4[0])"
+    },
+    "c2_4_1": {
+      "id": "topmostSubform[0].Page2[0].c2_4[1]",
+      "page": 2,
+      "rect": [
+        559.2,
+        552.002,
+        571.2,
+        564.002
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c2_4[1])"
+    },
+    "f2_02_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3a[0].Row1[0].f2_02[0]",
+      "page": 2,
+      "rect": [
+        36.0,
+        522.0,
+        294.45,
+        533.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_02[0])"
+    },
+    "f2_03_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3a[0].Row1[0].f2_03[0]",
+      "page": 2,
+      "rect": [
+        295.2,
+        522.0,
+        388.8,
+        533.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_03[0])"
+    },
+    "f2_04_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3a[0].Row1[0].f2_04[0]",
+      "page": 2,
+      "rect": [
+        389.8,
+        522.0,
+        481.65,
+        533.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_04[0])"
+    },
+    "f2_05_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3a[0].Row1[0].f2_05[0]",
+      "page": 2,
+      "rect": [
+        482.4,
+        522.0,
+        576.0,
+        533.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_05[0])"
+    },
+    "f2_06_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3a[0].Row2[0].f2_06[0]",
+      "page": 2,
+      "rect": [
+        36.0,
+        510.001,
+        294.45,
+        522.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_06[0])"
+    },
+    "f2_07_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3a[0].Row2[0].f2_07[0]",
+      "page": 2,
+      "rect": [
+        295.2,
+        510.001,
+        388.8,
+        522.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_07[0])"
+    },
+    "f2_08_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3a[0].Row2[0].f2_08[0]",
+      "page": 2,
+      "rect": [
+        389.8,
+        510.001,
+        481.65,
+        522.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_08[0])"
+    },
+    "f2_09_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3a[0].Row2[0].f2_09[0]",
+      "page": 2,
+      "rect": [
+        482.4,
+        510.001,
+        576.0,
+        522.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_09[0])"
+    },
+    "f2_10_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3a[0].Row3[0].f2_10[0]",
+      "page": 2,
+      "rect": [
+        36.0,
+        498.002,
+        294.45,
+        510.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_10[0])"
+    },
+    "f2_11_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3a[0].Row3[0].f2_11[0]",
+      "page": 2,
+      "rect": [
+        295.2,
+        498.002,
+        388.8,
+        510.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_11[0])"
+    },
+    "f2_12_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3a[0].Row3[0].f2_12[0]",
+      "page": 2,
+      "rect": [
+        389.8,
+        498.002,
+        481.65,
+        510.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_12[0])"
+    },
+    "f2_13_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3a[0].Row3[0].f2_13[0]",
+      "page": 2,
+      "rect": [
+        482.4,
+        498.002,
+        576.0,
+        510.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_13[0])"
+    },
+    "f2_14_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3a[0].Row4[0].f2_14[0]",
+      "page": 2,
+      "rect": [
+        36.0,
+        486.003,
+        294.45,
+        498.002
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_14[0])"
+    },
+    "f2_15_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3a[0].Row4[0].f2_15[0]",
+      "page": 2,
+      "rect": [
+        295.2,
+        486.003,
+        388.8,
+        498.002
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_15[0])"
+    },
+    "f2_16_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3a[0].Row4[0].f2_16[0]",
+      "page": 2,
+      "rect": [
+        389.8,
+        486.003,
+        481.65,
+        498.002
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_16[0])"
+    },
+    "f2_17_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3a[0].Row4[0].f2_17[0]",
+      "page": 2,
+      "rect": [
+        482.4,
+        486.003,
+        576.0,
+        498.002
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_17[0])"
+    },
+    "f2_18_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3a[0].Row5[0].f2_18[0]",
+      "page": 2,
+      "rect": [
+        36.0,
+        474.004,
+        294.45,
+        486.003
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_18[0])"
+    },
+    "f2_19_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3a[0].Row5[0].f2_19[0]",
+      "page": 2,
+      "rect": [
+        295.2,
+        474.004,
+        388.8,
+        486.003
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_19[0])"
+    },
+    "f2_20_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3a[0].Row5[0].f2_20[0]",
+      "page": 2,
+      "rect": [
+        389.8,
+        474.004,
+        481.65,
+        486.003
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_20[0])"
+    },
+    "f2_21_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3a[0].Row5[0].f2_21[0]",
+      "page": 2,
+      "rect": [
+        482.4,
+        474.004,
+        576.0,
+        486.003
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_21[0])"
+    },
+    "c2_5_0": {
+      "id": "topmostSubform[0].Page2[0].c2_5[0]",
+      "page": 2,
+      "rect": [
+        537.6,
+        438.001,
+        549.6,
+        450.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c2_5[0])"
+    },
+    "c2_5_1": {
+      "id": "topmostSubform[0].Page2[0].c2_5[1]",
+      "page": 2,
+      "rect": [
+        559.2,
+        438.001,
+        571.2,
+        450.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c2_5[1])"
+    },
+    "f2_22_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3b[0].BodyRow1[0].f2_22[0]",
+      "page": 2,
+      "rect": [
+        36.0,
+        402.001,
+        272.85,
+        414.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_22[0])"
+    },
+    "f2_23_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3b[0].BodyRow1[0].f2_23[0]",
+      "page": 2,
+      "rect": [
+        273.6,
+        402.001,
+        345.6,
+        414.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_23[0])"
+    },
+    "f2_24_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3b[0].BodyRow1[0].f2_24[0]",
+      "page": 2,
+      "rect": [
+        346.6,
+        402.001,
+        416.85,
+        414.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_24[0])"
+    },
+    "f2_25_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3b[0].BodyRow1[0].f2_25[0]",
+      "page": 2,
+      "rect": [
+        418.6,
+        402.001,
+        496.05,
+        414.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_25[0])"
+    },
+    "f2_26_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3b[0].BodyRow1[0].f2_26[0]",
+      "page": 2,
+      "rect": [
+        496.8,
+        402.001,
+        576.0,
+        414.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_26[0])"
+    },
+    "f2_27_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3b[0].BodyRow2[0].f2_27[0]",
+      "page": 2,
+      "rect": [
+        36.0,
+        390.002,
+        272.85,
+        402.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_27[0])"
+    },
+    "f2_28_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3b[0].BodyRow2[0].f2_28[0]",
+      "page": 2,
+      "rect": [
+        273.6,
+        390.002,
+        345.6,
+        402.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_28[0])"
+    },
+    "f2_29_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3b[0].BodyRow2[0].f2_29[0]",
+      "page": 2,
+      "rect": [
+        346.6,
+        390.002,
+        416.85,
+        402.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_29[0])"
+    },
+    "f2_30_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3b[0].BodyRow2[0].f2_30[0]",
+      "page": 2,
+      "rect": [
+        418.6,
+        390.002,
+        496.05,
+        402.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_30[0])"
+    },
+    "f2_31_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3b[0].BodyRow2[0].f2_31[0]",
+      "page": 2,
+      "rect": [
+        496.8,
+        390.002,
+        576.0,
+        402.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_31[0])"
+    },
+    "f2_32_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3b[0].BodyRow3[0].f2_32[0]",
+      "page": 2,
+      "rect": [
+        36.0,
+        378.003,
+        272.85,
+        390.002
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_32[0])"
+    },
+    "f2_33_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3b[0].BodyRow3[0].f2_33[0]",
+      "page": 2,
+      "rect": [
+        273.6,
+        378.003,
+        345.6,
+        390.002
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_33[0])"
+    },
+    "f2_34_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3b[0].BodyRow3[0].f2_34[0]",
+      "page": 2,
+      "rect": [
+        346.6,
+        378.003,
+        416.85,
+        390.002
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_34[0])"
+    },
+    "f2_35_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3b[0].BodyRow3[0].f2_35[0]",
+      "page": 2,
+      "rect": [
+        418.6,
+        378.003,
+        496.05,
+        390.002
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_35[0])"
+    },
+    "f2_36_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3b[0].BodyRow3[0].f2_36[0]",
+      "page": 2,
+      "rect": [
+        496.8,
+        378.003,
+        576.0,
+        390.002
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_36[0])"
+    },
+    "f2_37_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3b[0].BodyRow4[0].f2_37[0]",
+      "page": 2,
+      "rect": [
+        36.0,
+        366.004,
+        272.85,
+        378.003
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_37[0])"
+    },
+    "f2_38_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3b[0].BodyRow4[0].f2_38[0]",
+      "page": 2,
+      "rect": [
+        273.6,
+        366.004,
+        345.6,
+        378.003
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_38[0])"
+    },
+    "f2_39_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3b[0].BodyRow4[0].f2_39[0]",
+      "page": 2,
+      "rect": [
+        346.6,
+        366.004,
+        416.85,
+        378.003
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_39[0])"
+    },
+    "f2_40_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3b[0].BodyRow4[0].f2_40[0]",
+      "page": 2,
+      "rect": [
+        418.6,
+        366.004,
+        496.05,
+        378.003
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_40[0])"
+    },
+    "f2_41_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3b[0].BodyRow4[0].f2_41[0]",
+      "page": 2,
+      "rect": [
+        496.8,
+        366.004,
+        576.0,
+        378.003
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_41[0])"
+    },
+    "f2_42_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3b[0].BodyRow5[0].f2_42[0]",
+      "page": 2,
+      "rect": [
+        36.0,
+        354.005,
+        272.85,
+        366.004
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_42[0])"
+    },
+    "f2_43_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3b[0].BodyRow5[0].f2_43[0]",
+      "page": 2,
+      "rect": [
+        273.6,
+        354.005,
+        345.6,
+        366.004
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_43[0])"
+    },
+    "f2_44_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3b[0].BodyRow5[0].f2_44[0]",
+      "page": 2,
+      "rect": [
+        346.6,
+        354.005,
+        416.85,
+        366.004
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_44[0])"
+    },
+    "f2_45_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3b[0].BodyRow5[0].f2_45[0]",
+      "page": 2,
+      "rect": [
+        418.6,
+        354.005,
+        496.05,
+        366.004
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_45[0])"
+    },
+    "f2_46_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line3b[0].BodyRow5[0].f2_46[0]",
+      "page": 2,
+      "rect": [
+        496.8,
+        354.005,
+        576.0,
+        366.004
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_46[0])"
+    },
+    "c2_6_0": {
+      "id": "topmostSubform[0].Page2[0].c2_6[0]",
+      "page": 2,
+      "rect": [
+        537.6,
+        276.001,
+        549.6,
+        288.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c2_6[0])"
+    },
+    "c2_6_1": {
+      "id": "topmostSubform[0].Page2[0].c2_6[1]",
+      "page": 2,
+      "rect": [
+        559.2,
+        276.001,
+        571.2,
+        288.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c2_6[1])"
+    },
+    "line_5_is_this_partnership_a_publicly_a": {
+      "id": "topmostSubform[0].Page2[0].c2_7[0]",
+      "page": 2,
+      "rect": [
+        537.6,
+        240.001,
+        549.6,
+        252.001
+      ],
+      "type": "checkbox",
+      "description": "Line 5: Is this partnership a publicly"
+    },
+    "line_5_is_this_partnership_a_publicly_b": {
+      "id": "topmostSubform[0].Page2[0].c2_7[1]",
+      "page": 2,
+      "rect": [
+        559.2,
+        240.001,
+        571.2,
+        252.001
+      ],
+      "type": "checkbox",
+      "description": "Line 5: Is this partnership a publicly"
+    },
+    "c2_8_0": {
+      "id": "topmostSubform[0].Page2[0].c2_8[0]",
+      "page": 2,
+      "rect": [
+        537.6,
+        216.0,
+        549.6,
+        228.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c2_8[0])"
+    },
+    "c2_8_1": {
+      "id": "topmostSubform[0].Page2[0].c2_8[1]",
+      "page": 2,
+      "rect": [
+        559.2,
+        216.0,
+        571.2,
+        228.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c2_8[1])"
+    },
+    "c2_9_0": {
+      "id": "topmostSubform[0].Page2[0].c2_9[0]",
+      "page": 2,
+      "rect": [
+        537.6,
+        192.002,
+        549.6,
+        204.002
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c2_9[0])"
+    },
+    "c2_9_1": {
+      "id": "topmostSubform[0].Page2[0].c2_9[1]",
+      "page": 2,
+      "rect": [
+        559.2,
+        192.002,
+        571.2,
+        204.002
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c2_9[1])"
+    },
+    "f2_47_0": {
+      "id": "topmostSubform[0].Page2[0].f2_47[0]",
+      "page": 2,
+      "rect": [
+        363.6,
+        152.001,
+        525.6,
+        162.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_47[0])"
+    },
+    "c2_10_0": {
+      "id": "topmostSubform[0].Page2[0].c2_10[0]",
+      "page": 2,
+      "rect": [
+        537.6,
+        150.001,
+        549.6,
+        162.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c2_10[0])"
+    },
+    "c2_10_1": {
+      "id": "topmostSubform[0].Page2[0].c2_10[1]",
+      "page": 2,
+      "rect": [
+        559.2,
+        150.001,
+        571.2,
+        162.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c2_10[1])"
+    },
+    "c2_11_0": {
+      "id": "topmostSubform[0].Page2[0].c2_11[0]",
+      "page": 2,
+      "rect": [
+        537.6,
+        114.001,
+        549.6,
+        126.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c2_11[0])"
+    },
+    "c2_11_1": {
+      "id": "topmostSubform[0].Page2[0].c2_11[1]",
+      "page": 2,
+      "rect": [
+        559.2,
+        114.001,
+        571.2,
+        126.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c2_11[1])"
+    },
+    "f2_48_0": {
+      "id": "topmostSubform[0].Page2[0].f2_48[0]",
+      "page": 2,
+      "rect": [
+        439.2,
+        92.0,
+        525.6,
+        101.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_48[0])"
+    },
+    "c2_12_0": {
+      "id": "topmostSubform[0].Page2[0].c2_12[0]",
+      "page": 2,
+      "rect": [
+        537.6,
+        90.0,
+        549.6,
+        102.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c2_12[0])"
+    },
+    "c2_12_1": {
+      "id": "topmostSubform[0].Page2[0].c2_12[1]",
+      "page": 2,
+      "rect": [
+        559.2,
+        90.0,
+        571.2,
+        102.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c2_12[1])"
+    },
+    "f2_49_0": {
+      "id": "topmostSubform[0].Page2[0].f2_49[0]",
+      "page": 2,
+      "rect": [
+        194.4,
+        60.001,
+        266.4,
+        70.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_49[0])"
+    },
+    "f2_50_0": {
+      "id": "topmostSubform[0].Page2[0].f2_50[0]",
+      "page": 2,
+      "rect": [
+        456.6,
+        60.001,
+        522.6,
+        70.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_50[0])"
+    },
+    "c2_13_0": {
+      "id": "topmostSubform[0].Page2[0].c2_13[0]",
+      "page": 2,
+      "rect": [
+        537.6,
+        36.0,
+        549.6,
+        48.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c2_13[0])"
+    },
+    "c2_13_1": {
+      "id": "topmostSubform[0].Page2[0].c2_13[1]",
+      "page": 2,
+      "rect": [
+        559.2,
+        36.0,
+        571.2,
+        48.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c2_13[1])"
+    },
+    "f3_1_0": {
+      "id": "topmostSubform[0].Page3[0].f3_1[0]",
+      "page": 3,
+      "rect": [
+        194.4,
+        702.0,
+        266.4,
+        711.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_1[0])"
+    },
+    "f3_2_0": {
+      "id": "topmostSubform[0].Page3[0].f3_2[0]",
+      "page": 3,
+      "rect": [
+        456.6,
+        702.0,
+        522.6,
+        711.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_2[0])"
+    },
+    "c3_1_0": {
+      "id": "topmostSubform[0].Page3[0].c3_1[0]",
+      "page": 3,
+      "rect": [
+        537.6,
+        678.002,
+        549.6,
+        690.002
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c3_1[0])"
+    },
+    "c3_1_1": {
+      "id": "topmostSubform[0].Page3[0].c3_1[1]",
+      "page": 3,
+      "rect": [
+        559.2,
+        678.002,
+        571.2,
+        690.002
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c3_1[1])"
+    },
+    "f3_3_0": {
+      "id": "topmostSubform[0].Page3[0].f3_3[0]",
+      "page": 3,
+      "rect": [
+        384.4,
+        636.001,
+        453.6,
+        646.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_3[0])"
+    },
+    "c3_2_0": {
+      "id": "topmostSubform[0].Page3[0].c3_2[0]",
+      "page": 3,
+      "rect": [
+        537.6,
+        624.002,
+        549.6,
+        636.002
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c3_2[0])"
+    },
+    "c3_2_1": {
+      "id": "topmostSubform[0].Page3[0].c3_2[1]",
+      "page": 3,
+      "rect": [
+        559.2,
+        624.002,
+        571.2,
+        636.002
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c3_2[1])"
+    },
+    "c3_3_0": {
+      "id": "topmostSubform[0].Page3[0].c3_3[0]",
+      "page": 3,
+      "rect": [
+        537.6,
+        612.0,
+        549.6,
+        624.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c3_3[0])"
+    },
+    "c3_3_1": {
+      "id": "topmostSubform[0].Page3[0].c3_3[1]",
+      "page": 3,
+      "rect": [
+        559.2,
+        612.0,
+        571.2,
+        624.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c3_3[1])"
+    },
+    "c3_4_0": {
+      "id": "topmostSubform[0].Page3[0].c3_4[0]",
+      "page": 3,
+      "rect": [
+        517.6,
+        581.502,
+        525.6,
+        589.502
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c3_4[0])"
+    },
+    "c3_5_0": {
+      "id": "topmostSubform[0].Page3[0].c3_5[0]",
+      "page": 3,
+      "rect": [
+        537.6,
+        558.0,
+        549.6,
+        570.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c3_5[0])"
+    },
+    "c3_5_1": {
+      "id": "topmostSubform[0].Page3[0].c3_5[1]",
+      "page": 3,
+      "rect": [
+        559.2,
+        558.0,
+        571.2,
+        570.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c3_5[1])"
+    },
+    "f3_4_0": {
+      "id": "topmostSubform[0].Page3[0].f3_4[0]",
+      "page": 3,
+      "rect": [
+        453.6,
+        524.0,
+        525.6,
+        533.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_4[0])"
+    },
+    "f3_5_0": {
+      "id": "topmostSubform[0].Page3[0].f3_5[0]",
+      "page": 3,
+      "rect": [
+        453.6,
+        488.0,
+        525.6,
+        497.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_5[0])"
+    },
+    "c3_6_0": {
+      "id": "topmostSubform[0].Page3[0].c3_6[0]",
+      "page": 3,
+      "rect": [
+        537.6,
+        486.0,
+        549.6,
+        498.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c3_6[0])"
+    },
+    "c3_6_1": {
+      "id": "topmostSubform[0].Page3[0].c3_6[1]",
+      "page": 3,
+      "rect": [
+        559.2,
+        486.0,
+        571.2,
+        498.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c3_6[1])"
+    },
+    "f3_6_0": {
+      "id": "topmostSubform[0].Page3[0].f3_6[0]",
+      "page": 3,
+      "rect": [
+        453.6,
+        464.002,
+        525.6,
+        474.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_6[0])"
+    },
+    "line_16_a_did_you_make_any_a": {
+      "id": "topmostSubform[0].Page3[0].c3_7[0]",
+      "page": 3,
+      "rect": [
+        537.6,
+        450.0,
+        549.6,
+        462.0
+      ],
+      "type": "checkbox",
+      "description": "Line 16: a Did you make any"
+    },
+    "line_16_a_did_you_make_any_b": {
+      "id": "topmostSubform[0].Page3[0].c3_7[1]",
+      "page": 3,
+      "rect": [
+        559.2,
+        450.0,
+        571.2,
+        462.0
+      ],
+      "type": "checkbox",
+      "description": "Line 16: a Did you make any"
+    },
+    "c3_8_0": {
+      "id": "topmostSubform[0].Page3[0].c3_8[0]",
+      "page": 3,
+      "rect": [
+        537.6,
+        438.001,
+        549.6,
+        450.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c3_8[0])"
+    },
+    "c3_8_1": {
+      "id": "topmostSubform[0].Page3[0].c3_8[1]",
+      "page": 3,
+      "rect": [
+        559.2,
+        438.001,
+        571.2,
+        450.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c3_8[1])"
+    },
+    "f3_7_0": {
+      "id": "topmostSubform[0].Page3[0].f3_7[0]",
+      "page": 3,
+      "rect": [
+        453.6,
+        416.0,
+        525.6,
+        425.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_7[0])"
+    },
+    "line_18_enter_the_number_of_partners": {
+      "id": "topmostSubform[0].Page3[0].f3_8[0]",
+      "page": 3,
+      "rect": [
+        453.6,
+        404.001,
+        525.6,
+        414.0
+      ],
+      "type": "text",
+      "description": "Line 18: Enter the number of partners"
+    },
+    "c3_9_0": {
+      "id": "topmostSubform[0].Page3[0].c3_9[0]",
+      "page": 3,
+      "rect": [
+        537.6,
+        366.001,
+        549.6,
+        378.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c3_9[0])"
+    },
+    "c3_9_1": {
+      "id": "topmostSubform[0].Page3[0].c3_9[1]",
+      "page": 3,
+      "rect": [
+        559.2,
+        366.001,
+        571.2,
+        378.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c3_9[1])"
+    },
+    "c3_10_0": {
+      "id": "topmostSubform[0].Page3[0].c3_10[0]",
+      "page": 3,
+      "rect": [
+        537.6,
+        342.0,
+        549.6,
+        354.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c3_10[0])"
+    },
+    "c3_10_1": {
+      "id": "topmostSubform[0].Page3[0].c3_10[1]",
+      "page": 3,
+      "rect": [
+        559.2,
+        342.0,
+        571.2,
+        354.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c3_10[1])"
+    },
+    "line_21_is_the_partnership_a_section_a": {
+      "id": "topmostSubform[0].Page3[0].c3_11[0]",
+      "page": 3,
+      "rect": [
+        537.6,
+        330.001,
+        549.6,
+        342.001
+      ],
+      "type": "checkbox",
+      "description": "Line 21: Is the partnership a section"
+    },
+    "line_21_is_the_partnership_a_section_b": {
+      "id": "topmostSubform[0].Page3[0].c3_11[1]",
+      "page": 3,
+      "rect": [
+        559.2,
+        330.001,
+        571.2,
+        342.001
+      ],
+      "type": "checkbox",
+      "description": "Line 21: Is the partnership a section"
+    },
+    "c3_12_0": {
+      "id": "topmostSubform[0].Page3[0].c3_12[0]",
+      "page": 3,
+      "rect": [
+        537.6,
+        306.0,
+        549.6,
+        318.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c3_12[0])"
+    },
+    "c3_12_1": {
+      "id": "topmostSubform[0].Page3[0].c3_12[1]",
+      "page": 3,
+      "rect": [
+        559.2,
+        306.0,
+        571.2,
+        318.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c3_12[1])"
+    },
+    "f3_9_0": {
+      "id": "topmostSubform[0].Page3[0].f3_9[0]",
+      "page": 3,
+      "rect": [
+        453.6,
+        296.001,
+        525.6,
+        306.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_9[0])"
+    },
+    "c3_13_0": {
+      "id": "topmostSubform[0].Page3[0].c3_13[0]",
+      "page": 3,
+      "rect": [
+        537.6,
+        270.0,
+        549.6,
+        282.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c3_13[0])"
+    },
+    "c3_13_1": {
+      "id": "topmostSubform[0].Page3[0].c3_13[1]",
+      "page": 3,
+      "rect": [
+        559.2,
+        270.0,
+        571.2,
+        282.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c3_13[1])"
+    },
+    "line_24_does_the_partnership_satisfy_one_a": {
+      "id": "topmostSubform[0].Page3[0].c3_14[0]",
+      "page": 3,
+      "rect": [
+        537.6,
+        258.001,
+        549.6,
+        270.001
+      ],
+      "type": "checkbox",
+      "description": "Line 24: Does the partnership satisfy one"
+    },
+    "line_24_does_the_partnership_satisfy_one_b": {
+      "id": "topmostSubform[0].Page3[0].c3_14[1]",
+      "page": 3,
+      "rect": [
+        559.2,
+        258.001,
+        571.2,
+        270.001
+      ],
+      "type": "checkbox",
+      "description": "Line 24: Does the partnership satisfy one"
+    },
+    "line_25_does_the_partnership_intend_to_a": {
+      "id": "topmostSubform[0].Page3[0].c3_15[0]",
+      "page": 3,
+      "rect": [
+        537.6,
+        186.001,
+        549.6,
+        198.001
+      ],
+      "type": "checkbox",
+      "description": "Line 25: Does the partnership intend to"
+    },
+    "line_25_does_the_partnership_intend_to_b": {
+      "id": "topmostSubform[0].Page3[0].c3_15[1]",
+      "page": 3,
+      "rect": [
+        559.2,
+        186.001,
+        571.2,
+        198.001
+      ],
+      "type": "checkbox",
+      "description": "Line 25: Does the partnership intend to"
+    },
+    "f3_10_0": {
+      "id": "topmostSubform[0].Page3[0].f3_10[0]",
+      "page": 3,
+      "rect": [
+        453.6,
+        164.0,
+        525.6,
+        173.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_10[0])"
+    },
+    "f3_11_0": {
+      "id": "topmostSubform[0].Page3[0].f3_11[0]",
+      "page": 3,
+      "rect": [
+        453.6,
+        140.002,
+        525.6,
+        150.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_11[0])"
+    },
+    "c3_16_0": {
+      "id": "topmostSubform[0].Page3[0].c3_16[0]",
+      "page": 3,
+      "rect": [
+        537.6,
+        90.0,
+        549.6,
+        102.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c3_16[0])"
+    },
+    "c3_16_1": {
+      "id": "topmostSubform[0].Page3[0].c3_16[1]",
+      "page": 3,
+      "rect": [
+        559.2,
+        90.0,
+        571.2,
+        102.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c3_16[1])"
+    },
+    "f4_01_0": {
+      "id": "topmostSubform[0].Page4[0].f4_01[0]",
+      "page": 4,
+      "rect": [
+        340.35,
+        674.001,
+        403.2,
+        684.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_01[0])"
+    },
+    "f4_02_0": {
+      "id": "topmostSubform[0].Page4[0].f4_02[0]",
+      "page": 4,
+      "rect": [
+        461.036,
+        674.001,
+        525.6,
+        684.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_02[0])"
+    },
+    "c4_1_0": {
+      "id": "topmostSubform[0].Page4[0].c4_1[0]",
+      "page": 4,
+      "rect": [
+        537.6,
+        672.001,
+        549.6,
+        684.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c4_1[0])"
+    },
+    "c4_1_1": {
+      "id": "topmostSubform[0].Page4[0].c4_1[1]",
+      "page": 4,
+      "rect": [
+        559.2,
+        672.001,
+        571.2,
+        684.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c4_1[1])"
+    },
+    "c4_2_0": {
+      "id": "topmostSubform[0].Page4[0].c4_2[0]",
+      "page": 4,
+      "rect": [
+        537.6,
+        648.0,
+        549.6,
+        660.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c4_2[0])"
+    },
+    "c4_2_1": {
+      "id": "topmostSubform[0].Page4[0].c4_2[1]",
+      "page": 4,
+      "rect": [
+        559.2,
+        648.0,
+        571.2,
+        660.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c4_2[1])"
+    },
+    "c4_3_0": {
+      "id": "topmostSubform[0].Page4[0].c4_3[0]",
+      "page": 4,
+      "rect": [
+        537.6,
+        636.001,
+        549.6,
+        648.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c4_3[0])"
+    },
+    "c4_3_1": {
+      "id": "topmostSubform[0].Page4[0].c4_3[1]",
+      "page": 4,
+      "rect": [
+        559.2,
+        636.001,
+        571.2,
+        648.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c4_3[1])"
+    },
+    "c4_4_0": {
+      "id": "topmostSubform[0].Page4[0].c4_4[0]",
+      "page": 4,
+      "rect": [
+        537.6,
+        588.002,
+        549.6,
+        600.002
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c4_4[0])"
+    },
+    "c4_4_1": {
+      "id": "topmostSubform[0].Page4[0].c4_4[1]",
+      "page": 4,
+      "rect": [
+        559.2,
+        588.002,
+        571.2,
+        600.002
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c4_4[1])"
+    },
+    "line_32_check_this_box_if_an": {
+      "id": "topmostSubform[0].Page4[0].c4_5[0]",
+      "page": 4,
+      "rect": [
+        517.6,
+        566.001,
+        525.6,
+        574.001
+      ],
+      "type": "checkbox",
+      "description": "Line 32: Check this box if an"
+    },
+    "line_33_is_the_partnership_electing_out_a": {
+      "id": "topmostSubform[0].Page4[0].c4_6[0]",
+      "page": 4,
+      "rect": [
+        537.6,
+        552.002,
+        549.6,
+        564.002
+      ],
+      "type": "checkbox",
+      "description": "Line 33: Is the partnership electing out"
+    },
+    "line_33_is_the_partnership_electing_out_b": {
+      "id": "topmostSubform[0].Page4[0].c4_6[1]",
+      "page": 4,
+      "rect": [
+        559.2,
+        552.002,
+        571.2,
+        564.002
+      ],
+      "type": "checkbox",
+      "description": "Line 33: Is the partnership electing out"
+    },
+    "f4_03_0": {
+      "id": "topmostSubform[0].Page4[0].f4_03[0]",
+      "page": 4,
+      "rect": [
+        453.6,
+        530.001,
+        525.6,
+        540.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_03[0])"
+    },
+    "f4_04_0": {
+      "id": "topmostSubform[0].Page4[0].f4_04[0]",
+      "page": 4,
+      "rect": [
+        36.0,
+        461.999,
+        301.65,
+        474.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_04[0])"
+    },
+    "f4_05_0": {
+      "id": "topmostSubform[0].Page4[0].f4_05[0]",
+      "page": 4,
+      "rect": [
+        303.4,
+        461.999,
+        576.0,
+        474.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_05[0])"
+    },
+    "f4_06_0": {
+      "id": "topmostSubform[0].Page4[0].f4_06[0]",
+      "page": 4,
+      "rect": [
+        87.4,
+        437.998,
+        272.85,
+        450.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_06[0])"
+    },
+    "f4_07_0": {
+      "id": "topmostSubform[0].Page4[0].f4_07[0]",
+      "page": 4,
+      "rect": [
+        274.6,
+        437.998,
+        380.85,
+        450.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_07[0])"
+    },
+    "f4_08_0": {
+      "id": "topmostSubform[0].Page4[0].f4_08[0]",
+      "page": 4,
+      "rect": [
+        381.6,
+        437.998,
+        417.6,
+        450.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_08[0])"
+    },
+    "f4_09_0": {
+      "id": "topmostSubform[0].Page4[0].f4_09[0]",
+      "page": 4,
+      "rect": [
+        417.6,
+        437.998,
+        475.2,
+        450.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_09[0])"
+    },
+    "f4_10_0": {
+      "id": "topmostSubform[0].Page4[0].f4_10[0]",
+      "page": 4,
+      "rect": [
+        475.2,
+        437.998,
+        576.0,
+        450.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_10[0])"
+    },
+    "f4_11_0": {
+      "id": "topmostSubform[0].Page4[0].f4_11[0]",
+      "page": 4,
+      "rect": [
+        36.0,
+        396.0,
+        301.65,
+        408.002
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_11[0])"
+    },
+    "f4_12_0": {
+      "id": "topmostSubform[0].Page4[0].f4_12[0]",
+      "page": 4,
+      "rect": [
+        303.4,
+        396.0,
+        576.0,
+        408.002
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_12[0])"
+    },
+    "f4_13_0": {
+      "id": "topmostSubform[0].Page4[0].f4_13[0]",
+      "page": 4,
+      "rect": [
+        87.4,
+        371.999,
+        272.85,
+        384.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_13[0])"
+    },
+    "f4_14_0": {
+      "id": "topmostSubform[0].Page4[0].f4_14[0]",
+      "page": 4,
+      "rect": [
+        274.6,
+        371.999,
+        380.85,
+        384.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_14[0])"
+    },
+    "f4_15_0": {
+      "id": "topmostSubform[0].Page4[0].f4_15[0]",
+      "page": 4,
+      "rect": [
+        381.6,
+        371.999,
+        417.6,
+        384.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_15[0])"
+    },
+    "f4_16_0": {
+      "id": "topmostSubform[0].Page4[0].f4_16[0]",
+      "page": 4,
+      "rect": [
+        417.6,
+        371.999,
+        475.2,
+        384.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_16[0])"
+    },
+    "f4_17_0": {
+      "id": "topmostSubform[0].Page4[0].f4_17[0]",
+      "page": 4,
+      "rect": [
+        475.2,
+        371.999,
+        576.0,
+        384.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_17[0])"
+    },
+    "line_1_ordinary_business_income_loss_page": {
+      "id": "topmostSubform[0].Page5[0].f5_01[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        720.0,
+        576.0,
+        731.999
+      ],
+      "type": "text",
+      "description": "Line 1: Ordinary business income (loss) (page"
+    },
+    "line_2_net_rental_real_estate_income": {
+      "id": "topmostSubform[0].Page5[0].f5_02[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        708.001,
+        576.0,
+        720.0
+      ],
+      "type": "text",
+      "description": "Line 2: Net rental real estate income"
+    },
+    "line_3a_other_gross_rental_income_loss": {
+      "id": "topmostSubform[0].Page5[0].f5_03[0]",
+      "page": 5,
+      "rect": [
+        410.4,
+        696.002,
+        481.65,
+        708.001
+      ],
+      "type": "text",
+      "description": "Line 3a: Other gross rental income (loss)"
+    },
+    "f5_04_0": {
+      "id": "topmostSubform[0].Page5[0].f5_04[0]",
+      "page": 5,
+      "rect": [
+        410.4,
+        684.0,
+        481.65,
+        695.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_04[0])"
+    },
+    "f5_05_0": {
+      "id": "topmostSubform[0].Page5[0].f5_05[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        672.001,
+        576.0,
+        684.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_05[0])"
+    },
+    "line_4_guaranteed_payments_a_services_4a_a": {
+      "id": "topmostSubform[0].Page5[0].f5_06[0]",
+      "page": 5,
+      "rect": [
+        259.2,
+        660.002,
+        330.45,
+        672.001
+      ],
+      "type": "text",
+      "description": "Line 4: Guaranteed payments: a Services 4a"
+    },
+    "line_4_guaranteed_payments_a_services_4a_b": {
+      "id": "topmostSubform[0].Page5[0].f5_07[0]",
+      "page": 5,
+      "rect": [
+        410.4,
+        660.002,
+        481.65,
+        672.001
+      ],
+      "type": "text",
+      "description": "Line 4: Guaranteed payments: a Services 4a"
+    },
+    "f5_08_0": {
+      "id": "topmostSubform[0].Page5[0].f5_08[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        648.0,
+        576.0,
+        659.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_08[0])"
+    },
+    "line_5_interest_income": {
+      "id": "topmostSubform[0].Page5[0].f5_09[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        636.001,
+        576.0,
+        648.0
+      ],
+      "type": "text",
+      "description": "Line 5: Interest income . . ."
+    },
+    "line_6_dividends_and_dividend_equivalents_a": {
+      "id": "topmostSubform[0].Page5[0].f5_10[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        624.002,
+        576.0,
+        636.001
+      ],
+      "type": "text",
+      "description": "Line 6: Dividends and dividend equivalents: a"
+    },
+    "f5_11_0": {
+      "id": "topmostSubform[0].Page5[0].f5_11[0]",
+      "page": 5,
+      "rect": [
+        208.8,
+        612.0,
+        280.05,
+        623.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_11[0])"
+    },
+    "f5_12_0": {
+      "id": "topmostSubform[0].Page5[0].f5_12[0]",
+      "page": 5,
+      "rect": [
+        410.4,
+        612.0,
+        481.65,
+        623.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_12[0])"
+    },
+    "line_7_royalties": {
+      "id": "topmostSubform[0].Page5[0].f5_13[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        600.001,
+        576.0,
+        612.0
+      ],
+      "type": "text",
+      "description": "Line 7: Royalties . . . ."
+    },
+    "line_8_net_short_term_capital_gain_loss": {
+      "id": "topmostSubform[0].Page5[0].f5_14[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        588.002,
+        576.0,
+        600.001
+      ],
+      "type": "text",
+      "description": "Line 8: Net short-term capital gain (loss)"
+    },
+    "line_9_a_net_long_term_capital_gain": {
+      "id": "topmostSubform[0].Page5[0].f5_15[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        576.0,
+        576.0,
+        587.999
+      ],
+      "type": "text",
+      "description": "Line 9: a Net long-term capital gain"
+    },
+    "f5_16_0": {
+      "id": "topmostSubform[0].Page5[0].f5_16[0]",
+      "page": 5,
+      "rect": [
+        410.4,
+        564.001,
+        481.65,
+        576.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_16[0])"
+    },
+    "f5_17_0": {
+      "id": "topmostSubform[0].Page5[0].f5_17[0]",
+      "page": 5,
+      "rect": [
+        410.4,
+        552.002,
+        481.65,
+        564.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_17[0])"
+    },
+    "line_10_net_section_1231_gain_loss": {
+      "id": "topmostSubform[0].Page5[0].f5_18[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        540.0,
+        576.0,
+        551.999
+      ],
+      "type": "text",
+      "description": "Line 10: Net section 1231 gain (loss)"
+    },
+    "line_11_other_income_loss_see_instructions_a": {
+      "id": "topmostSubform[0].Page5[0].f5_19[0]",
+      "page": 5,
+      "rect": [
+        280.8,
+        530.001,
+        475.2,
+        540.0
+      ],
+      "type": "text",
+      "description": "Line 11: Other income (loss) (see instructions)"
+    },
+    "line_11_other_income_loss_see_instructions_b": {
+      "id": "topmostSubform[0].Page5[0].f5_20[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        528.001,
+        576.0,
+        540.0
+      ],
+      "type": "text",
+      "description": "Line 11: Other income (loss) (see instructions)"
+    },
+    "line_12_section_179_deduction_attach_form": {
+      "id": "topmostSubform[0].Page5[0].f5_21[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        516.002,
+        576.0,
+        528.001
+      ],
+      "type": "text",
+      "description": "Line 12: Section 179 deduction (attach Form"
+    },
+    "line_13a_cash_contributions": {
+      "id": "topmostSubform[0].Page5[0].f5_22[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        504.0,
+        576.0,
+        515.999
+      ],
+      "type": "text",
+      "description": "Line 13a: Cash contributions . . ."
+    },
+    "f5_23_0": {
+      "id": "topmostSubform[0].Page5[0].f5_23[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        492.001,
+        576.0,
+        504.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_23[0])"
+    },
+    "f5_24_0": {
+      "id": "topmostSubform[0].Page5[0].f5_24[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        480.002,
+        576.0,
+        492.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_24[0])"
+    },
+    "f5_25_0": {
+      "id": "topmostSubform[0].Page5[0].f5_25[0]",
+      "page": 5,
+      "rect": [
+        273.6,
+        470.0,
+        410.4,
+        479.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_25[0])"
+    },
+    "f5_26_0": {
+      "id": "topmostSubform[0].Page5[0].f5_26[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        468.0,
+        576.0,
+        479.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_26[0])"
+    },
+    "f5_27_0": {
+      "id": "topmostSubform[0].Page5[0].f5_27[0]",
+      "page": 5,
+      "rect": [
+        273.6,
+        458.001,
+        475.2,
+        468.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_27[0])"
+    },
+    "f5_28_0": {
+      "id": "topmostSubform[0].Page5[0].f5_28[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        456.001,
+        576.0,
+        468.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_28[0])"
+    },
+    "f5_29_0": {
+      "id": "topmostSubform[0].Page5[0].f5_29[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        444.002,
+        576.0,
+        456.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_29[0])"
+    },
+    "f5_30_0": {
+      "id": "topmostSubform[0].Page5[0].f5_30[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        432.0,
+        576.0,
+        443.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_30[0])"
+    },
+    "f5_31_0": {
+      "id": "topmostSubform[0].Page5[0].f5_31[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        420.001,
+        576.0,
+        432.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_31[0])"
+    },
+    "line_15a_low_income_housing_credit_section_42_j_5": {
+      "id": "topmostSubform[0].Page5[0].f5_32[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        408.002,
+        576.0,
+        420.001
+      ],
+      "type": "text",
+      "description": "Line 15a: Low-income housing credit (section 42(j)(5))"
+    },
+    "f5_33_0": {
+      "id": "topmostSubform[0].Page5[0].f5_33[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        396.0,
+        576.0,
+        407.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_33[0])"
+    },
+    "f5_34_0": {
+      "id": "topmostSubform[0].Page5[0].f5_34[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        384.001,
+        576.0,
+        396.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_34[0])"
+    },
+    "f5_35_0": {
+      "id": "topmostSubform[0].Page5[0].f5_35[0]",
+      "page": 5,
+      "rect": [
+        324.0,
+        374.002,
+        475.2,
+        384.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_35[0])"
+    },
+    "f5_36_0": {
+      "id": "topmostSubform[0].Page5[0].f5_36[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        372.002,
+        576.0,
+        384.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_36[0])"
+    },
+    "f5_37_0": {
+      "id": "topmostSubform[0].Page5[0].f5_37[0]",
+      "page": 5,
+      "rect": [
+        280.8,
+        362.0,
+        475.2,
+        371.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_37[0])"
+    },
+    "f5_38_0": {
+      "id": "topmostSubform[0].Page5[0].f5_38[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        360.0,
+        576.0,
+        371.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_38[0])"
+    },
+    "f5_39_0": {
+      "id": "topmostSubform[0].Page5[0].f5_39[0]",
+      "page": 5,
+      "rect": [
+        252.0,
+        350.001,
+        475.2,
+        360.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_39[0])"
+    },
+    "f5_40_0": {
+      "id": "topmostSubform[0].Page5[0].f5_40[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        348.001,
+        576.0,
+        360.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_40[0])"
+    },
+    "c5_1_0": {
+      "id": "topmostSubform[0].Page5[0].c5_1[0]",
+      "page": 5,
+      "rect": [
+        467.2,
+        326.5,
+        475.2,
+        334.5
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_1[0])"
+    },
+    "c5_2_0": {
+      "id": "topmostSubform[0].Page5[0].c5_2[0]",
+      "page": 5,
+      "rect": [
+        467.2,
+        314.501,
+        475.2,
+        322.501
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_2[0])"
+    },
+    "line_17a_post_1986_depreciation_adjustment": {
+      "id": "topmostSubform[0].Page5[0].f5_41[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        300.002,
+        576.0,
+        312.001
+      ],
+      "type": "text",
+      "description": "Line 17a: Post-1986 depreciation adjustment . ."
+    },
+    "f5_42_0": {
+      "id": "topmostSubform[0].Page5[0].f5_42[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        288.0,
+        576.0,
+        299.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_42[0])"
+    },
+    "f5_43_0": {
+      "id": "topmostSubform[0].Page5[0].f5_43[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        276.001,
+        576.0,
+        288.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_43[0])"
+    },
+    "f5_44_0": {
+      "id": "topmostSubform[0].Page5[0].f5_44[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        264.002,
+        576.0,
+        276.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_44[0])"
+    },
+    "f5_45_0": {
+      "id": "topmostSubform[0].Page5[0].f5_45[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        252.0,
+        576.0,
+        263.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_45[0])"
+    },
+    "f5_46_0": {
+      "id": "topmostSubform[0].Page5[0].f5_46[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        240.001,
+        576.0,
+        252.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_46[0])"
+    },
+    "line_18a_tax_exempt_interest_income": {
+      "id": "topmostSubform[0].Page5[0].f5_47[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        228.002,
+        576.0,
+        240.001
+      ],
+      "type": "text",
+      "description": "Line 18a: Tax-exempt interest income . ."
+    },
+    "f5_48_0": {
+      "id": "topmostSubform[0].Page5[0].f5_48[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        216.0,
+        576.0,
+        227.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_48[0])"
+    },
+    "f5_49_0": {
+      "id": "topmostSubform[0].Page5[0].f5_49[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        204.001,
+        576.0,
+        216.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_49[0])"
+    },
+    "line_19a_distributions_of_cash_and_marketable": {
+      "id": "topmostSubform[0].Page5[0].f5_50[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        192.002,
+        576.0,
+        204.001
+      ],
+      "type": "text",
+      "description": "Line 19a: Distributions of cash and marketable"
+    },
+    "f5_51_0": {
+      "id": "topmostSubform[0].Page5[0].f5_51[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        180.0,
+        576.0,
+        191.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_51[0])"
+    },
+    "line_20a_investment_income": {
+      "id": "topmostSubform[0].Page5[0].f5_52[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        168.001,
+        576.0,
+        180.0
+      ],
+      "type": "text",
+      "description": "Line 20a: Investment income . . ."
+    },
+    "f5_53_0": {
+      "id": "topmostSubform[0].Page5[0].f5_53[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        156.002,
+        576.0,
+        168.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_53[0])"
+    },
+    "f5_54_0": {
+      "id": "topmostSubform[0].Page5[0].f5_54[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        144.0,
+        576.0,
+        155.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_54[0])"
+    },
+    "line_21_total_foreign_taxes_paid_or": {
+      "id": "topmostSubform[0].Page5[0].f5_55[0]",
+      "page": 5,
+      "rect": [
+        504.0,
+        132.001,
+        576.0,
+        144.0
+      ],
+      "type": "text",
+      "description": "Line 21: Total foreign taxes paid or"
+    },
+    "f6_01_0": {
+      "id": "topmostSubform[0].Page6[0].f6_01[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        708.001,
+        576.0,
+        720.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_01[0])"
+    },
+    "f6_02_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Line2[0].BodyRowA[0].f6_02[0]",
+      "page": 6,
+      "rect": [
+        144.0,
+        672.001,
+        215.25,
+        684.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_02[0])"
+    },
+    "f6_03_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Line2[0].BodyRowA[0].f6_03[0]",
+      "page": 6,
+      "rect": [
+        216.0,
+        672.001,
+        287.25,
+        684.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_03[0])"
+    },
+    "f6_04_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Line2[0].BodyRowA[0].f6_04[0]",
+      "page": 6,
+      "rect": [
+        288.0,
+        672.001,
+        359.25,
+        684.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_04[0])"
+    },
+    "f6_05_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Line2[0].BodyRowA[0].f6_05[0]",
+      "page": 6,
+      "rect": [
+        360.0,
+        672.001,
+        431.25,
+        684.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_05[0])"
+    },
+    "f6_06_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Line2[0].BodyRowA[0].f6_06[0]",
+      "page": 6,
+      "rect": [
+        432.0,
+        672.001,
+        503.25,
+        684.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_06[0])"
+    },
+    "f6_07_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Line2[0].BodyRowA[0].f6_07[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        672.001,
+        576.0,
+        684.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_07[0])"
+    },
+    "f6_08_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Line2[0].BodyRowB[0].f6_08[0]",
+      "page": 6,
+      "rect": [
+        144.0,
+        660.002,
+        215.25,
+        672.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_08[0])"
+    },
+    "f6_09_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Line2[0].BodyRowB[0].f6_09[0]",
+      "page": 6,
+      "rect": [
+        216.0,
+        660.002,
+        287.25,
+        672.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_09[0])"
+    },
+    "f6_10_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Line2[0].BodyRowB[0].f6_10[0]",
+      "page": 6,
+      "rect": [
+        288.0,
+        660.002,
+        359.25,
+        672.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_10[0])"
+    },
+    "f6_11_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Line2[0].BodyRowB[0].f6_11[0]",
+      "page": 6,
+      "rect": [
+        360.0,
+        660.002,
+        431.25,
+        672.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_11[0])"
+    },
+    "f6_12_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Line2[0].BodyRowB[0].f6_12[0]",
+      "page": 6,
+      "rect": [
+        432.0,
+        660.002,
+        503.25,
+        672.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_12[0])"
+    },
+    "f6_13_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Line2[0].BodyRowB[0].f6_13[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        660.002,
+        576.0,
+        672.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_13[0])"
+    },
+    "line_1_cash_a": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line1[0].f6_14[0]",
+      "page": 6,
+      "rect": [
+        288.0,
+        624.002,
+        359.25,
+        636.001
+      ],
+      "type": "text",
+      "description": "Line 1: Cash . . . ."
+    },
+    "line_1_cash_b": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line1[0].f6_15[0]",
+      "page": 6,
+      "rect": [
+        360.0,
+        624.002,
+        431.25,
+        636.001
+      ],
+      "type": "text",
+      "description": "Line 1: Cash . . . ."
+    },
+    "line_1_cash_c": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line1[0].f6_16[0]",
+      "page": 6,
+      "rect": [
+        432.0,
+        624.002,
+        503.25,
+        636.001
+      ],
+      "type": "text",
+      "description": "Line 1: Cash . . . ."
+    },
+    "line_1_cash_d": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line1[0].f6_17[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        624.002,
+        576.0,
+        636.001
+      ],
+      "type": "text",
+      "description": "Line 1: Cash . . . ."
+    },
+    "line_2a_trade_notes_and_accounts_receivable_a": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line2a[0].f6_18[0]",
+      "page": 6,
+      "rect": [
+        288.0,
+        612.003,
+        359.25,
+        624.002
+      ],
+      "type": "text",
+      "description": "Line 2a: Trade notes and accounts receivable"
+    },
+    "line_2a_trade_notes_and_accounts_receivable_b": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line2a[0].f6_19[0]",
+      "page": 6,
+      "rect": [
+        360.0,
+        612.003,
+        431.25,
+        624.002
+      ],
+      "type": "text",
+      "description": "Line 2a: Trade notes and accounts receivable"
+    },
+    "line_2a_trade_notes_and_accounts_receivable_c": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line2a[0].f6_20[0]",
+      "page": 6,
+      "rect": [
+        432.0,
+        612.003,
+        503.25,
+        624.002
+      ],
+      "type": "text",
+      "description": "Line 2a: Trade notes and accounts receivable"
+    },
+    "line_2a_trade_notes_and_accounts_receivable_d": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line2a[0].f6_21[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        612.003,
+        576.0,
+        624.002
+      ],
+      "type": "text",
+      "description": "Line 2a: Trade notes and accounts receivable"
+    },
+    "f6_22_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line2b[0].f6_22[0]",
+      "page": 6,
+      "rect": [
+        288.0,
+        600.004,
+        359.25,
+        612.003
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_22[0])"
+    },
+    "f6_23_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line2b[0].f6_23[0]",
+      "page": 6,
+      "rect": [
+        360.0,
+        600.004,
+        431.25,
+        612.003
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_23[0])"
+    },
+    "f6_24_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line2b[0].f6_24[0]",
+      "page": 6,
+      "rect": [
+        432.0,
+        600.004,
+        503.25,
+        612.003
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_24[0])"
+    },
+    "f6_25_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line2b[0].f6_25[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        600.004,
+        576.0,
+        612.003
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_25[0])"
+    },
+    "line_3_inventories_a": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line3[0].f6_26[0]",
+      "page": 6,
+      "rect": [
+        288.0,
+        588.005,
+        359.25,
+        600.004
+      ],
+      "type": "text",
+      "description": "Line 3: Inventories . . . ."
+    },
+    "line_3_inventories_b": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line3[0].f6_27[0]",
+      "page": 6,
+      "rect": [
+        360.0,
+        588.005,
+        431.25,
+        600.004
+      ],
+      "type": "text",
+      "description": "Line 3: Inventories . . . ."
+    },
+    "line_3_inventories_c": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line3[0].f6_28[0]",
+      "page": 6,
+      "rect": [
+        432.0,
+        588.005,
+        503.25,
+        600.004
+      ],
+      "type": "text",
+      "description": "Line 3: Inventories . . . ."
+    },
+    "line_3_inventories_d": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line3[0].f6_29[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        588.005,
+        576.0,
+        600.004
+      ],
+      "type": "text",
+      "description": "Line 3: Inventories . . . ."
+    },
+    "line_4_u_s_government_obligations_a": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line4[0].f6_30[0]",
+      "page": 6,
+      "rect": [
+        288.0,
+        576.006,
+        359.25,
+        588.005
+      ],
+      "type": "text",
+      "description": "Line 4: U.S. Government obligations . ."
+    },
+    "line_4_u_s_government_obligations_b": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line4[0].f6_31[0]",
+      "page": 6,
+      "rect": [
+        360.0,
+        576.006,
+        431.25,
+        588.005
+      ],
+      "type": "text",
+      "description": "Line 4: U.S. Government obligations . ."
+    },
+    "line_4_u_s_government_obligations_c": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line4[0].f6_32[0]",
+      "page": 6,
+      "rect": [
+        432.0,
+        576.006,
+        503.25,
+        588.005
+      ],
+      "type": "text",
+      "description": "Line 4: U.S. Government obligations . ."
+    },
+    "line_4_u_s_government_obligations_d": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line4[0].f6_33[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        576.006,
+        576.0,
+        588.005
+      ],
+      "type": "text",
+      "description": "Line 4: U.S. Government obligations . ."
+    },
+    "line_5_tax_exempt_securities_a": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line5[0].f6_34[0]",
+      "page": 6,
+      "rect": [
+        288.0,
+        564.007,
+        359.25,
+        576.006
+      ],
+      "type": "text",
+      "description": "Line 5: Tax-exempt securities . . ."
+    },
+    "line_5_tax_exempt_securities_b": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line5[0].f6_35[0]",
+      "page": 6,
+      "rect": [
+        360.0,
+        564.007,
+        431.25,
+        576.006
+      ],
+      "type": "text",
+      "description": "Line 5: Tax-exempt securities . . ."
+    },
+    "line_5_tax_exempt_securities_c": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line5[0].f6_36[0]",
+      "page": 6,
+      "rect": [
+        432.0,
+        564.007,
+        503.25,
+        576.006
+      ],
+      "type": "text",
+      "description": "Line 5: Tax-exempt securities . . ."
+    },
+    "line_5_tax_exempt_securities_d": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line5[0].f6_37[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        564.007,
+        576.0,
+        576.006
+      ],
+      "type": "text",
+      "description": "Line 5: Tax-exempt securities . . ."
+    },
+    "line_6_other_current_assets_attach_statement_a": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line6[0].f6_38[0]",
+      "page": 6,
+      "rect": [
+        288.0,
+        552.008,
+        359.25,
+        564.007
+      ],
+      "type": "text",
+      "description": "Line 6: Other current assets (attach statement)"
+    },
+    "line_6_other_current_assets_attach_statement_b": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line6[0].f6_39[0]",
+      "page": 6,
+      "rect": [
+        360.0,
+        552.008,
+        431.25,
+        564.007
+      ],
+      "type": "text",
+      "description": "Line 6: Other current assets (attach statement)"
+    },
+    "line_6_other_current_assets_attach_statement_c": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line6[0].f6_40[0]",
+      "page": 6,
+      "rect": [
+        432.0,
+        552.008,
+        503.25,
+        564.007
+      ],
+      "type": "text",
+      "description": "Line 6: Other current assets (attach statement)"
+    },
+    "line_6_other_current_assets_attach_statement_d": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line6[0].f6_41[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        552.008,
+        576.0,
+        564.007
+      ],
+      "type": "text",
+      "description": "Line 6: Other current assets (attach statement)"
+    },
+    "line_7a_loans_to_partners_or_persons_a": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line7a[0].f6_42[0]",
+      "page": 6,
+      "rect": [
+        288.0,
+        540.009,
+        359.25,
+        552.008
+      ],
+      "type": "text",
+      "description": "Line 7a: Loans to partners (or persons"
+    },
+    "line_7a_loans_to_partners_or_persons_b": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line7a[0].f6_43[0]",
+      "page": 6,
+      "rect": [
+        360.0,
+        540.009,
+        431.25,
+        552.008
+      ],
+      "type": "text",
+      "description": "Line 7a: Loans to partners (or persons"
+    },
+    "line_7a_loans_to_partners_or_persons_c": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line7a[0].f6_44[0]",
+      "page": 6,
+      "rect": [
+        432.0,
+        540.009,
+        503.25,
+        552.008
+      ],
+      "type": "text",
+      "description": "Line 7a: Loans to partners (or persons"
+    },
+    "line_7a_loans_to_partners_or_persons_d": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line7a[0].f6_45[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        540.009,
+        576.0,
+        552.008
+      ],
+      "type": "text",
+      "description": "Line 7a: Loans to partners (or persons"
+    },
+    "f6_46_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line7b[0].f6_46[0]",
+      "page": 6,
+      "rect": [
+        288.0,
+        528.01,
+        359.25,
+        540.009
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_46[0])"
+    },
+    "f6_47_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line7b[0].f6_47[0]",
+      "page": 6,
+      "rect": [
+        360.0,
+        528.01,
+        431.25,
+        540.009
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_47[0])"
+    },
+    "f6_48_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line7b[0].f6_48[0]",
+      "page": 6,
+      "rect": [
+        432.0,
+        528.01,
+        503.25,
+        540.009
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_48[0])"
+    },
+    "f6_49_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line7b[0].f6_49[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        528.01,
+        576.0,
+        540.009
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_49[0])"
+    },
+    "line_8_other_investments_attach_statement_a": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line8[0].f6_50[0]",
+      "page": 6,
+      "rect": [
+        288.0,
+        516.011,
+        359.25,
+        528.01
+      ],
+      "type": "text",
+      "description": "Line 8: Other investments (attach statement) ."
+    },
+    "line_8_other_investments_attach_statement_b": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line8[0].f6_51[0]",
+      "page": 6,
+      "rect": [
+        360.0,
+        516.011,
+        431.25,
+        528.01
+      ],
+      "type": "text",
+      "description": "Line 8: Other investments (attach statement) ."
+    },
+    "line_8_other_investments_attach_statement_c": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line8[0].f6_52[0]",
+      "page": 6,
+      "rect": [
+        432.0,
+        516.011,
+        503.25,
+        528.01
+      ],
+      "type": "text",
+      "description": "Line 8: Other investments (attach statement) ."
+    },
+    "line_8_other_investments_attach_statement_d": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line8[0].f6_53[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        516.011,
+        576.0,
+        528.01
+      ],
+      "type": "text",
+      "description": "Line 8: Other investments (attach statement) ."
+    },
+    "line_9a_buildings_and_other_depreciable_assets_a": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line9a[0].f6_54[0]",
+      "page": 6,
+      "rect": [
+        288.0,
+        504.012,
+        359.25,
+        516.011
+      ],
+      "type": "text",
+      "description": "Line 9a: Buildings and other depreciable assets"
+    },
+    "line_9a_buildings_and_other_depreciable_assets_b": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line9a[0].f6_55[0]",
+      "page": 6,
+      "rect": [
+        360.0,
+        504.012,
+        431.25,
+        516.011
+      ],
+      "type": "text",
+      "description": "Line 9a: Buildings and other depreciable assets"
+    },
+    "line_9a_buildings_and_other_depreciable_assets_c": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line9a[0].f6_56[0]",
+      "page": 6,
+      "rect": [
+        432.0,
+        504.012,
+        503.25,
+        516.011
+      ],
+      "type": "text",
+      "description": "Line 9a: Buildings and other depreciable assets"
+    },
+    "line_9a_buildings_and_other_depreciable_assets_d": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line9a[0].f6_57[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        504.012,
+        576.0,
+        516.011
+      ],
+      "type": "text",
+      "description": "Line 9a: Buildings and other depreciable assets"
+    },
+    "f6_58_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line9b[0].f6_58[0]",
+      "page": 6,
+      "rect": [
+        288.0,
+        492.013,
+        359.25,
+        504.012
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_58[0])"
+    },
+    "f6_59_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line9b[0].f6_59[0]",
+      "page": 6,
+      "rect": [
+        360.0,
+        492.013,
+        431.25,
+        504.012
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_59[0])"
+    },
+    "f6_60_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line9b[0].f6_60[0]",
+      "page": 6,
+      "rect": [
+        432.0,
+        492.013,
+        503.25,
+        504.012
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_60[0])"
+    },
+    "f6_61_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line9b[0].f6_61[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        492.013,
+        576.0,
+        504.012
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_61[0])"
+    },
+    "line_10a_depletable_assets_a": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line10a[0].f6_62[0]",
+      "page": 6,
+      "rect": [
+        288.0,
+        480.014,
+        359.25,
+        492.013
+      ],
+      "type": "text",
+      "description": "Line 10a: Depletable assets . . ."
+    },
+    "line_10a_depletable_assets_b": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line10a[0].f6_63[0]",
+      "page": 6,
+      "rect": [
+        360.0,
+        480.014,
+        431.25,
+        492.013
+      ],
+      "type": "text",
+      "description": "Line 10a: Depletable assets . . ."
+    },
+    "line_10a_depletable_assets_c": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line10a[0].f6_64[0]",
+      "page": 6,
+      "rect": [
+        432.0,
+        480.014,
+        503.25,
+        492.013
+      ],
+      "type": "text",
+      "description": "Line 10a: Depletable assets . . ."
+    },
+    "line_10a_depletable_assets_d": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line10a[0].f6_65[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        480.014,
+        576.0,
+        492.013
+      ],
+      "type": "text",
+      "description": "Line 10a: Depletable assets . . ."
+    },
+    "f6_66_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line10b[0].f6_66[0]",
+      "page": 6,
+      "rect": [
+        288.0,
+        468.015,
+        359.25,
+        480.014
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_66[0])"
+    },
+    "f6_67_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line10b[0].f6_67[0]",
+      "page": 6,
+      "rect": [
+        360.0,
+        468.015,
+        431.25,
+        480.014
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_67[0])"
+    },
+    "f6_68_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line10b[0].f6_68[0]",
+      "page": 6,
+      "rect": [
+        432.0,
+        468.015,
+        503.25,
+        480.014
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_68[0])"
+    },
+    "f6_69_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line10b[0].f6_69[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        468.015,
+        576.0,
+        480.014
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_69[0])"
+    },
+    "line_11_land_net_of_any_amortization_a": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line11[0].f6_70[0]",
+      "page": 6,
+      "rect": [
+        288.0,
+        456.016,
+        359.25,
+        468.015
+      ],
+      "type": "text",
+      "description": "Line 11: Land (net of any amortization)"
+    },
+    "line_11_land_net_of_any_amortization_b": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line11[0].f6_71[0]",
+      "page": 6,
+      "rect": [
+        360.0,
+        456.016,
+        431.25,
+        468.015
+      ],
+      "type": "text",
+      "description": "Line 11: Land (net of any amortization)"
+    },
+    "line_11_land_net_of_any_amortization_c": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line11[0].f6_72[0]",
+      "page": 6,
+      "rect": [
+        432.0,
+        456.016,
+        503.25,
+        468.015
+      ],
+      "type": "text",
+      "description": "Line 11: Land (net of any amortization)"
+    },
+    "line_11_land_net_of_any_amortization_d": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line11[0].f6_73[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        456.016,
+        576.0,
+        468.015
+      ],
+      "type": "text",
+      "description": "Line 11: Land (net of any amortization)"
+    },
+    "line_12a_intangible_assets_amortizable_only_a": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line12a[0].f6_74[0]",
+      "page": 6,
+      "rect": [
+        288.0,
+        444.017,
+        359.25,
+        456.016
+      ],
+      "type": "text",
+      "description": "Line 12a: Intangible assets (amortizable only) ."
+    },
+    "line_12a_intangible_assets_amortizable_only_b": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line12a[0].f6_75[0]",
+      "page": 6,
+      "rect": [
+        360.0,
+        444.017,
+        431.25,
+        456.016
+      ],
+      "type": "text",
+      "description": "Line 12a: Intangible assets (amortizable only) ."
+    },
+    "line_12a_intangible_assets_amortizable_only_c": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line12a[0].f6_76[0]",
+      "page": 6,
+      "rect": [
+        432.0,
+        444.017,
+        503.25,
+        456.016
+      ],
+      "type": "text",
+      "description": "Line 12a: Intangible assets (amortizable only) ."
+    },
+    "line_12a_intangible_assets_amortizable_only_d": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line12a[0].f6_77[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        444.017,
+        576.0,
+        456.016
+      ],
+      "type": "text",
+      "description": "Line 12a: Intangible assets (amortizable only) ."
+    },
+    "f6_78_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line12b[0].f6_78[0]",
+      "page": 6,
+      "rect": [
+        288.0,
+        432.018,
+        359.25,
+        444.017
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_78[0])"
+    },
+    "f6_79_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line12b[0].f6_79[0]",
+      "page": 6,
+      "rect": [
+        360.0,
+        432.018,
+        431.25,
+        444.017
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_79[0])"
+    },
+    "f6_80_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line12b[0].f6_80[0]",
+      "page": 6,
+      "rect": [
+        432.0,
+        432.018,
+        503.25,
+        444.017
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_80[0])"
+    },
+    "f6_81_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line12b[0].f6_81[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        432.018,
+        576.0,
+        444.017
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_81[0])"
+    },
+    "line_13_other_assets_attach_statement_a": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line13[0].f6_82[0]",
+      "page": 6,
+      "rect": [
+        288.0,
+        420.019,
+        359.25,
+        432.018
+      ],
+      "type": "text",
+      "description": "Line 13: Other assets (attach statement) ."
+    },
+    "line_13_other_assets_attach_statement_b": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line13[0].f6_83[0]",
+      "page": 6,
+      "rect": [
+        360.0,
+        420.019,
+        431.25,
+        432.018
+      ],
+      "type": "text",
+      "description": "Line 13: Other assets (attach statement) ."
+    },
+    "line_13_other_assets_attach_statement_c": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line13[0].f6_84[0]",
+      "page": 6,
+      "rect": [
+        432.0,
+        420.019,
+        503.25,
+        432.018
+      ],
+      "type": "text",
+      "description": "Line 13: Other assets (attach statement) ."
+    },
+    "line_13_other_assets_attach_statement_d": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line13[0].f6_85[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        420.019,
+        576.0,
+        432.018
+      ],
+      "type": "text",
+      "description": "Line 13: Other assets (attach statement) ."
+    },
+    "line_14_total_assets_a": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line14[0].f6_86[0]",
+      "page": 6,
+      "rect": [
+        288.0,
+        408.02,
+        359.25,
+        420.019
+      ],
+      "type": "text",
+      "description": "Line 14: Total assets . . ."
+    },
+    "line_14_total_assets_b": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line14[0].f6_87[0]",
+      "page": 6,
+      "rect": [
+        360.0,
+        408.02,
+        431.25,
+        420.019
+      ],
+      "type": "text",
+      "description": "Line 14: Total assets . . ."
+    },
+    "line_14_total_assets_c": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line14[0].f6_88[0]",
+      "page": 6,
+      "rect": [
+        432.0,
+        408.02,
+        503.25,
+        420.019
+      ],
+      "type": "text",
+      "description": "Line 14: Total assets . . ."
+    },
+    "line_14_total_assets_d": {
+      "id": "topmostSubform[0].Page6[0].Table_Assets[0].Line14[0].f6_89[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        408.02,
+        576.0,
+        420.019
+      ],
+      "type": "text",
+      "description": "Line 14: Total assets . . ."
+    },
+    "line_15_accounts_payable_a": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line15[0].f6_90[0]",
+      "page": 6,
+      "rect": [
+        288.0,
+        384.001,
+        359.25,
+        396.0
+      ],
+      "type": "text",
+      "description": "Line 15: Accounts payable . . ."
+    },
+    "line_15_accounts_payable_b": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line15[0].f6_91[0]",
+      "page": 6,
+      "rect": [
+        360.0,
+        384.001,
+        431.25,
+        396.0
+      ],
+      "type": "text",
+      "description": "Line 15: Accounts payable . . ."
+    },
+    "line_15_accounts_payable_c": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line15[0].f6_92[0]",
+      "page": 6,
+      "rect": [
+        432.0,
+        384.001,
+        503.25,
+        396.0
+      ],
+      "type": "text",
+      "description": "Line 15: Accounts payable . . ."
+    },
+    "line_15_accounts_payable_d": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line15[0].f6_93[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        384.001,
+        576.0,
+        396.0
+      ],
+      "type": "text",
+      "description": "Line 15: Accounts payable . . ."
+    },
+    "line_16_mortgages_notes_bonds_payable_in_a": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line16[0].f6_94[0]",
+      "page": 6,
+      "rect": [
+        288.0,
+        372.002,
+        359.25,
+        384.001
+      ],
+      "type": "text",
+      "description": "Line 16: Mortgages, notes, bonds payable in"
+    },
+    "line_16_mortgages_notes_bonds_payable_in_b": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line16[0].f6_95[0]",
+      "page": 6,
+      "rect": [
+        360.0,
+        372.002,
+        431.25,
+        384.001
+      ],
+      "type": "text",
+      "description": "Line 16: Mortgages, notes, bonds payable in"
+    },
+    "line_16_mortgages_notes_bonds_payable_in_c": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line16[0].f6_96[0]",
+      "page": 6,
+      "rect": [
+        432.0,
+        372.002,
+        503.25,
+        384.001
+      ],
+      "type": "text",
+      "description": "Line 16: Mortgages, notes, bonds payable in"
+    },
+    "line_16_mortgages_notes_bonds_payable_in_d": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line16[0].f6_97[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        372.002,
+        576.0,
+        384.001
+      ],
+      "type": "text",
+      "description": "Line 16: Mortgages, notes, bonds payable in"
+    },
+    "line_17_other_current_liabilities_attach_statement_a": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line17[0].f6_98[0]",
+      "page": 6,
+      "rect": [
+        288.0,
+        360.003,
+        359.25,
+        372.002
+      ],
+      "type": "text",
+      "description": "Line 17: Other current liabilities (attach statement)"
+    },
+    "line_17_other_current_liabilities_attach_statement_b": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line17[0].f6_99[0]",
+      "page": 6,
+      "rect": [
+        360.0,
+        360.003,
+        431.25,
+        372.002
+      ],
+      "type": "text",
+      "description": "Line 17: Other current liabilities (attach statement)"
+    },
+    "line_17_other_current_liabilities_attach_statement_c": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line17[0].f6_100[0]",
+      "page": 6,
+      "rect": [
+        432.0,
+        360.003,
+        503.25,
+        372.002
+      ],
+      "type": "text",
+      "description": "Line 17: Other current liabilities (attach statement)"
+    },
+    "line_17_other_current_liabilities_attach_statement_d": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line17[0].f6_101[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        360.003,
+        576.0,
+        372.002
+      ],
+      "type": "text",
+      "description": "Line 17: Other current liabilities (attach statement)"
+    },
+    "line_18_all_nonrecourse_loans_a": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line18[0].f6_102[0]",
+      "page": 6,
+      "rect": [
+        288.0,
+        348.004,
+        359.25,
+        360.003
+      ],
+      "type": "text",
+      "description": "Line 18: All nonrecourse loans . ."
+    },
+    "line_18_all_nonrecourse_loans_b": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line18[0].f6_103[0]",
+      "page": 6,
+      "rect": [
+        360.0,
+        348.004,
+        431.25,
+        360.003
+      ],
+      "type": "text",
+      "description": "Line 18: All nonrecourse loans . ."
+    },
+    "line_18_all_nonrecourse_loans_c": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line18[0].f6_104[0]",
+      "page": 6,
+      "rect": [
+        432.0,
+        348.004,
+        503.25,
+        360.003
+      ],
+      "type": "text",
+      "description": "Line 18: All nonrecourse loans . ."
+    },
+    "line_18_all_nonrecourse_loans_d": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line18[0].f6_105[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        348.004,
+        576.0,
+        360.003
+      ],
+      "type": "text",
+      "description": "Line 18: All nonrecourse loans . ."
+    },
+    "line_19a_loans_from_partners_or_persons_a": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line19a[0].f6_106[0]",
+      "page": 6,
+      "rect": [
+        288.0,
+        336.005,
+        359.25,
+        348.004
+      ],
+      "type": "text",
+      "description": "Line 19a: Loans from partners (or persons"
+    },
+    "line_19a_loans_from_partners_or_persons_b": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line19a[0].f6_107[0]",
+      "page": 6,
+      "rect": [
+        360.0,
+        336.005,
+        431.25,
+        348.004
+      ],
+      "type": "text",
+      "description": "Line 19a: Loans from partners (or persons"
+    },
+    "line_19a_loans_from_partners_or_persons_c": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line19a[0].f6_108[0]",
+      "page": 6,
+      "rect": [
+        432.0,
+        336.005,
+        503.25,
+        348.004
+      ],
+      "type": "text",
+      "description": "Line 19a: Loans from partners (or persons"
+    },
+    "line_19a_loans_from_partners_or_persons_d": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line19a[0].f6_109[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        336.005,
+        576.0,
+        348.004
+      ],
+      "type": "text",
+      "description": "Line 19a: Loans from partners (or persons"
+    },
+    "f6_110_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line19b[0].f6_110[0]",
+      "page": 6,
+      "rect": [
+        288.0,
+        324.006,
+        359.25,
+        336.005
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_110[0])"
+    },
+    "f6_111_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line19b[0].f6_111[0]",
+      "page": 6,
+      "rect": [
+        360.0,
+        324.006,
+        431.25,
+        336.005
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_111[0])"
+    },
+    "f6_112_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line19b[0].f6_112[0]",
+      "page": 6,
+      "rect": [
+        432.0,
+        324.006,
+        503.25,
+        336.005
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_112[0])"
+    },
+    "f6_113_0": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line19b[0].f6_113[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        324.006,
+        576.0,
+        336.005
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_113[0])"
+    },
+    "line_20_other_liabilities_attach_statement_a": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line20[0].f6_114[0]",
+      "page": 6,
+      "rect": [
+        288.0,
+        312.007,
+        359.25,
+        324.006
+      ],
+      "type": "text",
+      "description": "Line 20: Other liabilities (attach statement) ."
+    },
+    "line_20_other_liabilities_attach_statement_b": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line20[0].f6_115[0]",
+      "page": 6,
+      "rect": [
+        360.0,
+        312.007,
+        431.25,
+        324.006
+      ],
+      "type": "text",
+      "description": "Line 20: Other liabilities (attach statement) ."
+    },
+    "line_20_other_liabilities_attach_statement_c": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line20[0].f6_116[0]",
+      "page": 6,
+      "rect": [
+        432.0,
+        312.007,
+        503.25,
+        324.006
+      ],
+      "type": "text",
+      "description": "Line 20: Other liabilities (attach statement) ."
+    },
+    "line_20_other_liabilities_attach_statement_d": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line20[0].f6_117[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        312.007,
+        576.0,
+        324.006
+      ],
+      "type": "text",
+      "description": "Line 20: Other liabilities (attach statement) ."
+    },
+    "line_21_partners_capital_accounts_a": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line21[0].f6_118[0]",
+      "page": 6,
+      "rect": [
+        288.0,
+        300.008,
+        359.25,
+        312.007
+      ],
+      "type": "text",
+      "description": "Line 21: Partners\u2019 capital accounts . ."
+    },
+    "line_21_partners_capital_accounts_b": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line21[0].f6_119[0]",
+      "page": 6,
+      "rect": [
+        360.0,
+        300.008,
+        431.25,
+        312.007
+      ],
+      "type": "text",
+      "description": "Line 21: Partners\u2019 capital accounts . ."
+    },
+    "line_21_partners_capital_accounts_c": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line21[0].f6_120[0]",
+      "page": 6,
+      "rect": [
+        432.0,
+        300.008,
+        503.25,
+        312.007
+      ],
+      "type": "text",
+      "description": "Line 21: Partners\u2019 capital accounts . ."
+    },
+    "line_21_partners_capital_accounts_d": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line21[0].f6_121[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        300.008,
+        576.0,
+        312.007
+      ],
+      "type": "text",
+      "description": "Line 21: Partners\u2019 capital accounts . ."
+    },
+    "line_22_total_liabilities_and_capital_a": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line22[0].f6_122[0]",
+      "page": 6,
+      "rect": [
+        288.0,
+        288.009,
+        359.25,
+        300.008
+      ],
+      "type": "text",
+      "description": "Line 22: Total liabilities and capital ."
+    },
+    "line_22_total_liabilities_and_capital_b": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line22[0].f6_123[0]",
+      "page": 6,
+      "rect": [
+        360.0,
+        288.009,
+        431.25,
+        300.008
+      ],
+      "type": "text",
+      "description": "Line 22: Total liabilities and capital ."
+    },
+    "line_22_total_liabilities_and_capital_c": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line22[0].f6_124[0]",
+      "page": 6,
+      "rect": [
+        432.0,
+        288.009,
+        503.25,
+        300.008
+      ],
+      "type": "text",
+      "description": "Line 22: Total liabilities and capital ."
+    },
+    "line_22_total_liabilities_and_capital_d": {
+      "id": "topmostSubform[0].Page6[0].Table_Liabilities[0].Line22[0].f6_125[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        288.009,
+        576.0,
+        300.008
+      ],
+      "type": "text",
+      "description": "Line 22: Total liabilities and capital ."
+    },
+    "line_1_net_income_loss_per_books": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Left[0].f6_126[0]",
+      "page": 6,
+      "rect": [
+        230.4,
+        252.0,
+        301.65,
+        263.999
+      ],
+      "type": "text",
+      "description": "Line 1: Net income (loss) per books"
+    },
+    "f6_127_0": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Left[0].f6_127[0]",
+      "page": 6,
+      "rect": [
+        151.2,
+        216.0,
+        223.2,
+        227.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_127[0])"
+    },
+    "f6_128_0": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Left[0].f6_128[0]",
+      "page": 6,
+      "rect": [
+        230.4,
+        216.0,
+        301.65,
+        227.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_128[0])"
+    },
+    "f6_129_0": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Left[0].f6_129[0]",
+      "page": 6,
+      "rect": [
+        230.4,
+        192.002,
+        301.65,
+        204.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_129[0])"
+    },
+    "f6_130_0": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Left[0].f6_130[0]",
+      "page": 6,
+      "rect": [
+        129.6,
+        144.0,
+        223.2,
+        155.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_130[0])"
+    },
+    "line_9_income_loss_analysis_of_net_a": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Left[0].f6_131[0]",
+      "page": 6,
+      "rect": [
+        165.6,
+        132.001,
+        223.2,
+        144.0
+      ],
+      "type": "text",
+      "description": "Line 9: Income (loss) (Analysis of Net"
+    },
+    "line_9_income_loss_analysis_of_net_b": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Left[0].f6_132[0]",
+      "page": 6,
+      "rect": [
+        230.4,
+        132.001,
+        301.65,
+        144.0
+      ],
+      "type": "text",
+      "description": "Line 9: Income (loss) (Analysis of Net"
+    },
+    "line_5_add_lines_1_through_4_a": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Left[0].f6_133[0]",
+      "page": 6,
+      "rect": [
+        230.4,
+        120.002,
+        301.65,
+        132.001
+      ],
+      "type": "text",
+      "description": "Line 5: Add lines 1 through 4"
+    },
+    "f6_134_0": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Right[0].f6_134[0]",
+      "page": 6,
+      "rect": [
+        424.8,
+        228.002,
+        496.8,
+        240.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_134[0])"
+    },
+    "f6_135_0": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Right[0].f6_135[0]",
+      "page": 6,
+      "rect": [
+        331.2,
+        216.0,
+        496.8,
+        227.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_135[0])"
+    },
+    "f6_136_0": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Right[0].f6_136[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        216.0,
+        576.0,
+        227.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_136[0])"
+    },
+    "f6_137_0": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Right[0].f6_137[0]",
+      "page": 6,
+      "rect": [
+        396.0,
+        168.001,
+        496.8,
+        180.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_137[0])"
+    },
+    "f6_138_0": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Right[0].f6_138[0]",
+      "page": 6,
+      "rect": [
+        331.2,
+        156.002,
+        496.8,
+        168.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_138[0])"
+    },
+    "f6_139_0": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Right[0].f6_139[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        156.002,
+        576.0,
+        168.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_139[0])"
+    },
+    "f6_140_0": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Right[0].f6_140[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        144.0,
+        576.0,
+        155.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_140[0])"
+    },
+    "line_5_add_lines_1_through_4_b": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Right[0].f6_141[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        120.002,
+        576.0,
+        132.001
+      ],
+      "type": "text",
+      "description": "Line 5: Add lines 1 through 4"
+    },
+    "line_1_balance_at_beginning_of_year_a": {
+      "id": "topmostSubform[0].Page6[0].SchM-2_Left[0].f6_142[0]",
+      "page": 6,
+      "rect": [
+        230.4,
+        96.001,
+        301.65,
+        108.0
+      ],
+      "type": "text",
+      "description": "Line 1: Balance at beginning of year"
+    },
+    "line_2_capital_contributed_a_cash_a": {
+      "id": "topmostSubform[0].Page6[0].SchM-2_Left[0].f6_143[0]",
+      "page": 6,
+      "rect": [
+        230.4,
+        84.002,
+        301.65,
+        96.001
+      ],
+      "type": "text",
+      "description": "Line 2: Capital contributed: a Cash ."
+    },
+    "f6_144_0": {
+      "id": "topmostSubform[0].Page6[0].SchM-2_Left[0].f6_144[0]",
+      "page": 6,
+      "rect": [
+        230.4,
+        72.0,
+        301.65,
+        83.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_144[0])"
+    },
+    "line_3_net_income_loss_see_instructions_a": {
+      "id": "topmostSubform[0].Page6[0].SchM-2_Left[0].f6_145[0]",
+      "page": 6,
+      "rect": [
+        230.4,
+        60.001,
+        301.65,
+        72.0
+      ],
+      "type": "text",
+      "description": "Line 3: Net income (loss) (see instructions)"
+    },
+    "line_4_other_increases_itemize_8_add_a": {
+      "id": "topmostSubform[0].Page6[0].SchM-2_Left[0].f6_146[0]",
+      "page": 6,
+      "rect": [
+        165.6,
+        48.002,
+        223.2,
+        60.001
+      ],
+      "type": "text",
+      "description": "Line 4: Other increases (itemize): 8 Add"
+    },
+    "line_4_other_increases_itemize_8_add_b": {
+      "id": "topmostSubform[0].Page6[0].SchM-2_Left[0].f6_147[0]",
+      "page": 6,
+      "rect": [
+        230.4,
+        48.002,
+        301.65,
+        60.001
+      ],
+      "type": "text",
+      "description": "Line 4: Other increases (itemize): 8 Add"
+    },
+    "line_5_add_lines_1_through_4_a_2": {
+      "id": "topmostSubform[0].Page6[0].SchM-2_Left[0].f6_148[0]",
+      "page": 6,
+      "rect": [
+        230.4,
+        36.0,
+        301.65,
+        47.999
+      ],
+      "type": "text",
+      "description": "Line 5: Add lines 1 through 4"
+    },
+    "line_1_balance_at_beginning_of_year_b": {
+      "id": "topmostSubform[0].Page6[0].f6_149[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        96.001,
+        576.0,
+        108.0
+      ],
+      "type": "text",
+      "description": "Line 1: Balance at beginning of year"
+    },
+    "line_2_capital_contributed_a_cash_b": {
+      "id": "topmostSubform[0].Page6[0].f6_150[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        84.002,
+        576.0,
+        96.001
+      ],
+      "type": "text",
+      "description": "Line 2: Capital contributed: a Cash ."
+    },
+    "f6_151_0": {
+      "id": "topmostSubform[0].Page6[0].f6_151[0]",
+      "page": 6,
+      "rect": [
+        439.2,
+        72.0,
+        496.8,
+        83.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_151[0])"
+    },
+    "line_3_net_income_loss_see_instructions_b": {
+      "id": "topmostSubform[0].Page6[0].f6_152[0]",
+      "page": 6,
+      "rect": [
+        331.2,
+        60.001,
+        496.8,
+        72.0
+      ],
+      "type": "text",
+      "description": "Line 3: Net income (loss) (see instructions)"
+    },
+    "line_3_net_income_loss_see_instructions_c": {
+      "id": "topmostSubform[0].Page6[0].f6_153[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        60.001,
+        576.0,
+        72.0
+      ],
+      "type": "text",
+      "description": "Line 3: Net income (loss) (see instructions)"
+    },
+    "line_4_other_increases_itemize_8_add_c": {
+      "id": "topmostSubform[0].Page6[0].f6_154[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        48.002,
+        576.0,
+        60.001
+      ],
+      "type": "text",
+      "description": "Line 4: Other increases (itemize): 8 Add"
+    },
+    "line_5_add_lines_1_through_4_b_2": {
+      "id": "topmostSubform[0].Page6[0].f6_155[0]",
+      "page": 6,
+      "rect": [
+        504.0,
+        36.0,
+        576.0,
+        47.999
+      ],
+      "type": "text",
+      "description": "Line 5: Add lines 1 through 4"
+    }
+  }
+}

@@ -162,9 +162,18 @@ function scheduleCExpenseParts(input: EntityReturnInput): {
   return { contractLabor, supplies, travel, meals, utilities, insurance, legal, softwareEducationMisc };
 }
 
-export function values1040SC(input: EntityReturnInput, summary: EntityReturnSummary): FormFieldValues {
-  const naics = '541990';
-  const owner = input.owners[0]?.name ?? '';
+export function values1040SC(
+  input: EntityReturnInput,
+  summary: EntityReturnSummary,
+  individual?: IndividualReturnInput,
+): FormFieldValues {
+  // NAICS code: prefer principalBusinessCode passthrough on the entity input,
+  // fall back to a generic services code.
+  const naics = digitsOnly(((input as unknown) as { principalBusinessCode?: string }).principalBusinessCode ?? '541990');
+  const principalBusinessText = ((input as unknown) as { principalBusiness?: string }).principalBusiness
+    ?? 'Design and consulting services';
+  const owner = individual?.taxpayerName ?? input.owners[0]?.name ?? '';
+  const ssnDigits = digitsOnly(individual?.taxpayerSSN ?? '');
   const addrLine = input.homeAddress;
   const cityZip = input.homeCityStateZip;
   const oi = input.otherIncome.reduce((s, x) => s + x.amount, 0);
@@ -188,16 +197,41 @@ export function values1040SC(input: EntityReturnInput, summary: EntityReturnSumm
     ['topmostSubform_0_Page2_0_PartVTable_0_Item9_0_f2_31_0', 'topmostSubform_0_Page2_0_PartVTable_0_Item9_0_f2_32_0'],
   ];
 
+  // Field-to-line mapping (verified by Y-coordinate inspection of the IRS PDF widget annotations):
+  //   Header:
+  //     f1_1 (top-left, Y=684) Name of proprietor
+  //     f1_2 (top-right, Y=685) SSN slot — note: this is the SSN, not the NAICS code
+  //     f1_3 (Y=660 left) Line A Principal business
+  //     BComb.f1_4 (Y=661) Line B NAICS code (6-digit comb)
+  //     f1_5 (Y=636 left) Line C Business name
+  //     DComb.f1_6 (Y=636) Line D EIN (9-digit comb)
+  //     f1_7 (Y=624) Line E business address
+  //     f1_8 (Y=612) Line E city/state/zip
+  //   Income (right column, Y=516..444): f1_10..f1_16 = Lines 1..7
+  //   Left expense column (X=194):
+  //     f1_17=L8, f1_18=L9, f1_19=L10, f1_20=L11, f1_21=L12, f1_22=L13,
+  //     f1_23=L14, f1_24=L15, f1_25=L16a, f1_26=L16b, f1_27=L17
+  //   Right expense column (X=475, in Lines18_27 subform):
+  //     f1_28=L18, f1_29=L19, f1_30=L20a, f1_31=L20b, f1_32=L21, f1_33=L22,
+  //     f1_34=L23, f1_35=L24a, f1_36=L24b, f1_37=L25, f1_38=L26, f1_39=L27a, f1_40=L27b
+  //   Totals: f1_41=L28 total expenses, f1_42=L29 tentative profit
+  //   Net profit: Line30_ReadOrder.f1_43 (line 30 home office), Line30_ReadOrder.f1_44 = L31 net
+  const tentativeProfit = summary.grossIncome - summary.totalDeductions;
+  const netProfit = summary.ordinaryBusinessIncome;
   const v: FormFieldValues = {
+    // Header
     'topmostSubform_0_Page1_0_f1_1_0': owner,
-    'topmostSubform_0_Page1_0_f1_2_0': naics,
-    'topmostSubform_0_Page1_0_f1_3_0': input.entityName,
-    'topmostSubform_0_Page1_0_f1_5_0': owner,
+    'topmostSubform_0_Page1_0_f1_2_0': ssnDigits,
+    'topmostSubform_0_Page1_0_f1_3_0': principalBusinessText,
+    'topmostSubform_0_Page1_0_BComb_0_f1_4_0': naics,
+    'topmostSubform_0_Page1_0_f1_5_0': input.entityName,
     'topmostSubform_0_Page1_0_DComb_0_f1_6_0': digitsOnly(input.ein),
-    'topmostSubform_0_Page1_0_f1_7_0': `${addrLine}\n${cityZip}`,
+    'topmostSubform_0_Page1_0_f1_7_0': addrLine,
+    'topmostSubform_0_Page1_0_f1_8_0': cityZip,
     'topmostSubform_0_Page1_0_c1_1_0': yn(input.accountingMethod === 'cash'),
     'topmostSubform_0_Page1_0_c1_1_1': yn(input.accountingMethod === 'accrual'),
 
+    // Part I — Income (right column)
     'topmostSubform_0_Page1_0_f1_10_0': fmt(input.grossReceipts),
     'topmostSubform_0_Page1_0_f1_11_0': fmt(input.returnsAndAllowances),
     'topmostSubform_0_Page1_0_f1_12_0': fmt(grossLessReturns),
@@ -206,28 +240,47 @@ export function values1040SC(input: EntityReturnInput, summary: EntityReturnSumm
     'topmostSubform_0_Page1_0_f1_15_0': fmt(oi),
     'topmostSubform_0_Page1_0_f1_16_0': fmt(summary.grossIncome),
 
-    'topmostSubform_0_Page1_0_Lines8_17_0_f1_17_0': fmt(input.advertising),
-    'topmostSubform_0_Page1_0_Lines8_17_0_f1_20_0': fmt(parts.contractLabor || input.compensation),
-    'topmostSubform_0_Page1_0_Lines8_17_0_f1_21_0': fmt(input.depletion),
-    'topmostSubform_0_Page1_0_Lines8_17_0_f1_22_0': fmt(input.depreciation),
-    'topmostSubform_0_Page1_0_Lines8_17_0_f1_23_0': fmt(input.benefitPrograms),
-    'topmostSubform_0_Page1_0_Lines8_17_0_f1_24_0': fmt(parts.insurance),
-    'topmostSubform_0_Page1_0_Lines8_17_0_f1_25_0': fmt(input.interest),
-    'topmostSubform_0_Page1_0_Lines8_17_0_f1_26_0': fmt(parts.legal),
+    // Part II — Expenses (LEFT column, Lines 8-17)
+    'topmostSubform_0_Page1_0_Lines8_17_0_f1_17_0': fmt(input.advertising),                  // L8
+    'topmostSubform_0_Page1_0_Lines8_17_0_f1_18_0': fmt(0),                                  // L9 car/truck
+    'topmostSubform_0_Page1_0_Lines8_17_0_f1_19_0': fmt(0),                                  // L10 commissions
+    'topmostSubform_0_Page1_0_Lines8_17_0_f1_20_0': fmt(parts.contractLabor || input.compensation), // L11
+    'topmostSubform_0_Page1_0_Lines8_17_0_f1_21_0': fmt(input.depletion),                    // L12
+    'topmostSubform_0_Page1_0_Lines8_17_0_f1_22_0': fmt(input.depreciation),                 // L13
+    'topmostSubform_0_Page1_0_Lines8_17_0_f1_23_0': fmt(input.benefitPrograms),              // L14
+    'topmostSubform_0_Page1_0_Lines8_17_0_f1_24_0': fmt(parts.insurance),                    // L15
+    'topmostSubform_0_Page1_0_Lines8_17_0_f1_25_0': fmt(0),                                  // L16a mortgage
+    'topmostSubform_0_Page1_0_Lines8_17_0_f1_26_0': fmt(input.interest),                     // L16b other interest
+    'topmostSubform_0_Page1_0_Lines8_17_0_f1_27_0': fmt(parts.legal),                        // L17
 
-    'topmostSubform_0_Page1_0_Lines18_27_0_f1_29_0': fmt(input.pensionAndProfitSharing),
-    'topmostSubform_0_Page1_0_Lines18_27_0_f1_30_0': fmt(input.rents),
-    'topmostSubform_0_Page1_0_Lines18_27_0_f1_31_0': fmt(input.repairs),
-    'topmostSubform_0_Page1_0_Lines18_27_0_f1_32_0': fmt(parts.supplies),
-    'topmostSubform_0_Page1_0_Lines18_27_0_f1_33_0': fmt(input.taxesAndLicenses),
-    'topmostSubform_0_Page1_0_Lines18_27_0_f1_34_0': fmt(parts.travel),
-    'topmostSubform_0_Page1_0_Lines18_27_0_f1_35_0': fmt(parts.meals),
-    'topmostSubform_0_Page1_0_Lines18_27_0_f1_36_0': fmt(parts.utilities),
-    'topmostSubform_0_Page1_0_Lines18_27_0_f1_37_0': fmt(input.salariesAndWages),
+    // Part II — Expenses (RIGHT column, Lines 18-27a)
+    'topmostSubform_0_Page1_0_Lines18_27_0_f1_28_0': fmt(0),                                 // L18 office
+    'topmostSubform_0_Page1_0_Lines18_27_0_f1_29_0': fmt(input.pensionAndProfitSharing),     // L19
+    'topmostSubform_0_Page1_0_Lines18_27_0_f1_30_0': fmt(0),                                 // L20a rent vehicles
+    'topmostSubform_0_Page1_0_Lines18_27_0_f1_31_0': fmt(input.rents),                       // L20b rent other
+    'topmostSubform_0_Page1_0_Lines18_27_0_f1_32_0': fmt(input.repairs),                     // L21
+    'topmostSubform_0_Page1_0_Lines18_27_0_f1_33_0': fmt(parts.supplies),                    // L22
+    'topmostSubform_0_Page1_0_Lines18_27_0_f1_34_0': fmt(input.taxesAndLicenses),            // L23
+    'topmostSubform_0_Page1_0_Lines18_27_0_f1_35_0': fmt(parts.travel),                      // L24a
+    'topmostSubform_0_Page1_0_Lines18_27_0_f1_36_0': fmt(parts.meals),                       // L24b
+    'topmostSubform_0_Page1_0_Lines18_27_0_f1_37_0': fmt(parts.utilities),                   // L25
+    'topmostSubform_0_Page1_0_Lines18_27_0_f1_38_0': fmt(input.salariesAndWages),            // L26 wages
+    // L27a (other expenses from Part V) is set below after we know miscRows total
 
-    'topmostSubform_0_Page1_0_f1_41_0': fmt(summary.ordinaryBusinessIncome),
-    'topmostSubform_0_Page1_0_f1_42_0': fmt(summary.totalDeductions),
+    // Totals (f1_41=L28 Y=228, f1_42=L29 Y=216, f1_45=L30 Y=156, f1_46=L31 Y=120)
+    'topmostSubform_0_Page1_0_f1_41_0': fmt(summary.totalDeductions),                        // L28 total expenses
+    'topmostSubform_0_Page1_0_f1_42_0': fmt(tentativeProfit),                                // L29 tentative profit
+    'topmostSubform_0_Page1_0_f1_45_0': fmt(0),                                              // L30 home office (none)
+    'topmostSubform_0_Page1_0_f1_46_0': fmt(netProfit),                                      // L31 net profit
   };
+
+  // Line 27a Energy efficient commercial buildings = 0 (f1_39, Y=264)
+  // Line 27b Other expenses from Part V = total (f1_40, Y=240)
+  const partVTotal = miscRows.reduce((s, r) => s + r.amount, 0);
+  v['topmostSubform_0_Page1_0_Lines18_27_0_f1_39_0'] = fmt(0);
+  v['topmostSubform_0_Page1_0_Lines18_27_0_f1_40_0'] = fmt(partVTotal);
+  // Line 48 (Part V total) on page 2 also gets the same value
+  v['topmostSubform_0_Page2_0_f2_33_0'] = fmt(partVTotal);
 
   for (let i = 0; i < Math.min(miscRows.length, partVKeys.length); i++) {
     const [dk, ak] = partVKeys[i];

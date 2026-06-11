@@ -1,0 +1,14 @@
+# Python dependencies for the taxgenerator pipeline.
+#
+# Core PDF fill pipeline (taxgenerator/ package + scripts/fill_*.py):
+#   pypdf       — read AcroForm widgets, clone/merge PDFs
+#   reportlab   — draw the rect-positioned text overlays
+#   pdfplumber  — extract line labels by Y position when building field maps
+pypdf>=6.0
+reportlab>=4.0
+pdfplumber>=0.11
+
+# Auxiliary field-maintenance scripts only — NOT needed to run the pipeline or
+# the verification commands (scripts/sync_fields_from_widgets.py,
+# remap_1040_page1_lines.py, apply_margin_semantics.py, fix_form_field_pages.py).
+pymupdf>=1.24.0

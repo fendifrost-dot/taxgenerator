@@ -1,0 +1,1375 @@
+{
+  "form": "1120ssk",
+  "year": 2025,
+  "pdfFilename": "1120ssk.pdf",
+  "fields": {
+    "tax_year_begin_month_01": {
+      "id": "topmostSubform[0].Page1[0].Header[0].ForCalendarYear[0].f1_01[0]",
+      "page": 1,
+      "rect": [
+        100.8,
+        684.0,
+        122.4,
+        695.999
+      ],
+      "type": "text",
+      "description": "Tax year begin month (01)"
+    },
+    "tax_year_begin_day_01": {
+      "id": "topmostSubform[0].Page1[0].Header[0].ForCalendarYear[0].f1_02[0]",
+      "page": 1,
+      "rect": [
+        125.268,
+        684.0,
+        144.0,
+        695.999
+      ],
+      "type": "text",
+      "description": "Tax year begin day (01)"
+    },
+    "tax_year_end_month_12": {
+      "id": "topmostSubform[0].Page1[0].Header[0].ForCalendarYear[0].f1_03[0]",
+      "page": 1,
+      "rect": [
+        223.2,
+        684.0,
+        244.8,
+        695.999
+      ],
+      "type": "text",
+      "description": "Tax year end month (12)"
+    },
+    "tax_year_end_day_31": {
+      "id": "topmostSubform[0].Page1[0].Header[0].ForCalendarYear[0].f1_04[0]",
+      "page": 1,
+      "rect": [
+        247.668,
+        684.0,
+        266.4,
+        695.999
+      ],
+      "type": "text",
+      "description": "Tax year end day (31)"
+    },
+    "tax_year_end_year_2025": {
+      "id": "topmostSubform[0].Page1[0].Header[0].ForCalendarYear[0].f1_05[0]",
+      "page": 1,
+      "rect": [
+        269.268,
+        684.0,
+        302.4,
+        695.999
+      ],
+      "type": "text",
+      "description": "Tax year end year (2025)"
+    },
+    "topmostSubform_0_Page1_0_c1_01_0": {
+      "id": "topmostSubform[0].Page1[0].c1_01[0]",
+      "page": 1,
+      "rect": [
+        324.0,
+        746.001,
+        332.0,
+        754.001
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_01_0)"
+    },
+    "topmostSubform_0_Page1_0_c1_02_0": {
+      "id": "topmostSubform[0].Page1[0].c1_02[0]",
+      "page": 1,
+      "rect": [
+        403.2,
+        746.001,
+        411.2,
+        754.001
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_02_0)"
+    },
+    "section_a_corp_ein": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].f1_06[0]",
+      "page": 1,
+      "rect": [
+        37.0,
+        600.001,
+        308.6,
+        612.0
+      ],
+      "type": "text",
+      "description": "Section A - Corp EIN"
+    },
+    "section_b_corp_name_and_address": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].f1_07[0]",
+      "page": 1,
+      "rect": [
+        37.0,
+        527.998,
+        308.6,
+        587.999
+      ],
+      "type": "text",
+      "description": "Section B - Corp name and address"
+    },
+    "section_c_irs_center": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].f1_08[0]",
+      "page": 1,
+      "rect": [
+        37.0,
+        504.0,
+        308.6,
+        515.999
+      ],
+      "type": "text",
+      "description": "Section C - IRS Center"
+    },
+    "section_d_shares_beginning": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].f1_09[0]",
+      "page": 1,
+      "rect": [
+        208.8,
+        480.002,
+        302.4,
+        492.001
+      ],
+      "type": "text",
+      "description": "Section D - shares beginning"
+    },
+    "section_d_shares_ending": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].f1_10[0]",
+      "page": 1,
+      "rect": [
+        208.8,
+        468.0,
+        302.4,
+        479.999
+      ],
+      "type": "text",
+      "description": "Section D - shares ending"
+    },
+    "section_e_shareholder_ssn_leave_blank_user_fills": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].f1_11[0]",
+      "page": 1,
+      "rect": [
+        37.0,
+        408.002,
+        308.6,
+        420.001
+      ],
+      "type": "text",
+      "description": "Section E - Shareholder SSN (LEAVE BLANK - user fills)"
+    },
+    "section_f1_shareholder_name_and_address": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].f1_12[0]",
+      "page": 1,
+      "rect": [
+        37.0,
+        335.999,
+        308.6,
+        396.0
+      ],
+      "type": "text",
+      "description": "Section F1 - Shareholder name and address"
+    },
+    "topmostSubform_0_Page1_0_LeftCol_0_f1_13_0": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].f1_13[0]",
+      "page": 1,
+      "rect": [
+        72.0,
+        300.002,
+        136.8,
+        312.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_LeftCol_0_f1_13_0)"
+    },
+    "topmostSubform_0_Page1_0_LeftCol_0_f1_14_0": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].f1_14[0]",
+      "page": 1,
+      "rect": [
+        165.6,
+        300.002,
+        302.4,
+        312.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_LeftCol_0_f1_14_0)"
+    },
+    "section_f3_entity_type": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].f1_15[0]",
+      "page": 1,
+      "rect": [
+        187.0,
+        288.0,
+        302.4,
+        299.999
+      ],
+      "type": "text",
+      "description": "Section F3 - Entity type"
+    },
+    "section_g_allocation": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].f1_16[0]",
+      "page": 1,
+      "rect": [
+        208.8,
+        252.0,
+        289.6,
+        263.999
+      ],
+      "type": "text",
+      "description": "Section G - Allocation %"
+    },
+    "section_h_shares_beginning": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].f1_17[0]",
+      "page": 1,
+      "rect": [
+        208.8,
+        216.0,
+        302.4,
+        227.999
+      ],
+      "type": "text",
+      "description": "Section H - shares beginning"
+    },
+    "section_h_shares_ending": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].f1_18[0]",
+      "page": 1,
+      "rect": [
+        208.8,
+        204.001,
+        302.4,
+        216.0
+      ],
+      "type": "text",
+      "description": "Section H - shares ending"
+    },
+    "section_i_loans_beginning": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].f1_19[0]",
+      "page": 1,
+      "rect": [
+        208.8,
+        168.001,
+        302.4,
+        180.0
+      ],
+      "type": "text",
+      "description": "Section I - loans beginning"
+    },
+    "section_i_loans_ending": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].f1_20[0]",
+      "page": 1,
+      "rect": [
+        208.8,
+        156.002,
+        302.4,
+        168.001
+      ],
+      "type": "text",
+      "description": "Section I - loans ending"
+    },
+    "box_1_ordinary_business_income": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_21[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        695.999,
+        445.4,
+        710.0
+      ],
+      "type": "text",
+      "description": "Box 1 - Ordinary business income"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_22_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_22[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        671.998,
+        445.4,
+        685.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_22_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_23_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_23[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        648.0,
+        445.4,
+        662.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_23_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_24_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_24[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        623.999,
+        445.4,
+        638.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_24_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_25_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_25[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        599.998,
+        445.4,
+        613.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_25_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_26_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_26[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        576.0,
+        445.4,
+        590.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_26_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_27_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_27[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        551.999,
+        445.4,
+        566.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_27_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_28_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_28[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        527.998,
+        445.4,
+        541.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_28_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_29_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_29[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        504.0,
+        445.4,
+        518.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_29_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_30_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_30[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        479.999,
+        445.4,
+        494.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_30_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_31_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_31[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        455.998,
+        445.4,
+        469.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_31_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_32_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_32[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        432.0,
+        445.4,
+        446.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_32_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_33_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_33[0]",
+      "page": 1,
+      "rect": [
+        309.6,
+        407.999,
+        331.2,
+        422.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_33_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_34_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_34[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        407.999,
+        445.4,
+        422.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_34_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_35_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_35[0]",
+      "page": 1,
+      "rect": [
+        309.6,
+        383.998,
+        331.2,
+        397.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_35_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_36_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_36[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        383.998,
+        445.4,
+        397.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_36_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_37_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_37[0]",
+      "page": 1,
+      "rect": [
+        309.6,
+        360.0,
+        331.2,
+        374.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_37_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_38_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_38[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        360.0,
+        445.4,
+        374.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_38_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_39_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_39[0]",
+      "page": 1,
+      "rect": [
+        309.6,
+        335.999,
+        331.2,
+        350.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_39_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_40_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_40[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        335.999,
+        445.4,
+        350.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_40_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_41_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_41[0]",
+      "page": 1,
+      "rect": [
+        309.6,
+        311.998,
+        331.2,
+        325.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_41_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_42_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_42[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        311.998,
+        445.4,
+        325.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_42_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_43_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_43[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        288.0,
+        445.4,
+        302.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_43_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_44_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_44[0]",
+      "page": 1,
+      "rect": [
+        309.6,
+        263.999,
+        331.2,
+        278.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_44_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_45_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_45[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        263.999,
+        445.4,
+        278.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_45_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_46_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_46[0]",
+      "page": 1,
+      "rect": [
+        309.6,
+        239.998,
+        331.2,
+        253.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_46_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_47_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_47[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        239.998,
+        445.4,
+        253.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_47_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_48_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_48[0]",
+      "page": 1,
+      "rect": [
+        309.6,
+        216.0,
+        331.2,
+        230.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_48_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_49_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_49[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        216.0,
+        445.4,
+        230.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_49_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_50_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_50[0]",
+      "page": 1,
+      "rect": [
+        309.6,
+        191.999,
+        331.2,
+        206.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_50_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_51_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_51[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        191.999,
+        445.4,
+        206.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_51_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_52_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_52[0]",
+      "page": 1,
+      "rect": [
+        309.6,
+        167.998,
+        331.2,
+        181.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_52_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_53_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_53[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        167.998,
+        445.4,
+        181.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_53_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_54_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_54[0]",
+      "page": 1,
+      "rect": [
+        309.6,
+        144.0,
+        331.2,
+        158.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_54_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_55_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_55[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        144.0,
+        445.4,
+        158.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_55_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_56_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_56[0]",
+      "page": 1,
+      "rect": [
+        309.6,
+        119.999,
+        331.2,
+        134.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_56_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_57_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_57[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        119.999,
+        445.4,
+        134.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_57_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_58_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_58[0]",
+      "page": 1,
+      "rect": [
+        309.6,
+        95.998,
+        331.2,
+        109.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_58_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_59_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines1-12[0].f1_59[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        95.998,
+        445.4,
+        109.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines1-12_0_f1_59_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_60_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_60[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        695.999,
+        468.0,
+        710.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_60_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_61_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_61[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        695.999,
+        575.0,
+        710.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_61_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_62_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_62[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        671.998,
+        468.0,
+        685.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_62_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_63_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_63[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        671.998,
+        575.0,
+        685.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_63_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_64_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_64[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        648.0,
+        468.0,
+        662.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_64_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_65_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_65[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        648.0,
+        575.0,
+        662.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_65_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_66_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_66[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        623.999,
+        468.0,
+        638.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_66_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_67_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_67[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        623.999,
+        575.0,
+        638.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_67_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_68_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_68[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        599.998,
+        468.0,
+        613.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_68_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_69_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_69[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        599.998,
+        575.0,
+        613.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_69_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_c1_03_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].c1_03[0]",
+      "page": 1,
+      "rect": [
+        562.0,
+        579.5,
+        570.0,
+        587.5
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_c1_03_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_70_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_70[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        551.999,
+        468.0,
+        566.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_70_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_71_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_71[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        551.999,
+        575.0,
+        566.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_71_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_72_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_72[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        527.998,
+        468.0,
+        541.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_72_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_73_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_73[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        527.998,
+        575.0,
+        541.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_73_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_74_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_74[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        504.0,
+        468.0,
+        518.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_74_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_75_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_75[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        504.0,
+        575.0,
+        518.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_75_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_76_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_76[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        479.999,
+        468.0,
+        494.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_76_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_77_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_77[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        479.999,
+        575.0,
+        494.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_77_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_78_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_78[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        455.998,
+        468.0,
+        469.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_78_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_79_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_79[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        455.998,
+        575.0,
+        469.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_79_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_80_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_80[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        432.0,
+        468.0,
+        446.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_80_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_81_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_81[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        432.0,
+        575.0,
+        446.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_81_0)"
+    },
+    "box_16_row_4_code_d_for_distributions": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_82[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        407.999,
+        468.0,
+        422.0
+      ],
+      "type": "text",
+      "description": "Box 16 row 4 code (D for Distributions)"
+    },
+    "box_16_row_4_amount_distributions": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_83[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        407.999,
+        575.0,
+        422.0
+      ],
+      "type": "text",
+      "description": "Box 16 row 4 amount (Distributions)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_84_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_84[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        383.998,
+        468.0,
+        397.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_84_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_85_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_85[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        383.998,
+        575.0,
+        397.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_85_0)"
+    },
+    "box_17_row_2_code_v_for_section_199a": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_86[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        360.0,
+        468.0,
+        374.001
+      ],
+      "type": "text",
+      "description": "Box 17 row 2 code (V for Section 199A)"
+    },
+    "box_17_row_2_amount_qbi": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_87[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        360.0,
+        575.0,
+        374.001
+      ],
+      "type": "text",
+      "description": "Box 17 row 2 amount (QBI)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_88_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_88[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        335.999,
+        468.0,
+        350.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_88_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_89_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_89[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        335.999,
+        575.0,
+        350.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_89_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_90_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_90[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        311.998,
+        468.0,
+        325.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_90_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_91_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_91[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        311.998,
+        575.0,
+        325.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_91_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_92_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_92[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        288.0,
+        468.0,
+        302.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_92_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_93_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_93[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        288.0,
+        575.0,
+        302.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_93_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_94_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_94[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        263.999,
+        468.0,
+        278.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_94_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_95_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_95[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        263.999,
+        575.0,
+        278.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_95_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_96_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_96[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        239.998,
+        468.0,
+        253.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_96_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_97_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_97[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        239.998,
+        575.0,
+        253.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_97_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_98_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_98[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        216.0,
+        468.0,
+        230.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_98_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_99_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_99[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        216.0,
+        575.0,
+        230.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_99_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_100_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_100[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        191.999,
+        468.0,
+        206.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_100_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_101_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_101[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        191.999,
+        575.0,
+        206.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_101_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_102_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_102[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        167.998,
+        468.0,
+        181.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_102_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_103_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_103[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        167.998,
+        575.0,
+        181.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_103_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_104_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_104[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        144.0,
+        468.0,
+        158.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_104_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_105_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_105[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        144.0,
+        575.0,
+        158.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_105_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_106_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_106[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        119.999,
+        468.0,
+        134.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_106_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_107_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_107[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        119.999,
+        575.0,
+        134.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_107_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_108_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_108[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        95.998,
+        468.0,
+        109.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_108_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_109_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].Lines13-17[0].f1_109[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        95.998,
+        575.0,
+        109.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_Lines13-17_0_f1_109_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_c1_04_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].c1_04[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        86.002,
+        339.2,
+        94.002
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_c1_04_0)"
+    },
+    "topmostSubform_0_Page1_0_RightCol_0_c1_05_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].c1_05[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        74.0,
+        339.2,
+        82.0
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_RightCol_0_c1_05_0)"
+    }
+  }
+}

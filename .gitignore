@@ -22,3 +22,18 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Backup snapshots of fill scripts
+scripts/_versions/
+
+# Scratch debug files
+scripts/_*.txt
+scripts/_*.json
+
+# Claude Code agent-local state (settings + nested worktrees)
+.claude/

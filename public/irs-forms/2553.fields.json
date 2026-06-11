@@ -1,0 +1,1207 @@
+{
+  "form": "2553",
+  "year": 2025,
+  "pdfFilename": "2553.pdf",
+  "fields": {
+    "name": {
+      "id": "topmostSubform[0].Page1[0].NameAddress[0].f1_01[0]",
+      "page": 1,
+      "rect": [
+        80.2,
+        623.999,
+        424.8,
+        638.0
+      ],
+      "type": "text",
+      "description": "Name"
+    },
+    "number_street": {
+      "id": "topmostSubform[0].Page1[0].NameAddress[0].f1_02[0]",
+      "page": 1,
+      "rect": [
+        80.2,
+        599.998,
+        424.8,
+        613.999
+      ],
+      "type": "text",
+      "description": "Number, street"
+    },
+    "city_state_zip": {
+      "id": "topmostSubform[0].Page1[0].NameAddress[0].f1_03[0]",
+      "page": 1,
+      "rect": [
+        80.2,
+        576.0,
+        424.8,
+        590.001
+      ],
+      "type": "text",
+      "description": "City, state, ZIP"
+    },
+    "a_ein": {
+      "id": "topmostSubform[0].Page1[0].f1_04[0]",
+      "page": 1,
+      "rect": [
+        424.8,
+        623.999,
+        576.0,
+        638.0
+      ],
+      "type": "text",
+      "description": "A EIN"
+    },
+    "b_date_incorporated": {
+      "id": "topmostSubform[0].Page1[0].f1_05[0]",
+      "page": 1,
+      "rect": [
+        424.8,
+        599.998,
+        576.0,
+        613.999
+      ],
+      "type": "text",
+      "description": "B Date incorporated"
+    },
+    "c_state_of_incorporation": {
+      "id": "topmostSubform[0].Page1[0].f1_06[0]",
+      "page": 1,
+      "rect": [
+        425.8,
+        576.0,
+        576.0,
+        590.001
+      ],
+      "type": "text",
+      "description": "C State of incorporation"
+    },
+    "topmostSubform_0_Page1_0_c1_1_0": {
+      "id": "topmostSubform[0].Page1[0].c1_1[0]",
+      "page": 1,
+      "rect": [
+        482.4,
+        565.998,
+        490.4,
+        573.998
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_1_0)"
+    },
+    "topmostSubform_0_Page1_0_c1_2_0": {
+      "id": "topmostSubform[0].Page1[0].c1_2[0]",
+      "page": 1,
+      "rect": [
+        532.8,
+        565.999,
+        540.8,
+        573.999
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_2_0)"
+    },
+    "e_election_effective_date": {
+      "id": "topmostSubform[0].Page1[0].f1_07[0]",
+      "page": 1,
+      "rect": [
+        482.4,
+        552.002,
+        576.0,
+        564.001
+      ],
+      "type": "text",
+      "description": "E Election effective date"
+    },
+    "f_1_calendar_year": {
+      "id": "topmostSubform[0].Page1[0].c1_3[0]",
+      "page": 1,
+      "rect": [
+        75.2,
+        505.75,
+        83.2,
+        513.75
+      ],
+      "type": "checkbox",
+      "description": "F(1) Calendar year"
+    },
+    "topmostSubform_0_Page1_0_c1_3_1": {
+      "id": "topmostSubform[0].Page1[0].c1_3[1]",
+      "page": 1,
+      "rect": [
+        75.2,
+        493.748,
+        83.2,
+        501.748
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_3_1)"
+    },
+    "topmostSubform_0_Page1_0_f1_08_0": {
+      "id": "topmostSubform[0].Page1[0].f1_08[0]",
+      "page": 1,
+      "rect": [
+        244.8,
+        491.997,
+        331.2,
+        503.997
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_08_0)"
+    },
+    "topmostSubform_0_Page1_0_c1_3_2": {
+      "id": "topmostSubform[0].Page1[0].c1_3[2]",
+      "page": 1,
+      "rect": [
+        75.2,
+        481.749,
+        83.2,
+        489.749
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_3_2)"
+    },
+    "topmostSubform_0_Page1_0_c1_3_3": {
+      "id": "topmostSubform[0].Page1[0].c1_3[3]",
+      "page": 1,
+      "rect": [
+        75.2,
+        469.75,
+        83.2,
+        477.75
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_3_3)"
+    },
+    "topmostSubform_0_Page1_0_f1_09_0": {
+      "id": "topmostSubform[0].Page1[0].f1_09[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        468.0,
+        439.2,
+        479.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_09_0)"
+    },
+    "topmostSubform_0_Page1_0_c1_4_0": {
+      "id": "topmostSubform[0].Page1[0].c1_4[0]",
+      "page": 1,
+      "rect": [
+        500.0,
+        422.498,
+        508.0,
+        430.498
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_4_0)"
+    },
+    "h_officer_name_and_title": {
+      "id": "topmostSubform[0].Page1[0].f1_10[0]",
+      "page": 1,
+      "rect": [
+        57.6,
+        384.001,
+        417.6,
+        396.001
+      ],
+      "type": "text",
+      "description": "H Officer name and title"
+    },
+    "h_telephone": {
+      "id": "topmostSubform[0].Page1[0].f1_11[0]",
+      "page": 1,
+      "rect": [
+        417.6,
+        384.001,
+        576.0,
+        396.001
+      ],
+      "type": "text",
+      "description": "H Telephone"
+    },
+    "f1_12_0": {
+      "id": "topmostSubform[0].Page1[0].f1_12[0]",
+      "page": 1,
+      "rect": [
+        57.6,
+        300.002,
+        576.0,
+        312.001
+      ],
+      "type": "text",
+      "description": "f1_12[0]"
+    },
+    "f1_13_0": {
+      "id": "topmostSubform[0].Page1[0].f1_13[0]",
+      "page": 1,
+      "rect": [
+        57.6,
+        276.001,
+        576.0,
+        288.0
+      ],
+      "type": "text",
+      "description": "f1_13[0]"
+    },
+    "f1_14_0": {
+      "id": "topmostSubform[0].Page1[0].f1_14[0]",
+      "page": 1,
+      "rect": [
+        57.6,
+        252.0,
+        576.0,
+        263.999
+      ],
+      "type": "text",
+      "description": "f1_14[0]"
+    },
+    "f1_15_0": {
+      "id": "topmostSubform[0].Page1[0].f1_15[0]",
+      "page": 1,
+      "rect": [
+        57.6,
+        228.002,
+        576.0,
+        240.001
+      ],
+      "type": "text",
+      "description": "f1_15[0]"
+    },
+    "f1_16_0": {
+      "id": "topmostSubform[0].Page1[0].f1_16[0]",
+      "page": 1,
+      "rect": [
+        57.6,
+        204.001,
+        576.0,
+        216.0
+      ],
+      "type": "text",
+      "description": "f1_16[0]"
+    },
+    "f1_17_0": {
+      "id": "topmostSubform[0].Page1[0].f1_17[0]",
+      "page": 1,
+      "rect": [
+        57.6,
+        180.0,
+        576.0,
+        191.999
+      ],
+      "type": "text",
+      "description": "f1_17[0]"
+    },
+    "f1_18_0": {
+      "id": "topmostSubform[0].Page1[0].f1_18[0]",
+      "page": 1,
+      "rect": [
+        57.6,
+        156.002,
+        576.0,
+        168.001
+      ],
+      "type": "text",
+      "description": "f1_18[0]"
+    },
+    "f1_19_0": {
+      "id": "topmostSubform[0].Page1[0].f1_19[0]",
+      "page": 1,
+      "rect": [
+        57.6,
+        132.001,
+        576.0,
+        144.0
+      ],
+      "type": "text",
+      "description": "f1_19[0]"
+    },
+    "f1_20_0": {
+      "id": "topmostSubform[0].Page1[0].f1_20[0]",
+      "page": 1,
+      "rect": [
+        57.6,
+        108.0,
+        576.0,
+        119.999
+      ],
+      "type": "text",
+      "description": "f1_20[0]"
+    },
+    "title_in_signature_block": {
+      "id": "topmostSubform[0].Page1[0].f1_21[0]",
+      "page": 1,
+      "rect": [
+        324.0,
+        48.0,
+        489.6,
+        60.001
+      ],
+      "type": "text",
+      "description": "Title in signature block"
+    },
+    "header_name": {
+      "id": "topmostSubform[0].Page2[0].f2_01[0]",
+      "page": 2,
+      "rect": [
+        36.0,
+        720.0,
+        424.8,
+        734.001
+      ],
+      "type": "text",
+      "description": "Header Name"
+    },
+    "header_ein": {
+      "id": "topmostSubform[0].Page2[0].f2_02[0]",
+      "page": 2,
+      "rect": [
+        424.8,
+        720.0,
+        576.0,
+        734.001
+      ],
+      "type": "text",
+      "description": "Header EIN"
+    },
+    "j_row_1_name_and_address": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row1[0].f2_03[0]",
+      "page": 2,
+      "rect": [
+        36.0,
+        420.001,
+        187.2,
+        480.002
+      ],
+      "type": "text",
+      "description": "J Row 1 Name and address"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row1_0_f2_04_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row1[0].f2_04[0]",
+      "page": 2,
+      "rect": [
+        188.2,
+        420.001,
+        309.6,
+        480.002
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row1_0_f2_04_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row1_0_f2_05_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row1[0].f2_05[0]",
+      "page": 2,
+      "rect": [
+        309.6,
+        420.001,
+        360.0,
+        480.002
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row1_0_f2_05_0)"
+    },
+    "l_row_1_number_of_shares_or": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row1[0].f2_06[0]",
+      "page": 2,
+      "rect": [
+        360.0,
+        420.001,
+        410.4,
+        480.002
+      ],
+      "type": "text",
+      "description": "L Row 1 Number of shares (or %)"
+    },
+    "l_row_1_date_acquired": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row1[0].f2_07[0]",
+      "page": 2,
+      "rect": [
+        410.4,
+        420.001,
+        460.8,
+        480.002
+      ],
+      "type": "text",
+      "description": "L Row 1 Date acquired"
+    },
+    "m_row_1_shareholder_ssn": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row1[0].f2_08[0]",
+      "page": 2,
+      "rect": [
+        460.8,
+        420.001,
+        518.4,
+        480.002
+      ],
+      "type": "text",
+      "description": "M Row 1 Shareholder SSN"
+    },
+    "n_row_1_shareholder_tax_year_end": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row1[0].f2_09[0]",
+      "page": 2,
+      "rect": [
+        519.4,
+        420.001,
+        576.0,
+        480.002
+      ],
+      "type": "text",
+      "description": "N Row 1 Shareholder tax year end"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row2_0_f2_10_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row2[0].f2_10[0]",
+      "page": 2,
+      "rect": [
+        36.0,
+        360.0,
+        187.2,
+        420.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row2_0_f2_10_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row2_0_f2_11_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row2[0].f2_11[0]",
+      "page": 2,
+      "rect": [
+        188.2,
+        360.0,
+        309.6,
+        420.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row2_0_f2_11_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row2_0_f2_12_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row2[0].f2_12[0]",
+      "page": 2,
+      "rect": [
+        309.6,
+        360.0,
+        360.0,
+        420.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row2_0_f2_12_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row2_0_f2_13_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row2[0].f2_13[0]",
+      "page": 2,
+      "rect": [
+        360.0,
+        360.0,
+        410.4,
+        420.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row2_0_f2_13_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row2_0_f2_14_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row2[0].f2_14[0]",
+      "page": 2,
+      "rect": [
+        410.4,
+        360.0,
+        460.8,
+        420.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row2_0_f2_14_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row2_0_f2_15_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row2[0].f2_15[0]",
+      "page": 2,
+      "rect": [
+        460.8,
+        360.0,
+        518.4,
+        420.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row2_0_f2_15_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row2_0_f2_16_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row2[0].f2_16[0]",
+      "page": 2,
+      "rect": [
+        519.4,
+        360.0,
+        576.0,
+        420.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row2_0_f2_16_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row3_0_f2_17_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row3[0].f2_17[0]",
+      "page": 2,
+      "rect": [
+        36.0,
+        299.999,
+        187.2,
+        360.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row3_0_f2_17_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row3_0_f2_18_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row3[0].f2_18[0]",
+      "page": 2,
+      "rect": [
+        188.2,
+        299.999,
+        309.6,
+        360.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row3_0_f2_18_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row3_0_f2_19_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row3[0].f2_19[0]",
+      "page": 2,
+      "rect": [
+        309.6,
+        299.999,
+        360.0,
+        360.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row3_0_f2_19_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row3_0_f2_20_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row3[0].f2_20[0]",
+      "page": 2,
+      "rect": [
+        360.0,
+        299.999,
+        410.4,
+        360.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row3_0_f2_20_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row3_0_f2_21_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row3[0].f2_21[0]",
+      "page": 2,
+      "rect": [
+        410.4,
+        299.999,
+        460.8,
+        360.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row3_0_f2_21_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row3_0_f2_22_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row3[0].f2_22[0]",
+      "page": 2,
+      "rect": [
+        460.8,
+        299.999,
+        518.4,
+        360.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row3_0_f2_22_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row3_0_f2_23_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row3[0].f2_23[0]",
+      "page": 2,
+      "rect": [
+        519.4,
+        299.999,
+        576.0,
+        360.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row3_0_f2_23_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row4_0_f2_24_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row4[0].f2_24[0]",
+      "page": 2,
+      "rect": [
+        36.0,
+        239.998,
+        187.2,
+        299.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row4_0_f2_24_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row4_0_f2_25_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row4[0].f2_25[0]",
+      "page": 2,
+      "rect": [
+        188.2,
+        239.998,
+        309.6,
+        299.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row4_0_f2_25_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row4_0_f2_26_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row4[0].f2_26[0]",
+      "page": 2,
+      "rect": [
+        309.6,
+        239.998,
+        360.0,
+        299.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row4_0_f2_26_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row4_0_f2_27_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row4[0].f2_27[0]",
+      "page": 2,
+      "rect": [
+        360.0,
+        239.998,
+        410.4,
+        299.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row4_0_f2_27_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row4_0_f2_28_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row4[0].f2_28[0]",
+      "page": 2,
+      "rect": [
+        410.4,
+        239.998,
+        460.8,
+        299.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row4_0_f2_28_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row4_0_f2_29_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row4[0].f2_29[0]",
+      "page": 2,
+      "rect": [
+        460.8,
+        239.998,
+        518.4,
+        299.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row4_0_f2_29_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row4_0_f2_30_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row4[0].f2_30[0]",
+      "page": 2,
+      "rect": [
+        519.4,
+        239.998,
+        576.0,
+        299.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row4_0_f2_30_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row5_0_f2_31_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row5[0].f2_31[0]",
+      "page": 2,
+      "rect": [
+        36.0,
+        179.997,
+        187.2,
+        239.998
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row5_0_f2_31_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row5_0_f2_32_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row5[0].f2_32[0]",
+      "page": 2,
+      "rect": [
+        188.2,
+        179.997,
+        309.6,
+        239.998
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row5_0_f2_32_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row5_0_f2_33_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row5[0].f2_33[0]",
+      "page": 2,
+      "rect": [
+        309.6,
+        179.997,
+        360.0,
+        239.998
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row5_0_f2_33_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row5_0_f2_34_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row5[0].f2_34[0]",
+      "page": 2,
+      "rect": [
+        360.0,
+        179.997,
+        410.4,
+        239.998
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row5_0_f2_34_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row5_0_f2_35_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row5[0].f2_35[0]",
+      "page": 2,
+      "rect": [
+        410.4,
+        179.997,
+        460.8,
+        239.998
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row5_0_f2_35_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row5_0_f2_36_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row5[0].f2_36[0]",
+      "page": 2,
+      "rect": [
+        460.8,
+        179.997,
+        518.4,
+        239.998
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row5_0_f2_36_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row5_0_f2_37_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row5[0].f2_37[0]",
+      "page": 2,
+      "rect": [
+        519.4,
+        179.997,
+        576.0,
+        239.998
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row5_0_f2_37_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row6_0_f2_38_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row6[0].f2_38[0]",
+      "page": 2,
+      "rect": [
+        36.0,
+        119.996,
+        187.2,
+        179.997
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row6_0_f2_38_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row6_0_f2_39_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row6[0].f2_39[0]",
+      "page": 2,
+      "rect": [
+        188.2,
+        119.996,
+        309.6,
+        179.997
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row6_0_f2_39_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row6_0_f2_40_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row6[0].f2_40[0]",
+      "page": 2,
+      "rect": [
+        309.6,
+        119.996,
+        360.0,
+        179.997
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row6_0_f2_40_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row6_0_f2_41_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row6[0].f2_41[0]",
+      "page": 2,
+      "rect": [
+        360.0,
+        119.996,
+        410.4,
+        179.997
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row6_0_f2_41_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row6_0_f2_42_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row6[0].f2_42[0]",
+      "page": 2,
+      "rect": [
+        410.4,
+        119.996,
+        460.8,
+        179.997
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row6_0_f2_42_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row6_0_f2_43_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row6[0].f2_43[0]",
+      "page": 2,
+      "rect": [
+        460.8,
+        119.996,
+        518.4,
+        179.997
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row6_0_f2_43_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row6_0_f2_44_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row6[0].f2_44[0]",
+      "page": 2,
+      "rect": [
+        519.4,
+        119.996,
+        576.0,
+        179.997
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row6_0_f2_44_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row7_0_f2_45_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row7[0].f2_45[0]",
+      "page": 2,
+      "rect": [
+        36.0,
+        59.995,
+        187.2,
+        119.996
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row7_0_f2_45_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row7_0_f2_46_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row7[0].f2_46[0]",
+      "page": 2,
+      "rect": [
+        188.2,
+        59.995,
+        309.6,
+        119.996
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row7_0_f2_46_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row7_0_f2_47_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row7[0].f2_47[0]",
+      "page": 2,
+      "rect": [
+        309.6,
+        59.995,
+        360.0,
+        119.996
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row7_0_f2_47_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row7_0_f2_48_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row7[0].f2_48[0]",
+      "page": 2,
+      "rect": [
+        360.0,
+        59.995,
+        410.4,
+        119.996
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row7_0_f2_48_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row7_0_f2_49_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row7[0].f2_49[0]",
+      "page": 2,
+      "rect": [
+        410.4,
+        59.995,
+        460.8,
+        119.996
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row7_0_f2_49_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row7_0_f2_50_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row7[0].f2_50[0]",
+      "page": 2,
+      "rect": [
+        460.8,
+        59.995,
+        518.4,
+        119.996
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row7_0_f2_50_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Part1_0_Row7_0_f2_51_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Part1[0].Row7[0].f2_51[0]",
+      "page": 2,
+      "rect": [
+        519.4,
+        59.995,
+        576.0,
+        119.996
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Part1_0_Row7_0_f2_51_0)"
+    },
+    "topmostSubform_0_Page3_0_f3_01_0": {
+      "id": "topmostSubform[0].Page3[0].f3_01[0]",
+      "page": 3,
+      "rect": [
+        36.0,
+        720.0,
+        424.8,
+        734.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_01_0)"
+    },
+    "topmostSubform_0_Page3_0_f3_02_0": {
+      "id": "topmostSubform[0].Page3[0].f3_02[0]",
+      "page": 3,
+      "rect": [
+        424.8,
+        720.0,
+        576.0,
+        734.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_02_0)"
+    },
+    "topmostSubform_0_Page3_0_c3_1_0": {
+      "id": "topmostSubform[0].Page3[0].c3_1[0]",
+      "page": 3,
+      "rect": [
+        75.197,
+        674.001,
+        83.197,
+        682.001
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_c3_1_0)"
+    },
+    "topmostSubform_0_Page3_0_c3_1_1": {
+      "id": "topmostSubform[0].Page3[0].c3_1[1]",
+      "page": 3,
+      "rect": [
+        75.197,
+        661.999,
+        83.197,
+        669.999
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_c3_1_1)"
+    },
+    "topmostSubform_0_Page3_0_c3_1_2": {
+      "id": "topmostSubform[0].Page3[0].c3_1[2]",
+      "page": 3,
+      "rect": [
+        75.197,
+        650.0,
+        83.197,
+        658.0
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_c3_1_2)"
+    },
+    "topmostSubform_0_Page3_0_c3_2_0": {
+      "id": "topmostSubform[0].Page3[0].c3_2[0]",
+      "page": 3,
+      "rect": [
+        173.2,
+        589.502,
+        181.2,
+        597.502
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_c3_2_0)"
+    },
+    "topmostSubform_0_Page3_0_c3_3_0": {
+      "id": "topmostSubform[0].Page3[0].c3_3[0]",
+      "page": 3,
+      "rect": [
+        166.0,
+        529.751,
+        174.0,
+        537.751
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_c3_3_0)"
+    },
+    "topmostSubform_0_Page3_0_c3_4_0": {
+      "id": "topmostSubform[0].Page3[0].c3_4[0]",
+      "page": 3,
+      "rect": [
+        132.0,
+        397.75,
+        140.0,
+        405.75
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_c3_4_0)"
+    },
+    "topmostSubform_0_Page3_0_c3_5_0": {
+      "id": "topmostSubform[0].Page3[0].c3_5[0]",
+      "page": 3,
+      "rect": [
+        58.6,
+        338.002,
+        66.6,
+        346.002
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_c3_5_0)"
+    },
+    "topmostSubform_0_Page3_0_c3_5_1": {
+      "id": "topmostSubform[0].Page3[0].c3_5[1]",
+      "page": 3,
+      "rect": [
+        101.797,
+        337.999,
+        109.797,
+        345.999
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_c3_5_1)"
+    },
+    "topmostSubform_0_Page3_0_c3_6_0": {
+      "id": "topmostSubform[0].Page3[0].c3_6[0]",
+      "page": 3,
+      "rect": [
+        132.0,
+        313.501,
+        140.0,
+        321.501
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_c3_6_0)"
+    },
+    "topmostSubform_0_Page3_0_c3_7_0": {
+      "id": "topmostSubform[0].Page3[0].c3_7[0]",
+      "page": 3,
+      "rect": [
+        132.0,
+        277.501,
+        140.0,
+        285.501
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_c3_7_0)"
+    },
+    "topmostSubform_0_Page3_0_c3_8_0": {
+      "id": "topmostSubform[0].Page3[0].c3_8[0]",
+      "page": 3,
+      "rect": [
+        132.0,
+        204.501,
+        140.0,
+        212.501
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_c3_8_0)"
+    },
+    "topmostSubform_0_Page3_0_c3_9_0": {
+      "id": "topmostSubform[0].Page3[0].c3_9[0]",
+      "page": 3,
+      "rect": [
+        132.0,
+        157.502,
+        140.0,
+        165.502
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_c3_9_0)"
+    },
+    "topmostSubform_0_Page4_0_f4_01_0": {
+      "id": "topmostSubform[0].Page4[0].f4_01[0]",
+      "page": 4,
+      "rect": [
+        36.0,
+        720.0,
+        424.8,
+        734.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_f4_01_0)"
+    },
+    "topmostSubform_0_Page4_0_f4_02_0": {
+      "id": "topmostSubform[0].Page4[0].f4_02[0]",
+      "page": 4,
+      "rect": [
+        424.8,
+        720.0,
+        576.0,
+        734.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_f4_02_0)"
+    },
+    "topmostSubform_0_Page4_0_f4_03_0": {
+      "id": "topmostSubform[0].Page4[0].f4_03[0]",
+      "page": 4,
+      "rect": [
+        36.0,
+        648.0,
+        381.6,
+        685.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_f4_03_0)"
+    },
+    "topmostSubform_0_Page4_0_f4_04_0": {
+      "id": "topmostSubform[0].Page4[0].f4_04[0]",
+      "page": 4,
+      "rect": [
+        381.6,
+        648.0,
+        576.0,
+        685.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_f4_04_0)"
+    },
+    "topmostSubform_0_Page4_0_f4_05_0": {
+      "id": "topmostSubform[0].Page4[0].f4_05[0]",
+      "page": 4,
+      "rect": [
+        36.0,
+        600.001,
+        381.6,
+        638.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_f4_05_0)"
+    },
+    "topmostSubform_0_Page4_0_f4_06_0": {
+      "id": "topmostSubform[0].Page4[0].f4_06[0]",
+      "page": 4,
+      "rect": [
+        381.6,
+        600.001,
+        576.0,
+        638.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_f4_06_0)"
+    },
+    "topmostSubform_0_Page4_0_f4_07_0": {
+      "id": "topmostSubform[0].Page4[0].f4_07[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        588.002,
+        576.0,
+        600.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_f4_07_0)"
+    }
+  }
+}

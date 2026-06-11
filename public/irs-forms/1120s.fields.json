@@ -1,0 +1,4687 @@
+{
+  "form": "1120s",
+  "year": 2025,
+  "pdfFilename": "1120s.pdf",
+  "fields": {
+    "topmostSubform_0_Page1_0_Date_Name_ReadOrder_0_f1_1_0": {
+      "id": "topmostSubform[0].Page1[0].Date_Name_ReadOrder[0].f1_1[0]",
+      "page": 1,
+      "rect": [
+        219.0,
+        696.752,
+        345.6,
+        708.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_Date_Name_ReadOrder_0_f1_1_0)"
+    },
+    "topmostSubform_0_Page1_0_Date_Name_ReadOrder_0_f1_2_0": {
+      "id": "topmostSubform[0].Page1[0].Date_Name_ReadOrder[0].f1_2[0]",
+      "page": 1,
+      "rect": [
+        407.2,
+        696.752,
+        532.8,
+        708.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_Date_Name_ReadOrder_0_f1_2_0)"
+    },
+    "topmostSubform_0_Page1_0_Date_Name_ReadOrder_0_f1_3_0": {
+      "id": "topmostSubform[0].Page1[0].Date_Name_ReadOrder[0].f1_3[0]",
+      "page": 1,
+      "rect": [
+        552.8,
+        696.752,
+        576.0,
+        708.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_Date_Name_ReadOrder_0_f1_3_0)"
+    },
+    "name": {
+      "id": "topmostSubform[0].Page1[0].Date_Name_ReadOrder[0].f1_4[0]",
+      "page": 1,
+      "rect": [
+        137.8,
+        671.998,
+        459.8,
+        685.999
+      ],
+      "type": "text",
+      "description": "Name"
+    },
+    "street": {
+      "id": "topmostSubform[0].Page1[0].Date_Name_ReadOrder[0].f1_5[0]",
+      "page": 1,
+      "rect": [
+        137.8,
+        648.0,
+        395.0,
+        662.001
+      ],
+      "type": "text",
+      "description": "Street"
+    },
+    "topmostSubform_0_Page1_0_Date_Name_ReadOrder_0_f1_6_0": {
+      "id": "topmostSubform[0].Page1[0].Date_Name_ReadOrder[0].f1_6[0]",
+      "page": 1,
+      "rect": [
+        397.0,
+        648.0,
+        459.8,
+        662.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_Date_Name_ReadOrder_0_f1_6_0)"
+    },
+    "city": {
+      "id": "topmostSubform[0].Page1[0].Date_Name_ReadOrder[0].f1_7[0]",
+      "page": 1,
+      "rect": [
+        137.8,
+        623.999,
+        265.4,
+        638.0
+      ],
+      "type": "text",
+      "description": "City"
+    },
+    "state": {
+      "id": "topmostSubform[0].Page1[0].Date_Name_ReadOrder[0].f1_8[0]",
+      "page": 1,
+      "rect": [
+        267.4,
+        623.999,
+        315.8,
+        638.0
+      ],
+      "type": "text",
+      "description": "State"
+    },
+    "topmostSubform_0_Page1_0_Date_Name_ReadOrder_0_f1_9_0": {
+      "id": "topmostSubform[0].Page1[0].Date_Name_ReadOrder[0].f1_9[0]",
+      "page": 1,
+      "rect": [
+        317.8,
+        623.999,
+        380.6,
+        638.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_Date_Name_ReadOrder_0_f1_9_0)"
+    },
+    "zip": {
+      "id": "topmostSubform[0].Page1[0].Date_Name_ReadOrder[0].f1_10[0]",
+      "page": 1,
+      "rect": [
+        382.6,
+        623.999,
+        459.8,
+        638.0
+      ],
+      "type": "text",
+      "description": "ZIP"
+    },
+    "a_s_elec_effective_date": {
+      "id": "topmostSubform[0].Page1[0].ABC[0].f1_11[0]",
+      "page": 1,
+      "rect": [
+        36.0,
+        671.998,
+        135.8,
+        685.999
+      ],
+      "type": "text",
+      "description": "A S-elec effective date"
+    },
+    "b_activity_code": {
+      "id": "topmostSubform[0].Page1[0].ABC[0].f1_12[0]",
+      "page": 1,
+      "rect": [
+        36.0,
+        636.001,
+        135.8,
+        650.001
+      ],
+      "type": "text",
+      "description": "B Activity code"
+    },
+    "topmostSubform_0_Page1_0_ABC_0_c1_1_0": {
+      "id": "topmostSubform[0].Page1[0].ABC[0].c1_1[0]",
+      "page": 1,
+      "rect": [
+        123.8,
+        626.002,
+        131.8,
+        634.002
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_ABC_0_c1_1_0)"
+    },
+    "d_ein": {
+      "id": "topmostSubform[0].Page1[0].f1_13[0]",
+      "page": 1,
+      "rect": [
+        460.8,
+        671.998,
+        576.0,
+        685.999
+      ],
+      "type": "text",
+      "description": "D EIN"
+    },
+    "e_date_incorporated": {
+      "id": "topmostSubform[0].Page1[0].f1_14[0]",
+      "page": 1,
+      "rect": [
+        460.8,
+        648.0,
+        576.0,
+        662.001
+      ],
+      "type": "text",
+      "description": "E Date incorporated"
+    },
+    "f_total_assets": {
+      "id": "topmostSubform[0].Page1[0].f1_15[0]",
+      "page": 1,
+      "rect": [
+        470.8,
+        624.002,
+        576.0,
+        636.001
+      ],
+      "type": "text",
+      "description": "F Total assets"
+    },
+    "g_yes_electing_s_this_year": {
+      "id": "topmostSubform[0].Page1[0].c1_2[0]",
+      "page": 1,
+      "rect": [
+        410.4,
+        613.5,
+        418.4,
+        621.5
+      ],
+      "type": "checkbox",
+      "description": "G Yes electing S this year"
+    },
+    "topmostSubform_0_Page1_0_c1_2_1": {
+      "id": "topmostSubform[0].Page1[0].c1_2[1]",
+      "page": 1,
+      "rect": [
+        439.2,
+        613.5,
+        447.2,
+        621.5
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_2_1)"
+    },
+    "topmostSubform_0_Page1_0_c1_3_0": {
+      "id": "topmostSubform[0].Page1[0].c1_3[0]",
+      "page": 1,
+      "rect": [
+        100.8,
+        601.501,
+        108.8,
+        609.501
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_3_0)"
+    },
+    "topmostSubform_0_Page1_0_c1_4_0": {
+      "id": "topmostSubform[0].Page1[0].c1_4[0]",
+      "page": 1,
+      "rect": [
+        172.8,
+        601.501,
+        180.8,
+        609.501
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_4_0)"
+    },
+    "topmostSubform_0_Page1_0_c1_5_0": {
+      "id": "topmostSubform[0].Page1[0].c1_5[0]",
+      "page": 1,
+      "rect": [
+        259.2,
+        601.501,
+        267.2,
+        609.501
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_5_0)"
+    },
+    "topmostSubform_0_Page1_0_c1_6_0": {
+      "id": "topmostSubform[0].Page1[0].c1_6[0]",
+      "page": 1,
+      "rect": [
+        352.8,
+        601.501,
+        360.8,
+        609.501
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_6_0)"
+    },
+    "topmostSubform_0_Page1_0_c1_7_0": {
+      "id": "topmostSubform[0].Page1[0].c1_7[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        601.501,
+        454.4,
+        609.501
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_7_0)"
+    },
+    "i_number_of_shareholders": {
+      "id": "topmostSubform[0].Page1[0].f1_16[0]",
+      "page": 1,
+      "rect": [
+        492.435,
+        588.002,
+        576.0,
+        600.001
+      ],
+      "type": "text",
+      "description": "I Number of shareholders"
+    },
+    "topmostSubform_0_Page1_0_c1_8_0": {
+      "id": "topmostSubform[0].Page1[0].c1_8[0]",
+      "page": 1,
+      "rect": [
+        144.0,
+        578.25,
+        152.0,
+        586.25
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_8_0)"
+    },
+    "topmostSubform_0_Page1_0_c1_8_1": {
+      "id": "topmostSubform[0].Page1[0].c1_8[1]",
+      "page": 1,
+      "rect": [
+        360.0,
+        578.25,
+        368.0,
+        586.25
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_8_1)"
+    },
+    "1a_gross_receipts": {
+      "id": "topmostSubform[0].Page1[0].f1_17[0]",
+      "page": 1,
+      "rect": [
+        158.4,
+        552.002,
+        229.65,
+        564.001
+      ],
+      "type": "text",
+      "description": "1a Gross receipts"
+    },
+    "1b_returns": {
+      "id": "topmostSubform[0].Page1[0].f1_18[0]",
+      "page": 1,
+      "rect": [
+        345.6,
+        552.002,
+        416.85,
+        564.001
+      ],
+      "type": "text",
+      "description": "1b Returns"
+    },
+    "1c_balance": {
+      "id": "topmostSubform[0].Page1[0].f1_19[0]",
+      "page": 1,
+      "rect": [
+        496.8,
+        552.002,
+        576.0,
+        564.001
+      ],
+      "type": "text",
+      "description": "1c Balance"
+    },
+    "2_cogs": {
+      "id": "topmostSubform[0].Page1[0].f1_20[0]",
+      "page": 1,
+      "rect": [
+        496.8,
+        540.0,
+        576.0,
+        551.999
+      ],
+      "type": "text",
+      "description": "2 COGS"
+    },
+    "3_gross_profit": {
+      "id": "topmostSubform[0].Page1[0].f1_21[0]",
+      "page": 1,
+      "rect": [
+        496.8,
+        528.001,
+        576.0,
+        540.0
+      ],
+      "type": "text",
+      "description": "3 Gross profit"
+    },
+    "4_net_gain": {
+      "id": "topmostSubform[0].Page1[0].f1_22[0]",
+      "page": 1,
+      "rect": [
+        496.8,
+        516.002,
+        576.0,
+        528.001
+      ],
+      "type": "text",
+      "description": "4 Net gain"
+    },
+    "5_other_income": {
+      "id": "topmostSubform[0].Page1[0].f1_23[0]",
+      "page": 1,
+      "rect": [
+        496.8,
+        504.0,
+        576.0,
+        515.999
+      ],
+      "type": "text",
+      "description": "5 Other income"
+    },
+    "6_total_income": {
+      "id": "topmostSubform[0].Page1[0].f1_24[0]",
+      "page": 1,
+      "rect": [
+        496.8,
+        492.001,
+        576.0,
+        504.0
+      ],
+      "type": "text",
+      "description": "6 Total income"
+    },
+    "7_comp_officers": {
+      "id": "topmostSubform[0].Page1[0].f1_25[0]",
+      "page": 1,
+      "rect": [
+        496.8,
+        480.002,
+        576.0,
+        492.001
+      ],
+      "type": "text",
+      "description": "7 Comp officers"
+    },
+    "8_salaries": {
+      "id": "topmostSubform[0].Page1[0].f1_26[0]",
+      "page": 1,
+      "rect": [
+        496.8,
+        468.0,
+        576.0,
+        479.999
+      ],
+      "type": "text",
+      "description": "8 Salaries"
+    },
+    "9_repairs": {
+      "id": "topmostSubform[0].Page1[0].f1_27[0]",
+      "page": 1,
+      "rect": [
+        496.8,
+        456.001,
+        576.0,
+        468.0
+      ],
+      "type": "text",
+      "description": "9 Repairs"
+    },
+    "10_bad_debts": {
+      "id": "topmostSubform[0].Page1[0].f1_28[0]",
+      "page": 1,
+      "rect": [
+        496.8,
+        444.002,
+        576.0,
+        456.001
+      ],
+      "type": "text",
+      "description": "10 Bad debts"
+    },
+    "11_rents": {
+      "id": "topmostSubform[0].Page1[0].f1_29[0]",
+      "page": 1,
+      "rect": [
+        496.8,
+        432.0,
+        576.0,
+        443.999
+      ],
+      "type": "text",
+      "description": "11 Rents"
+    },
+    "12_taxes": {
+      "id": "topmostSubform[0].Page1[0].f1_30[0]",
+      "page": 1,
+      "rect": [
+        496.8,
+        420.001,
+        576.0,
+        432.0
+      ],
+      "type": "text",
+      "description": "12 Taxes"
+    },
+    "13_interest": {
+      "id": "topmostSubform[0].Page1[0].f1_31[0]",
+      "page": 1,
+      "rect": [
+        496.8,
+        408.002,
+        576.0,
+        420.001
+      ],
+      "type": "text",
+      "description": "13 Interest"
+    },
+    "14_depreciation": {
+      "id": "topmostSubform[0].Page1[0].f1_32[0]",
+      "page": 1,
+      "rect": [
+        496.8,
+        396.0,
+        576.0,
+        407.999
+      ],
+      "type": "text",
+      "description": "14 Depreciation"
+    },
+    "15_depletion": {
+      "id": "topmostSubform[0].Page1[0].f1_33[0]",
+      "page": 1,
+      "rect": [
+        496.8,
+        384.001,
+        576.0,
+        396.0
+      ],
+      "type": "text",
+      "description": "15 Depletion"
+    },
+    "16_advertising": {
+      "id": "topmostSubform[0].Page1[0].f1_34[0]",
+      "page": 1,
+      "rect": [
+        496.8,
+        372.002,
+        576.0,
+        384.001
+      ],
+      "type": "text",
+      "description": "16 Advertising"
+    },
+    "17_pension": {
+      "id": "topmostSubform[0].Page1[0].f1_35[0]",
+      "page": 1,
+      "rect": [
+        496.8,
+        360.0,
+        576.0,
+        371.999
+      ],
+      "type": "text",
+      "description": "17 Pension"
+    },
+    "18_employee_benefits": {
+      "id": "topmostSubform[0].Page1[0].f1_36[0]",
+      "page": 1,
+      "rect": [
+        496.8,
+        348.001,
+        576.0,
+        360.0
+      ],
+      "type": "text",
+      "description": "18 Employee benefits"
+    },
+    "19_energy_efficient": {
+      "id": "topmostSubform[0].Page1[0].f1_37[0]",
+      "page": 1,
+      "rect": [
+        496.8,
+        336.002,
+        576.0,
+        348.001
+      ],
+      "type": "text",
+      "description": "19 Energy efficient"
+    },
+    "20_other_deductions": {
+      "id": "topmostSubform[0].Page1[0].f1_38[0]",
+      "page": 1,
+      "rect": [
+        496.8,
+        324.0,
+        576.0,
+        335.999
+      ],
+      "type": "text",
+      "description": "20 Other deductions"
+    },
+    "21_total_deductions": {
+      "id": "topmostSubform[0].Page1[0].f1_39[0]",
+      "page": 1,
+      "rect": [
+        496.8,
+        312.001,
+        576.0,
+        324.0
+      ],
+      "type": "text",
+      "description": "21 Total deductions"
+    },
+    "22_ordinary_biz_income": {
+      "id": "topmostSubform[0].Page1[0].f1_40[0]",
+      "page": 1,
+      "rect": [
+        496.8,
+        300.002,
+        576.0,
+        312.001
+      ],
+      "type": "text",
+      "description": "22 Ordinary biz income"
+    },
+    "topmostSubform_0_Page1_0_f1_41_0": {
+      "id": "topmostSubform[0].Page1[0].f1_41[0]",
+      "page": 1,
+      "rect": [
+        396.0,
+        288.0,
+        474.45,
+        299.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_41_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_42_0": {
+      "id": "topmostSubform[0].Page1[0].f1_42[0]",
+      "page": 1,
+      "rect": [
+        396.0,
+        276.001,
+        474.45,
+        288.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_42_0)"
+    },
+    "23c_total_tax": {
+      "id": "topmostSubform[0].Page1[0].f1_43[0]",
+      "page": 1,
+      "rect": [
+        496.8,
+        264.002,
+        576.0,
+        276.001
+      ],
+      "type": "text",
+      "description": "23c Total tax"
+    },
+    "topmostSubform_0_Page1_0_f1_44_0": {
+      "id": "topmostSubform[0].Page1[0].f1_44[0]",
+      "page": 1,
+      "rect": [
+        396.0,
+        240.001,
+        474.45,
+        252.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_44_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_45_0": {
+      "id": "topmostSubform[0].Page1[0].f1_45[0]",
+      "page": 1,
+      "rect": [
+        396.0,
+        228.002,
+        474.45,
+        240.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_45_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_46_0": {
+      "id": "topmostSubform[0].Page1[0].f1_46[0]",
+      "page": 1,
+      "rect": [
+        396.0,
+        216.0,
+        474.45,
+        227.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_46_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_47_0": {
+      "id": "topmostSubform[0].Page1[0].f1_47[0]",
+      "page": 1,
+      "rect": [
+        396.0,
+        204.001,
+        474.45,
+        216.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_47_0)"
+    },
+    "24z_total_payments": {
+      "id": "topmostSubform[0].Page1[0].f1_48[0]",
+      "page": 1,
+      "rect": [
+        496.8,
+        192.002,
+        576.0,
+        204.001
+      ],
+      "type": "text",
+      "description": "24z Total payments"
+    },
+    "topmostSubform_0_Page1_0_c1_9_0": {
+      "id": "topmostSubform[0].Page1[0].c1_9[0]",
+      "page": 1,
+      "rect": [
+        456.0,
+        182.0,
+        464.0,
+        190.0
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_9_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_49_0": {
+      "id": "topmostSubform[0].Page1[0].f1_49[0]",
+      "page": 1,
+      "rect": [
+        496.8,
+        180.0,
+        576.0,
+        191.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_49_0)"
+    },
+    "26_amount_owed": {
+      "id": "topmostSubform[0].Page1[0].f1_50[0]",
+      "page": 1,
+      "rect": [
+        496.8,
+        168.001,
+        576.0,
+        180.0
+      ],
+      "type": "text",
+      "description": "26 Amount owed"
+    },
+    "27_overpayment": {
+      "id": "topmostSubform[0].Page1[0].f1_51[0]",
+      "page": 1,
+      "rect": [
+        496.8,
+        156.002,
+        576.0,
+        168.001
+      ],
+      "type": "text",
+      "description": "27 Overpayment"
+    },
+    "topmostSubform_0_Page1_0_f1_52_0": {
+      "id": "topmostSubform[0].Page1[0].f1_52[0]",
+      "page": 1,
+      "rect": [
+        328.609,
+        144.0,
+        403.2,
+        155.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_52_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_53_0": {
+      "id": "topmostSubform[0].Page1[0].f1_53[0]",
+      "page": 1,
+      "rect": [
+        496.8,
+        144.0,
+        576.0,
+        155.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_53_0)"
+    },
+    "topmostSubform_0_Page1_0_Routing_Number_0_f1_54_0": {
+      "id": "topmostSubform[0].Page1[0].Routing_Number[0].f1_54[0]",
+      "page": 1,
+      "rect": [
+        158.601,
+        132.999,
+        288.201,
+        144.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_Routing_Number_0_f1_54_0)"
+    },
+    "topmostSubform_0_Page1_0_c1_10_0": {
+      "id": "topmostSubform[0].Page1[0].c1_10[0]",
+      "page": 1,
+      "rect": [
+        341.4,
+        133.001,
+        349.4,
+        141.001
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_10_0)"
+    },
+    "topmostSubform_0_Page1_0_c1_10_1": {
+      "id": "topmostSubform[0].Page1[0].c1_10[1]",
+      "page": 1,
+      "rect": [
+        406.2,
+        133.001,
+        414.2,
+        141.001
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_10_1)"
+    },
+    "topmostSubform_0_Page1_0_Account_Number_0_f1_55_0": {
+      "id": "topmostSubform[0].Page1[0].Account_Number[0].f1_55[0]",
+      "page": 1,
+      "rect": [
+        158.601,
+        118.999,
+        403.401,
+        130.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_Account_Number_0_f1_55_0)"
+    },
+    "topmostSubform_0_Page1_0_c1_11_0": {
+      "id": "topmostSubform[0].Page1[0].c1_11[0]",
+      "page": 1,
+      "rect": [
+        521.4,
+        87.5,
+        529.4,
+        95.5
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_11_0)"
+    },
+    "may_irs_discuss_with_preparer_no": {
+      "id": "topmostSubform[0].Page1[0].c1_11[1]",
+      "page": 1,
+      "rect": [
+        551.999,
+        87.5,
+        559.999,
+        95.5
+      ],
+      "type": "checkbox",
+      "description": "May IRS discuss with preparer = No"
+    },
+    "topmostSubform_0_Page1_0_f1_56_0": {
+      "id": "topmostSubform[0].Page1[0].f1_56[0]",
+      "page": 1,
+      "rect": [
+        341.0,
+        84.002,
+        458.8,
+        96.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_56_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_57_0": {
+      "id": "topmostSubform[0].Page1[0].f1_57[0]",
+      "page": 1,
+      "rect": [
+        80.2,
+        59.998,
+        236.85,
+        74.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_57_0)"
+    },
+    "topmostSubform_0_Page1_0_c1_12_0": {
+      "id": "topmostSubform[0].Page1[0].c1_12[0]",
+      "page": 1,
+      "rect": [
+        481.0,
+        72.499,
+        489.0,
+        80.499
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_c1_12_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_58_0": {
+      "id": "topmostSubform[0].Page1[0].f1_58[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        59.998,
+        576.0,
+        74.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_58_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_59_0": {
+      "id": "topmostSubform[0].Page1[0].f1_59[0]",
+      "page": 1,
+      "rect": [
+        124.45,
+        48.002,
+        431.25,
+        60.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_59_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_60_0": {
+      "id": "topmostSubform[0].Page1[0].f1_60[0]",
+      "page": 1,
+      "rect": [
+        471.756,
+        48.002,
+        576.0,
+        60.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_60_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_61_0": {
+      "id": "topmostSubform[0].Page1[0].f1_61[0]",
+      "page": 1,
+      "rect": [
+        131.197,
+        36.0,
+        431.25,
+        47.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_61_0)"
+    },
+    "topmostSubform_0_Page1_0_f1_62_0": {
+      "id": "topmostSubform[0].Page1[0].f1_62[0]",
+      "page": 1,
+      "rect": [
+        471.756,
+        36.0,
+        576.0,
+        47.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page1_0_f1_62_0)"
+    },
+    "1_cash_method": {
+      "id": "topmostSubform[0].Page2[0].c2_1[0]",
+      "page": 2,
+      "rect": [
+        187.2,
+        722.0,
+        195.2,
+        730.0
+      ],
+      "type": "checkbox",
+      "description": "1 Cash method"
+    },
+    "topmostSubform_0_Page2_0_c2_1_1": {
+      "id": "topmostSubform[0].Page2[0].c2_1[1]",
+      "page": 2,
+      "rect": [
+        252.0,
+        722.0,
+        260.0,
+        730.0
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_c2_1_1)"
+    },
+    "topmostSubform_0_Page2_0_c2_1_2": {
+      "id": "topmostSubform[0].Page2[0].c2_1[2]",
+      "page": 2,
+      "rect": [
+        187.2,
+        710.001,
+        195.2,
+        718.001
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_c2_1_2)"
+    },
+    "topmostSubform_0_Page2_0_f2_1_0": {
+      "id": "topmostSubform[0].Page2[0].f2_1[0]",
+      "page": 2,
+      "rect": [
+        259.2,
+        708.001,
+        525.6,
+        720.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_1_0)"
+    },
+    "2a_business_activity": {
+      "id": "topmostSubform[0].Page2[0].f2_2[0]",
+      "page": 2,
+      "rect": [
+        137.746,
+        684.0,
+        288.0,
+        695.999
+      ],
+      "type": "text",
+      "description": "2a Business activity"
+    },
+    "2b_product_service": {
+      "id": "topmostSubform[0].Page2[0].f2_3[0]",
+      "page": 2,
+      "rect": [
+        374.4,
+        684.0,
+        525.6,
+        695.999
+      ],
+      "type": "text",
+      "description": "2b Product/service"
+    },
+    "topmostSubform_0_Page2_0_c2_2_0": {
+      "id": "topmostSubform[0].Page2[0].c2_2[0]",
+      "page": 2,
+      "rect": [
+        538.6,
+        661.002,
+        548.6,
+        671.002
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_c2_2_0)"
+    },
+    "3_disregarded_entity_shareholder_no": {
+      "id": "topmostSubform[0].Page2[0].c2_2[1]",
+      "page": 2,
+      "rect": [
+        560.2,
+        661.002,
+        570.2,
+        671.002
+      ],
+      "type": "checkbox",
+      "description": "3 Disregarded entity shareholder = No"
+    },
+    "topmostSubform_0_Page2_0_c2_3_0": {
+      "id": "topmostSubform[0].Page2[0].c2_3[0]",
+      "page": 2,
+      "rect": [
+        538.6,
+        613.0,
+        548.6,
+        623.0
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_c2_3_0)"
+    },
+    "4a_own_20_corp_no": {
+      "id": "topmostSubform[0].Page2[0].c2_3[1]",
+      "page": 2,
+      "rect": [
+        560.2,
+        613.0,
+        570.2,
+        623.0
+      ],
+      "type": "checkbox",
+      "description": "4a Own 20%+ corp = No"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow1_0_f2_4_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4a[0].BodyRow1[0].f2_4[0]",
+      "page": 2,
+      "rect": [
+        64.8,
+        564.001,
+        194.4,
+        576.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow1_0_f2_4_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow1_0_f2_5_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4a[0].BodyRow1[0].f2_5[0]",
+      "page": 2,
+      "rect": [
+        194.4,
+        564.001,
+        273.6,
+        576.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow1_0_f2_5_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow1_0_f2_6_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4a[0].BodyRow1[0].f2_6[0]",
+      "page": 2,
+      "rect": [
+        274.35,
+        564.001,
+        367.2,
+        576.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow1_0_f2_6_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow1_0_f2_7_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4a[0].BodyRow1[0].f2_7[0]",
+      "page": 2,
+      "rect": [
+        367.2,
+        564.001,
+        438.45,
+        576.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow1_0_f2_7_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow1_0_f2_8_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4a[0].BodyRow1[0].f2_8[0]",
+      "page": 2,
+      "rect": [
+        439.2,
+        564.001,
+        576.0,
+        576.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow1_0_f2_8_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow2_0_f2_9_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4a[0].BodyRow2[0].f2_9[0]",
+      "page": 2,
+      "rect": [
+        64.8,
+        552.002,
+        194.4,
+        564.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow2_0_f2_9_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow2_0_f2_10_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4a[0].BodyRow2[0].f2_10[0]",
+      "page": 2,
+      "rect": [
+        194.4,
+        552.002,
+        273.6,
+        564.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow2_0_f2_10_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow2_0_f2_11_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4a[0].BodyRow2[0].f2_11[0]",
+      "page": 2,
+      "rect": [
+        274.35,
+        552.002,
+        367.2,
+        564.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow2_0_f2_11_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow2_0_f2_12_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4a[0].BodyRow2[0].f2_12[0]",
+      "page": 2,
+      "rect": [
+        367.2,
+        552.002,
+        438.45,
+        564.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow2_0_f2_12_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow2_0_f2_13_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4a[0].BodyRow2[0].f2_13[0]",
+      "page": 2,
+      "rect": [
+        439.2,
+        552.002,
+        576.0,
+        564.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow2_0_f2_13_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow3_0_f2_14_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4a[0].BodyRow3[0].f2_14[0]",
+      "page": 2,
+      "rect": [
+        64.8,
+        540.003,
+        194.4,
+        552.002
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow3_0_f2_14_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow3_0_f2_15_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4a[0].BodyRow3[0].f2_15[0]",
+      "page": 2,
+      "rect": [
+        194.4,
+        540.003,
+        273.6,
+        552.002
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow3_0_f2_15_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow3_0_f2_16_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4a[0].BodyRow3[0].f2_16[0]",
+      "page": 2,
+      "rect": [
+        274.35,
+        540.003,
+        367.2,
+        552.002
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow3_0_f2_16_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow3_0_f2_17_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4a[0].BodyRow3[0].f2_17[0]",
+      "page": 2,
+      "rect": [
+        367.2,
+        540.003,
+        438.45,
+        552.002
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow3_0_f2_17_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow3_0_f2_18_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4a[0].BodyRow3[0].f2_18[0]",
+      "page": 2,
+      "rect": [
+        439.2,
+        540.003,
+        576.0,
+        552.002
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow3_0_f2_18_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow4_0_f2_19_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4a[0].BodyRow4[0].f2_19[0]",
+      "page": 2,
+      "rect": [
+        64.8,
+        528.004,
+        194.4,
+        540.003
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow4_0_f2_19_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow4_0_f2_20_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4a[0].BodyRow4[0].f2_20[0]",
+      "page": 2,
+      "rect": [
+        194.4,
+        528.004,
+        273.6,
+        540.003
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow4_0_f2_20_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow4_0_f2_21_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4a[0].BodyRow4[0].f2_21[0]",
+      "page": 2,
+      "rect": [
+        274.35,
+        528.004,
+        367.2,
+        540.003
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow4_0_f2_21_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow4_0_f2_22_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4a[0].BodyRow4[0].f2_22[0]",
+      "page": 2,
+      "rect": [
+        367.2,
+        528.004,
+        438.45,
+        540.003
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow4_0_f2_22_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow4_0_f2_23_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4a[0].BodyRow4[0].f2_23[0]",
+      "page": 2,
+      "rect": [
+        439.2,
+        528.004,
+        576.0,
+        540.003
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4a_0_BodyRow4_0_f2_23_0)"
+    },
+    "topmostSubform_0_Page2_0_c2_4_0": {
+      "id": "topmostSubform[0].Page2[0].c2_4[0]",
+      "page": 2,
+      "rect": [
+        538.6,
+        493.001,
+        548.6,
+        503.001
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_c2_4_0)"
+    },
+    "4b_own_20_partnership_no": {
+      "id": "topmostSubform[0].Page2[0].c2_4[1]",
+      "page": 2,
+      "rect": [
+        560.2,
+        493.001,
+        570.2,
+        503.001
+      ],
+      "type": "checkbox",
+      "description": "4b Own 20%+ partnership = No"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow1_0_f2_24_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4b[0].BodyRow1[0].f2_24[0]",
+      "page": 2,
+      "rect": [
+        64.8,
+        444.002,
+        194.4,
+        456.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow1_0_f2_24_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow1_0_f2_25_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4b[0].BodyRow1[0].f2_25[0]",
+      "page": 2,
+      "rect": [
+        194.4,
+        444.002,
+        273.6,
+        456.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow1_0_f2_25_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow1_0_f2_26_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4b[0].BodyRow1[0].f2_26[0]",
+      "page": 2,
+      "rect": [
+        274.35,
+        444.002,
+        367.2,
+        456.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow1_0_f2_26_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow1_0_f2_27_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4b[0].BodyRow1[0].f2_27[0]",
+      "page": 2,
+      "rect": [
+        367.95,
+        444.002,
+        460.8,
+        456.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow1_0_f2_27_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow1_0_f2_28_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4b[0].BodyRow1[0].f2_28[0]",
+      "page": 2,
+      "rect": [
+        460.8,
+        444.002,
+        576.0,
+        456.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow1_0_f2_28_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow2_0_f2_29_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4b[0].BodyRow2[0].f2_29[0]",
+      "page": 2,
+      "rect": [
+        64.8,
+        432.003,
+        194.4,
+        444.002
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow2_0_f2_29_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow2_0_f2_30_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4b[0].BodyRow2[0].f2_30[0]",
+      "page": 2,
+      "rect": [
+        194.4,
+        432.003,
+        273.6,
+        444.002
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow2_0_f2_30_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow2_0_f2_31_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4b[0].BodyRow2[0].f2_31[0]",
+      "page": 2,
+      "rect": [
+        274.35,
+        432.003,
+        367.2,
+        444.002
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow2_0_f2_31_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow2_0_f2_32_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4b[0].BodyRow2[0].f2_32[0]",
+      "page": 2,
+      "rect": [
+        367.95,
+        432.003,
+        460.8,
+        444.002
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow2_0_f2_32_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow2_0_f2_33_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4b[0].BodyRow2[0].f2_33[0]",
+      "page": 2,
+      "rect": [
+        460.8,
+        432.003,
+        576.0,
+        444.002
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow2_0_f2_33_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow3_0_f2_34_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4b[0].BodyRow3[0].f2_34[0]",
+      "page": 2,
+      "rect": [
+        64.8,
+        420.004,
+        194.4,
+        432.003
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow3_0_f2_34_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow3_0_f2_35_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4b[0].BodyRow3[0].f2_35[0]",
+      "page": 2,
+      "rect": [
+        194.4,
+        420.004,
+        273.6,
+        432.003
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow3_0_f2_35_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow3_0_f2_36_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4b[0].BodyRow3[0].f2_36[0]",
+      "page": 2,
+      "rect": [
+        274.35,
+        420.004,
+        367.2,
+        432.003
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow3_0_f2_36_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow3_0_f2_37_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4b[0].BodyRow3[0].f2_37[0]",
+      "page": 2,
+      "rect": [
+        367.95,
+        420.004,
+        460.8,
+        432.003
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow3_0_f2_37_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow3_0_f2_38_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4b[0].BodyRow3[0].f2_38[0]",
+      "page": 2,
+      "rect": [
+        460.8,
+        420.004,
+        576.0,
+        432.003
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow3_0_f2_38_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow4_0_f2_39_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4b[0].BodyRow4[0].f2_39[0]",
+      "page": 2,
+      "rect": [
+        64.8,
+        408.005,
+        194.4,
+        420.004
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow4_0_f2_39_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow4_0_f2_40_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4b[0].BodyRow4[0].f2_40[0]",
+      "page": 2,
+      "rect": [
+        194.4,
+        408.005,
+        273.6,
+        420.004
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow4_0_f2_40_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow4_0_f2_41_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4b[0].BodyRow4[0].f2_41[0]",
+      "page": 2,
+      "rect": [
+        274.35,
+        408.005,
+        367.2,
+        420.004
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow4_0_f2_41_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow4_0_f2_42_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4b[0].BodyRow4[0].f2_42[0]",
+      "page": 2,
+      "rect": [
+        367.95,
+        408.005,
+        460.8,
+        420.004
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow4_0_f2_42_0)"
+    },
+    "topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow4_0_f2_43_0": {
+      "id": "topmostSubform[0].Page2[0].Table_Line4b[0].BodyRow4[0].f2_43[0]",
+      "page": 2,
+      "rect": [
+        460.8,
+        408.005,
+        576.0,
+        420.004
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_Table_Line4b_0_BodyRow4_0_f2_43_0)"
+    },
+    "topmostSubform_0_Page2_0_c2_5_0": {
+      "id": "topmostSubform[0].Page2[0].c2_5[0]",
+      "page": 2,
+      "rect": [
+        538.6,
+        397.0,
+        548.6,
+        407.0
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_c2_5_0)"
+    },
+    "5a_restricted_stock_no": {
+      "id": "topmostSubform[0].Page2[0].c2_5[1]",
+      "page": 2,
+      "rect": [
+        560.2,
+        397.0,
+        570.2,
+        407.0
+      ],
+      "type": "checkbox",
+      "description": "5a Restricted stock = No"
+    },
+    "topmostSubform_0_Page2_0_f2_44_0": {
+      "id": "topmostSubform[0].Page2[0].f2_44[0]",
+      "page": 2,
+      "rect": [
+        345.6,
+        372.002,
+        525.6,
+        384.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_44_0)"
+    },
+    "topmostSubform_0_Page2_0_f2_45_0": {
+      "id": "topmostSubform[0].Page2[0].f2_45[0]",
+      "page": 2,
+      "rect": [
+        345.6,
+        360.0,
+        525.6,
+        371.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_45_0)"
+    },
+    "topmostSubform_0_Page2_0_c2_6_0": {
+      "id": "topmostSubform[0].Page2[0].c2_6[0]",
+      "page": 2,
+      "rect": [
+        538.6,
+        349.001,
+        548.6,
+        359.001
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_c2_6_0)"
+    },
+    "5b_stock_options_no": {
+      "id": "topmostSubform[0].Page2[0].c2_6[1]",
+      "page": 2,
+      "rect": [
+        560.2,
+        349.001,
+        570.2,
+        359.001
+      ],
+      "type": "checkbox",
+      "description": "5b Stock options = No"
+    },
+    "topmostSubform_0_Page2_0_f2_46_0": {
+      "id": "topmostSubform[0].Page2[0].f2_46[0]",
+      "page": 2,
+      "rect": [
+        345.6,
+        324.0,
+        525.6,
+        335.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_46_0)"
+    },
+    "topmostSubform_0_Page2_0_f2_47_0": {
+      "id": "topmostSubform[0].Page2[0].f2_47[0]",
+      "page": 2,
+      "rect": [
+        345.6,
+        312.001,
+        525.6,
+        324.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_47_0)"
+    },
+    "topmostSubform_0_Page2_0_c2_7_0": {
+      "id": "topmostSubform[0].Page2[0].c2_7[0]",
+      "page": 2,
+      "rect": [
+        538.6,
+        289.0,
+        548.6,
+        299.0
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_c2_7_0)"
+    },
+    "6_form_8918_no": {
+      "id": "topmostSubform[0].Page2[0].c2_7[1]",
+      "page": 2,
+      "rect": [
+        560.2,
+        289.0,
+        570.2,
+        299.0
+      ],
+      "type": "checkbox",
+      "description": "6 Form 8918 = No"
+    },
+    "topmostSubform_0_Page2_0_c2_8_0": {
+      "id": "topmostSubform[0].Page2[0].c2_8[0]",
+      "page": 2,
+      "rect": [
+        517.6,
+        278.001,
+        525.6,
+        286.001
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_c2_8_0)"
+    },
+    "topmostSubform_0_Page2_0_f2_48_0": {
+      "id": "topmostSubform[0].Page2[0].f2_48[0]",
+      "page": 2,
+      "rect": [
+        432.0,
+        204.001,
+        525.6,
+        216.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_f2_48_0)"
+    },
+    "topmostSubform_0_Page2_0_c2_9_0": {
+      "id": "topmostSubform[0].Page2[0].c2_9[0]",
+      "page": 2,
+      "rect": [
+        538.6,
+        181.0,
+        548.6,
+        191.0
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_c2_9_0)"
+    },
+    "9_163_j_election_no": {
+      "id": "topmostSubform[0].Page2[0].c2_9[1]",
+      "page": 2,
+      "rect": [
+        560.2,
+        181.0,
+        570.2,
+        191.0
+      ],
+      "type": "checkbox",
+      "description": "9 \u00a7163(j) election = No"
+    },
+    "topmostSubform_0_Page2_0_c2_10_0": {
+      "id": "topmostSubform[0].Page2[0].c2_10[0]",
+      "page": 2,
+      "rect": [
+        538.6,
+        169.001,
+        548.6,
+        179.001
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_c2_10_0)"
+    },
+    "10_163_j_interest_expense_no": {
+      "id": "topmostSubform[0].Page2[0].c2_10[1]",
+      "page": 2,
+      "rect": [
+        560.2,
+        169.001,
+        570.2,
+        179.001
+      ],
+      "type": "checkbox",
+      "description": "10 \u00a7163(j) interest expense = No"
+    },
+    "topmostSubform_0_Page2_0_c2_11_0": {
+      "id": "topmostSubform[0].Page2[0].c2_11[0]",
+      "page": 2,
+      "rect": [
+        538.6,
+        97.001,
+        548.6,
+        107.001
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page2_0_c2_11_0)"
+    },
+    "11_total_receipts_and_assets_250k_no": {
+      "id": "topmostSubform[0].Page2[0].c2_11[1]",
+      "page": 2,
+      "rect": [
+        560.2,
+        97.001,
+        570.2,
+        107.001
+      ],
+      "type": "checkbox",
+      "description": "11 Total receipts and assets <$250K = No"
+    },
+    "topmostSubform_0_Page3_0_c3_1_0": {
+      "id": "topmostSubform[0].Page3[0].c3_1[0]",
+      "page": 3,
+      "rect": [
+        538.6,
+        697.0,
+        548.6,
+        707.0
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_c3_1_0)"
+    },
+    "12_cancellation_of_debt_no": {
+      "id": "topmostSubform[0].Page3[0].c3_1[1]",
+      "page": 3,
+      "rect": [
+        560.2,
+        697.0,
+        570.2,
+        707.0
+      ],
+      "type": "checkbox",
+      "description": "12 Cancellation of debt = No"
+    },
+    "topmostSubform_0_Page3_0_f3_1_0": {
+      "id": "topmostSubform[0].Page3[0].f3_1[0]",
+      "page": 3,
+      "rect": [
+        439.2,
+        684.0,
+        525.6,
+        695.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_1_0)"
+    },
+    "topmostSubform_0_Page3_0_c3_2_0": {
+      "id": "topmostSubform[0].Page3[0].c3_2[0]",
+      "page": 3,
+      "rect": [
+        538.6,
+        673.001,
+        548.6,
+        683.001
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_c3_2_0)"
+    },
+    "13_qsub_election_no": {
+      "id": "topmostSubform[0].Page3[0].c3_2[1]",
+      "page": 3,
+      "rect": [
+        560.2,
+        673.001,
+        570.2,
+        683.001
+      ],
+      "type": "checkbox",
+      "description": "13 QSub election = No"
+    },
+    "topmostSubform_0_Page3_0_c3_3_0": {
+      "id": "topmostSubform[0].Page3[0].c3_3[0]",
+      "page": 3,
+      "rect": [
+        538.6,
+        661.002,
+        548.6,
+        671.002
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_c3_3_0)"
+    },
+    "14a_form_1099_payments_no": {
+      "id": "topmostSubform[0].Page3[0].c3_3[1]",
+      "page": 3,
+      "rect": [
+        560.2,
+        661.002,
+        570.2,
+        671.002
+      ],
+      "type": "checkbox",
+      "description": "14a Form 1099 payments = No"
+    },
+    "topmostSubform_0_Page3_0_c3_4_0": {
+      "id": "topmostSubform[0].Page3[0].c3_4[0]",
+      "page": 3,
+      "rect": [
+        538.6,
+        649.0,
+        548.6,
+        659.0
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_c3_4_0)"
+    },
+    "topmostSubform_0_Page3_0_c3_4_1": {
+      "id": "topmostSubform[0].Page3[0].c3_4[1]",
+      "page": 3,
+      "rect": [
+        560.2,
+        649.0,
+        570.2,
+        659.0
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_c3_4_1)"
+    },
+    "topmostSubform_0_Page3_0_c3_5_0": {
+      "id": "topmostSubform[0].Page3[0].c3_5[0]",
+      "page": 3,
+      "rect": [
+        538.6,
+        637.001,
+        548.6,
+        647.001
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_c3_5_0)"
+    },
+    "15_qualified_opportunity_fund_no": {
+      "id": "topmostSubform[0].Page3[0].c3_5[1]",
+      "page": 3,
+      "rect": [
+        560.2,
+        637.001,
+        570.2,
+        647.001
+      ],
+      "type": "checkbox",
+      "description": "15 Qualified Opportunity Fund = No"
+    },
+    "topmostSubform_0_Page3_0_f3_2_0": {
+      "id": "topmostSubform[0].Page3[0].f3_2[0]",
+      "page": 3,
+      "rect": [
+        439.2,
+        624.002,
+        525.6,
+        636.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_2_0)"
+    },
+    "topmostSubform_0_Page3_0_c3_6_0": {
+      "id": "topmostSubform[0].Page3[0].c3_6[0]",
+      "page": 3,
+      "rect": [
+        538.6,
+        600.999,
+        548.6,
+        610.999
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_c3_6_0)"
+    },
+    "16_digital_asset_no": {
+      "id": "topmostSubform[0].Page3[0].c3_6[1]",
+      "page": 3,
+      "rect": [
+        560.2,
+        600.999,
+        570.2,
+        610.999
+      ],
+      "type": "checkbox",
+      "description": "16 Digital asset = No"
+    },
+    "topmostSubform_0_Page3_0_c3_7_0": {
+      "id": "topmostSubform[0].Page3[0].c3_7[0]",
+      "page": 3,
+      "rect": [
+        538.6,
+        589.002,
+        548.6,
+        599.002
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_c3_7_0)"
+    },
+    "topmostSubform_0_Page3_0_c3_7_1": {
+      "id": "topmostSubform[0].Page3[0].c3_7[1]",
+      "page": 3,
+      "rect": [
+        560.2,
+        589.002,
+        570.2,
+        599.002
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_c3_7_1)"
+    },
+    "k_line_1_ordinary_biz_income": {
+      "id": "topmostSubform[0].Page3[0].f3_3[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        552.002,
+        576.0,
+        564.001
+      ],
+      "type": "text",
+      "description": "K Line 1 ordinary biz income"
+    },
+    "k_line_2_net_rental_real_estate": {
+      "id": "topmostSubform[0].Page3[0].f3_4[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        540.0,
+        576.0,
+        551.999
+      ],
+      "type": "text",
+      "description": "K Line 2 net rental real estate"
+    },
+    "topmostSubform_0_Page3_0_f3_5_0": {
+      "id": "topmostSubform[0].Page3[0].f3_5[0]",
+      "page": 3,
+      "rect": [
+        396.0,
+        528.001,
+        474.45,
+        540.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_5_0)"
+    },
+    "topmostSubform_0_Page3_0_f3_6_0": {
+      "id": "topmostSubform[0].Page3[0].f3_6[0]",
+      "page": 3,
+      "rect": [
+        396.0,
+        516.002,
+        474.45,
+        528.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_6_0)"
+    },
+    "k_line_3c_other_rental": {
+      "id": "topmostSubform[0].Page3[0].f3_7[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        504.0,
+        576.0,
+        515.999
+      ],
+      "type": "text",
+      "description": "K Line 3c other rental"
+    },
+    "k_line_4_interest": {
+      "id": "topmostSubform[0].Page3[0].f3_8[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        492.001,
+        576.0,
+        504.0
+      ],
+      "type": "text",
+      "description": "K Line 4 interest"
+    },
+    "k_line_5a_ordinary_dividends": {
+      "id": "topmostSubform[0].Page3[0].f3_9[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        480.002,
+        576.0,
+        492.001
+      ],
+      "type": "text",
+      "description": "K Line 5a ordinary dividends"
+    },
+    "topmostSubform_0_Page3_0_f3_10_0": {
+      "id": "topmostSubform[0].Page3[0].f3_10[0]",
+      "page": 3,
+      "rect": [
+        396.0,
+        468.0,
+        474.45,
+        479.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_10_0)"
+    },
+    "k_line_6_royalties": {
+      "id": "topmostSubform[0].Page3[0].f3_11[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        456.001,
+        576.0,
+        468.0
+      ],
+      "type": "text",
+      "description": "K Line 6 royalties"
+    },
+    "k_line_7_net_st_capital_gain": {
+      "id": "topmostSubform[0].Page3[0].f3_12[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        444.002,
+        576.0,
+        456.001
+      ],
+      "type": "text",
+      "description": "K Line 7 net ST capital gain"
+    },
+    "k_line_8a_net_lt_capital_gain": {
+      "id": "topmostSubform[0].Page3[0].f3_13[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        432.0,
+        576.0,
+        443.999
+      ],
+      "type": "text",
+      "description": "K Line 8a net LT capital gain"
+    },
+    "topmostSubform_0_Page3_0_f3_14_0": {
+      "id": "topmostSubform[0].Page3[0].f3_14[0]",
+      "page": 3,
+      "rect": [
+        396.0,
+        420.001,
+        474.45,
+        432.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_14_0)"
+    },
+    "topmostSubform_0_Page3_0_f3_15_0": {
+      "id": "topmostSubform[0].Page3[0].f3_15[0]",
+      "page": 3,
+      "rect": [
+        396.0,
+        408.002,
+        474.45,
+        420.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_15_0)"
+    },
+    "k_line_9_1231_gain": {
+      "id": "topmostSubform[0].Page3[0].f3_16[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        396.0,
+        576.0,
+        407.999
+      ],
+      "type": "text",
+      "description": "K Line 9 \u00a71231 gain"
+    },
+    "topmostSubform_0_Page3_0_f3_17_0": {
+      "id": "topmostSubform[0].Page3[0].f3_17[0]",
+      "page": 3,
+      "rect": [
+        312.081,
+        384.001,
+        468.0,
+        396.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_17_0)"
+    },
+    "k_line_10_other_income": {
+      "id": "topmostSubform[0].Page3[0].f3_18[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        384.001,
+        576.0,
+        396.0
+      ],
+      "type": "text",
+      "description": "K Line 10 other income"
+    },
+    "k_line_11_179_deduction": {
+      "id": "topmostSubform[0].Page3[0].f3_19[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        372.002,
+        576.0,
+        384.001
+      ],
+      "type": "text",
+      "description": "K Line 11 \u00a7179 deduction"
+    },
+    "k_line_12a_charitable_cash": {
+      "id": "topmostSubform[0].Page3[0].f3_20[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        360.0,
+        576.0,
+        371.999
+      ],
+      "type": "text",
+      "description": "K Line 12a charitable cash"
+    },
+    "topmostSubform_0_Page3_0_f3_21_0": {
+      "id": "topmostSubform[0].Page3[0].f3_21[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        348.001,
+        576.0,
+        360.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_21_0)"
+    },
+    "topmostSubform_0_Page3_0_f3_22_0": {
+      "id": "topmostSubform[0].Page3[0].f3_22[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        336.002,
+        576.0,
+        348.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_22_0)"
+    },
+    "topmostSubform_0_Page3_0_f3_23_0": {
+      "id": "topmostSubform[0].Page3[0].f3_23[0]",
+      "page": 3,
+      "rect": [
+        312.776,
+        324.0,
+        468.0,
+        335.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_23_0)"
+    },
+    "topmostSubform_0_Page3_0_f3_24_0": {
+      "id": "topmostSubform[0].Page3[0].f3_24[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        324.0,
+        576.0,
+        335.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_24_0)"
+    },
+    "topmostSubform_0_Page3_0_f3_25_0": {
+      "id": "topmostSubform[0].Page3[0].f3_25[0]",
+      "page": 3,
+      "rect": [
+        312.776,
+        312.001,
+        468.0,
+        324.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_25_0)"
+    },
+    "topmostSubform_0_Page3_0_f3_26_0": {
+      "id": "topmostSubform[0].Page3[0].f3_26[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        312.001,
+        576.0,
+        324.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_26_0)"
+    },
+    "topmostSubform_0_Page3_0_f3_27_0": {
+      "id": "topmostSubform[0].Page3[0].f3_27[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        300.002,
+        576.0,
+        312.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_27_0)"
+    },
+    "topmostSubform_0_Page3_0_f3_28_0": {
+      "id": "topmostSubform[0].Page3[0].f3_28[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        288.0,
+        576.0,
+        299.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_28_0)"
+    },
+    "topmostSubform_0_Page3_0_f3_29_0": {
+      "id": "topmostSubform[0].Page3[0].f3_29[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        276.001,
+        576.0,
+        288.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_29_0)"
+    },
+    "topmostSubform_0_Page3_0_f3_30_0": {
+      "id": "topmostSubform[0].Page3[0].f3_30[0]",
+      "page": 3,
+      "rect": [
+        311.706,
+        264.002,
+        468.0,
+        276.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_30_0)"
+    },
+    "topmostSubform_0_Page3_0_f3_31_0": {
+      "id": "topmostSubform[0].Page3[0].f3_31[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        264.002,
+        576.0,
+        276.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_31_0)"
+    },
+    "topmostSubform_0_Page3_0_f3_32_0": {
+      "id": "topmostSubform[0].Page3[0].f3_32[0]",
+      "page": 3,
+      "rect": [
+        311.706,
+        252.0,
+        468.0,
+        263.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_32_0)"
+    },
+    "topmostSubform_0_Page3_0_f3_33_0": {
+      "id": "topmostSubform[0].Page3[0].f3_33[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        252.0,
+        576.0,
+        263.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_33_0)"
+    },
+    "topmostSubform_0_Page3_0_f3_34_0": {
+      "id": "topmostSubform[0].Page3[0].f3_34[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        240.001,
+        576.0,
+        252.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_34_0)"
+    },
+    "topmostSubform_0_Page3_0_f3_35_0": {
+      "id": "topmostSubform[0].Page3[0].f3_35[0]",
+      "page": 3,
+      "rect": [
+        311.358,
+        228.002,
+        468.0,
+        240.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_35_0)"
+    },
+    "topmostSubform_0_Page3_0_f3_36_0": {
+      "id": "topmostSubform[0].Page3[0].f3_36[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        228.002,
+        576.0,
+        240.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_36_0)"
+    },
+    "topmostSubform_0_Page3_0_c3_7_2": {
+      "id": "topmostSubform[0].Page3[0].c3_7[2]",
+      "page": 3,
+      "rect": [
+        460.0,
+        206.001,
+        468.0,
+        214.001
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_c3_7_2)"
+    },
+    "k_line_14b_schedule_k_2_exception": {
+      "id": "topmostSubform[0].Page3[0].c3_8[0]",
+      "page": 3,
+      "rect": [
+        460.0,
+        194.002,
+        468.0,
+        202.002
+      ],
+      "type": "checkbox",
+      "description": "K Line 14b Schedule K-2 exception"
+    },
+    "topmostSubform_0_Page3_0_f3_37_0": {
+      "id": "topmostSubform[0].Page3[0].f3_37[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        180.0,
+        576.0,
+        191.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_37_0)"
+    },
+    "topmostSubform_0_Page3_0_f3_38_0": {
+      "id": "topmostSubform[0].Page3[0].f3_38[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        168.001,
+        576.0,
+        180.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_38_0)"
+    },
+    "topmostSubform_0_Page3_0_f3_39_0": {
+      "id": "topmostSubform[0].Page3[0].f3_39[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        156.002,
+        576.0,
+        168.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_39_0)"
+    },
+    "topmostSubform_0_Page3_0_f3_40_0": {
+      "id": "topmostSubform[0].Page3[0].f3_40[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        144.0,
+        576.0,
+        155.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_40_0)"
+    },
+    "topmostSubform_0_Page3_0_f3_41_0": {
+      "id": "topmostSubform[0].Page3[0].f3_41[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        132.001,
+        576.0,
+        144.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_41_0)"
+    },
+    "topmostSubform_0_Page3_0_f3_42_0": {
+      "id": "topmostSubform[0].Page3[0].f3_42[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        120.002,
+        576.0,
+        132.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_42_0)"
+    },
+    "topmostSubform_0_Page3_0_f3_43_0": {
+      "id": "topmostSubform[0].Page3[0].f3_43[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        108.0,
+        576.0,
+        119.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_43_0)"
+    },
+    "topmostSubform_0_Page3_0_f3_44_0": {
+      "id": "topmostSubform[0].Page3[0].f3_44[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        96.001,
+        576.0,
+        108.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_44_0)"
+    },
+    "topmostSubform_0_Page3_0_f3_45_0": {
+      "id": "topmostSubform[0].Page3[0].f3_45[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        84.002,
+        576.0,
+        96.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_45_0)"
+    },
+    "k_line_16d_distributions": {
+      "id": "topmostSubform[0].Page3[0].f3_46[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        72.0,
+        576.0,
+        83.999
+      ],
+      "type": "text",
+      "description": "K Line 16d Distributions"
+    },
+    "topmostSubform_0_Page3_0_f3_47_0": {
+      "id": "topmostSubform[0].Page3[0].f3_47[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        60.001,
+        576.0,
+        72.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_47_0)"
+    },
+    "topmostSubform_0_Page3_0_f3_48_0": {
+      "id": "topmostSubform[0].Page3[0].f3_48[0]",
+      "page": 3,
+      "rect": [
+        496.8,
+        48.002,
+        576.0,
+        60.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page3_0_f3_48_0)"
+    },
+    "k_line_17a_investment_income": {
+      "id": "topmostSubform[0].Page4[0].f4_1[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        708.001,
+        576.0,
+        720.0
+      ],
+      "type": "text",
+      "description": "K Line 17a Investment income"
+    },
+    "k_line_17b_investment_expenses": {
+      "id": "topmostSubform[0].Page4[0].f4_2[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        696.002,
+        576.0,
+        708.001
+      ],
+      "type": "text",
+      "description": "K Line 17b Investment expenses"
+    },
+    "k_line_17c_dividend_distributions": {
+      "id": "topmostSubform[0].Page4[0].f4_3[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        684.0,
+        576.0,
+        695.999
+      ],
+      "type": "text",
+      "description": "K Line 17c Dividend distributions"
+    },
+    "k_line_18_reconciliation": {
+      "id": "topmostSubform[0].Page4[0].f4_4[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        636.001,
+        576.0,
+        648.0
+      ],
+      "type": "text",
+      "description": "K Line 18 Reconciliation"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line1_0_f4_5_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line1[0].f4_5[0]",
+      "page": 4,
+      "rect": [
+        259.2,
+        600.004,
+        337.65,
+        612.003
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line1_0_f4_5_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line1_0_f4_6_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line1[0].f4_6[0]",
+      "page": 4,
+      "rect": [
+        338.4,
+        600.004,
+        416.85,
+        612.003
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line1_0_f4_6_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line1_0_f4_7_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line1[0].f4_7[0]",
+      "page": 4,
+      "rect": [
+        417.6,
+        600.004,
+        496.05,
+        612.003
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line1_0_f4_7_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line1_0_f4_8_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line1[0].f4_8[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        600.004,
+        576.0,
+        612.003
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line1_0_f4_8_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line2a_0_f4_9_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line2a[0].f4_9[0]",
+      "page": 4,
+      "rect": [
+        259.2,
+        588.005,
+        337.65,
+        600.004
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line2a_0_f4_9_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line2a_0_f4_10_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line2a[0].f4_10[0]",
+      "page": 4,
+      "rect": [
+        338.4,
+        588.005,
+        416.85,
+        600.004
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line2a_0_f4_10_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line2a_0_f4_11_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line2a[0].f4_11[0]",
+      "page": 4,
+      "rect": [
+        417.6,
+        588.005,
+        496.05,
+        600.004
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line2a_0_f4_11_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line2a_0_f4_12_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line2a[0].f4_12[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        588.005,
+        576.0,
+        600.004
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line2a_0_f4_12_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line2b_0_f4_13_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line2b[0].f4_13[0]",
+      "page": 4,
+      "rect": [
+        263.2,
+        576.006,
+        334.4,
+        588.005
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line2b_0_f4_13_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line2b_0_f4_14_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line2b[0].f4_14[0]",
+      "page": 4,
+      "rect": [
+        338.4,
+        576.006,
+        416.85,
+        588.005
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line2b_0_f4_14_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line2b_0_f4_15_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line2b[0].f4_15[0]",
+      "page": 4,
+      "rect": [
+        421.6,
+        576.006,
+        492.8,
+        588.005
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line2b_0_f4_15_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line2b_0_f4_16_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line2b[0].f4_16[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        576.006,
+        576.0,
+        588.005
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line2b_0_f4_16_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line3_0_f4_17_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line3[0].f4_17[0]",
+      "page": 4,
+      "rect": [
+        259.2,
+        564.007,
+        337.65,
+        576.006
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line3_0_f4_17_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line3_0_f4_18_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line3[0].f4_18[0]",
+      "page": 4,
+      "rect": [
+        338.4,
+        564.007,
+        416.85,
+        576.006
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line3_0_f4_18_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line3_0_f4_19_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line3[0].f4_19[0]",
+      "page": 4,
+      "rect": [
+        417.6,
+        564.007,
+        496.05,
+        576.006
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line3_0_f4_19_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line3_0_f4_20_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line3[0].f4_20[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        564.007,
+        576.0,
+        576.006
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line3_0_f4_20_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line4_0_f4_21_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line4[0].f4_21[0]",
+      "page": 4,
+      "rect": [
+        259.2,
+        552.008,
+        337.65,
+        564.007
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line4_0_f4_21_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line4_0_f4_22_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line4[0].f4_22[0]",
+      "page": 4,
+      "rect": [
+        338.4,
+        552.008,
+        416.85,
+        564.007
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line4_0_f4_22_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line4_0_f4_23_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line4[0].f4_23[0]",
+      "page": 4,
+      "rect": [
+        417.6,
+        552.008,
+        496.05,
+        564.007
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line4_0_f4_23_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line4_0_f4_24_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line4[0].f4_24[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        552.008,
+        576.0,
+        564.007
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line4_0_f4_24_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line5_0_f4_25_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line5[0].f4_25[0]",
+      "page": 4,
+      "rect": [
+        259.2,
+        540.009,
+        337.65,
+        552.008
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line5_0_f4_25_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line5_0_f4_26_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line5[0].f4_26[0]",
+      "page": 4,
+      "rect": [
+        338.4,
+        540.009,
+        416.85,
+        552.008
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line5_0_f4_26_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line5_0_f4_27_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line5[0].f4_27[0]",
+      "page": 4,
+      "rect": [
+        417.6,
+        540.009,
+        496.05,
+        552.008
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line5_0_f4_27_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line5_0_f4_28_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line5[0].f4_28[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        540.009,
+        576.0,
+        552.008
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line5_0_f4_28_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line6_0_f4_29_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line6[0].f4_29[0]",
+      "page": 4,
+      "rect": [
+        259.2,
+        528.01,
+        337.65,
+        540.009
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line6_0_f4_29_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line6_0_f4_30_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line6[0].f4_30[0]",
+      "page": 4,
+      "rect": [
+        338.4,
+        528.01,
+        416.85,
+        540.009
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line6_0_f4_30_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line6_0_f4_31_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line6[0].f4_31[0]",
+      "page": 4,
+      "rect": [
+        417.6,
+        528.01,
+        496.05,
+        540.009
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line6_0_f4_31_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line6_0_f4_32_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line6[0].f4_32[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        528.01,
+        576.0,
+        540.009
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line6_0_f4_32_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line7_0_f4_33_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line7[0].f4_33[0]",
+      "page": 4,
+      "rect": [
+        259.2,
+        516.011,
+        337.65,
+        528.01
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line7_0_f4_33_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line7_0_f4_34_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line7[0].f4_34[0]",
+      "page": 4,
+      "rect": [
+        338.4,
+        516.011,
+        416.85,
+        528.01
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line7_0_f4_34_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line7_0_f4_35_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line7[0].f4_35[0]",
+      "page": 4,
+      "rect": [
+        417.6,
+        516.011,
+        496.05,
+        528.01
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line7_0_f4_35_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line7_0_f4_36_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line7[0].f4_36[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        516.011,
+        576.0,
+        528.01
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line7_0_f4_36_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line8_0_f4_37_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line8[0].f4_37[0]",
+      "page": 4,
+      "rect": [
+        259.2,
+        504.012,
+        337.65,
+        516.011
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line8_0_f4_37_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line8_0_f4_38_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line8[0].f4_38[0]",
+      "page": 4,
+      "rect": [
+        338.4,
+        504.012,
+        416.85,
+        516.011
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line8_0_f4_38_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line8_0_f4_39_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line8[0].f4_39[0]",
+      "page": 4,
+      "rect": [
+        417.6,
+        504.012,
+        496.05,
+        516.011
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line8_0_f4_39_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line8_0_f4_40_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line8[0].f4_40[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        504.012,
+        576.0,
+        516.011
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line8_0_f4_40_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line9_0_f4_41_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line9[0].f4_41[0]",
+      "page": 4,
+      "rect": [
+        259.2,
+        492.013,
+        337.65,
+        504.012
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line9_0_f4_41_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line9_0_f4_42_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line9[0].f4_42[0]",
+      "page": 4,
+      "rect": [
+        338.4,
+        492.013,
+        416.85,
+        504.012
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line9_0_f4_42_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line9_0_f4_43_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line9[0].f4_43[0]",
+      "page": 4,
+      "rect": [
+        417.6,
+        492.013,
+        496.05,
+        504.012
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line9_0_f4_43_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line9_0_f4_44_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line9[0].f4_44[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        492.013,
+        576.0,
+        504.012
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line9_0_f4_44_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line10a_0_f4_45_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line10a[0].f4_45[0]",
+      "page": 4,
+      "rect": [
+        259.2,
+        480.014,
+        337.65,
+        492.013
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line10a_0_f4_45_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line10a_0_f4_46_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line10a[0].f4_46[0]",
+      "page": 4,
+      "rect": [
+        338.4,
+        480.014,
+        416.85,
+        492.013
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line10a_0_f4_46_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line10a_0_f4_47_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line10a[0].f4_47[0]",
+      "page": 4,
+      "rect": [
+        417.6,
+        480.014,
+        496.05,
+        492.013
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line10a_0_f4_47_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line10a_0_f4_48_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line10a[0].f4_48[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        480.014,
+        576.0,
+        492.013
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line10a_0_f4_48_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line10b_0_f4_49_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line10b[0].f4_49[0]",
+      "page": 4,
+      "rect": [
+        263.2,
+        468.015,
+        334.4,
+        480.014
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line10b_0_f4_49_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line10b_0_f4_50_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line10b[0].f4_50[0]",
+      "page": 4,
+      "rect": [
+        338.4,
+        468.015,
+        416.85,
+        480.014
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line10b_0_f4_50_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line10b_0_f4_51_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line10b[0].f4_51[0]",
+      "page": 4,
+      "rect": [
+        421.6,
+        468.015,
+        492.8,
+        480.014
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line10b_0_f4_51_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line10b_0_f4_52_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line10b[0].f4_52[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        468.015,
+        576.0,
+        480.014
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line10b_0_f4_52_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line11a_0_f4_53_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line11a[0].f4_53[0]",
+      "page": 4,
+      "rect": [
+        259.2,
+        456.016,
+        337.65,
+        468.015
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line11a_0_f4_53_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line11a_0_f4_54_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line11a[0].f4_54[0]",
+      "page": 4,
+      "rect": [
+        338.4,
+        456.016,
+        416.85,
+        468.015
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line11a_0_f4_54_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line11a_0_f4_55_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line11a[0].f4_55[0]",
+      "page": 4,
+      "rect": [
+        417.6,
+        456.016,
+        496.05,
+        468.015
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line11a_0_f4_55_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line11a_0_f4_56_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line11a[0].f4_56[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        456.016,
+        576.0,
+        468.015
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line11a_0_f4_56_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line11b_0_f4_57_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line11b[0].f4_57[0]",
+      "page": 4,
+      "rect": [
+        263.2,
+        444.017,
+        334.4,
+        456.016
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line11b_0_f4_57_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line11b_0_f4_58_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line11b[0].f4_58[0]",
+      "page": 4,
+      "rect": [
+        338.4,
+        444.017,
+        416.85,
+        456.016
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line11b_0_f4_58_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line11b_0_f4_59_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line11b[0].f4_59[0]",
+      "page": 4,
+      "rect": [
+        421.6,
+        444.017,
+        492.8,
+        456.016
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line11b_0_f4_59_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line11b_0_f4_60_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line11b[0].f4_60[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        444.017,
+        576.0,
+        456.016
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line11b_0_f4_60_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line12_0_f4_61_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line12[0].f4_61[0]",
+      "page": 4,
+      "rect": [
+        259.2,
+        432.018,
+        337.65,
+        444.017
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line12_0_f4_61_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line12_0_f4_62_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line12[0].f4_62[0]",
+      "page": 4,
+      "rect": [
+        338.4,
+        432.018,
+        416.85,
+        444.017
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line12_0_f4_62_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line12_0_f4_63_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line12[0].f4_63[0]",
+      "page": 4,
+      "rect": [
+        417.6,
+        432.018,
+        496.05,
+        444.017
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line12_0_f4_63_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line12_0_f4_64_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line12[0].f4_64[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        432.018,
+        576.0,
+        444.017
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line12_0_f4_64_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line13a_0_f4_65_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line13a[0].f4_65[0]",
+      "page": 4,
+      "rect": [
+        259.2,
+        420.019,
+        337.65,
+        432.018
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line13a_0_f4_65_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line13a_0_f4_66_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line13a[0].f4_66[0]",
+      "page": 4,
+      "rect": [
+        338.4,
+        420.019,
+        416.85,
+        432.018
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line13a_0_f4_66_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line13a_0_f4_67_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line13a[0].f4_67[0]",
+      "page": 4,
+      "rect": [
+        417.6,
+        420.019,
+        496.05,
+        432.018
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line13a_0_f4_67_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line13a_0_f4_68_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line13a[0].f4_68[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        420.019,
+        576.0,
+        432.018
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line13a_0_f4_68_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line13b_0_f4_69_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line13b[0].f4_69[0]",
+      "page": 4,
+      "rect": [
+        263.2,
+        408.02,
+        334.4,
+        420.019
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line13b_0_f4_69_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line13b_0_f4_70_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line13b[0].f4_70[0]",
+      "page": 4,
+      "rect": [
+        338.4,
+        408.02,
+        416.85,
+        420.019
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line13b_0_f4_70_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line13b_0_f4_71_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line13b[0].f4_71[0]",
+      "page": 4,
+      "rect": [
+        421.6,
+        408.02,
+        492.8,
+        420.019
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line13b_0_f4_71_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line13b_0_f4_72_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line13b[0].f4_72[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        408.02,
+        576.0,
+        420.019
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line13b_0_f4_72_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line14_0_f4_73_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line14[0].f4_73[0]",
+      "page": 4,
+      "rect": [
+        259.2,
+        396.021,
+        337.65,
+        408.02
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line14_0_f4_73_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line14_0_f4_74_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line14[0].f4_74[0]",
+      "page": 4,
+      "rect": [
+        338.4,
+        396.021,
+        416.85,
+        408.02
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line14_0_f4_74_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line14_0_f4_75_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line14[0].f4_75[0]",
+      "page": 4,
+      "rect": [
+        417.6,
+        396.021,
+        496.05,
+        408.02
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line14_0_f4_75_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line14_0_f4_76_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line14[0].f4_76[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        396.021,
+        576.0,
+        408.02
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line14_0_f4_76_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line15_0_f4_77_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line15[0].f4_77[0]",
+      "page": 4,
+      "rect": [
+        259.2,
+        384.022,
+        337.65,
+        396.021
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line15_0_f4_77_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line15_0_f4_78_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line15[0].f4_78[0]",
+      "page": 4,
+      "rect": [
+        338.4,
+        384.022,
+        416.85,
+        396.021
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line15_0_f4_78_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line15_0_f4_79_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line15[0].f4_79[0]",
+      "page": 4,
+      "rect": [
+        417.6,
+        384.022,
+        496.05,
+        396.021
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line15_0_f4_79_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Assets_0_Line15_0_f4_80_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Assets[0].Line15[0].f4_80[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        384.022,
+        576.0,
+        396.021
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Assets_0_Line15_0_f4_80_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line16_0_f4_81_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line16[0].f4_81[0]",
+      "page": 4,
+      "rect": [
+        259.2,
+        360.003,
+        337.65,
+        372.002
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line16_0_f4_81_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line16_0_f4_82_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line16[0].f4_82[0]",
+      "page": 4,
+      "rect": [
+        338.4,
+        360.003,
+        416.85,
+        372.002
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line16_0_f4_82_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line16_0_f4_83_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line16[0].f4_83[0]",
+      "page": 4,
+      "rect": [
+        417.6,
+        360.003,
+        496.05,
+        372.002
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line16_0_f4_83_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line16_0_f4_84_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line16[0].f4_84[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        360.003,
+        576.0,
+        372.002
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line16_0_f4_84_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line17_0_f4_85_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line17[0].f4_85[0]",
+      "page": 4,
+      "rect": [
+        259.2,
+        348.004,
+        337.65,
+        360.003
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line17_0_f4_85_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line17_0_f4_86_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line17[0].f4_86[0]",
+      "page": 4,
+      "rect": [
+        338.4,
+        348.004,
+        416.85,
+        360.003
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line17_0_f4_86_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line17_0_f4_87_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line17[0].f4_87[0]",
+      "page": 4,
+      "rect": [
+        417.6,
+        348.004,
+        496.05,
+        360.003
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line17_0_f4_87_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line17_0_f4_88_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line17[0].f4_88[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        348.004,
+        576.0,
+        360.003
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line17_0_f4_88_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line18_0_f4_89_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line18[0].f4_89[0]",
+      "page": 4,
+      "rect": [
+        259.2,
+        336.005,
+        337.65,
+        348.004
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line18_0_f4_89_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line18_0_f4_90_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line18[0].f4_90[0]",
+      "page": 4,
+      "rect": [
+        338.4,
+        336.005,
+        416.85,
+        348.004
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line18_0_f4_90_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line18_0_f4_91_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line18[0].f4_91[0]",
+      "page": 4,
+      "rect": [
+        417.6,
+        336.005,
+        496.05,
+        348.004
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line18_0_f4_91_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line18_0_f4_92_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line18[0].f4_92[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        336.005,
+        576.0,
+        348.004
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line18_0_f4_92_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line19_0_f4_93_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line19[0].f4_93[0]",
+      "page": 4,
+      "rect": [
+        259.2,
+        324.006,
+        337.65,
+        336.005
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line19_0_f4_93_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line19_0_f4_94_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line19[0].f4_94[0]",
+      "page": 4,
+      "rect": [
+        338.4,
+        324.006,
+        416.85,
+        336.005
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line19_0_f4_94_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line19_0_f4_95_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line19[0].f4_95[0]",
+      "page": 4,
+      "rect": [
+        417.6,
+        324.006,
+        496.05,
+        336.005
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line19_0_f4_95_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line19_0_f4_96_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line19[0].f4_96[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        324.006,
+        576.0,
+        336.005
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line19_0_f4_96_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line20_0_f4_97_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line20[0].f4_97[0]",
+      "page": 4,
+      "rect": [
+        259.2,
+        312.007,
+        337.65,
+        324.006
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line20_0_f4_97_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line20_0_f4_98_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line20[0].f4_98[0]",
+      "page": 4,
+      "rect": [
+        338.4,
+        312.007,
+        416.85,
+        324.006
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line20_0_f4_98_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line20_0_f4_99_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line20[0].f4_99[0]",
+      "page": 4,
+      "rect": [
+        417.6,
+        312.007,
+        496.05,
+        324.006
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line20_0_f4_99_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line20_0_f4_100_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line20[0].f4_100[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        312.007,
+        576.0,
+        324.006
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line20_0_f4_100_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line21_0_f4_101_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line21[0].f4_101[0]",
+      "page": 4,
+      "rect": [
+        259.2,
+        300.008,
+        337.65,
+        312.007
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line21_0_f4_101_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line21_0_f4_102_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line21[0].f4_102[0]",
+      "page": 4,
+      "rect": [
+        338.4,
+        300.008,
+        416.85,
+        312.007
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line21_0_f4_102_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line21_0_f4_103_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line21[0].f4_103[0]",
+      "page": 4,
+      "rect": [
+        417.6,
+        300.008,
+        496.05,
+        312.007
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line21_0_f4_103_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line21_0_f4_104_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line21[0].f4_104[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        300.008,
+        576.0,
+        312.007
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line21_0_f4_104_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line22_0_f4_105_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line22[0].f4_105[0]",
+      "page": 4,
+      "rect": [
+        259.2,
+        288.009,
+        337.65,
+        300.008
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line22_0_f4_105_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line22_0_f4_106_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line22[0].f4_106[0]",
+      "page": 4,
+      "rect": [
+        338.4,
+        288.009,
+        416.85,
+        300.008
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line22_0_f4_106_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line22_0_f4_107_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line22[0].f4_107[0]",
+      "page": 4,
+      "rect": [
+        417.6,
+        288.009,
+        496.05,
+        300.008
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line22_0_f4_107_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line22_0_f4_108_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line22[0].f4_108[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        288.009,
+        576.0,
+        300.008
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line22_0_f4_108_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line23_0_f4_109_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line23[0].f4_109[0]",
+      "page": 4,
+      "rect": [
+        259.2,
+        276.01,
+        337.65,
+        288.009
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line23_0_f4_109_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line23_0_f4_110_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line23[0].f4_110[0]",
+      "page": 4,
+      "rect": [
+        338.4,
+        276.01,
+        416.85,
+        288.009
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line23_0_f4_110_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line23_0_f4_111_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line23[0].f4_111[0]",
+      "page": 4,
+      "rect": [
+        417.6,
+        276.01,
+        496.05,
+        288.009
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line23_0_f4_111_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line23_0_f4_112_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line23[0].f4_112[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        276.01,
+        576.0,
+        288.009
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line23_0_f4_112_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line24_0_f4_113_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line24[0].f4_113[0]",
+      "page": 4,
+      "rect": [
+        259.2,
+        264.011,
+        337.65,
+        276.01
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line24_0_f4_113_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line24_0_f4_114_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line24[0].f4_114[0]",
+      "page": 4,
+      "rect": [
+        338.4,
+        264.011,
+        416.85,
+        276.01
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line24_0_f4_114_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line24_0_f4_115_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line24[0].f4_115[0]",
+      "page": 4,
+      "rect": [
+        417.6,
+        264.011,
+        496.05,
+        276.01
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line24_0_f4_115_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line24_0_f4_116_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line24[0].f4_116[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        264.011,
+        576.0,
+        276.01
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line24_0_f4_116_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line25_0_f4_117_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line25[0].f4_117[0]",
+      "page": 4,
+      "rect": [
+        259.2,
+        252.012,
+        337.65,
+        264.011
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line25_0_f4_117_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line25_0_f4_118_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line25[0].f4_118[0]",
+      "page": 4,
+      "rect": [
+        338.4,
+        252.012,
+        416.85,
+        264.011
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line25_0_f4_118_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line25_0_f4_119_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line25[0].f4_119[0]",
+      "page": 4,
+      "rect": [
+        417.6,
+        252.012,
+        496.05,
+        264.011
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line25_0_f4_119_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line25_0_f4_120_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line25[0].f4_120[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        252.012,
+        576.0,
+        264.011
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line25_0_f4_120_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line26_0_f4_121_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line26[0].f4_121[0]",
+      "page": 4,
+      "rect": [
+        259.2,
+        240.013,
+        337.65,
+        252.012
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line26_0_f4_121_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line26_0_f4_122_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line26[0].f4_122[0]",
+      "page": 4,
+      "rect": [
+        342.4,
+        240.013,
+        413.6,
+        252.012
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line26_0_f4_122_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line26_0_f4_123_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line26[0].f4_123[0]",
+      "page": 4,
+      "rect": [
+        417.6,
+        240.013,
+        496.05,
+        252.012
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line26_0_f4_123_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line26_0_f4_124_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line26[0].f4_124[0]",
+      "page": 4,
+      "rect": [
+        500.8,
+        240.013,
+        572.0,
+        252.012
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line26_0_f4_124_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line27_0_f4_125_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line27[0].f4_125[0]",
+      "page": 4,
+      "rect": [
+        259.2,
+        228.014,
+        337.65,
+        240.013
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line27_0_f4_125_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line27_0_f4_126_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line27[0].f4_126[0]",
+      "page": 4,
+      "rect": [
+        338.4,
+        228.014,
+        416.85,
+        240.013
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line27_0_f4_126_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line27_0_f4_127_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line27[0].f4_127[0]",
+      "page": 4,
+      "rect": [
+        417.6,
+        228.014,
+        496.05,
+        240.013
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line27_0_f4_127_0)"
+    },
+    "topmostSubform_0_Page4_0_Table_Liabilities_0_Line27_0_f4_128_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Liabilities[0].Line27[0].f4_128[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        228.014,
+        576.0,
+        240.013
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page4_0_Table_Liabilities_0_Line27_0_f4_128_0)"
+    },
+    "m_1_line_1_net_income_per_books": {
+      "id": "topmostSubform[0].Page5[0].SchM-1_Left[0].f5_1[0]",
+      "page": 5,
+      "rect": [
+        230.4,
+        708.001,
+        308.85,
+        720.0
+      ],
+      "type": "text",
+      "description": "M-1 Line 1 Net income per books"
+    },
+    "topmostSubform_0_Page5_0_SchM-1_Left_0_f5_2_0": {
+      "id": "topmostSubform[0].Page5[0].SchM-1_Left[0].f5_2[0]",
+      "page": 5,
+      "rect": [
+        172.8,
+        672.001,
+        223.2,
+        684.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_SchM-1_Left_0_f5_2_0)"
+    },
+    "topmostSubform_0_Page5_0_SchM-1_Left_0_f5_3_0": {
+      "id": "topmostSubform[0].Page5[0].SchM-1_Left[0].f5_3[0]",
+      "page": 5,
+      "rect": [
+        64.8,
+        660.002,
+        223.2,
+        672.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_SchM-1_Left_0_f5_3_0)"
+    },
+    "topmostSubform_0_Page5_0_SchM-1_Left_0_f5_4_0": {
+      "id": "topmostSubform[0].Page5[0].SchM-1_Left[0].f5_4[0]",
+      "page": 5,
+      "rect": [
+        230.4,
+        660.002,
+        308.85,
+        672.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_SchM-1_Left_0_f5_4_0)"
+    },
+    "topmostSubform_0_Page5_0_SchM-1_Left_0_f5_5_0": {
+      "id": "topmostSubform[0].Page5[0].SchM-1_Left[0].f5_5[0]",
+      "page": 5,
+      "rect": [
+        122.4,
+        612.0,
+        223.2,
+        623.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_SchM-1_Left_0_f5_5_0)"
+    },
+    "topmostSubform_0_Page5_0_SchM-1_Left_0_f5_6_0": {
+      "id": "topmostSubform[0].Page5[0].SchM-1_Left[0].f5_6[0]",
+      "page": 5,
+      "rect": [
+        64.8,
+        600.001,
+        223.2,
+        612.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_SchM-1_Left_0_f5_6_0)"
+    },
+    "topmostSubform_0_Page5_0_SchM-1_Left_0_f5_7_0": {
+      "id": "topmostSubform[0].Page5[0].SchM-1_Left[0].f5_7[0]",
+      "page": 5,
+      "rect": [
+        168.8,
+        588.002,
+        223.2,
+        600.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_SchM-1_Left_0_f5_7_0)"
+    },
+    "topmostSubform_0_Page5_0_SchM-1_Left_0_f5_8_0": {
+      "id": "topmostSubform[0].Page5[0].SchM-1_Left[0].f5_8[0]",
+      "page": 5,
+      "rect": [
+        64.8,
+        576.0,
+        223.2,
+        587.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_SchM-1_Left_0_f5_8_0)"
+    },
+    "m_1_line_4_add_lines_1_3": {
+      "id": "topmostSubform[0].Page5[0].SchM-1_Left[0].f5_9[0]",
+      "page": 5,
+      "rect": [
+        230.4,
+        576.0,
+        308.85,
+        587.999
+      ],
+      "type": "text",
+      "description": "M-1 Line 4 Add lines 1-3"
+    },
+    "topmostSubform_0_Page5_0_SchM-1_Left_0_f5_10_0": {
+      "id": "topmostSubform[0].Page5[0].SchM-1_Left[0].f5_10[0]",
+      "page": 5,
+      "rect": [
+        230.4,
+        564.001,
+        308.85,
+        576.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_SchM-1_Left_0_f5_10_0)"
+    },
+    "topmostSubform_0_Page5_0_SchM-1_Right_0_f5_11_0": {
+      "id": "topmostSubform[0].Page5[0].SchM-1_Right[0].f5_11[0]",
+      "page": 5,
+      "rect": [
+        423.598,
+        672.001,
+        489.6,
+        684.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_SchM-1_Right_0_f5_11_0)"
+    },
+    "topmostSubform_0_Page5_0_SchM-1_Right_0_f5_12_0": {
+      "id": "topmostSubform[0].Page5[0].SchM-1_Right[0].f5_12[0]",
+      "page": 5,
+      "rect": [
+        338.4,
+        660.002,
+        489.6,
+        672.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_SchM-1_Right_0_f5_12_0)"
+    },
+    "topmostSubform_0_Page5_0_SchM-1_Right_0_f5_13_0": {
+      "id": "topmostSubform[0].Page5[0].SchM-1_Right[0].f5_13[0]",
+      "page": 5,
+      "rect": [
+        496.8,
+        660.002,
+        576.0,
+        672.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_SchM-1_Right_0_f5_13_0)"
+    },
+    "topmostSubform_0_Page5_0_SchM-1_Right_0_f5_14_0": {
+      "id": "topmostSubform[0].Page5[0].SchM-1_Right[0].f5_14[0]",
+      "page": 5,
+      "rect": [
+        396.0,
+        612.0,
+        489.6,
+        623.999
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_SchM-1_Right_0_f5_14_0)"
+    },
+    "topmostSubform_0_Page5_0_SchM-1_Right_0_f5_15_0": {
+      "id": "topmostSubform[0].Page5[0].SchM-1_Right[0].f5_15[0]",
+      "page": 5,
+      "rect": [
+        338.4,
+        600.001,
+        489.6,
+        612.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_SchM-1_Right_0_f5_15_0)"
+    },
+    "topmostSubform_0_Page5_0_SchM-1_Right_0_f5_16_0": {
+      "id": "topmostSubform[0].Page5[0].SchM-1_Right[0].f5_16[0]",
+      "page": 5,
+      "rect": [
+        496.8,
+        600.001,
+        576.0,
+        612.0
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_SchM-1_Right_0_f5_16_0)"
+    },
+    "topmostSubform_0_Page5_0_SchM-1_Right_0_f5_17_0": {
+      "id": "topmostSubform[0].Page5[0].SchM-1_Right[0].f5_17[0]",
+      "page": 5,
+      "rect": [
+        496.8,
+        588.002,
+        576.0,
+        600.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_SchM-1_Right_0_f5_17_0)"
+    },
+    "m_1_line_8_subtract_line_7_from_line_4_k_line_18": {
+      "id": "topmostSubform[0].Page5[0].SchM-1_Right[0].f5_18[0]",
+      "page": 5,
+      "rect": [
+        496.8,
+        564.001,
+        576.0,
+        576.0
+      ],
+      "type": "text",
+      "description": "M-1 Line 8 Subtract Line 7 from Line 4 = K Line 18"
+    },
+    "m_2_l1_col_a_begin_aaa": {
+      "id": "topmostSubform[0].Page5[0].Table_SchM-2[0].Line1[0].f5_19[0]",
+      "page": 5,
+      "rect": [
+        259.2,
+        480.002,
+        337.65,
+        492.001
+      ],
+      "type": "text",
+      "description": "M-2 L1 col a Begin AAA"
+    },
+    "topmostSubform_0_Page5_0_Table_SchM-2_0_Line1_0_f5_20_0": {
+      "id": "topmostSubform[0].Page5[0].Table_SchM-2[0].Line1[0].f5_20[0]",
+      "page": 5,
+      "rect": [
+        338.4,
+        480.002,
+        416.85,
+        492.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_Table_SchM-2_0_Line1_0_f5_20_0)"
+    },
+    "topmostSubform_0_Page5_0_Table_SchM-2_0_Line1_0_f5_21_0": {
+      "id": "topmostSubform[0].Page5[0].Table_SchM-2[0].Line1[0].f5_21[0]",
+      "page": 5,
+      "rect": [
+        417.6,
+        480.002,
+        496.05,
+        492.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_Table_SchM-2_0_Line1_0_f5_21_0)"
+    },
+    "topmostSubform_0_Page5_0_Table_SchM-2_0_Line1_0_f5_22_0": {
+      "id": "topmostSubform[0].Page5[0].Table_SchM-2[0].Line1[0].f5_22[0]",
+      "page": 5,
+      "rect": [
+        496.8,
+        480.002,
+        576.0,
+        492.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_Table_SchM-2_0_Line1_0_f5_22_0)"
+    },
+    "m_2_l2_col_a_ordinary_income": {
+      "id": "topmostSubform[0].Page5[0].Table_SchM-2[0].Line2[0].f5_23[0]",
+      "page": 5,
+      "rect": [
+        259.2,
+        468.003,
+        337.65,
+        480.002
+      ],
+      "type": "text",
+      "description": "M-2 L2 col a Ordinary income"
+    },
+    "topmostSubform_0_Page5_0_Table_SchM-2_0_Line2_0_f5_24_0": {
+      "id": "topmostSubform[0].Page5[0].Table_SchM-2[0].Line2[0].f5_24[0]",
+      "page": 5,
+      "rect": [
+        338.4,
+        468.003,
+        416.85,
+        480.002
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_Table_SchM-2_0_Line2_0_f5_24_0)"
+    },
+    "topmostSubform_0_Page5_0_Table_SchM-2_0_Line2_0_f5_25_0": {
+      "id": "topmostSubform[0].Page5[0].Table_SchM-2[0].Line2[0].f5_25[0]",
+      "page": 5,
+      "rect": [
+        417.6,
+        468.003,
+        496.05,
+        480.002
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_Table_SchM-2_0_Line2_0_f5_25_0)"
+    },
+    "topmostSubform_0_Page5_0_Table_SchM-2_0_Line2_0_f5_26_0": {
+      "id": "topmostSubform[0].Page5[0].Table_SchM-2[0].Line2[0].f5_26[0]",
+      "page": 5,
+      "rect": [
+        496.8,
+        468.003,
+        576.0,
+        480.002
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_Table_SchM-2_0_Line2_0_f5_26_0)"
+    },
+    "topmostSubform_0_Page5_0_Table_SchM-2_0_Line3_0_f5_27_0": {
+      "id": "topmostSubform[0].Page5[0].Table_SchM-2[0].Line3[0].f5_27[0]",
+      "page": 5,
+      "rect": [
+        259.2,
+        456.004,
+        337.65,
+        468.003
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_Table_SchM-2_0_Line3_0_f5_27_0)"
+    },
+    "topmostSubform_0_Page5_0_Table_SchM-2_0_Line3_0_f5_28_0": {
+      "id": "topmostSubform[0].Page5[0].Table_SchM-2[0].Line3[0].f5_28[0]",
+      "page": 5,
+      "rect": [
+        338.4,
+        456.004,
+        416.85,
+        468.003
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_Table_SchM-2_0_Line3_0_f5_28_0)"
+    },
+    "topmostSubform_0_Page5_0_Table_SchM-2_0_Line3_0_f5_29_0": {
+      "id": "topmostSubform[0].Page5[0].Table_SchM-2[0].Line3[0].f5_29[0]",
+      "page": 5,
+      "rect": [
+        417.6,
+        456.004,
+        496.05,
+        468.003
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_Table_SchM-2_0_Line3_0_f5_29_0)"
+    },
+    "topmostSubform_0_Page5_0_Table_SchM-2_0_Line3_0_f5_30_0": {
+      "id": "topmostSubform[0].Page5[0].Table_SchM-2[0].Line3[0].f5_30[0]",
+      "page": 5,
+      "rect": [
+        496.8,
+        456.004,
+        576.0,
+        468.003
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_Table_SchM-2_0_Line3_0_f5_30_0)"
+    },
+    "topmostSubform_0_Page5_0_Table_SchM-2_0_Line4_0_f5_31_0": {
+      "id": "topmostSubform[0].Page5[0].Table_SchM-2[0].Line4[0].f5_31[0]",
+      "page": 5,
+      "rect": [
+        263.2,
+        444.005,
+        334.4,
+        456.004
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_Table_SchM-2_0_Line4_0_f5_31_0)"
+    },
+    "topmostSubform_0_Page5_0_Table_SchM-2_0_Line4_0_f5_32_0": {
+      "id": "topmostSubform[0].Page5[0].Table_SchM-2[0].Line4[0].f5_32[0]",
+      "page": 5,
+      "rect": [
+        338.4,
+        444.005,
+        416.85,
+        456.004
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_Table_SchM-2_0_Line4_0_f5_32_0)"
+    },
+    "topmostSubform_0_Page5_0_Table_SchM-2_0_Line4_0_f5_33_0": {
+      "id": "topmostSubform[0].Page5[0].Table_SchM-2[0].Line4[0].f5_33[0]",
+      "page": 5,
+      "rect": [
+        417.6,
+        444.005,
+        496.05,
+        456.004
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_Table_SchM-2_0_Line4_0_f5_33_0)"
+    },
+    "topmostSubform_0_Page5_0_Table_SchM-2_0_Line4_0_f5_34_0": {
+      "id": "topmostSubform[0].Page5[0].Table_SchM-2[0].Line4[0].f5_34[0]",
+      "page": 5,
+      "rect": [
+        496.8,
+        444.005,
+        576.0,
+        456.004
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_Table_SchM-2_0_Line4_0_f5_34_0)"
+    },
+    "topmostSubform_0_Page5_0_Table_SchM-2_0_Line5_0_f5_35_0": {
+      "id": "topmostSubform[0].Page5[0].Table_SchM-2[0].Line5[0].f5_35[0]",
+      "page": 5,
+      "rect": [
+        263.2,
+        432.006,
+        334.4,
+        444.005
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_Table_SchM-2_0_Line5_0_f5_35_0)"
+    },
+    "topmostSubform_0_Page5_0_Table_SchM-2_0_Line5_0_f5_36_0": {
+      "id": "topmostSubform[0].Page5[0].Table_SchM-2[0].Line5[0].f5_36[0]",
+      "page": 5,
+      "rect": [
+        338.4,
+        432.006,
+        416.85,
+        444.005
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_Table_SchM-2_0_Line5_0_f5_36_0)"
+    },
+    "topmostSubform_0_Page5_0_Table_SchM-2_0_Line5_0_f5_37_0": {
+      "id": "topmostSubform[0].Page5[0].Table_SchM-2[0].Line5[0].f5_37[0]",
+      "page": 5,
+      "rect": [
+        417.6,
+        432.006,
+        496.05,
+        444.005
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_Table_SchM-2_0_Line5_0_f5_37_0)"
+    },
+    "topmostSubform_0_Page5_0_Table_SchM-2_0_Line5_0_f5_38_0": {
+      "id": "topmostSubform[0].Page5[0].Table_SchM-2[0].Line5[0].f5_38[0]",
+      "page": 5,
+      "rect": [
+        500.8,
+        432.006,
+        572.0,
+        444.005
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_Table_SchM-2_0_Line5_0_f5_38_0)"
+    },
+    "m_2_l6_col_a_combine_1_5": {
+      "id": "topmostSubform[0].Page5[0].Table_SchM-2[0].Line6[0].f5_39[0]",
+      "page": 5,
+      "rect": [
+        259.2,
+        420.007,
+        337.65,
+        432.006
+      ],
+      "type": "text",
+      "description": "M-2 L6 col a Combine 1-5"
+    },
+    "topmostSubform_0_Page5_0_Table_SchM-2_0_Line6_0_f5_40_0": {
+      "id": "topmostSubform[0].Page5[0].Table_SchM-2[0].Line6[0].f5_40[0]",
+      "page": 5,
+      "rect": [
+        338.4,
+        420.007,
+        416.85,
+        432.006
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_Table_SchM-2_0_Line6_0_f5_40_0)"
+    },
+    "topmostSubform_0_Page5_0_Table_SchM-2_0_Line6_0_f5_41_0": {
+      "id": "topmostSubform[0].Page5[0].Table_SchM-2[0].Line6[0].f5_41[0]",
+      "page": 5,
+      "rect": [
+        417.6,
+        420.007,
+        496.05,
+        432.006
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_Table_SchM-2_0_Line6_0_f5_41_0)"
+    },
+    "topmostSubform_0_Page5_0_Table_SchM-2_0_Line6_0_f5_42_0": {
+      "id": "topmostSubform[0].Page5[0].Table_SchM-2[0].Line6[0].f5_42[0]",
+      "page": 5,
+      "rect": [
+        496.8,
+        420.007,
+        576.0,
+        432.006
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_Table_SchM-2_0_Line6_0_f5_42_0)"
+    },
+    "m_2_l7_col_a_distributions": {
+      "id": "topmostSubform[0].Page5[0].Table_SchM-2[0].Line7[0].f5_43[0]",
+      "page": 5,
+      "rect": [
+        259.2,
+        408.008,
+        337.65,
+        420.007
+      ],
+      "type": "text",
+      "description": "M-2 L7 col a Distributions"
+    },
+    "topmostSubform_0_Page5_0_Table_SchM-2_0_Line7_0_f5_44_0": {
+      "id": "topmostSubform[0].Page5[0].Table_SchM-2[0].Line7[0].f5_44[0]",
+      "page": 5,
+      "rect": [
+        338.4,
+        408.008,
+        416.85,
+        420.007
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_Table_SchM-2_0_Line7_0_f5_44_0)"
+    },
+    "topmostSubform_0_Page5_0_Table_SchM-2_0_Line7_0_f5_45_0": {
+      "id": "topmostSubform[0].Page5[0].Table_SchM-2[0].Line7[0].f5_45[0]",
+      "page": 5,
+      "rect": [
+        417.6,
+        408.008,
+        496.05,
+        420.007
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_Table_SchM-2_0_Line7_0_f5_45_0)"
+    },
+    "topmostSubform_0_Page5_0_Table_SchM-2_0_Line7_0_f5_46_0": {
+      "id": "topmostSubform[0].Page5[0].Table_SchM-2[0].Line7[0].f5_46[0]",
+      "page": 5,
+      "rect": [
+        496.8,
+        408.008,
+        576.0,
+        420.007
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_Table_SchM-2_0_Line7_0_f5_46_0)"
+    },
+    "m_2_l8_col_a_end_aaa": {
+      "id": "topmostSubform[0].Page5[0].Table_SchM-2[0].Line8[0].f5_47[0]",
+      "page": 5,
+      "rect": [
+        259.2,
+        384.007,
+        337.65,
+        396.008
+      ],
+      "type": "text",
+      "description": "M-2 L8 col a End AAA"
+    },
+    "topmostSubform_0_Page5_0_Table_SchM-2_0_Line8_0_f5_48_0": {
+      "id": "topmostSubform[0].Page5[0].Table_SchM-2[0].Line8[0].f5_48[0]",
+      "page": 5,
+      "rect": [
+        338.4,
+        384.007,
+        416.85,
+        396.008
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_Table_SchM-2_0_Line8_0_f5_48_0)"
+    },
+    "topmostSubform_0_Page5_0_Table_SchM-2_0_Line8_0_f5_49_0": {
+      "id": "topmostSubform[0].Page5[0].Table_SchM-2[0].Line8[0].f5_49[0]",
+      "page": 5,
+      "rect": [
+        417.6,
+        384.007,
+        496.05,
+        396.008
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_Table_SchM-2_0_Line8_0_f5_49_0)"
+    },
+    "topmostSubform_0_Page5_0_Table_SchM-2_0_Line8_0_f5_50_0": {
+      "id": "topmostSubform[0].Page5[0].Table_SchM-2[0].Line8[0].f5_50[0]",
+      "page": 5,
+      "rect": [
+        496.8,
+        384.007,
+        576.0,
+        396.008
+      ],
+      "type": "text",
+      "description": "Auto-extracted (topmostSubform_0_Page5_0_Table_SchM-2_0_Line8_0_f5_50_0)"
+    }
+  }
+}

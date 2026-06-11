@@ -54,7 +54,7 @@ export async function generateScheduleCFederalPdfPacket(input: ScheduleCFederalP
         values = values1040S2(ind, summary);
         break;
       case '1040sc':
-        values = values1040SC(entityIn, entitySummary);
+        values = values1040SC(entityIn, entitySummary, ind);
         break;
       case '1040sse':
         values = values1040SSE(entityIn, summary);

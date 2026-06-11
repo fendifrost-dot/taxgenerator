@@ -1,0 +1,5779 @@
+{
+  "form": "1120",
+  "year": 2025,
+  "pdfFilename": "1120.pdf",
+  "fields": {
+    "f1_1_0": {
+      "id": "topmostSubform[0].Page1[0].PgHeader[0].f1_1[0]",
+      "page": 1,
+      "rect": [
+        288.0,
+        732.002,
+        345.6,
+        744.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_1[0])"
+    },
+    "f1_2_0": {
+      "id": "topmostSubform[0].Page1[0].PgHeader[0].f1_2[0]",
+      "page": 1,
+      "rect": [
+        396.0,
+        732.002,
+        453.6,
+        744.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_2[0])"
+    },
+    "f1_3_0": {
+      "id": "topmostSubform[0].Page1[0].PgHeader[0].f1_3[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        732.002,
+        482.4,
+        744.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_3[0])"
+    },
+    "line_1a_consolidated_return_b": {
+      "id": "topmostSubform[0].Page1[0].NameFieldsReadOrder[0].f1_4[0]",
+      "page": 1,
+      "rect": [
+        124.4,
+        695.999,
+        458.8,
+        710.0
+      ],
+      "type": "text",
+      "description": "Line 1a: Consolidated return"
+    },
+    "line_2_personal_holding_co_b": {
+      "id": "topmostSubform[0].Page1[0].NameFieldsReadOrder[0].f1_5[0]",
+      "page": 1,
+      "rect": [
+        124.4,
+        671.998,
+        395.25,
+        685.999
+      ],
+      "type": "text",
+      "description": "Line 2: Personal holding co."
+    },
+    "line_2_personal_holding_co_c": {
+      "id": "topmostSubform[0].Page1[0].NameFieldsReadOrder[0].f1_6[0]",
+      "page": 1,
+      "rect": [
+        396.0,
+        671.998,
+        460.8,
+        685.999
+      ],
+      "type": "text",
+      "description": "Line 2: Personal holding co."
+    },
+    "line_3_personal_service_corp_b": {
+      "id": "topmostSubform[0].Page1[0].NameFieldsReadOrder[0].f1_7[0]",
+      "page": 1,
+      "rect": [
+        124.4,
+        649.0,
+        207.8,
+        662.001
+      ],
+      "type": "text",
+      "description": "Line 3: Personal service corp."
+    },
+    "line_3_personal_service_corp_c": {
+      "id": "topmostSubform[0].Page1[0].NameFieldsReadOrder[0].f1_8[0]",
+      "page": 1,
+      "rect": [
+        209.8,
+        649.0,
+        294.2,
+        662.001
+      ],
+      "type": "text",
+      "description": "Line 3: Personal service corp."
+    },
+    "line_3_personal_service_corp_d": {
+      "id": "topmostSubform[0].Page1[0].NameFieldsReadOrder[0].f1_9[0]",
+      "page": 1,
+      "rect": [
+        296.2,
+        649.0,
+        373.4,
+        662.001
+      ],
+      "type": "text",
+      "description": "Line 3: Personal service corp."
+    },
+    "line_3_personal_service_corp_e": {
+      "id": "topmostSubform[0].Page1[0].NameFieldsReadOrder[0].f1_10[0]",
+      "page": 1,
+      "rect": [
+        375.4,
+        649.0,
+        458.8,
+        662.001
+      ],
+      "type": "text",
+      "description": "Line 3: Personal service corp."
+    },
+    "line_1a_consolidated_return_a": {
+      "id": "topmostSubform[0].Page1[0].A_ReadOrder[0].c1_1[0]",
+      "page": 1,
+      "rect": [
+        110.999,
+        696.001,
+        118.999,
+        704.001
+      ],
+      "type": "checkbox",
+      "description": "Line 1a: Consolidated return"
+    },
+    "c1_2_0": {
+      "id": "topmostSubform[0].Page1[0].A_ReadOrder[0].c1_2[0]",
+      "page": 1,
+      "rect": [
+        110.999,
+        680.0,
+        118.999,
+        688.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c1_2[0])"
+    },
+    "line_2_personal_holding_co_a": {
+      "id": "topmostSubform[0].Page1[0].A_ReadOrder[0].c1_3[0]",
+      "page": 1,
+      "rect": [
+        110.999,
+        664.001,
+        118.999,
+        672.001
+      ],
+      "type": "checkbox",
+      "description": "Line 2: Personal holding co."
+    },
+    "line_3_personal_service_corp_a": {
+      "id": "topmostSubform[0].Page1[0].A_ReadOrder[0].c1_4[0]",
+      "page": 1,
+      "rect": [
+        110.999,
+        647.999,
+        118.999,
+        655.999
+      ],
+      "type": "checkbox",
+      "description": "Line 3: Personal service corp."
+    },
+    "line_4_schedule_m_3_attached_e_1_a": {
+      "id": "topmostSubform[0].Page1[0].A_ReadOrder[0].c1_5[0]",
+      "page": 1,
+      "rect": [
+        110.999,
+        637.999,
+        118.999,
+        645.999
+      ],
+      "type": "checkbox",
+      "description": "Line 4: Schedule M-3 attached E (1)"
+    },
+    "line_1a_consolidated_return_c": {
+      "id": "topmostSubform[0].Page1[0].f1_11[0]",
+      "page": 1,
+      "rect": [
+        460.8,
+        695.999,
+        576.0,
+        710.0
+      ],
+      "type": "text",
+      "description": "Line 1a: Consolidated return"
+    },
+    "line_2_personal_holding_co_d": {
+      "id": "topmostSubform[0].Page1[0].f1_12[0]",
+      "page": 1,
+      "rect": [
+        460.8,
+        671.998,
+        576.0,
+        685.999
+      ],
+      "type": "text",
+      "description": "Line 2: Personal holding co."
+    },
+    "line_3_personal_service_corp_f": {
+      "id": "topmostSubform[0].Page1[0].f1_13[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        648.0,
+        576.0,
+        659.999
+      ],
+      "type": "text",
+      "description": "Line 3: Personal service corp."
+    },
+    "line_4_schedule_m_3_attached_e_1_b": {
+      "id": "topmostSubform[0].Page1[0].c1_6[0]",
+      "page": 1,
+      "rect": [
+        187.2,
+        637.751,
+        195.2,
+        645.751
+      ],
+      "type": "checkbox",
+      "description": "Line 4: Schedule M-3 attached E (1)"
+    },
+    "line_4_schedule_m_3_attached_e_1_c": {
+      "id": "topmostSubform[0].Page1[0].c1_7[0]",
+      "page": 1,
+      "rect": [
+        280.8,
+        637.751,
+        288.8,
+        645.751
+      ],
+      "type": "checkbox",
+      "description": "Line 4: Schedule M-3 attached E (1)"
+    },
+    "line_4_schedule_m_3_attached_e_1_d": {
+      "id": "topmostSubform[0].Page1[0].c1_8[0]",
+      "page": 1,
+      "rect": [
+        374.4,
+        637.751,
+        382.4,
+        645.751
+      ],
+      "type": "checkbox",
+      "description": "Line 4: Schedule M-3 attached E (1)"
+    },
+    "line_4_schedule_m_3_attached_e_1_e": {
+      "id": "topmostSubform[0].Page1[0].c1_9[0]",
+      "page": 1,
+      "rect": [
+        475.2,
+        637.751,
+        483.2,
+        645.751
+      ],
+      "type": "checkbox",
+      "description": "Line 4: Schedule M-3 attached E (1)"
+    },
+    "line_1a_gross_receipts_or_sales": {
+      "id": "topmostSubform[0].Page1[0].f1_14[0]",
+      "page": 1,
+      "rect": [
+        410.4,
+        624.002,
+        481.65,
+        636.001
+      ],
+      "type": "text",
+      "description": "Line 1a: Gross receipts or sales ."
+    },
+    "f1_15_0": {
+      "id": "topmostSubform[0].Page1[0].f1_15[0]",
+      "page": 1,
+      "rect": [
+        410.4,
+        612.0,
+        481.65,
+        623.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_15[0])"
+    },
+    "f1_16_0": {
+      "id": "topmostSubform[0].Page1[0].f1_16[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        600.001,
+        576.0,
+        612.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_16[0])"
+    },
+    "line_2_cost_of_goods_sold_attach": {
+      "id": "topmostSubform[0].Page1[0].f1_17[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        588.002,
+        576.0,
+        600.001
+      ],
+      "type": "text",
+      "description": "Line 2: Cost of goods sold (attach"
+    },
+    "line_3_gross_profit_subtract_line_2": {
+      "id": "topmostSubform[0].Page1[0].f1_18[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        576.0,
+        576.0,
+        587.999
+      ],
+      "type": "text",
+      "description": "Line 3: Gross profit. Subtract line 2"
+    },
+    "line_4_dividends_and_inclusions_schedule_c": {
+      "id": "topmostSubform[0].Page1[0].f1_19[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        564.001,
+        576.0,
+        576.0
+      ],
+      "type": "text",
+      "description": "Line 4: Dividends and inclusions (Schedule C,"
+    },
+    "line_5_interest": {
+      "id": "topmostSubform[0].Page1[0].f1_20[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        552.002,
+        576.0,
+        564.001
+      ],
+      "type": "text",
+      "description": "Line 5: Interest . . . ."
+    },
+    "line_6_gross_rents": {
+      "id": "topmostSubform[0].Page1[0].f1_21[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        540.0,
+        576.0,
+        551.999
+      ],
+      "type": "text",
+      "description": "Line 6: Gross rents . . ."
+    },
+    "line_7_gross_royalties": {
+      "id": "topmostSubform[0].Page1[0].f1_22[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        528.001,
+        576.0,
+        540.0
+      ],
+      "type": "text",
+      "description": "Line 7: Gross royalties . . ."
+    },
+    "line_8_capital_gain_net_income_attach": {
+      "id": "topmostSubform[0].Page1[0].f1_23[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        516.002,
+        576.0,
+        528.001
+      ],
+      "type": "text",
+      "description": "Line 8: Capital gain net income (attach"
+    },
+    "line_9_net_gain_or_loss_from": {
+      "id": "topmostSubform[0].Page1[0].f1_24[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        504.0,
+        576.0,
+        515.999
+      ],
+      "type": "text",
+      "description": "Line 9: Net gain or (loss) from"
+    },
+    "line_10_other_income_see_instructions_attach_statement": {
+      "id": "topmostSubform[0].Page1[0].f1_25[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        492.001,
+        576.0,
+        504.0
+      ],
+      "type": "text",
+      "description": "Line 10: Other income (see instructions\u2014attach statement)"
+    },
+    "line_11_total_income_add_lines_3": {
+      "id": "topmostSubform[0].Page1[0].f1_26[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        480.002,
+        576.0,
+        492.001
+      ],
+      "type": "text",
+      "description": "Line 11: Total income. Add lines 3"
+    },
+    "line_12_compensation_of_officers_see_instructions_attach": {
+      "id": "topmostSubform[0].Page1[0].f1_27[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        468.0,
+        576.0,
+        479.999
+      ],
+      "type": "text",
+      "description": "Line 12: Compensation of officers (see instructions\u2014attach"
+    },
+    "line_13_13": {
+      "id": "topmostSubform[0].Page1[0].f1_28[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        456.001,
+        576.0,
+        468.0
+      ],
+      "type": "text",
+      "description": "Line 13: 13"
+    },
+    "line_14_repairs_and_maintenance": {
+      "id": "topmostSubform[0].Page1[0].f1_29[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        444.002,
+        576.0,
+        456.001
+      ],
+      "type": "text",
+      "description": "Line 14: Repairs and maintenance . ."
+    },
+    "line_15_bad_debts": {
+      "id": "topmostSubform[0].Page1[0].f1_30[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        432.0,
+        576.0,
+        443.999
+      ],
+      "type": "text",
+      "description": "Line 15: Bad debts . . ."
+    },
+    "line_16_rents": {
+      "id": "topmostSubform[0].Page1[0].f1_31[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        420.001,
+        576.0,
+        432.0
+      ],
+      "type": "text",
+      "description": "Line 16: Rents . . . ."
+    },
+    "line_17_taxes_and_licenses": {
+      "id": "topmostSubform[0].Page1[0].f1_32[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        408.002,
+        576.0,
+        420.001
+      ],
+      "type": "text",
+      "description": "Line 17: Taxes and licenses . ."
+    },
+    "line_18_interest_see_instructions": {
+      "id": "topmostSubform[0].Page1[0].f1_33[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        396.0,
+        576.0,
+        407.999
+      ],
+      "type": "text",
+      "description": "Line 18: Interest (see instructions) . ."
+    },
+    "line_19_charitable_contributions": {
+      "id": "topmostSubform[0].Page1[0].f1_34[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        384.001,
+        576.0,
+        396.0
+      ],
+      "type": "text",
+      "description": "Line 19: Charitable contributions . . ."
+    },
+    "line_20_depreciation_from_form_4562_not": {
+      "id": "topmostSubform[0].Page1[0].f1_35[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        372.002,
+        576.0,
+        384.001
+      ],
+      "type": "text",
+      "description": "Line 20: Depreciation from Form 4562 not"
+    },
+    "line_21_depletion": {
+      "id": "topmostSubform[0].Page1[0].f1_36[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        360.0,
+        576.0,
+        371.999
+      ],
+      "type": "text",
+      "description": "Line 21: Depletion . . . ."
+    },
+    "line_22_advertising": {
+      "id": "topmostSubform[0].Page1[0].f1_37[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        348.001,
+        576.0,
+        360.0
+      ],
+      "type": "text",
+      "description": "Line 22: Advertising . . . ."
+    },
+    "line_23_pension_profit_sharing_etc_plans": {
+      "id": "topmostSubform[0].Page1[0].f1_38[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        336.002,
+        576.0,
+        348.001
+      ],
+      "type": "text",
+      "description": "Line 23: Pension, profit-sharing, etc., plans ."
+    },
+    "line_24_employee_benefit_programs": {
+      "id": "topmostSubform[0].Page1[0].f1_39[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        324.0,
+        576.0,
+        335.999
+      ],
+      "type": "text",
+      "description": "Line 24: Employee benefit programs . ."
+    },
+    "line_25_energy_efficient_commercial_buildings_deduction": {
+      "id": "topmostSubform[0].Page1[0].f1_40[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        312.001,
+        576.0,
+        324.0
+      ],
+      "type": "text",
+      "description": "Line 25: Energy efficient commercial buildings deduction"
+    },
+    "line_26_other_deductions_attach_statement": {
+      "id": "topmostSubform[0].Page1[0].f1_41[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        300.002,
+        576.0,
+        312.001
+      ],
+      "type": "text",
+      "description": "Line 26: Other deductions (attach statement) ."
+    },
+    "line_27_total_deductions_add_lines_12": {
+      "id": "topmostSubform[0].Page1[0].f1_42[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        288.0,
+        576.0,
+        299.999
+      ],
+      "type": "text",
+      "description": "Line 27: Total deductions. Add lines 12"
+    },
+    "line_28_taxable_income_before_net_operating": {
+      "id": "topmostSubform[0].Page1[0].f1_43[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        276.001,
+        576.0,
+        288.0
+      ],
+      "type": "text",
+      "description": "Line 28: Taxable income before net operating"
+    },
+    "line_29a_net_operating_loss_deduction_see": {
+      "id": "topmostSubform[0].Page1[0].f1_44[0]",
+      "page": 1,
+      "rect": [
+        410.4,
+        264.002,
+        481.65,
+        276.001
+      ],
+      "type": "text",
+      "description": "Line 29a: Net operating loss deduction (see"
+    },
+    "f1_45_0": {
+      "id": "topmostSubform[0].Page1[0].f1_45[0]",
+      "page": 1,
+      "rect": [
+        410.4,
+        252.0,
+        481.65,
+        263.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_45[0])"
+    },
+    "f1_46_0": {
+      "id": "topmostSubform[0].Page1[0].f1_46[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        240.001,
+        576.0,
+        252.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_46[0])"
+    },
+    "line_30_taxable_income_subtract_line_29c": {
+      "id": "topmostSubform[0].Page1[0].f1_47[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        228.002,
+        576.0,
+        240.001
+      ],
+      "type": "text",
+      "description": "Line 30: Taxable income. Subtract line 29c"
+    },
+    "line_31_total_tax_schedule_j_line": {
+      "id": "topmostSubform[0].Page1[0].f1_48[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        216.0,
+        576.0,
+        227.999
+      ],
+      "type": "text",
+      "description": "Line 31: Total tax (Schedule J, line"
+    },
+    "line_32_first_installment_of_section_1062": {
+      "id": "topmostSubform[0].Page1[0].f1_49[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        204.001,
+        576.0,
+        216.0
+      ],
+      "type": "text",
+      "description": "Line 32: First installment of section 1062"
+    },
+    "line_33_total_payments_credits_and_section": {
+      "id": "topmostSubform[0].Page1[0].f1_50[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        192.002,
+        576.0,
+        204.001
+      ],
+      "type": "text",
+      "description": "Line 33: Total payments, credits, and section"
+    },
+    "line_34_estimated_tax_penalty_see_instructions_a": {
+      "id": "topmostSubform[0].Page1[0].c1_10[0]",
+      "page": 1,
+      "rect": [
+        465.2,
+        182.0,
+        473.2,
+        190.0
+      ],
+      "type": "checkbox",
+      "description": "Line 34: Estimated tax penalty. See instructions."
+    },
+    "line_34_estimated_tax_penalty_see_instructions_b": {
+      "id": "topmostSubform[0].Page1[0].f1_51[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        180.0,
+        576.0,
+        191.999
+      ],
+      "type": "text",
+      "description": "Line 34: Estimated tax penalty. See instructions."
+    },
+    "line_35_amount_owed_if_line_33": {
+      "id": "topmostSubform[0].Page1[0].f1_52[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        168.001,
+        576.0,
+        180.0
+      ],
+      "type": "text",
+      "description": "Line 35: Amount owed. If line 33"
+    },
+    "line_36_overpayment_if_line_33_is": {
+      "id": "topmostSubform[0].Page1[0].f1_53[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        156.002,
+        576.0,
+        168.001
+      ],
+      "type": "text",
+      "description": "Line 36: Overpayment. If line 33 is"
+    },
+    "line_37_b_refunded_37b_a": {
+      "id": "topmostSubform[0].Page1[0].f1_54[0]",
+      "page": 1,
+      "rect": [
+        338.4,
+        144.0,
+        424.8,
+        155.999
+      ],
+      "type": "text",
+      "description": "Line 37: b Refunded 37b"
+    },
+    "line_37_b_refunded_37b_b": {
+      "id": "topmostSubform[0].Page1[0].f1_55[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        144.0,
+        576.0,
+        155.999
+      ],
+      "type": "text",
+      "description": "Line 37: b Refunded 37b"
+    },
+    "f1_56_0": {
+      "id": "topmostSubform[0].Page1[0].RoutingNo[0].f1_56[0]",
+      "page": 1,
+      "rect": [
+        158.4,
+        132.999,
+        288.0,
+        144.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_56[0])"
+    },
+    "c1_11_0": {
+      "id": "topmostSubform[0].Page1[0].c1_11[0]",
+      "page": 1,
+      "rect": [
+        377.4,
+        133.501,
+        385.4,
+        141.501
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c1_11[0])"
+    },
+    "c1_11_1": {
+      "id": "topmostSubform[0].Page1[0].c1_11[1]",
+      "page": 1,
+      "rect": [
+        435.0,
+        133.501,
+        443.0,
+        141.501
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c1_11[1])"
+    },
+    "f1_57_0": {
+      "id": "topmostSubform[0].Page1[0].AccountNo[0].f1_57[0]",
+      "page": 1,
+      "rect": [
+        158.4,
+        119.999,
+        403.2,
+        131.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_57[0])"
+    },
+    "f1_58_0": {
+      "id": "topmostSubform[0].Page1[0].SignHere-ReadOrder[0].f1_58[0]",
+      "page": 1,
+      "rect": [
+        324.0,
+        89.997,
+        460.8,
+        101.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_58[0])"
+    },
+    "c1_12_0": {
+      "id": "topmostSubform[0].Page1[0].c1_12[0]",
+      "page": 1,
+      "rect": [
+        524.4,
+        81.251,
+        532.4,
+        89.251
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c1_12[0])"
+    },
+    "c1_12_1": {
+      "id": "topmostSubform[0].Page1[0].c1_12[1]",
+      "page": 1,
+      "rect": [
+        553.2,
+        81.251,
+        561.2,
+        89.251
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c1_12[1])"
+    },
+    "f1_59_0": {
+      "id": "topmostSubform[0].Page1[0].f1_59[0]",
+      "page": 1,
+      "rect": [
+        87.4,
+        54.0,
+        236.85,
+        68.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_59[0])"
+    },
+    "c1_13_0": {
+      "id": "topmostSubform[0].Page1[0].c1_13[0]",
+      "page": 1,
+      "rect": [
+        482.979,
+        67.502,
+        490.979,
+        75.502
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c1_13[0])"
+    },
+    "f1_60_0": {
+      "id": "topmostSubform[0].Page1[0].f1_60[0]",
+      "page": 1,
+      "rect": [
+        504.0,
+        54.0,
+        576.0,
+        68.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_60[0])"
+    },
+    "f1_61_0": {
+      "id": "topmostSubform[0].Page1[0].f1_61[0]",
+      "page": 1,
+      "rect": [
+        133.096,
+        42.001,
+        452.85,
+        54.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_61[0])"
+    },
+    "f1_62_0": {
+      "id": "topmostSubform[0].Page1[0].f1_62[0]",
+      "page": 1,
+      "rect": [
+        496.8,
+        42.001,
+        576.0,
+        54.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_62[0])"
+    },
+    "f1_63_0": {
+      "id": "topmostSubform[0].Page1[0].f1_63[0]",
+      "page": 1,
+      "rect": [
+        141.349,
+        30.002,
+        452.85,
+        42.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_63[0])"
+    },
+    "f1_64_0": {
+      "id": "topmostSubform[0].Page1[0].f1_64[0]",
+      "page": 1,
+      "rect": [
+        496.8,
+        30.002,
+        576.0,
+        42.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_64[0])"
+    },
+    "line_50_a": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line1[0].f2_1[0]",
+      "page": 2,
+      "rect": [
+        388.8,
+        695.999,
+        460.05,
+        708.0
+      ],
+      "type": "text",
+      "description": "Line 50: "
+    },
+    "line_1_dividends_from_less_than_20_owned_domestic_corporations": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line1[0].f2_2[0]",
+      "page": 2,
+      "rect": [
+        503.0,
+        695.999,
+        504.0,
+        720.0
+      ],
+      "type": "text",
+      "description": "Line 1: Dividends from less-than-20%-owned domestic corporations"
+    },
+    "line_50_c": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line1[0].f2_3[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        695.999,
+        576.0,
+        708.0
+      ],
+      "type": "text",
+      "description": "Line 50: "
+    },
+    "line_65_a": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line2[0].f2_4[0]",
+      "page": 2,
+      "rect": [
+        388.8,
+        671.998,
+        460.05,
+        683.999
+      ],
+      "type": "text",
+      "description": "Line 65: "
+    },
+    "line_65_b": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line2[0].f2_5[0]",
+      "page": 2,
+      "rect": [
+        503.0,
+        671.998,
+        504.0,
+        683.999
+      ],
+      "type": "text",
+      "description": "Line 65: "
+    },
+    "line_65_c": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line2[0].f2_6[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        671.998,
+        576.0,
+        683.999
+      ],
+      "type": "text",
+      "description": "Line 65: "
+    },
+    "line_3_dividends_on_certain_debt_financed_stock_a": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line3[0].f2_7[0]",
+      "page": 2,
+      "rect": [
+        388.8,
+        647.997,
+        460.05,
+        659.998
+      ],
+      "type": "text",
+      "description": "Line 3: Dividends on certain debt-financed stock"
+    },
+    "line_3_dividends_on_certain_debt_financed_stock_b": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line3[0].f2_8[0]",
+      "page": 2,
+      "rect": [
+        503.0,
+        647.997,
+        504.0,
+        671.998
+      ],
+      "type": "text",
+      "description": "Line 3: Dividends on certain debt-financed stock"
+    },
+    "line_3_dividends_on_certain_debt_financed_stock_c": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line3[0].f2_9[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        647.997,
+        576.0,
+        659.998
+      ],
+      "type": "text",
+      "description": "Line 3: Dividends on certain debt-financed stock"
+    },
+    "line_4_dividends_on_certain_preferred_stock_a": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line4[0].f2_10[0]",
+      "page": 2,
+      "rect": [
+        388.8,
+        623.996,
+        460.05,
+        635.997
+      ],
+      "type": "text",
+      "description": "Line 4: Dividends on certain preferred stock"
+    },
+    "line_4_dividends_on_certain_preferred_stock_b": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line4[0].f2_11[0]",
+      "page": 2,
+      "rect": [
+        503.0,
+        623.996,
+        504.0,
+        635.997
+      ],
+      "type": "text",
+      "description": "Line 4: Dividends on certain preferred stock"
+    },
+    "line_4_dividends_on_certain_preferred_stock_c": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line4[0].f2_12[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        623.996,
+        576.0,
+        635.997
+      ],
+      "type": "text",
+      "description": "Line 4: Dividends on certain preferred stock"
+    },
+    "line_5_dividends_on_certain_preferred_stock_a": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line5[0].f2_13[0]",
+      "page": 2,
+      "rect": [
+        388.8,
+        599.995,
+        460.05,
+        611.996
+      ],
+      "type": "text",
+      "description": "Line 5: Dividends on certain preferred stock"
+    },
+    "line_5_dividends_on_certain_preferred_stock_b": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line5[0].f2_14[0]",
+      "page": 2,
+      "rect": [
+        503.0,
+        599.995,
+        504.0,
+        611.996
+      ],
+      "type": "text",
+      "description": "Line 5: Dividends on certain preferred stock"
+    },
+    "line_5_dividends_on_certain_preferred_stock_c": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line5[0].f2_15[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        599.995,
+        576.0,
+        611.996
+      ],
+      "type": "text",
+      "description": "Line 5: Dividends on certain preferred stock"
+    },
+    "line_50_a_2": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line6[0].f2_16[0]",
+      "page": 2,
+      "rect": [
+        388.8,
+        575.994,
+        460.05,
+        587.995
+      ],
+      "type": "text",
+      "description": "Line 50: "
+    },
+    "line_50_b": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line6[0].f2_17[0]",
+      "page": 2,
+      "rect": [
+        503.0,
+        575.994,
+        504.0,
+        587.995
+      ],
+      "type": "text",
+      "description": "Line 50: "
+    },
+    "line_50_c_2": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line6[0].f2_18[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        575.994,
+        576.0,
+        587.995
+      ],
+      "type": "text",
+      "description": "Line 50: "
+    },
+    "line_65_a_2": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line7[0].f2_19[0]",
+      "page": 2,
+      "rect": [
+        388.8,
+        551.993,
+        460.05,
+        563.994
+      ],
+      "type": "text",
+      "description": "Line 65: "
+    },
+    "line_65_b_2": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line7[0].f2_20[0]",
+      "page": 2,
+      "rect": [
+        503.0,
+        551.993,
+        504.0,
+        563.994
+      ],
+      "type": "text",
+      "description": "Line 65: "
+    },
+    "line_65_c_2": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line7[0].f2_21[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        551.993,
+        576.0,
+        563.994
+      ],
+      "type": "text",
+      "description": "Line 65: "
+    },
+    "line_8_dividends_from_wholly_owned_foreign_a": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line8[0].f2_22[0]",
+      "page": 2,
+      "rect": [
+        388.8,
+        527.992,
+        460.05,
+        539.993
+      ],
+      "type": "text",
+      "description": "Line 8: Dividends from wholly owned foreign"
+    },
+    "line_8_dividends_from_wholly_owned_foreign_b": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line8[0].f2_23[0]",
+      "page": 2,
+      "rect": [
+        503.0,
+        527.992,
+        504.0,
+        539.993
+      ],
+      "type": "text",
+      "description": "Line 8: Dividends from wholly owned foreign"
+    },
+    "line_8_dividends_from_wholly_owned_foreign_c": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line8[0].f2_24[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        527.992,
+        576.0,
+        539.993
+      ],
+      "type": "text",
+      "description": "Line 8: Dividends from wholly owned foreign"
+    },
+    "line_9_subtotal_add_lines_1_through_a": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line9[0].f2_25[0]",
+      "page": 2,
+      "rect": [
+        388.8,
+        503.991,
+        460.05,
+        515.992
+      ],
+      "type": "text",
+      "description": "Line 9: Subtotal. Add lines 1 through"
+    },
+    "line_9_subtotal_add_lines_1_through_b": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line9[0].f2_26[0]",
+      "page": 2,
+      "rect": [
+        503.0,
+        503.991,
+        504.0,
+        527.992
+      ],
+      "type": "text",
+      "description": "Line 9: Subtotal. Add lines 1 through"
+    },
+    "line_9_subtotal_add_lines_1_through_c": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line9[0].f2_27[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        503.991,
+        576.0,
+        515.992
+      ],
+      "type": "text",
+      "description": "Line 9: Subtotal. Add lines 1 through"
+    },
+    "f2_28_0": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line10[0].f2_28[0]",
+      "page": 2,
+      "rect": [
+        388.8,
+        479.99,
+        460.05,
+        491.991
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_28[0])"
+    },
+    "f2_29_0": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line10[0].f2_29[0]",
+      "page": 2,
+      "rect": [
+        503.0,
+        479.99,
+        504.0,
+        491.991
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_29[0])"
+    },
+    "f2_30_0": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line10[0].f2_30[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        479.99,
+        576.0,
+        491.991
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_30[0])"
+    },
+    "line_11_dividends_from_affiliated_group_members_a": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line11[0].f2_31[0]",
+      "page": 2,
+      "rect": [
+        388.8,
+        455.989,
+        460.05,
+        467.99
+      ],
+      "type": "text",
+      "description": "Line 11: Dividends from affiliated group members"
+    },
+    "line_11_dividends_from_affiliated_group_members_b": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line11[0].f2_32[0]",
+      "page": 2,
+      "rect": [
+        503.0,
+        455.989,
+        504.0,
+        467.99
+      ],
+      "type": "text",
+      "description": "Line 11: Dividends from affiliated group members"
+    },
+    "line_11_dividends_from_affiliated_group_members_c": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line11[0].f2_33[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        455.989,
+        576.0,
+        467.99
+      ],
+      "type": "text",
+      "description": "Line 11: Dividends from affiliated group members"
+    },
+    "line_12_dividends_from_certain_fscs_a": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line12[0].f2_34[0]",
+      "page": 2,
+      "rect": [
+        388.8,
+        431.988,
+        460.05,
+        443.989
+      ],
+      "type": "text",
+      "description": "Line 12: Dividends from certain FSCs ."
+    },
+    "line_12_dividends_from_certain_fscs_b": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line12[0].f2_35[0]",
+      "page": 2,
+      "rect": [
+        503.0,
+        431.988,
+        504.0,
+        443.989
+      ],
+      "type": "text",
+      "description": "Line 12: Dividends from certain FSCs ."
+    },
+    "line_12_dividends_from_certain_fscs_c": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line12[0].f2_36[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        431.988,
+        576.0,
+        443.989
+      ],
+      "type": "text",
+      "description": "Line 12: Dividends from certain FSCs ."
+    },
+    "f2_37_0": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line13[0].f2_37[0]",
+      "page": 2,
+      "rect": [
+        388.8,
+        407.987,
+        460.05,
+        419.988
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_37[0])"
+    },
+    "line_13_foreign_source_portion_of_dividends_received": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line13[0].f2_38[0]",
+      "page": 2,
+      "rect": [
+        503.0,
+        407.987,
+        504.0,
+        431.988
+      ],
+      "type": "text",
+      "description": "Line 13: Foreign-source portion of dividends received"
+    },
+    "f2_39_0": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line13[0].f2_39[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        407.987,
+        576.0,
+        419.988
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_39[0])"
+    },
+    "f2_40_0": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line14[0].f2_40[0]",
+      "page": 2,
+      "rect": [
+        388.8,
+        383.986,
+        460.05,
+        395.987
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_40[0])"
+    },
+    "line_14_dividends_from_foreign_corporations_not_a": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line14[0].f2_41[0]",
+      "page": 2,
+      "rect": [
+        503.0,
+        383.986,
+        504.0,
+        407.987
+      ],
+      "type": "text",
+      "description": "Line 14: Dividends from foreign corporations not"
+    },
+    "line_14_dividends_from_foreign_corporations_not_b": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line14[0].f2_42[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        383.986,
+        576.0,
+        407.987
+      ],
+      "type": "text",
+      "description": "Line 14: Dividends from foreign corporations not"
+    },
+    "line_15_reserved_for_future_use_a": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line15[0].f2_43[0]",
+      "page": 2,
+      "rect": [
+        388.8,
+        359.985,
+        460.05,
+        371.986
+      ],
+      "type": "text",
+      "description": "Line 15: Reserved for future use ."
+    },
+    "line_15_reserved_for_future_use_b": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line15[0].f2_44[0]",
+      "page": 2,
+      "rect": [
+        503.0,
+        359.985,
+        504.0,
+        383.986
+      ],
+      "type": "text",
+      "description": "Line 15: Reserved for future use ."
+    },
+    "line_15_reserved_for_future_use_c": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line15[0].f2_45[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        359.985,
+        576.0,
+        371.986
+      ],
+      "type": "text",
+      "description": "Line 15: Reserved for future use ."
+    },
+    "f2_46_0": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line16a[0].f2_46[0]",
+      "page": 2,
+      "rect": [
+        388.8,
+        323.985,
+        460.05,
+        335.985
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_46[0])"
+    },
+    "line_16a_subpart_f_inclusions_derived_from": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line16a[0].f2_47[0]",
+      "page": 2,
+      "rect": [
+        503.0,
+        323.985,
+        504.0,
+        359.985
+      ],
+      "type": "text",
+      "description": "Line 16a: Subpart F inclusions derived from"
+    },
+    "f2_48_0": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line16a[0].f2_48[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        323.985,
+        576.0,
+        335.985
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_48[0])"
+    },
+    "f2_49_0": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line16b[0].f2_49[0]",
+      "page": 2,
+      "rect": [
+        388.8,
+        299.984,
+        460.05,
+        311.985
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_49[0])"
+    },
+    "f2_50_0": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line16b[0].f2_50[0]",
+      "page": 2,
+      "rect": [
+        503.0,
+        299.984,
+        504.0,
+        323.985
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_50[0])"
+    },
+    "f2_51_0": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line16b[0].f2_51[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        299.984,
+        576.0,
+        323.985
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_51[0])"
+    },
+    "f2_52_0": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line16c[0].f2_52[0]",
+      "page": 2,
+      "rect": [
+        388.8,
+        275.983,
+        460.05,
+        287.984
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_52[0])"
+    },
+    "f2_53_0": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line16c[0].f2_53[0]",
+      "page": 2,
+      "rect": [
+        503.0,
+        275.983,
+        504.0,
+        299.984
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_53[0])"
+    },
+    "f2_54_0": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line16c[0].f2_54[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        275.983,
+        576.0,
+        299.984
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_54[0])"
+    },
+    "line_17_global_intangible_low_taxed_income_gilti_a": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line17[0].f2_55[0]",
+      "page": 2,
+      "rect": [
+        388.8,
+        251.982,
+        460.05,
+        263.983
+      ],
+      "type": "text",
+      "description": "Line 17: Global Intangible Low-Taxed Income (GILTI)"
+    },
+    "line_17_global_intangible_low_taxed_income_gilti_b": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line17[0].f2_56[0]",
+      "page": 2,
+      "rect": [
+        503.0,
+        251.982,
+        504.0,
+        275.983
+      ],
+      "type": "text",
+      "description": "Line 17: Global Intangible Low-Taxed Income (GILTI)"
+    },
+    "line_17_global_intangible_low_taxed_income_gilti_c": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line17[0].f2_57[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        251.982,
+        576.0,
+        275.983
+      ],
+      "type": "text",
+      "description": "Line 17: Global Intangible Low-Taxed Income (GILTI)"
+    },
+    "line_18_gross_up_for_foreign_taxes_deemed_a": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line18[0].f2_58[0]",
+      "page": 2,
+      "rect": [
+        388.8,
+        227.981,
+        460.05,
+        239.982
+      ],
+      "type": "text",
+      "description": "Line 18: Gross-up for foreign taxes deemed"
+    },
+    "line_18_gross_up_for_foreign_taxes_deemed_b": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line18[0].f2_59[0]",
+      "page": 2,
+      "rect": [
+        503.0,
+        227.981,
+        504.0,
+        251.982
+      ],
+      "type": "text",
+      "description": "Line 18: Gross-up for foreign taxes deemed"
+    },
+    "line_18_gross_up_for_foreign_taxes_deemed_c": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line18[0].f2_60[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        227.981,
+        576.0,
+        251.982
+      ],
+      "type": "text",
+      "description": "Line 18: Gross-up for foreign taxes deemed"
+    },
+    "line_19_ic_disc_and_former_disc_dividends_a": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line19[0].f2_61[0]",
+      "page": 2,
+      "rect": [
+        388.8,
+        203.98,
+        460.05,
+        215.981
+      ],
+      "type": "text",
+      "description": "Line 19: IC-DISC and former DISC dividends"
+    },
+    "line_19_ic_disc_and_former_disc_dividends_b": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line19[0].f2_62[0]",
+      "page": 2,
+      "rect": [
+        503.0,
+        203.98,
+        504.0,
+        227.981
+      ],
+      "type": "text",
+      "description": "Line 19: IC-DISC and former DISC dividends"
+    },
+    "line_19_ic_disc_and_former_disc_dividends_c": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line19[0].f2_63[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        203.98,
+        576.0,
+        227.981
+      ],
+      "type": "text",
+      "description": "Line 19: IC-DISC and former DISC dividends"
+    },
+    "line_20_other_dividends_a": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line20[0].f2_64[0]",
+      "page": 2,
+      "rect": [
+        388.8,
+        179.979,
+        460.05,
+        191.98
+      ],
+      "type": "text",
+      "description": "Line 20: Other dividends . . ."
+    },
+    "line_20_other_dividends_b": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line20[0].f2_65[0]",
+      "page": 2,
+      "rect": [
+        503.0,
+        179.979,
+        504.0,
+        203.98
+      ],
+      "type": "text",
+      "description": "Line 20: Other dividends . . ."
+    },
+    "line_20_other_dividends_c": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line20[0].f2_66[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        179.979,
+        576.0,
+        203.98
+      ],
+      "type": "text",
+      "description": "Line 20: Other dividends . . ."
+    },
+    "line_21_deduction_for_dividends_paid_on_a": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line21[0].f2_67[0]",
+      "page": 2,
+      "rect": [
+        388.8,
+        155.978,
+        460.05,
+        179.979
+      ],
+      "type": "text",
+      "description": "Line 21: Deduction for dividends paid on"
+    },
+    "line_21_deduction_for_dividends_paid_on_b": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line21[0].f2_68[0]",
+      "page": 2,
+      "rect": [
+        503.0,
+        155.978,
+        504.0,
+        179.979
+      ],
+      "type": "text",
+      "description": "Line 21: Deduction for dividends paid on"
+    },
+    "line_21_deduction_for_dividends_paid_on_c": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line21[0].f2_69[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        155.978,
+        576.0,
+        167.979
+      ],
+      "type": "text",
+      "description": "Line 21: Deduction for dividends paid on"
+    },
+    "line_22_section_250_deduction_attach_form_a": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line22[0].f2_70[0]",
+      "page": 2,
+      "rect": [
+        388.8,
+        131.977,
+        460.05,
+        155.978
+      ],
+      "type": "text",
+      "description": "Line 22: Section 250 deduction (attach Form"
+    },
+    "line_22_section_250_deduction_attach_form_b": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line22[0].f2_71[0]",
+      "page": 2,
+      "rect": [
+        503.0,
+        131.977,
+        504.0,
+        155.978
+      ],
+      "type": "text",
+      "description": "Line 22: Section 250 deduction (attach Form"
+    },
+    "line_22_section_250_deduction_attach_form_c": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line22[0].f2_72[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        131.977,
+        576.0,
+        143.978
+      ],
+      "type": "text",
+      "description": "Line 22: Section 250 deduction (attach Form"
+    },
+    "f2_73_0": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line23[0].f2_73[0]",
+      "page": 2,
+      "rect": [
+        388.8,
+        107.976,
+        460.05,
+        119.977
+      ],
+      "type": "text",
+      "description": "Unlabeled (f2_73[0])"
+    },
+    "line_23_total_dividends_and_inclusions_add_a": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line23[0].f2_74[0]",
+      "page": 2,
+      "rect": [
+        503.0,
+        107.976,
+        504.0,
+        131.977
+      ],
+      "type": "text",
+      "description": "Line 23: Total dividends and inclusions. Add"
+    },
+    "line_23_total_dividends_and_inclusions_add_b": {
+      "id": "topmostSubform[0].Page2[0].Table_ScheduleC[0].Line23[0].f2_75[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        107.976,
+        576.0,
+        131.977
+      ],
+      "type": "text",
+      "description": "Line 23: Total dividends and inclusions. Add"
+    },
+    "line_24_total_special_deductions_add_column": {
+      "id": "topmostSubform[0].Page2[0].f2_76[0]",
+      "page": 2,
+      "rect": [
+        504.0,
+        84.002,
+        576.0,
+        96.001
+      ],
+      "type": "text",
+      "description": "Line 24: Total special deductions. Add column"
+    },
+    "line_1_a_income_tax_see_instructions": {
+      "id": "topmostSubform[0].Page3[0].f3_1[0]",
+      "page": 3,
+      "rect": [
+        410.4,
+        720.0,
+        481.65,
+        731.999
+      ],
+      "type": "text",
+      "description": "Line 1: a Income tax (see instructions)"
+    },
+    "f3_2_0": {
+      "id": "topmostSubform[0].Page3[0].f3_2[0]",
+      "page": 3,
+      "rect": [
+        410.4,
+        708.001,
+        481.65,
+        720.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_2[0])"
+    },
+    "f3_3_0": {
+      "id": "topmostSubform[0].Page3[0].f3_3[0]",
+      "page": 3,
+      "rect": [
+        410.4,
+        696.002,
+        481.65,
+        708.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_3[0])"
+    },
+    "f3_4_0": {
+      "id": "topmostSubform[0].Page3[0].f3_4[0]",
+      "page": 3,
+      "rect": [
+        410.4,
+        684.0,
+        481.65,
+        695.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_4[0])"
+    },
+    "f3_5_0": {
+      "id": "topmostSubform[0].Page3[0].f3_5[0]",
+      "page": 3,
+      "rect": [
+        410.4,
+        672.001,
+        481.65,
+        684.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_5[0])"
+    },
+    "f3_6_0": {
+      "id": "topmostSubform[0].Page3[0].f3_6[0]",
+      "page": 3,
+      "rect": [
+        410.4,
+        660.002,
+        481.65,
+        672.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_6[0])"
+    },
+    "f3_7_0": {
+      "id": "topmostSubform[0].Page3[0].f3_7[0]",
+      "page": 3,
+      "rect": [
+        410.4,
+        648.0,
+        481.65,
+        659.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_7[0])"
+    },
+    "f3_8_0": {
+      "id": "topmostSubform[0].Page3[0].f3_8[0]",
+      "page": 3,
+      "rect": [
+        410.4,
+        636.001,
+        481.65,
+        648.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_8[0])"
+    },
+    "line_2_total_income_tax_add_lines": {
+      "id": "topmostSubform[0].Page3[0].f3_9[0]",
+      "page": 3,
+      "rect": [
+        504.0,
+        624.002,
+        576.0,
+        636.001
+      ],
+      "type": "text",
+      "description": "Line 2: Total income tax. Add lines"
+    },
+    "line_3_corporate_alternative_minimum_tax_from": {
+      "id": "topmostSubform[0].Page3[0].f3_10[0]",
+      "page": 3,
+      "rect": [
+        504.0,
+        612.0,
+        576.0,
+        623.999
+      ],
+      "type": "text",
+      "description": "Line 3: Corporate alternative minimum tax from"
+    },
+    "line_4_add_lines_2_and_3": {
+      "id": "topmostSubform[0].Page3[0].f3_11[0]",
+      "page": 3,
+      "rect": [
+        504.0,
+        600.001,
+        576.0,
+        612.0
+      ],
+      "type": "text",
+      "description": "Line 4: Add lines 2 and 3"
+    },
+    "line_5_a_foreign_tax_credit_attach": {
+      "id": "topmostSubform[0].Page3[0].f3_12[0]",
+      "page": 3,
+      "rect": [
+        410.4,
+        588.002,
+        481.65,
+        600.001
+      ],
+      "type": "text",
+      "description": "Line 5: a Foreign tax credit (attach"
+    },
+    "f3_13_0": {
+      "id": "topmostSubform[0].Page3[0].f3_13[0]",
+      "page": 3,
+      "rect": [
+        410.4,
+        576.0,
+        481.65,
+        587.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_13[0])"
+    },
+    "f3_14_0": {
+      "id": "topmostSubform[0].Page3[0].f3_14[0]",
+      "page": 3,
+      "rect": [
+        410.4,
+        564.001,
+        481.65,
+        576.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_14[0])"
+    },
+    "f3_15_0": {
+      "id": "topmostSubform[0].Page3[0].f3_15[0]",
+      "page": 3,
+      "rect": [
+        410.4,
+        552.002,
+        481.65,
+        564.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_15[0])"
+    },
+    "f3_16_0": {
+      "id": "topmostSubform[0].Page3[0].f3_16[0]",
+      "page": 3,
+      "rect": [
+        410.4,
+        540.0,
+        481.65,
+        551.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_16[0])"
+    },
+    "f3_17_0": {
+      "id": "topmostSubform[0].Page3[0].f3_17[0]",
+      "page": 3,
+      "rect": [
+        410.4,
+        528.001,
+        481.65,
+        540.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_17[0])"
+    },
+    "line_6_total_credits_add_lines_5a": {
+      "id": "topmostSubform[0].Page3[0].f3_18[0]",
+      "page": 3,
+      "rect": [
+        504.0,
+        516.002,
+        576.0,
+        528.001
+      ],
+      "type": "text",
+      "description": "Line 6: Total credits. Add lines 5a"
+    },
+    "line_7_subtract_line_6_from_line": {
+      "id": "topmostSubform[0].Page3[0].f3_19[0]",
+      "page": 3,
+      "rect": [
+        504.0,
+        504.0,
+        576.0,
+        515.999
+      ],
+      "type": "text",
+      "description": "Line 7: Subtract line 6 from line"
+    },
+    "line_8_personal_holding_company_tax_attach": {
+      "id": "topmostSubform[0].Page3[0].f3_20[0]",
+      "page": 3,
+      "rect": [
+        504.0,
+        492.001,
+        576.0,
+        504.0
+      ],
+      "type": "text",
+      "description": "Line 8: Personal holding company tax (attach"
+    },
+    "line_9_a_amount_from_form_4255": {
+      "id": "topmostSubform[0].Page3[0].f3_21[0]",
+      "page": 3,
+      "rect": [
+        410.4,
+        480.002,
+        481.65,
+        492.001
+      ],
+      "type": "text",
+      "description": "Line 9: a Amount from Form 4255,"
+    },
+    "f3_22_0": {
+      "id": "topmostSubform[0].Page3[0].f3_22[0]",
+      "page": 3,
+      "rect": [
+        410.4,
+        468.0,
+        481.65,
+        479.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_22[0])"
+    },
+    "f3_23_0": {
+      "id": "topmostSubform[0].Page3[0].f3_23[0]",
+      "page": 3,
+      "rect": [
+        410.4,
+        456.001,
+        481.65,
+        468.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_23[0])"
+    },
+    "f3_24_0": {
+      "id": "topmostSubform[0].Page3[0].f3_24[0]",
+      "page": 3,
+      "rect": [
+        410.4,
+        444.002,
+        481.65,
+        456.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_24[0])"
+    },
+    "f3_25_0": {
+      "id": "topmostSubform[0].Page3[0].f3_25[0]",
+      "page": 3,
+      "rect": [
+        410.4,
+        432.0,
+        481.65,
+        443.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_25[0])"
+    },
+    "f3_26_0": {
+      "id": "topmostSubform[0].Page3[0].f3_26[0]",
+      "page": 3,
+      "rect": [
+        410.4,
+        420.001,
+        481.65,
+        432.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_26[0])"
+    },
+    "f3_27_0": {
+      "id": "topmostSubform[0].Page3[0].f3_27[0]",
+      "page": 3,
+      "rect": [
+        410.4,
+        408.002,
+        481.65,
+        420.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_27[0])"
+    },
+    "f3_28_0": {
+      "id": "topmostSubform[0].Page3[0].f3_28[0]",
+      "page": 3,
+      "rect": [
+        410.4,
+        396.0,
+        481.65,
+        407.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_28[0])"
+    },
+    "line_10_total_add_lines_9a_through": {
+      "id": "topmostSubform[0].Page3[0].f3_29[0]",
+      "page": 3,
+      "rect": [
+        504.0,
+        384.001,
+        576.0,
+        396.0
+      ],
+      "type": "text",
+      "description": "Line 10: Total. Add lines 9a through"
+    },
+    "line_11_a_total_tax_before_deferred": {
+      "id": "topmostSubform[0].Page3[0].f3_30[0]",
+      "page": 3,
+      "rect": [
+        410.4,
+        372.002,
+        481.65,
+        384.001
+      ],
+      "type": "text",
+      "description": "Line 11: a Total tax before deferred"
+    },
+    "line_11b": {
+      "id": "topmostSubform[0].Page3[0].f3_31[0]",
+      "page": 3,
+      "rect": [
+        410.4,
+        348.001,
+        481.65,
+        360.0
+      ],
+      "type": "text",
+      "description": "Line 11b: "
+    },
+    "f3_32_0": {
+      "id": "topmostSubform[0].Page3[0].f3_32[0]",
+      "page": 3,
+      "rect": [
+        410.4,
+        336.002,
+        481.65,
+        348.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_32[0])"
+    },
+    "line_12_total_tax_subtract_the_sum": {
+      "id": "topmostSubform[0].Page3[0].f3_33[0]",
+      "page": 3,
+      "rect": [
+        504.0,
+        324.0,
+        576.0,
+        335.999
+      ],
+      "type": "text",
+      "description": "Line 12: Total tax. Subtract the sum"
+    },
+    "line_13_preceding_year_s_overpayment_credited_to": {
+      "id": "topmostSubform[0].Page3[0].f3_34[0]",
+      "page": 3,
+      "rect": [
+        504.0,
+        312.001,
+        576.0,
+        324.0
+      ],
+      "type": "text",
+      "description": "Line 13: Preceding year\u2019s overpayment credited to"
+    },
+    "line_14_current_year_s_estimated_tax_payments": {
+      "id": "topmostSubform[0].Page3[0].f3_35[0]",
+      "page": 3,
+      "rect": [
+        504.0,
+        300.002,
+        576.0,
+        312.001
+      ],
+      "type": "text",
+      "description": "Line 14: Current year\u2019s estimated tax payments"
+    },
+    "line_15_current_year_s_refund_applied_for": {
+      "id": "topmostSubform[0].Page3[0].f3_36[0]",
+      "page": 3,
+      "rect": [
+        508.0,
+        288.0,
+        572.0,
+        299.999
+      ],
+      "type": "text",
+      "description": "Line 15: Current year\u2019s refund applied for"
+    },
+    "line_16_reserved_for_future_use": {
+      "id": "topmostSubform[0].Page3[0].f3_37[0]",
+      "page": 3,
+      "rect": [
+        504.0,
+        276.001,
+        576.0,
+        288.0
+      ],
+      "type": "text",
+      "description": "Line 16: Reserved for future use ."
+    },
+    "line_17_tax_deposited_with_form_7004": {
+      "id": "topmostSubform[0].Page3[0].f3_38[0]",
+      "page": 3,
+      "rect": [
+        504.0,
+        264.002,
+        576.0,
+        276.001
+      ],
+      "type": "text",
+      "description": "Line 17: Tax deposited with Form 7004"
+    },
+    "line_18_withholding_see_instructions": {
+      "id": "topmostSubform[0].Page3[0].f3_39[0]",
+      "page": 3,
+      "rect": [
+        504.0,
+        252.0,
+        576.0,
+        263.999
+      ],
+      "type": "text",
+      "description": "Line 18: Withholding (see instructions) . ."
+    },
+    "line_19_total_payments_combine_lines_13": {
+      "id": "topmostSubform[0].Page3[0].f3_40[0]",
+      "page": 3,
+      "rect": [
+        504.0,
+        240.001,
+        576.0,
+        252.0
+      ],
+      "type": "text",
+      "description": "Line 19: Total payments. Combine lines 13"
+    },
+    "f3_41_0": {
+      "id": "topmostSubform[0].Page3[0].Line20_ReadOrder[0].f3_41[0]",
+      "page": 3,
+      "rect": [
+        410.4,
+        216.0,
+        481.65,
+        227.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_41[0])"
+    },
+    "f3_42_0": {
+      "id": "topmostSubform[0].Page3[0].f3_42[0]",
+      "page": 3,
+      "rect": [
+        410.4,
+        204.001,
+        481.65,
+        216.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_42[0])"
+    },
+    "line_20c": {
+      "id": "topmostSubform[0].Page3[0].f3_43[0]",
+      "page": 3,
+      "rect": [
+        410.4,
+        180.0,
+        481.65,
+        191.999
+      ],
+      "type": "text",
+      "description": "Line 20c: "
+    },
+    "f3_44_0": {
+      "id": "topmostSubform[0].Page3[0].f3_44[0]",
+      "page": 3,
+      "rect": [
+        410.4,
+        168.001,
+        481.65,
+        180.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_44[0])"
+    },
+    "line_21_total_credits_add_lines_20a": {
+      "id": "topmostSubform[0].Page3[0].f3_45[0]",
+      "page": 3,
+      "rect": [
+        504.0,
+        156.002,
+        576.0,
+        168.001
+      ],
+      "type": "text",
+      "description": "Line 21: Total credits. Add lines 20a"
+    },
+    "line_22a_elective_payment_election_amount_from": {
+      "id": "topmostSubform[0].Page3[0].f3_46[0]",
+      "page": 3,
+      "rect": [
+        504.0,
+        144.0,
+        576.0,
+        155.999
+      ],
+      "type": "text",
+      "description": "Line 22a: Elective payment election amount from"
+    },
+    "f3_47_0": {
+      "id": "topmostSubform[0].Page3[0].f3_47[0]",
+      "page": 3,
+      "rect": [
+        504.0,
+        132.001,
+        576.0,
+        144.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_47[0])"
+    },
+    "f3_48_0": {
+      "id": "topmostSubform[0].Page3[0].f3_48[0]",
+      "page": 3,
+      "rect": [
+        504.0,
+        108.0,
+        576.0,
+        119.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f3_48[0])"
+    },
+    "line_1_check_accounting_method_a_cash_a": {
+      "id": "topmostSubform[0].Page4[0].c4_1[0]",
+      "page": 4,
+      "rect": [
+        180.0,
+        722.0,
+        188.0,
+        730.0
+      ],
+      "type": "checkbox",
+      "description": "Line 1: Check accounting method: a Cash"
+    },
+    "line_1_check_accounting_method_a_cash_b": {
+      "id": "topmostSubform[0].Page4[0].c4_1[1]",
+      "page": 4,
+      "rect": [
+        252.0,
+        722.0,
+        260.0,
+        730.0
+      ],
+      "type": "checkbox",
+      "description": "Line 1: Check accounting method: a Cash"
+    },
+    "line_1_check_accounting_method_a_cash_c": {
+      "id": "topmostSubform[0].Page4[0].c4_1[2]",
+      "page": 4,
+      "rect": [
+        322.2,
+        722.0,
+        330.2,
+        730.0
+      ],
+      "type": "checkbox",
+      "description": "Line 1: Check accounting method: a Cash"
+    },
+    "line_1_check_accounting_method_a_cash_d": {
+      "id": "topmostSubform[0].Page4[0].f4_1[0]",
+      "page": 4,
+      "rect": [
+        388.8,
+        720.0,
+        525.6,
+        731.999
+      ],
+      "type": "text",
+      "description": "Line 1: Check accounting method: a Cash"
+    },
+    "f4_2_0": {
+      "id": "topmostSubform[0].Page4[0].f4_2[0]",
+      "page": 4,
+      "rect": [
+        165.6,
+        696.002,
+        525.6,
+        708.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_2[0])"
+    },
+    "f4_3_0": {
+      "id": "topmostSubform[0].Page4[0].f4_3[0]",
+      "page": 4,
+      "rect": [
+        129.6,
+        684.0,
+        525.6,
+        695.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_3[0])"
+    },
+    "f4_4_0": {
+      "id": "topmostSubform[0].Page4[0].f4_4[0]",
+      "page": 4,
+      "rect": [
+        136.8,
+        672.001,
+        525.6,
+        684.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_4[0])"
+    },
+    "line_3_is_the_corporation_a_subsidiary_a": {
+      "id": "topmostSubform[0].Page4[0].c4_2[0]",
+      "page": 4,
+      "rect": [
+        537.6,
+        660.002,
+        549.6,
+        672.002
+      ],
+      "type": "checkbox",
+      "description": "Line 3: Is the corporation a subsidiary"
+    },
+    "line_3_is_the_corporation_a_subsidiary_b": {
+      "id": "topmostSubform[0].Page4[0].c4_2[1]",
+      "page": 4,
+      "rect": [
+        559.2,
+        660.002,
+        571.2,
+        672.002
+      ],
+      "type": "checkbox",
+      "description": "Line 3: Is the corporation a subsidiary"
+    },
+    "f4_5_0": {
+      "id": "topmostSubform[0].Page4[0].IfYes_ReadOrder[0].f4_5[0]",
+      "page": 4,
+      "rect": [
+        64.8,
+        623.999,
+        525.6,
+        648.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_5[0])"
+    },
+    "c4_3_0": {
+      "id": "topmostSubform[0].Page4[0].c4_3[0]",
+      "page": 4,
+      "rect": [
+        537.6,
+        582.001,
+        549.6,
+        594.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c4_3[0])"
+    },
+    "c4_3_1": {
+      "id": "topmostSubform[0].Page4[0].c4_3[1]",
+      "page": 4,
+      "rect": [
+        559.2,
+        582.001,
+        571.2,
+        594.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c4_3[1])"
+    },
+    "c4_4_0": {
+      "id": "topmostSubform[0].Page4[0].c4_4[0]",
+      "page": 4,
+      "rect": [
+        537.6,
+        558.0,
+        549.6,
+        570.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c4_4[0])"
+    },
+    "c4_4_1": {
+      "id": "topmostSubform[0].Page4[0].c4_4[1]",
+      "page": 4,
+      "rect": [
+        559.2,
+        558.0,
+        571.2,
+        570.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c4_4[1])"
+    },
+    "c4_5_0": {
+      "id": "topmostSubform[0].Page4[0].c4_5[0]",
+      "page": 4,
+      "rect": [
+        537.6,
+        516.002,
+        549.6,
+        528.002
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c4_5[0])"
+    },
+    "c4_5_1": {
+      "id": "topmostSubform[0].Page4[0].c4_5[1]",
+      "page": 4,
+      "rect": [
+        559.2,
+        516.002,
+        571.2,
+        528.002
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c4_5[1])"
+    },
+    "f4_6_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Line5a[0].Row1[0].f4_6[0]",
+      "page": 4,
+      "rect": [
+        36.0,
+        450.0,
+        308.85,
+        474.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_6[0])"
+    },
+    "f4_7_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Line5a[0].Row1[0].f4_7[0]",
+      "page": 4,
+      "rect": [
+        309.6,
+        450.0,
+        396.0,
+        474.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_7[0])"
+    },
+    "f4_8_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Line5a[0].Row1[0].f4_8[0]",
+      "page": 4,
+      "rect": [
+        397.0,
+        450.0,
+        496.05,
+        474.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_8[0])"
+    },
+    "f4_9_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Line5a[0].Row1[0].f4_9[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        450.0,
+        576.0,
+        474.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_9[0])"
+    },
+    "f4_10_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Line5a[0].Row2[0].f4_10[0]",
+      "page": 4,
+      "rect": [
+        36.0,
+        425.999,
+        308.85,
+        450.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_10[0])"
+    },
+    "f4_11_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Line5a[0].Row2[0].f4_11[0]",
+      "page": 4,
+      "rect": [
+        309.6,
+        425.999,
+        396.0,
+        450.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_11[0])"
+    },
+    "f4_12_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Line5a[0].Row2[0].f4_12[0]",
+      "page": 4,
+      "rect": [
+        397.0,
+        425.999,
+        496.05,
+        450.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_12[0])"
+    },
+    "f4_13_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Line5a[0].Row2[0].f4_13[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        425.999,
+        576.0,
+        450.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_13[0])"
+    },
+    "f4_14_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Line5a[0].Row3[0].f4_14[0]",
+      "page": 4,
+      "rect": [
+        36.0,
+        401.998,
+        308.85,
+        425.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_14[0])"
+    },
+    "f4_15_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Line5a[0].Row3[0].f4_15[0]",
+      "page": 4,
+      "rect": [
+        309.6,
+        401.998,
+        396.0,
+        425.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_15[0])"
+    },
+    "f4_16_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Line5a[0].Row3[0].f4_16[0]",
+      "page": 4,
+      "rect": [
+        397.0,
+        401.998,
+        496.05,
+        425.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_16[0])"
+    },
+    "f4_17_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Line5a[0].Row3[0].f4_17[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        401.998,
+        576.0,
+        425.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_17[0])"
+    },
+    "c4_6_0": {
+      "id": "topmostSubform[0].Page4[0].c4_6[0]",
+      "page": 4,
+      "rect": [
+        537.6,
+        372.002,
+        549.6,
+        384.002
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c4_6[0])"
+    },
+    "c4_6_1": {
+      "id": "topmostSubform[0].Page4[0].c4_6[1]",
+      "page": 4,
+      "rect": [
+        559.2,
+        372.002,
+        571.2,
+        384.002
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c4_6[1])"
+    },
+    "f4_18_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Line5b[0].Row1[0].f4_18[0]",
+      "page": 4,
+      "rect": [
+        36.0,
+        306.0,
+        308.85,
+        330.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_18[0])"
+    },
+    "f4_19_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Line5b[0].Row1[0].f4_19[0]",
+      "page": 4,
+      "rect": [
+        309.6,
+        306.0,
+        396.0,
+        330.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_19[0])"
+    },
+    "f4_20_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Line5b[0].Row1[0].f4_20[0]",
+      "page": 4,
+      "rect": [
+        397.0,
+        306.0,
+        496.05,
+        330.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_20[0])"
+    },
+    "f4_21_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Line5b[0].Row1[0].f4_21[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        306.0,
+        576.0,
+        330.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_21[0])"
+    },
+    "f4_22_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Line5b[0].Row2[0].f4_22[0]",
+      "page": 4,
+      "rect": [
+        36.0,
+        281.999,
+        308.85,
+        306.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_22[0])"
+    },
+    "f4_23_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Line5b[0].Row2[0].f4_23[0]",
+      "page": 4,
+      "rect": [
+        309.6,
+        281.999,
+        396.0,
+        306.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_23[0])"
+    },
+    "f4_24_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Line5b[0].Row2[0].f4_24[0]",
+      "page": 4,
+      "rect": [
+        397.0,
+        281.999,
+        496.05,
+        306.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_24[0])"
+    },
+    "f4_25_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Line5b[0].Row2[0].f4_25[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        281.999,
+        576.0,
+        306.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_25[0])"
+    },
+    "f4_26_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Line5b[0].Row3[0].f4_26[0]",
+      "page": 4,
+      "rect": [
+        36.0,
+        257.998,
+        308.85,
+        281.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_26[0])"
+    },
+    "f4_27_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Line5b[0].Row3[0].f4_27[0]",
+      "page": 4,
+      "rect": [
+        309.6,
+        257.998,
+        396.0,
+        281.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_27[0])"
+    },
+    "f4_28_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Line5b[0].Row3[0].f4_28[0]",
+      "page": 4,
+      "rect": [
+        397.0,
+        257.998,
+        496.05,
+        281.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_28[0])"
+    },
+    "f4_29_0": {
+      "id": "topmostSubform[0].Page4[0].Table_Line5b[0].Row3[0].f4_29[0]",
+      "page": 4,
+      "rect": [
+        496.8,
+        257.998,
+        576.0,
+        281.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_29[0])"
+    },
+    "c4_7_0": {
+      "id": "topmostSubform[0].Page4[0].c4_7[0]",
+      "page": 4,
+      "rect": [
+        537.6,
+        234.0,
+        549.6,
+        246.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c4_7[0])"
+    },
+    "c4_7_1": {
+      "id": "topmostSubform[0].Page4[0].c4_7[1]",
+      "page": 4,
+      "rect": [
+        559.2,
+        234.0,
+        571.2,
+        246.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c4_7[1])"
+    },
+    "c4_8_0": {
+      "id": "topmostSubform[0].Page4[0].c4_8[0]",
+      "page": 4,
+      "rect": [
+        537.6,
+        186.001,
+        549.6,
+        198.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c4_8[0])"
+    },
+    "c4_8_1": {
+      "id": "topmostSubform[0].Page4[0].c4_8[1]",
+      "page": 4,
+      "rect": [
+        559.2,
+        186.001,
+        571.2,
+        198.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c4_8[1])"
+    },
+    "f4_31_0": {
+      "id": "topmostSubform[0].Page4[0].f4_31[0]",
+      "page": 4,
+      "rect": [
+        151.2,
+        162.0,
+        208.8,
+        173.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_31[0])"
+    },
+    "f4_32_0": {
+      "id": "topmostSubform[0].Page4[0].f4_32[0]",
+      "page": 4,
+      "rect": [
+        309.6,
+        162.0,
+        525.6,
+        173.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_32[0])"
+    },
+    "f4_33_0": {
+      "id": "topmostSubform[0].Page4[0].f4_33[0]",
+      "page": 4,
+      "rect": [
+        453.6,
+        138.002,
+        525.6,
+        150.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_33[0])"
+    },
+    "line_8": {
+      "id": "topmostSubform[0].Page4[0].c4_9[0]",
+      "page": 4,
+      "rect": [
+        517.6,
+        128.0,
+        525.6,
+        136.0
+      ],
+      "type": "checkbox",
+      "description": "Line 8: "
+    },
+    "line_9_enter_the_amount_of_tax_exempt": {
+      "id": "topmostSubform[0].Page4[0].f4_34[0]",
+      "page": 4,
+      "rect": [
+        453.6,
+        102.002,
+        525.6,
+        114.001
+      ],
+      "type": "text",
+      "description": "Line 9: Enter the amount of tax-exempt"
+    },
+    "line_10_enter_the_number_of_shareholders": {
+      "id": "topmostSubform[0].Page4[0].f4_35[0]",
+      "page": 4,
+      "rect": [
+        453.6,
+        90.0,
+        525.6,
+        101.999
+      ],
+      "type": "text",
+      "description": "Line 10: Enter the number of shareholders"
+    },
+    "line_11": {
+      "id": "topmostSubform[0].Page4[0].c4_10[0]",
+      "page": 4,
+      "rect": [
+        517.6,
+        80.001,
+        525.6,
+        88.001
+      ],
+      "type": "checkbox",
+      "description": "Line 11: "
+    },
+    "f4_36_0": {
+      "id": "topmostSubform[0].Page4[0].f4_36[0]",
+      "page": 4,
+      "rect": [
+        453.6,
+        38.0,
+        525.6,
+        47.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f4_36[0])"
+    },
+    "c5_1_0": {
+      "id": "topmostSubform[0].Page5[0].c5_1[0]",
+      "page": 5,
+      "rect": [
+        537.6,
+        708.001,
+        549.6,
+        720.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_1[0])"
+    },
+    "c5_1_1": {
+      "id": "topmostSubform[0].Page5[0].c5_1[1]",
+      "page": 5,
+      "rect": [
+        559.2,
+        708.001,
+        571.2,
+        720.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_1[1])"
+    },
+    "f5_1_0": {
+      "id": "topmostSubform[0].Page5[0].IfYes_ReadOrder[0].f5_1[0]",
+      "page": 5,
+      "rect": [
+        453.6,
+        684.0,
+        525.6,
+        695.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_1[0])"
+    },
+    "line_14_is_the_corporation_required_to_a": {
+      "id": "topmostSubform[0].Page5[0].c5_2[0]",
+      "page": 5,
+      "rect": [
+        537.6,
+        672.001,
+        549.6,
+        684.001
+      ],
+      "type": "checkbox",
+      "description": "Line 14: Is the corporation required to"
+    },
+    "line_14_is_the_corporation_required_to_b": {
+      "id": "topmostSubform[0].Page5[0].c5_2[1]",
+      "page": 5,
+      "rect": [
+        559.2,
+        672.001,
+        571.2,
+        684.001
+      ],
+      "type": "checkbox",
+      "description": "Line 14: Is the corporation required to"
+    },
+    "line_15a_did_the_corporation_make_any_a": {
+      "id": "topmostSubform[0].Page5[0].c5_3[0]",
+      "page": 5,
+      "rect": [
+        537.6,
+        648.0,
+        549.6,
+        660.0
+      ],
+      "type": "checkbox",
+      "description": "Line 15a: Did the corporation make any"
+    },
+    "line_15a_did_the_corporation_make_any_b": {
+      "id": "topmostSubform[0].Page5[0].c5_3[1]",
+      "page": 5,
+      "rect": [
+        559.2,
+        648.0,
+        571.2,
+        660.0
+      ],
+      "type": "checkbox",
+      "description": "Line 15a: Did the corporation make any"
+    },
+    "c5_4_0": {
+      "id": "topmostSubform[0].Page5[0].c5_4[0]",
+      "page": 5,
+      "rect": [
+        537.6,
+        636.001,
+        549.6,
+        648.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_4[0])"
+    },
+    "c5_4_1": {
+      "id": "topmostSubform[0].Page5[0].c5_4[1]",
+      "page": 5,
+      "rect": [
+        559.2,
+        636.001,
+        571.2,
+        648.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_4[1])"
+    },
+    "c5_5_0": {
+      "id": "topmostSubform[0].Page5[0].c5_5[0]",
+      "page": 5,
+      "rect": [
+        537.6,
+        612.0,
+        549.6,
+        624.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_5[0])"
+    },
+    "c5_5_1": {
+      "id": "topmostSubform[0].Page5[0].c5_5[1]",
+      "page": 5,
+      "rect": [
+        559.2,
+        612.0,
+        571.2,
+        624.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_5[1])"
+    },
+    "c5_6_0": {
+      "id": "topmostSubform[0].Page5[0].c5_6[0]",
+      "page": 5,
+      "rect": [
+        537.6,
+        588.002,
+        549.6,
+        600.002
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_6[0])"
+    },
+    "c5_6_1": {
+      "id": "topmostSubform[0].Page5[0].c5_6[1]",
+      "page": 5,
+      "rect": [
+        559.2,
+        588.002,
+        571.2,
+        600.002
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_6[1])"
+    },
+    "c5_7_0": {
+      "id": "topmostSubform[0].Page5[0].c5_7[0]",
+      "page": 5,
+      "rect": [
+        537.6,
+        564.001,
+        549.6,
+        576.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_7[0])"
+    },
+    "c5_7_1": {
+      "id": "topmostSubform[0].Page5[0].c5_7[1]",
+      "page": 5,
+      "rect": [
+        559.2,
+        564.001,
+        571.2,
+        576.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_7[1])"
+    },
+    "c5_8_0": {
+      "id": "topmostSubform[0].Page5[0].c5_8[0]",
+      "page": 5,
+      "rect": [
+        537.6,
+        540.0,
+        549.6,
+        552.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_8[0])"
+    },
+    "c5_8_1": {
+      "id": "topmostSubform[0].Page5[0].c5_8[1]",
+      "page": 5,
+      "rect": [
+        559.2,
+        540.0,
+        571.2,
+        552.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_8[1])"
+    },
+    "line_20_is_the_corporation_operating_on_a": {
+      "id": "topmostSubform[0].Page5[0].c5_9[0]",
+      "page": 5,
+      "rect": [
+        537.6,
+        528.001,
+        549.6,
+        540.001
+      ],
+      "type": "checkbox",
+      "description": "Line 20: Is the corporation operating on"
+    },
+    "line_20_is_the_corporation_operating_on_b": {
+      "id": "topmostSubform[0].Page5[0].c5_9[1]",
+      "page": 5,
+      "rect": [
+        559.2,
+        528.001,
+        571.2,
+        540.001
+      ],
+      "type": "checkbox",
+      "description": "Line 20: Is the corporation operating on"
+    },
+    "c5_10_0": {
+      "id": "topmostSubform[0].Page5[0].c5_10[0]",
+      "page": 5,
+      "rect": [
+        537.6,
+        504.0,
+        549.6,
+        516.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_10[0])"
+    },
+    "c5_10_1": {
+      "id": "topmostSubform[0].Page5[0].c5_10[1]",
+      "page": 5,
+      "rect": [
+        559.2,
+        504.0,
+        571.2,
+        516.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_10[1])"
+    },
+    "f5_2_0": {
+      "id": "topmostSubform[0].Page5[0].f5_2[0]",
+      "page": 5,
+      "rect": [
+        453.6,
+        492.001,
+        525.6,
+        504.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_2[0])"
+    },
+    "line_22_does_this_corporation_have_gross_a": {
+      "id": "topmostSubform[0].Page5[0].c5_11[0]",
+      "page": 5,
+      "rect": [
+        537.6,
+        480.002,
+        549.6,
+        492.002
+      ],
+      "type": "checkbox",
+      "description": "Line 22: Does this corporation have gross"
+    },
+    "line_22_does_this_corporation_have_gross_b": {
+      "id": "topmostSubform[0].Page5[0].c5_11[1]",
+      "page": 5,
+      "rect": [
+        559.2,
+        480.002,
+        571.2,
+        492.002
+      ],
+      "type": "checkbox",
+      "description": "Line 22: Does this corporation have gross"
+    },
+    "c5_12_0": {
+      "id": "topmostSubform[0].Page5[0].c5_12[0]",
+      "page": 5,
+      "rect": [
+        537.6,
+        444.002,
+        549.6,
+        456.002
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_12[0])"
+    },
+    "c5_12_1": {
+      "id": "topmostSubform[0].Page5[0].c5_12[1]",
+      "page": 5,
+      "rect": [
+        559.2,
+        444.002,
+        571.2,
+        456.002
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_12[1])"
+    },
+    "line_24_does_the_corporation_satisfy_one_a": {
+      "id": "topmostSubform[0].Page5[0].c5_13[0]",
+      "page": 5,
+      "rect": [
+        537.6,
+        432.0,
+        549.6,
+        444.0
+      ],
+      "type": "checkbox",
+      "description": "Line 24: Does the corporation satisfy one"
+    },
+    "line_24_does_the_corporation_satisfy_one_b": {
+      "id": "topmostSubform[0].Page5[0].c5_13[1]",
+      "page": 5,
+      "rect": [
+        559.2,
+        432.0,
+        571.2,
+        444.0
+      ],
+      "type": "checkbox",
+      "description": "Line 24: Does the corporation satisfy one"
+    },
+    "line_25_does_the_corporation_intend_to_a": {
+      "id": "topmostSubform[0].Page5[0].c5_14[0]",
+      "page": 5,
+      "rect": [
+        537.6,
+        372.002,
+        549.6,
+        384.002
+      ],
+      "type": "checkbox",
+      "description": "Line 25: Does the corporation intend to"
+    },
+    "line_25_does_the_corporation_intend_to_b": {
+      "id": "topmostSubform[0].Page5[0].c5_14[1]",
+      "page": 5,
+      "rect": [
+        559.2,
+        372.002,
+        571.2,
+        384.002
+      ],
+      "type": "checkbox",
+      "description": "Line 25: Does the corporation intend to"
+    },
+    "f5_3_0": {
+      "id": "topmostSubform[0].Page5[0].f5_3[0]",
+      "page": 5,
+      "rect": [
+        453.6,
+        360.0,
+        525.6,
+        371.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_3[0])"
+    },
+    "c5_15_0": {
+      "id": "topmostSubform[0].Page5[0].c5_15[0]",
+      "page": 5,
+      "rect": [
+        537.6,
+        318.002,
+        549.6,
+        330.002
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_15[0])"
+    },
+    "c5_15_1": {
+      "id": "topmostSubform[0].Page5[0].c5_15[1]",
+      "page": 5,
+      "rect": [
+        559.2,
+        318.002,
+        571.2,
+        330.002
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_15[1])"
+    },
+    "f5_4_0": {
+      "id": "topmostSubform[0].Page5[0].f5_4[0]",
+      "page": 5,
+      "rect": [
+        151.2,
+        306.0,
+        266.4,
+        317.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_4[0])"
+    },
+    "f5_5_0": {
+      "id": "topmostSubform[0].Page5[0].f5_5[0]",
+      "page": 5,
+      "rect": [
+        331.2,
+        306.0,
+        446.4,
+        317.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f5_5[0])"
+    },
+    "c5_16_0": {
+      "id": "topmostSubform[0].Page5[0].c5_16[0]",
+      "page": 5,
+      "rect": [
+        537.6,
+        282.002,
+        549.6,
+        294.002
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_16[0])"
+    },
+    "c5_16_1": {
+      "id": "topmostSubform[0].Page5[0].c5_16[1]",
+      "page": 5,
+      "rect": [
+        559.2,
+        282.002,
+        571.2,
+        294.002
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_16[1])"
+    },
+    "line_28_is_the_corporation_a_member_a": {
+      "id": "topmostSubform[0].Page5[0].c5_17[0]",
+      "page": 5,
+      "rect": [
+        537.6,
+        270.0,
+        549.6,
+        282.0
+      ],
+      "type": "checkbox",
+      "description": "Line 28: Is the corporation a member"
+    },
+    "line_28_is_the_corporation_a_member_b": {
+      "id": "topmostSubform[0].Page5[0].c5_17[1]",
+      "page": 5,
+      "rect": [
+        559.2,
+        270.0,
+        571.2,
+        282.0
+      ],
+      "type": "checkbox",
+      "description": "Line 28: Is the corporation a member"
+    },
+    "c5_18_0": {
+      "id": "topmostSubform[0].Page5[0].c5_18[0]",
+      "page": 5,
+      "rect": [
+        537.6,
+        234.0,
+        549.6,
+        246.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_18[0])"
+    },
+    "c5_18_1": {
+      "id": "topmostSubform[0].Page5[0].c5_18[1]",
+      "page": 5,
+      "rect": [
+        559.2,
+        234.0,
+        571.2,
+        246.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_18[1])"
+    },
+    "c5_19_0": {
+      "id": "topmostSubform[0].Page5[0].c5_19[0]",
+      "page": 5,
+      "rect": [
+        537.6,
+        198.0,
+        549.6,
+        210.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_19[0])"
+    },
+    "c5_19_1": {
+      "id": "topmostSubform[0].Page5[0].c5_19[1]",
+      "page": 5,
+      "rect": [
+        559.2,
+        198.0,
+        571.2,
+        210.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_19[1])"
+    },
+    "c5_20_0": {
+      "id": "topmostSubform[0].Page5[0].c5_20[0]",
+      "page": 5,
+      "rect": [
+        537.6,
+        162.0,
+        549.6,
+        174.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_20[0])"
+    },
+    "c5_20_1": {
+      "id": "topmostSubform[0].Page5[0].c5_20[1]",
+      "page": 5,
+      "rect": [
+        559.2,
+        162.0,
+        571.2,
+        174.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_20[1])"
+    },
+    "c5_21_0": {
+      "id": "topmostSubform[0].Page5[0].c5_21[0]",
+      "page": 5,
+      "rect": [
+        537.6,
+        126.0,
+        549.6,
+        138.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_21[0])"
+    },
+    "c5_21_1": {
+      "id": "topmostSubform[0].Page5[0].c5_21[1]",
+      "page": 5,
+      "rect": [
+        559.2,
+        126.0,
+        571.2,
+        138.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_21[1])"
+    },
+    "c5_22_0": {
+      "id": "topmostSubform[0].Page5[0].c5_22[0]",
+      "page": 5,
+      "rect": [
+        537.6,
+        114.001,
+        549.6,
+        126.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_22[0])"
+    },
+    "c5_22_1": {
+      "id": "topmostSubform[0].Page5[0].c5_22[1]",
+      "page": 5,
+      "rect": [
+        559.2,
+        114.001,
+        571.2,
+        126.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_22[1])"
+    },
+    "c5_23_0": {
+      "id": "topmostSubform[0].Page5[0].c5_23[0]",
+      "page": 5,
+      "rect": [
+        537.6,
+        102.002,
+        549.6,
+        114.002
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_23[0])"
+    },
+    "c5_23_1": {
+      "id": "topmostSubform[0].Page5[0].c5_23[1]",
+      "page": 5,
+      "rect": [
+        559.2,
+        102.002,
+        571.2,
+        114.002
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_23[1])"
+    },
+    "c5_24_0": {
+      "id": "topmostSubform[0].Page5[0].c5_24[0]",
+      "page": 5,
+      "rect": [
+        537.6,
+        60.001,
+        549.6,
+        72.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_24[0])"
+    },
+    "c5_24_1": {
+      "id": "topmostSubform[0].Page5[0].c5_24[1]",
+      "page": 5,
+      "rect": [
+        559.2,
+        60.001,
+        571.2,
+        72.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c5_24[1])"
+    },
+    "line_32_reserved_for_future_use_a": {
+      "id": "topmostSubform[0].Page5[0].c5_25[0]",
+      "page": 5,
+      "rect": [
+        537.6,
+        36.0,
+        549.6,
+        48.0
+      ],
+      "type": "checkbox",
+      "description": "Line 32: Reserved for future use ."
+    },
+    "line_32_reserved_for_future_use_b": {
+      "id": "topmostSubform[0].Page5[0].c5_25[1]",
+      "page": 5,
+      "rect": [
+        559.2,
+        36.0,
+        571.2,
+        48.0
+      ],
+      "type": "checkbox",
+      "description": "Line 32: Reserved for future use ."
+    },
+    "line_1_cash_a": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line1[0].f6_1[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        708.001,
+        323.25,
+        720.0
+      ],
+      "type": "text",
+      "description": "Line 1: Cash . . . ."
+    },
+    "line_1_cash_b": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line1[0].f6_2[0]",
+      "page": 6,
+      "rect": [
+        324.0,
+        708.001,
+        409.65,
+        720.0
+      ],
+      "type": "text",
+      "description": "Line 1: Cash . . . ."
+    },
+    "line_1_cash_c": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line1[0].f6_3[0]",
+      "page": 6,
+      "rect": [
+        410.4,
+        708.001,
+        496.05,
+        720.0
+      ],
+      "type": "text",
+      "description": "Line 1: Cash . . . ."
+    },
+    "line_1_cash_d": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line1[0].f6_4[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        708.001,
+        576.0,
+        720.0
+      ],
+      "type": "text",
+      "description": "Line 1: Cash . . . ."
+    },
+    "line_2a_trade_notes_and_accounts_receivable_a": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line2a[0].f6_5[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        696.002,
+        323.25,
+        708.001
+      ],
+      "type": "text",
+      "description": "Line 2a: Trade notes and accounts receivable"
+    },
+    "line_2a_trade_notes_and_accounts_receivable_b": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line2a[0].f6_6[0]",
+      "page": 6,
+      "rect": [
+        324.0,
+        696.002,
+        409.65,
+        708.001
+      ],
+      "type": "text",
+      "description": "Line 2a: Trade notes and accounts receivable"
+    },
+    "line_2a_trade_notes_and_accounts_receivable_c": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line2a[0].f6_7[0]",
+      "page": 6,
+      "rect": [
+        410.4,
+        696.002,
+        496.05,
+        708.001
+      ],
+      "type": "text",
+      "description": "Line 2a: Trade notes and accounts receivable"
+    },
+    "line_2a_trade_notes_and_accounts_receivable_d": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line2a[0].f6_8[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        696.002,
+        576.0,
+        708.001
+      ],
+      "type": "text",
+      "description": "Line 2a: Trade notes and accounts receivable"
+    },
+    "f6_9_0": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line2b[0].f6_9[0]",
+      "page": 6,
+      "rect": [
+        247.8,
+        684.003,
+        321.0,
+        696.002
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_9[0])"
+    },
+    "f6_10_0": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line2b[0].f6_10[0]",
+      "page": 6,
+      "rect": [
+        324.0,
+        684.003,
+        409.65,
+        696.002
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_10[0])"
+    },
+    "f6_11_0": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line2b[0].f6_11[0]",
+      "page": 6,
+      "rect": [
+        413.4,
+        684.003,
+        493.8,
+        696.002
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_11[0])"
+    },
+    "f6_12_0": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line2b[0].f6_12[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        684.003,
+        576.0,
+        696.002
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_12[0])"
+    },
+    "line_3_inventories_a": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line3[0].f6_13[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        672.004,
+        323.25,
+        684.003
+      ],
+      "type": "text",
+      "description": "Line 3: Inventories . . . ."
+    },
+    "line_3_inventories_b": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line3[0].f6_14[0]",
+      "page": 6,
+      "rect": [
+        324.0,
+        672.004,
+        409.65,
+        684.003
+      ],
+      "type": "text",
+      "description": "Line 3: Inventories . . . ."
+    },
+    "line_3_inventories_c": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line3[0].f6_15[0]",
+      "page": 6,
+      "rect": [
+        410.4,
+        672.004,
+        496.05,
+        684.003
+      ],
+      "type": "text",
+      "description": "Line 3: Inventories . . . ."
+    },
+    "line_3_inventories_d": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line3[0].f6_16[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        672.004,
+        576.0,
+        684.003
+      ],
+      "type": "text",
+      "description": "Line 3: Inventories . . . ."
+    },
+    "line_4_u_s_government_obligations_a": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line4[0].f6_17[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        660.005,
+        323.25,
+        672.004
+      ],
+      "type": "text",
+      "description": "Line 4: U.S. government obligations . ."
+    },
+    "line_4_u_s_government_obligations_b": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line4[0].f6_18[0]",
+      "page": 6,
+      "rect": [
+        324.0,
+        660.005,
+        409.65,
+        672.004
+      ],
+      "type": "text",
+      "description": "Line 4: U.S. government obligations . ."
+    },
+    "line_4_u_s_government_obligations_c": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line4[0].f6_19[0]",
+      "page": 6,
+      "rect": [
+        410.4,
+        660.005,
+        496.05,
+        672.004
+      ],
+      "type": "text",
+      "description": "Line 4: U.S. government obligations . ."
+    },
+    "line_4_u_s_government_obligations_d": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line4[0].f6_20[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        660.005,
+        576.0,
+        672.004
+      ],
+      "type": "text",
+      "description": "Line 4: U.S. government obligations . ."
+    },
+    "line_5_tax_exempt_securities_see_instructions_a": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line5[0].f6_21[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        648.006,
+        323.25,
+        660.005
+      ],
+      "type": "text",
+      "description": "Line 5: Tax-exempt securities (see instructions) ."
+    },
+    "line_5_tax_exempt_securities_see_instructions_b": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line5[0].f6_22[0]",
+      "page": 6,
+      "rect": [
+        324.0,
+        648.006,
+        409.65,
+        660.005
+      ],
+      "type": "text",
+      "description": "Line 5: Tax-exempt securities (see instructions) ."
+    },
+    "line_5_tax_exempt_securities_see_instructions_c": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line5[0].f6_23[0]",
+      "page": 6,
+      "rect": [
+        410.4,
+        648.006,
+        496.05,
+        660.005
+      ],
+      "type": "text",
+      "description": "Line 5: Tax-exempt securities (see instructions) ."
+    },
+    "line_5_tax_exempt_securities_see_instructions_d": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line5[0].f6_24[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        648.006,
+        576.0,
+        660.005
+      ],
+      "type": "text",
+      "description": "Line 5: Tax-exempt securities (see instructions) ."
+    },
+    "line_6_other_current_assets_attach_statement_a": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line6[0].f6_25[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        636.007,
+        323.25,
+        648.006
+      ],
+      "type": "text",
+      "description": "Line 6: Other current assets (attach statement)"
+    },
+    "line_6_other_current_assets_attach_statement_b": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line6[0].f6_26[0]",
+      "page": 6,
+      "rect": [
+        324.0,
+        636.007,
+        409.65,
+        648.006
+      ],
+      "type": "text",
+      "description": "Line 6: Other current assets (attach statement)"
+    },
+    "line_6_other_current_assets_attach_statement_c": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line6[0].f6_27[0]",
+      "page": 6,
+      "rect": [
+        410.4,
+        636.007,
+        496.05,
+        648.006
+      ],
+      "type": "text",
+      "description": "Line 6: Other current assets (attach statement)"
+    },
+    "line_6_other_current_assets_attach_statement_d": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line6[0].f6_28[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        636.007,
+        576.0,
+        648.006
+      ],
+      "type": "text",
+      "description": "Line 6: Other current assets (attach statement)"
+    },
+    "line_7_loans_to_shareholders_a": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line7[0].f6_29[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        624.008,
+        323.25,
+        636.007
+      ],
+      "type": "text",
+      "description": "Line 7: Loans to shareholders . ."
+    },
+    "line_7_loans_to_shareholders_b": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line7[0].f6_30[0]",
+      "page": 6,
+      "rect": [
+        324.0,
+        624.008,
+        409.65,
+        636.007
+      ],
+      "type": "text",
+      "description": "Line 7: Loans to shareholders . ."
+    },
+    "line_7_loans_to_shareholders_c": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line7[0].f6_31[0]",
+      "page": 6,
+      "rect": [
+        410.4,
+        624.008,
+        496.05,
+        636.007
+      ],
+      "type": "text",
+      "description": "Line 7: Loans to shareholders . ."
+    },
+    "line_7_loans_to_shareholders_d": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line7[0].f6_32[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        624.008,
+        576.0,
+        636.007
+      ],
+      "type": "text",
+      "description": "Line 7: Loans to shareholders . ."
+    },
+    "line_8_mortgage_and_real_estate_loans_a": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line8[0].f6_33[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        612.009,
+        323.25,
+        624.008
+      ],
+      "type": "text",
+      "description": "Line 8: Mortgage and real estate loans"
+    },
+    "line_8_mortgage_and_real_estate_loans_b": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line8[0].f6_34[0]",
+      "page": 6,
+      "rect": [
+        324.0,
+        612.009,
+        409.65,
+        624.008
+      ],
+      "type": "text",
+      "description": "Line 8: Mortgage and real estate loans"
+    },
+    "line_8_mortgage_and_real_estate_loans_c": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line8[0].f6_35[0]",
+      "page": 6,
+      "rect": [
+        410.4,
+        612.009,
+        496.05,
+        624.008
+      ],
+      "type": "text",
+      "description": "Line 8: Mortgage and real estate loans"
+    },
+    "line_8_mortgage_and_real_estate_loans_d": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line8[0].f6_36[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        612.009,
+        576.0,
+        624.008
+      ],
+      "type": "text",
+      "description": "Line 8: Mortgage and real estate loans"
+    },
+    "line_9_other_investments_attach_statement_a": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line9[0].f6_37[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        600.01,
+        323.25,
+        612.009
+      ],
+      "type": "text",
+      "description": "Line 9: Other investments (attach statement) ."
+    },
+    "line_9_other_investments_attach_statement_b": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line9[0].f6_38[0]",
+      "page": 6,
+      "rect": [
+        324.0,
+        600.01,
+        409.65,
+        612.009
+      ],
+      "type": "text",
+      "description": "Line 9: Other investments (attach statement) ."
+    },
+    "line_9_other_investments_attach_statement_c": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line9[0].f6_39[0]",
+      "page": 6,
+      "rect": [
+        410.4,
+        600.01,
+        496.05,
+        612.009
+      ],
+      "type": "text",
+      "description": "Line 9: Other investments (attach statement) ."
+    },
+    "line_9_other_investments_attach_statement_d": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line9[0].f6_40[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        600.01,
+        576.0,
+        612.009
+      ],
+      "type": "text",
+      "description": "Line 9: Other investments (attach statement) ."
+    },
+    "line_10a_buildings_and_other_depreciable_assets_a": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line10a[0].f6_41[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        588.011,
+        323.25,
+        600.01
+      ],
+      "type": "text",
+      "description": "Line 10a: Buildings and other depreciable assets"
+    },
+    "line_10a_buildings_and_other_depreciable_assets_b": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line10a[0].f6_42[0]",
+      "page": 6,
+      "rect": [
+        324.0,
+        588.011,
+        409.65,
+        600.01
+      ],
+      "type": "text",
+      "description": "Line 10a: Buildings and other depreciable assets"
+    },
+    "line_10a_buildings_and_other_depreciable_assets_c": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line10a[0].f6_43[0]",
+      "page": 6,
+      "rect": [
+        410.4,
+        588.011,
+        496.05,
+        600.01
+      ],
+      "type": "text",
+      "description": "Line 10a: Buildings and other depreciable assets"
+    },
+    "line_10a_buildings_and_other_depreciable_assets_d": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line10a[0].f6_44[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        588.011,
+        576.0,
+        600.01
+      ],
+      "type": "text",
+      "description": "Line 10a: Buildings and other depreciable assets"
+    },
+    "f6_45_0": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line10b[0].f6_45[0]",
+      "page": 6,
+      "rect": [
+        247.8,
+        576.012,
+        321.0,
+        588.011
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_45[0])"
+    },
+    "f6_46_0": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line10b[0].f6_46[0]",
+      "page": 6,
+      "rect": [
+        324.0,
+        576.012,
+        409.65,
+        588.011
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_46[0])"
+    },
+    "f6_47_0": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line10b[0].f6_47[0]",
+      "page": 6,
+      "rect": [
+        413.4,
+        576.012,
+        493.8,
+        588.011
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_47[0])"
+    },
+    "f6_48_0": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line10b[0].f6_48[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        576.012,
+        576.0,
+        588.011
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_48[0])"
+    },
+    "line_11a_depletable_assets_a": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line11a[0].f6_49[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        564.013,
+        323.25,
+        576.012
+      ],
+      "type": "text",
+      "description": "Line 11a: Depletable assets . . ."
+    },
+    "line_11a_depletable_assets_b": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line11a[0].f6_50[0]",
+      "page": 6,
+      "rect": [
+        324.0,
+        564.013,
+        409.65,
+        576.012
+      ],
+      "type": "text",
+      "description": "Line 11a: Depletable assets . . ."
+    },
+    "line_11a_depletable_assets_c": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line11a[0].f6_51[0]",
+      "page": 6,
+      "rect": [
+        410.4,
+        564.013,
+        496.05,
+        576.012
+      ],
+      "type": "text",
+      "description": "Line 11a: Depletable assets . . ."
+    },
+    "line_11a_depletable_assets_d": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line11a[0].f6_52[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        564.013,
+        576.0,
+        576.012
+      ],
+      "type": "text",
+      "description": "Line 11a: Depletable assets . . ."
+    },
+    "f6_53_0": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line11b[0].f6_53[0]",
+      "page": 6,
+      "rect": [
+        247.8,
+        552.014,
+        321.0,
+        564.013
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_53[0])"
+    },
+    "f6_54_0": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line11b[0].f6_54[0]",
+      "page": 6,
+      "rect": [
+        324.0,
+        552.014,
+        409.65,
+        564.013
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_54[0])"
+    },
+    "f6_55_0": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line11b[0].f6_55[0]",
+      "page": 6,
+      "rect": [
+        413.4,
+        552.014,
+        493.8,
+        564.013
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_55[0])"
+    },
+    "f6_56_0": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line11b[0].f6_56[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        552.014,
+        576.0,
+        564.013
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_56[0])"
+    },
+    "line_12_land_net_of_any_amortization_a": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line12[0].f6_57[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        540.015,
+        323.25,
+        552.014
+      ],
+      "type": "text",
+      "description": "Line 12: Land (net of any amortization)"
+    },
+    "line_12_land_net_of_any_amortization_b": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line12[0].f6_58[0]",
+      "page": 6,
+      "rect": [
+        324.0,
+        540.015,
+        409.65,
+        552.014
+      ],
+      "type": "text",
+      "description": "Line 12: Land (net of any amortization)"
+    },
+    "line_12_land_net_of_any_amortization_c": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line12[0].f6_59[0]",
+      "page": 6,
+      "rect": [
+        410.4,
+        540.015,
+        496.05,
+        552.014
+      ],
+      "type": "text",
+      "description": "Line 12: Land (net of any amortization)"
+    },
+    "line_12_land_net_of_any_amortization_d": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line12[0].f6_60[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        540.015,
+        576.0,
+        552.014
+      ],
+      "type": "text",
+      "description": "Line 12: Land (net of any amortization)"
+    },
+    "line_13a_intangible_assets_amortizable_only_a": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line13a[0].f6_61[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        528.016,
+        323.25,
+        540.015
+      ],
+      "type": "text",
+      "description": "Line 13a: Intangible assets (amortizable only) ."
+    },
+    "line_13a_intangible_assets_amortizable_only_b": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line13a[0].f6_62[0]",
+      "page": 6,
+      "rect": [
+        324.0,
+        528.016,
+        409.65,
+        540.015
+      ],
+      "type": "text",
+      "description": "Line 13a: Intangible assets (amortizable only) ."
+    },
+    "line_13a_intangible_assets_amortizable_only_c": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line13a[0].f6_63[0]",
+      "page": 6,
+      "rect": [
+        410.4,
+        528.016,
+        496.05,
+        540.015
+      ],
+      "type": "text",
+      "description": "Line 13a: Intangible assets (amortizable only) ."
+    },
+    "line_13a_intangible_assets_amortizable_only_d": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line13a[0].f6_64[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        528.016,
+        576.0,
+        540.015
+      ],
+      "type": "text",
+      "description": "Line 13a: Intangible assets (amortizable only) ."
+    },
+    "f6_65_0": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line13b[0].f6_65[0]",
+      "page": 6,
+      "rect": [
+        247.8,
+        516.017,
+        321.0,
+        528.016
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_65[0])"
+    },
+    "f6_66_0": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line13b[0].f6_66[0]",
+      "page": 6,
+      "rect": [
+        324.0,
+        516.017,
+        409.65,
+        528.016
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_66[0])"
+    },
+    "f6_67_0": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line13b[0].f6_67[0]",
+      "page": 6,
+      "rect": [
+        413.4,
+        516.017,
+        493.8,
+        528.016
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_67[0])"
+    },
+    "f6_68_0": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line13b[0].f6_68[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        516.017,
+        576.0,
+        528.016
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_68[0])"
+    },
+    "line_14_other_assets_attach_statement_a": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line14[0].f6_69[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        504.018,
+        323.25,
+        516.017
+      ],
+      "type": "text",
+      "description": "Line 14: Other assets (attach statement) ."
+    },
+    "line_14_other_assets_attach_statement_b": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line14[0].f6_70[0]",
+      "page": 6,
+      "rect": [
+        324.0,
+        504.018,
+        409.65,
+        516.017
+      ],
+      "type": "text",
+      "description": "Line 14: Other assets (attach statement) ."
+    },
+    "line_14_other_assets_attach_statement_c": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line14[0].f6_71[0]",
+      "page": 6,
+      "rect": [
+        410.4,
+        504.018,
+        496.05,
+        516.017
+      ],
+      "type": "text",
+      "description": "Line 14: Other assets (attach statement) ."
+    },
+    "line_14_other_assets_attach_statement_d": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line14[0].f6_72[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        504.018,
+        576.0,
+        516.017
+      ],
+      "type": "text",
+      "description": "Line 14: Other assets (attach statement) ."
+    },
+    "line_15_total_assets_a": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line15[0].f6_73[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        492.019,
+        323.25,
+        504.018
+      ],
+      "type": "text",
+      "description": "Line 15: Total assets . . ."
+    },
+    "line_15_total_assets_b": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line15[0].f6_74[0]",
+      "page": 6,
+      "rect": [
+        324.0,
+        492.019,
+        409.65,
+        504.018
+      ],
+      "type": "text",
+      "description": "Line 15: Total assets . . ."
+    },
+    "line_15_total_assets_c": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line15[0].f6_75[0]",
+      "page": 6,
+      "rect": [
+        410.4,
+        492.019,
+        496.05,
+        504.018
+      ],
+      "type": "text",
+      "description": "Line 15: Total assets . . ."
+    },
+    "line_15_total_assets_d": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Assets[0].Line15[0].f6_76[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        492.019,
+        576.0,
+        504.018
+      ],
+      "type": "text",
+      "description": "Line 15: Total assets . . ."
+    },
+    "line_16_accounts_payable_a": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line16[0].f6_77[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        468.003,
+        323.25,
+        480.002
+      ],
+      "type": "text",
+      "description": "Line 16: Accounts payable . . ."
+    },
+    "line_16_accounts_payable_b": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line16[0].f6_78[0]",
+      "page": 6,
+      "rect": [
+        324.0,
+        468.003,
+        409.65,
+        480.002
+      ],
+      "type": "text",
+      "description": "Line 16: Accounts payable . . ."
+    },
+    "line_16_accounts_payable_c": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line16[0].f6_79[0]",
+      "page": 6,
+      "rect": [
+        410.4,
+        468.003,
+        496.05,
+        480.002
+      ],
+      "type": "text",
+      "description": "Line 16: Accounts payable . . ."
+    },
+    "line_16_accounts_payable_d": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line16[0].f6_80[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        468.003,
+        576.0,
+        480.002
+      ],
+      "type": "text",
+      "description": "Line 16: Accounts payable . . ."
+    },
+    "line_17_mortgages_notes_bonds_payable_in_a": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line17[0].f6_81[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        456.004,
+        323.25,
+        468.003
+      ],
+      "type": "text",
+      "description": "Line 17: Mortgages, notes, bonds payable in"
+    },
+    "line_17_mortgages_notes_bonds_payable_in_b": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line17[0].f6_82[0]",
+      "page": 6,
+      "rect": [
+        324.0,
+        456.004,
+        409.65,
+        468.003
+      ],
+      "type": "text",
+      "description": "Line 17: Mortgages, notes, bonds payable in"
+    },
+    "line_17_mortgages_notes_bonds_payable_in_c": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line17[0].f6_83[0]",
+      "page": 6,
+      "rect": [
+        410.4,
+        456.004,
+        496.05,
+        468.003
+      ],
+      "type": "text",
+      "description": "Line 17: Mortgages, notes, bonds payable in"
+    },
+    "line_17_mortgages_notes_bonds_payable_in_d": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line17[0].f6_84[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        456.004,
+        576.0,
+        468.003
+      ],
+      "type": "text",
+      "description": "Line 17: Mortgages, notes, bonds payable in"
+    },
+    "line_18_other_current_liabilities_attach_statement_a": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line18[0].f6_85[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        444.005,
+        323.25,
+        456.004
+      ],
+      "type": "text",
+      "description": "Line 18: Other current liabilities (attach statement)"
+    },
+    "line_18_other_current_liabilities_attach_statement_b": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line18[0].f6_86[0]",
+      "page": 6,
+      "rect": [
+        324.0,
+        444.005,
+        409.65,
+        456.004
+      ],
+      "type": "text",
+      "description": "Line 18: Other current liabilities (attach statement)"
+    },
+    "line_18_other_current_liabilities_attach_statement_c": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line18[0].f6_87[0]",
+      "page": 6,
+      "rect": [
+        410.4,
+        444.005,
+        496.05,
+        456.004
+      ],
+      "type": "text",
+      "description": "Line 18: Other current liabilities (attach statement)"
+    },
+    "line_18_other_current_liabilities_attach_statement_d": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line18[0].f6_88[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        444.005,
+        576.0,
+        456.004
+      ],
+      "type": "text",
+      "description": "Line 18: Other current liabilities (attach statement)"
+    },
+    "line_19_loans_from_shareholders_a": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line19[0].f6_89[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        432.006,
+        323.25,
+        444.005
+      ],
+      "type": "text",
+      "description": "Line 19: Loans from shareholders . ."
+    },
+    "line_19_loans_from_shareholders_b": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line19[0].f6_90[0]",
+      "page": 6,
+      "rect": [
+        324.0,
+        432.006,
+        409.65,
+        444.005
+      ],
+      "type": "text",
+      "description": "Line 19: Loans from shareholders . ."
+    },
+    "line_19_loans_from_shareholders_c": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line19[0].f6_91[0]",
+      "page": 6,
+      "rect": [
+        410.4,
+        432.006,
+        496.05,
+        444.005
+      ],
+      "type": "text",
+      "description": "Line 19: Loans from shareholders . ."
+    },
+    "line_19_loans_from_shareholders_d": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line19[0].f6_92[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        432.006,
+        576.0,
+        444.005
+      ],
+      "type": "text",
+      "description": "Line 19: Loans from shareholders . ."
+    },
+    "line_20_mortgages_notes_bonds_payable_in_a": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line20[0].f6_93[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        420.007,
+        323.25,
+        432.006
+      ],
+      "type": "text",
+      "description": "Line 20: Mortgages, notes, bonds payable in"
+    },
+    "line_20_mortgages_notes_bonds_payable_in_b": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line20[0].f6_94[0]",
+      "page": 6,
+      "rect": [
+        324.0,
+        420.007,
+        409.65,
+        432.006
+      ],
+      "type": "text",
+      "description": "Line 20: Mortgages, notes, bonds payable in"
+    },
+    "line_20_mortgages_notes_bonds_payable_in_c": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line20[0].f6_95[0]",
+      "page": 6,
+      "rect": [
+        410.4,
+        420.007,
+        496.05,
+        432.006
+      ],
+      "type": "text",
+      "description": "Line 20: Mortgages, notes, bonds payable in"
+    },
+    "line_20_mortgages_notes_bonds_payable_in_d": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line20[0].f6_96[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        420.007,
+        576.0,
+        432.006
+      ],
+      "type": "text",
+      "description": "Line 20: Mortgages, notes, bonds payable in"
+    },
+    "line_21_other_liabilities_attach_statement_a": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line21[0].f6_97[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        408.008,
+        323.25,
+        420.007
+      ],
+      "type": "text",
+      "description": "Line 21: Other liabilities (attach statement) ."
+    },
+    "line_21_other_liabilities_attach_statement_b": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line21[0].f6_98[0]",
+      "page": 6,
+      "rect": [
+        324.0,
+        408.008,
+        409.65,
+        420.007
+      ],
+      "type": "text",
+      "description": "Line 21: Other liabilities (attach statement) ."
+    },
+    "line_21_other_liabilities_attach_statement_c": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line21[0].f6_99[0]",
+      "page": 6,
+      "rect": [
+        410.4,
+        408.008,
+        496.05,
+        420.007
+      ],
+      "type": "text",
+      "description": "Line 21: Other liabilities (attach statement) ."
+    },
+    "line_21_other_liabilities_attach_statement_d": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line21[0].f6_100[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        408.008,
+        576.0,
+        420.007
+      ],
+      "type": "text",
+      "description": "Line 21: Other liabilities (attach statement) ."
+    },
+    "line_22_capital_stock_a_preferred_stock_a": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line22a[0].f6_101[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        396.009,
+        323.25,
+        408.008
+      ],
+      "type": "text",
+      "description": "Line 22: Capital stock: a Preferred stock"
+    },
+    "line_22_capital_stock_a_preferred_stock_b": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line22a[0].f6_102[0]",
+      "page": 6,
+      "rect": [
+        324.0,
+        396.009,
+        409.65,
+        408.008
+      ],
+      "type": "text",
+      "description": "Line 22: Capital stock: a Preferred stock"
+    },
+    "line_22_capital_stock_a_preferred_stock_c": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line22a[0].f6_103[0]",
+      "page": 6,
+      "rect": [
+        410.4,
+        396.009,
+        496.05,
+        408.008
+      ],
+      "type": "text",
+      "description": "Line 22: Capital stock: a Preferred stock"
+    },
+    "line_22_capital_stock_a_preferred_stock_d": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line22a[0].f6_104[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        396.009,
+        576.0,
+        408.008
+      ],
+      "type": "text",
+      "description": "Line 22: Capital stock: a Preferred stock"
+    },
+    "f6_105_0": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line22b[0].f6_105[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        384.01,
+        323.25,
+        396.009
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_105[0])"
+    },
+    "f6_106_0": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line22b[0].f6_106[0]",
+      "page": 6,
+      "rect": [
+        324.0,
+        384.01,
+        409.65,
+        396.009
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_106[0])"
+    },
+    "f6_107_0": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line22b[0].f6_107[0]",
+      "page": 6,
+      "rect": [
+        410.4,
+        384.01,
+        496.05,
+        396.009
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_107[0])"
+    },
+    "f6_108_0": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line22b[0].f6_108[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        384.01,
+        576.0,
+        396.009
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_108[0])"
+    },
+    "line_23_additional_paid_in_capital_a": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line23[0].f6_109[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        372.011,
+        323.25,
+        384.01
+      ],
+      "type": "text",
+      "description": "Line 23: Additional paid-in capital . ."
+    },
+    "line_23_additional_paid_in_capital_b": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line23[0].f6_110[0]",
+      "page": 6,
+      "rect": [
+        324.0,
+        372.011,
+        409.65,
+        384.01
+      ],
+      "type": "text",
+      "description": "Line 23: Additional paid-in capital . ."
+    },
+    "line_23_additional_paid_in_capital_c": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line23[0].f6_111[0]",
+      "page": 6,
+      "rect": [
+        410.4,
+        372.011,
+        496.05,
+        384.01
+      ],
+      "type": "text",
+      "description": "Line 23: Additional paid-in capital . ."
+    },
+    "line_23_additional_paid_in_capital_d": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line23[0].f6_112[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        372.011,
+        576.0,
+        384.01
+      ],
+      "type": "text",
+      "description": "Line 23: Additional paid-in capital . ."
+    },
+    "line_24_retained_earnings_appropriated_attach_statement_a": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line24[0].f6_113[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        360.012,
+        323.25,
+        372.011
+      ],
+      "type": "text",
+      "description": "Line 24: Retained earnings\u2014Appropriated (attach statement)"
+    },
+    "line_24_retained_earnings_appropriated_attach_statement_b": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line24[0].f6_114[0]",
+      "page": 6,
+      "rect": [
+        324.0,
+        360.012,
+        409.65,
+        372.011
+      ],
+      "type": "text",
+      "description": "Line 24: Retained earnings\u2014Appropriated (attach statement)"
+    },
+    "line_24_retained_earnings_appropriated_attach_statement_c": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line24[0].f6_115[0]",
+      "page": 6,
+      "rect": [
+        410.4,
+        360.012,
+        496.05,
+        372.011
+      ],
+      "type": "text",
+      "description": "Line 24: Retained earnings\u2014Appropriated (attach statement)"
+    },
+    "line_24_retained_earnings_appropriated_attach_statement_d": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line24[0].f6_116[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        360.012,
+        576.0,
+        372.011
+      ],
+      "type": "text",
+      "description": "Line 24: Retained earnings\u2014Appropriated (attach statement)"
+    },
+    "line_25_retained_earnings_unappropriated_a": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line25[0].f6_117[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        348.013,
+        323.25,
+        360.012
+      ],
+      "type": "text",
+      "description": "Line 25: Retained earnings\u2014Unappropriated . . ."
+    },
+    "line_25_retained_earnings_unappropriated_b": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line25[0].f6_118[0]",
+      "page": 6,
+      "rect": [
+        324.0,
+        348.013,
+        409.65,
+        360.012
+      ],
+      "type": "text",
+      "description": "Line 25: Retained earnings\u2014Unappropriated . . ."
+    },
+    "line_25_retained_earnings_unappropriated_c": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line25[0].f6_119[0]",
+      "page": 6,
+      "rect": [
+        410.4,
+        348.013,
+        496.05,
+        360.012
+      ],
+      "type": "text",
+      "description": "Line 25: Retained earnings\u2014Unappropriated . . ."
+    },
+    "line_25_retained_earnings_unappropriated_d": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line25[0].f6_120[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        348.013,
+        576.0,
+        360.012
+      ],
+      "type": "text",
+      "description": "Line 25: Retained earnings\u2014Unappropriated . . ."
+    },
+    "line_26_adjustments_to_shareholders_equity_attach_a": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line26[0].f6_121[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        336.014,
+        323.25,
+        348.013
+      ],
+      "type": "text",
+      "description": "Line 26: Adjustments to shareholders\u2019 equity (attach"
+    },
+    "line_26_adjustments_to_shareholders_equity_attach_b": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line26[0].f6_122[0]",
+      "page": 6,
+      "rect": [
+        324.0,
+        336.014,
+        409.65,
+        348.013
+      ],
+      "type": "text",
+      "description": "Line 26: Adjustments to shareholders\u2019 equity (attach"
+    },
+    "line_26_adjustments_to_shareholders_equity_attach_c": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line26[0].f6_123[0]",
+      "page": 6,
+      "rect": [
+        410.4,
+        336.014,
+        496.05,
+        348.013
+      ],
+      "type": "text",
+      "description": "Line 26: Adjustments to shareholders\u2019 equity (attach"
+    },
+    "line_26_adjustments_to_shareholders_equity_attach_d": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line26[0].f6_124[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        336.014,
+        576.0,
+        348.013
+      ],
+      "type": "text",
+      "description": "Line 26: Adjustments to shareholders\u2019 equity (attach"
+    },
+    "line_27_less_cost_of_treasury_stock_a": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line27[0].f6_125[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        324.015,
+        323.25,
+        336.014
+      ],
+      "type": "text",
+      "description": "Line 27: Less cost of treasury stock"
+    },
+    "line_27_less_cost_of_treasury_stock_b": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line27[0].f6_126[0]",
+      "page": 6,
+      "rect": [
+        327.0,
+        324.015,
+        407.4,
+        336.014
+      ],
+      "type": "text",
+      "description": "Line 27: Less cost of treasury stock"
+    },
+    "line_27_less_cost_of_treasury_stock_c": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line27[0].f6_127[0]",
+      "page": 6,
+      "rect": [
+        413.4,
+        324.015,
+        493.8,
+        336.014
+      ],
+      "type": "text",
+      "description": "Line 27: Less cost of treasury stock"
+    },
+    "line_27_less_cost_of_treasury_stock_d": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line27[0].f6_128[0]",
+      "page": 6,
+      "rect": [
+        499.8,
+        324.015,
+        573.0,
+        336.014
+      ],
+      "type": "text",
+      "description": "Line 27: Less cost of treasury stock"
+    },
+    "line_28_total_liabilities_and_shareholders_equity_a": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line28[0].f6_129[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        312.016,
+        323.25,
+        324.015
+      ],
+      "type": "text",
+      "description": "Line 28: Total liabilities and shareholders\u2019 equity"
+    },
+    "line_28_total_liabilities_and_shareholders_equity_b": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line28[0].f6_130[0]",
+      "page": 6,
+      "rect": [
+        324.0,
+        312.016,
+        409.65,
+        324.015
+      ],
+      "type": "text",
+      "description": "Line 28: Total liabilities and shareholders\u2019 equity"
+    },
+    "line_28_total_liabilities_and_shareholders_equity_c": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line28[0].f6_131[0]",
+      "page": 6,
+      "rect": [
+        410.4,
+        312.016,
+        496.05,
+        324.015
+      ],
+      "type": "text",
+      "description": "Line 28: Total liabilities and shareholders\u2019 equity"
+    },
+    "line_28_total_liabilities_and_shareholders_equity_d": {
+      "id": "topmostSubform[0].Page6[0].Table_SchL_Liabilities[0].Line28[0].f6_132[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        312.016,
+        576.0,
+        324.015
+      ],
+      "type": "text",
+      "description": "Line 28: Total liabilities and shareholders\u2019 equity"
+    },
+    "line_1_net_income_loss_per_books": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Left[0].f6_133[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        276.001,
+        323.25,
+        288.0
+      ],
+      "type": "text",
+      "description": "Line 1: Net income (loss) per books"
+    },
+    "line_2_federal_income_tax_per_books": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Left[0].f6_134[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        264.002,
+        323.25,
+        276.001
+      ],
+      "type": "text",
+      "description": "Line 2: Federal income tax per books"
+    },
+    "line_3_excess_of_capital_losses_over_a": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Left[0].f6_135[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        252.0,
+        323.25,
+        263.999
+      ],
+      "type": "text",
+      "description": "Line 3: Excess of capital losses over"
+    },
+    "f6_136_0": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Left[0].f6_136[0]",
+      "page": 6,
+      "rect": [
+        129.6,
+        228.002,
+        237.6,
+        240.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_136[0])"
+    },
+    "line_8_deductions_on_this_return_not_a": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Left[0].f6_137[0]",
+      "page": 6,
+      "rect": [
+        64.8,
+        216.0,
+        237.6,
+        227.999
+      ],
+      "type": "text",
+      "description": "Line 8: Deductions on this return not"
+    },
+    "line_8_deductions_on_this_return_not_b": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Left[0].f6_138[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        216.0,
+        323.25,
+        227.999
+      ],
+      "type": "text",
+      "description": "Line 8: Deductions on this return not"
+    },
+    "f6_139_0": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Left[0].f6_139[0]",
+      "page": 6,
+      "rect": [
+        165.6,
+        180.0,
+        237.6,
+        191.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_139[0])"
+    },
+    "f6_140_0": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Left[0].f6_140[0]",
+      "page": 6,
+      "rect": [
+        165.6,
+        168.001,
+        237.6,
+        180.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_140[0])"
+    },
+    "f6_141_0": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Left[0].f6_141[0]",
+      "page": 6,
+      "rect": [
+        165.6,
+        156.002,
+        237.6,
+        168.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_141[0])"
+    },
+    "line_9_add_lines_7_and_8_a": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Left[0].f6_142[0]",
+      "page": 6,
+      "rect": [
+        64.8,
+        144.0,
+        237.6,
+        155.999
+      ],
+      "type": "text",
+      "description": "Line 9: Add lines 7 and 8"
+    },
+    "line_9_add_lines_7_and_8_b": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Left[0].f6_143[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        144.0,
+        323.25,
+        155.999
+      ],
+      "type": "text",
+      "description": "Line 9: Add lines 7 and 8"
+    },
+    "line_6_add_lines_1_through_5_a": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Left[0].f6_144[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        132.001,
+        323.25,
+        144.0
+      ],
+      "type": "text",
+      "description": "Line 6: Add lines 1 through 5"
+    },
+    "line_3_excess_of_capital_losses_over_b": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Right[0].f6_145[0]",
+      "page": 6,
+      "rect": [
+        432.0,
+        252.0,
+        489.6,
+        263.999
+      ],
+      "type": "text",
+      "description": "Line 3: Excess of capital losses over"
+    },
+    "line_4_income_subject_to_tax_not": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Right[0].f6_146[0]",
+      "page": 6,
+      "rect": [
+        352.8,
+        240.001,
+        489.6,
+        252.0
+      ],
+      "type": "text",
+      "description": "Line 4: Income subject to tax not"
+    },
+    "f6_147_0": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Right[0].f6_147[0]",
+      "page": 6,
+      "rect": [
+        352.8,
+        228.002,
+        489.6,
+        240.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_147[0])"
+    },
+    "f6_148_0": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Right[0].f6_148[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        228.002,
+        576.0,
+        240.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_148[0])"
+    },
+    "f6_149_0": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Right[0].f6_149[0]",
+      "page": 6,
+      "rect": [
+        432.0,
+        192.002,
+        489.6,
+        204.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_149[0])"
+    },
+    "f6_150_0": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Right[0].f6_150[0]",
+      "page": 6,
+      "rect": [
+        439.2,
+        180.0,
+        489.6,
+        191.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_150[0])"
+    },
+    "f6_151_0": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Right[0].f6_151[0]",
+      "page": 6,
+      "rect": [
+        352.8,
+        168.001,
+        489.6,
+        180.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_151[0])"
+    },
+    "f6_152_0": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Right[0].f6_152[0]",
+      "page": 6,
+      "rect": [
+        352.8,
+        156.002,
+        489.6,
+        168.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_152[0])"
+    },
+    "f6_153_0": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Right[0].f6_153[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        156.002,
+        576.0,
+        168.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f6_153[0])"
+    },
+    "line_9_add_lines_7_and_8_c": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Right[0].f6_154[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        144.0,
+        576.0,
+        155.999
+      ],
+      "type": "text",
+      "description": "Line 9: Add lines 7 and 8"
+    },
+    "line_6_add_lines_1_through_5_b": {
+      "id": "topmostSubform[0].Page6[0].SchM-1_Right[0].f6_155[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        132.001,
+        576.0,
+        144.0
+      ],
+      "type": "text",
+      "description": "Line 6: Add lines 1 through 5"
+    },
+    "line_1_balance_at_beginning_of_year_a": {
+      "id": "topmostSubform[0].Page6[0].SchM-2_Left[0].f6_156[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        108.0,
+        323.25,
+        119.999
+      ],
+      "type": "text",
+      "description": "Line 1: Balance at beginning of year"
+    },
+    "line_2_net_income_loss_per_books_a": {
+      "id": "topmostSubform[0].Page6[0].SchM-2_Left[0].f6_157[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        96.001,
+        323.25,
+        108.0
+      ],
+      "type": "text",
+      "description": "Line 2: Net income (loss) per books"
+    },
+    "line_3_other_increases_itemize_c_property_a": {
+      "id": "topmostSubform[0].Page6[0].SchM-2_Left[0].f6_158[0]",
+      "page": 6,
+      "rect": [
+        158.4,
+        84.002,
+        237.6,
+        96.001
+      ],
+      "type": "text",
+      "description": "Line 3: Other increases (itemize): c Property"
+    },
+    "line_6_other_decreases_itemize_a": {
+      "id": "topmostSubform[0].Page6[0].SchM-2_Left[0].f6_159[0]",
+      "page": 6,
+      "rect": [
+        64.8,
+        72.0,
+        237.6,
+        83.999
+      ],
+      "type": "text",
+      "description": "Line 6: Other decreases (itemize):"
+    },
+    "line_7_add_lines_5_and_6_a": {
+      "id": "topmostSubform[0].Page6[0].SchM-2_Left[0].f6_160[0]",
+      "page": 6,
+      "rect": [
+        64.8,
+        60.001,
+        237.6,
+        72.0
+      ],
+      "type": "text",
+      "description": "Line 7: Add lines 5 and 6"
+    },
+    "line_7_add_lines_5_and_6_b": {
+      "id": "topmostSubform[0].Page6[0].SchM-2_Left[0].f6_161[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        60.001,
+        323.25,
+        72.0
+      ],
+      "type": "text",
+      "description": "Line 7: Add lines 5 and 6"
+    },
+    "line_4_add_lines_1_2_and_a": {
+      "id": "topmostSubform[0].Page6[0].SchM-2_Left[0].f6_162[0]",
+      "page": 6,
+      "rect": [
+        244.8,
+        48.002,
+        323.25,
+        60.001
+      ],
+      "type": "text",
+      "description": "Line 4: Add lines 1, 2, and"
+    },
+    "line_1_balance_at_beginning_of_year_b": {
+      "id": "topmostSubform[0].Page6[0].SchM-2_Right[0].f6_163[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        108.0,
+        576.0,
+        119.999
+      ],
+      "type": "text",
+      "description": "Line 1: Balance at beginning of year"
+    },
+    "line_2_net_income_loss_per_books_b": {
+      "id": "topmostSubform[0].Page6[0].SchM-2_Right[0].f6_164[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        96.001,
+        576.0,
+        108.0
+      ],
+      "type": "text",
+      "description": "Line 2: Net income (loss) per books"
+    },
+    "line_3_other_increases_itemize_c_property_b": {
+      "id": "topmostSubform[0].Page6[0].SchM-2_Right[0].f6_165[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        84.002,
+        576.0,
+        96.001
+      ],
+      "type": "text",
+      "description": "Line 3: Other increases (itemize): c Property"
+    },
+    "line_6_other_decreases_itemize_b": {
+      "id": "topmostSubform[0].Page6[0].SchM-2_Right[0].f6_166[0]",
+      "page": 6,
+      "rect": [
+        446.4,
+        72.0,
+        489.6,
+        83.999
+      ],
+      "type": "text",
+      "description": "Line 6: Other decreases (itemize):"
+    },
+    "line_6_other_decreases_itemize_c": {
+      "id": "topmostSubform[0].Page6[0].SchM-2_Right[0].f6_167[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        72.0,
+        576.0,
+        83.999
+      ],
+      "type": "text",
+      "description": "Line 6: Other decreases (itemize):"
+    },
+    "line_7_add_lines_5_and_6_c": {
+      "id": "topmostSubform[0].Page6[0].SchM-2_Right[0].f6_168[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        60.001,
+        576.0,
+        72.0
+      ],
+      "type": "text",
+      "description": "Line 7: Add lines 5 and 6"
+    },
+    "line_4_add_lines_1_2_and_b": {
+      "id": "topmostSubform[0].Page6[0].SchM-2_Right[0].f6_169[0]",
+      "page": 6,
+      "rect": [
+        496.8,
+        48.002,
+        576.0,
+        60.001
+      ],
+      "type": "text",
+      "description": "Line 4: Add lines 1, 2, and"
+    }
+  }
+}

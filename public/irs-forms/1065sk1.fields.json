@@ -1,0 +1,1339 @@
+{
+  "form": "1065sk1",
+  "year": 2025,
+  "pdfFilename": "1065sk1.pdf",
+  "fields": {
+    "f1_1_0": {
+      "id": "topmostSubform[0].Page1[0].Pg1Header[0].ForCalendarYear[0].f1_1[0]",
+      "page": 1,
+      "rect": [
+        108.0,
+        684.0,
+        129.6,
+        695.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_1[0])"
+    },
+    "f1_2_0": {
+      "id": "topmostSubform[0].Page1[0].Pg1Header[0].ForCalendarYear[0].f1_2[0]",
+      "page": 1,
+      "rect": [
+        132.468,
+        684.0,
+        151.2,
+        695.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_2[0])"
+    },
+    "f1_3_0": {
+      "id": "topmostSubform[0].Page1[0].Pg1Header[0].ForCalendarYear[0].f1_3[0]",
+      "page": 1,
+      "rect": [
+        223.2,
+        684.0,
+        244.8,
+        695.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_3[0])"
+    },
+    "f1_4_0": {
+      "id": "topmostSubform[0].Page1[0].Pg1Header[0].ForCalendarYear[0].f1_4[0]",
+      "page": 1,
+      "rect": [
+        247.668,
+        684.0,
+        266.4,
+        695.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_4[0])"
+    },
+    "f1_5_0": {
+      "id": "topmostSubform[0].Page1[0].Pg1Header[0].ForCalendarYear[0].f1_5[0]",
+      "page": 1,
+      "rect": [
+        269.268,
+        684.0,
+        302.4,
+        695.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_5[0])"
+    },
+    "c1_1_0": {
+      "id": "topmostSubform[0].Page1[0].Pg1Header[0].c1_1[0]",
+      "page": 1,
+      "rect": [
+        324.0,
+        746.001,
+        332.0,
+        754.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c1_1[0])"
+    },
+    "c1_2_0": {
+      "id": "topmostSubform[0].Page1[0].Pg1Header[0].c1_2[0]",
+      "page": 1,
+      "rect": [
+        403.2,
+        746.001,
+        411.2,
+        754.001
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c1_2[0])"
+    },
+    "line_4b_16": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].f1_6[0]",
+      "page": 1,
+      "rect": [
+        36.0,
+        612.0,
+        309.6,
+        623.999
+      ],
+      "type": "text",
+      "description": "Line 4b: 16"
+    },
+    "f1_7_0": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].f1_7[0]",
+      "page": 1,
+      "rect": [
+        38.0,
+        564.001,
+        309.6,
+        600.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_7[0])"
+    },
+    "f1_8_0": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].f1_8[0]",
+      "page": 1,
+      "rect": [
+        189.2,
+        552.002,
+        309.6,
+        564.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_8[0])"
+    },
+    "c1_3_0": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].c1_3[0]",
+      "page": 1,
+      "rect": [
+        57.6,
+        542.25,
+        65.6,
+        550.25
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c1_3[0])"
+    },
+    "f1_9_0": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].f1_9[0]",
+      "page": 1,
+      "rect": [
+        36.0,
+        504.0,
+        309.6,
+        515.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_9[0])"
+    },
+    "line_7_a": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].f1_10[0]",
+      "page": 1,
+      "rect": [
+        38.0,
+        456.001,
+        309.6,
+        492.001
+      ],
+      "type": "text",
+      "description": "Line 7: "
+    },
+    "line_8_a": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].c1_4[0]",
+      "page": 1,
+      "rect": [
+        57.6,
+        446.002,
+        65.6,
+        454.002
+      ],
+      "type": "checkbox",
+      "description": "Line 8: "
+    },
+    "line_8_b": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].c1_4[1]",
+      "page": 1,
+      "rect": [
+        180.0,
+        446.002,
+        188.0,
+        454.002
+      ],
+      "type": "checkbox",
+      "description": "Line 8: "
+    },
+    "line_9a_a": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].c1_5[0]",
+      "page": 1,
+      "rect": [
+        57.6,
+        422.001,
+        65.6,
+        430.001
+      ],
+      "type": "checkbox",
+      "description": "Line 9a: "
+    },
+    "line_9a_b": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].c1_5[1]",
+      "page": 1,
+      "rect": [
+        180.0,
+        422.001,
+        188.0,
+        430.001
+      ],
+      "type": "checkbox",
+      "description": "Line 9a: "
+    },
+    "c1_6_0": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].c1_6[0]",
+      "page": 1,
+      "rect": [
+        57.6,
+        410.002,
+        65.6,
+        418.002
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c1_6[0])"
+    },
+    "line_9b_a": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].f1_11[0]",
+      "page": 1,
+      "rect": [
+        72.0,
+        396.0,
+        136.8,
+        407.999
+      ],
+      "type": "text",
+      "description": "Line 9b: "
+    },
+    "line_9b_b": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].f1_12[0]",
+      "page": 1,
+      "rect": [
+        165.6,
+        396.0,
+        302.4,
+        407.999
+      ],
+      "type": "text",
+      "description": "Line 9b: "
+    },
+    "f1_13_0": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].f1_13[0]",
+      "page": 1,
+      "rect": [
+        173.254,
+        384.001,
+        302.4,
+        396.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_13[0])"
+    },
+    "line_9c_a": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].c1_7[0]",
+      "page": 1,
+      "rect": [
+        294.4,
+        373.002,
+        302.4,
+        381.002
+      ],
+      "type": "checkbox",
+      "description": "Line 9c: "
+    },
+    "f1_14_0": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].LineJTable[0].Profit[0].f1_14[0]",
+      "page": 1,
+      "rect": [
+        79.2,
+        336.002,
+        180.0,
+        348.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_14[0])"
+    },
+    "f1_15_0": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].LineJTable[0].Profit[0].f1_15[0]",
+      "page": 1,
+      "rect": [
+        194.4,
+        336.002,
+        288.0,
+        348.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_15[0])"
+    },
+    "line_11_a": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].LineJTable[0].Loss[0].f1_16[0]",
+      "page": 1,
+      "rect": [
+        79.2,
+        324.003,
+        180.0,
+        336.002
+      ],
+      "type": "text",
+      "description": "Line 11: "
+    },
+    "line_11_b": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].LineJTable[0].Loss[0].f1_17[0]",
+      "page": 1,
+      "rect": [
+        194.4,
+        324.003,
+        288.0,
+        336.002
+      ],
+      "type": "text",
+      "description": "Line 11: "
+    },
+    "f1_18_0": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].LineJTable[0].Capital[0].f1_18[0]",
+      "page": 1,
+      "rect": [
+        79.2,
+        312.004,
+        180.0,
+        324.003
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_18[0])"
+    },
+    "f1_19_0": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].LineJTable[0].Capital[0].f1_19[0]",
+      "page": 1,
+      "rect": [
+        194.4,
+        312.004,
+        288.0,
+        324.003
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_19[0])"
+    },
+    "c1_8_0": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].c1_8[0]",
+      "page": 1,
+      "rect": [
+        57.6,
+        290.0,
+        65.6,
+        298.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c1_8[0])"
+    },
+    "c1_8_1": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].c1_8[1]",
+      "page": 1,
+      "rect": [
+        100.8,
+        290.0,
+        108.8,
+        298.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c1_8[1])"
+    },
+    "line_13_a": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].LineK1Table[0].LineK1Table[0].Nonrecourse[0].f1_20[0]",
+      "page": 1,
+      "rect": [
+        144.0,
+        252.003,
+        215.25,
+        264.002
+      ],
+      "type": "text",
+      "description": "Line 13: "
+    },
+    "line_13_b": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].LineK1Table[0].LineK1Table[0].Nonrecourse[0].f1_21[0]",
+      "page": 1,
+      "rect": [
+        230.4,
+        252.003,
+        302.4,
+        264.002
+      ],
+      "type": "text",
+      "description": "Line 13: "
+    },
+    "f1_22_0": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].LineK1Table[0].LineK1Table[0].QualifiedNonrecourse[0].f1_22[0]",
+      "page": 1,
+      "rect": [
+        144.0,
+        228.002,
+        215.25,
+        240.003
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_22[0])"
+    },
+    "f1_23_0": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].LineK1Table[0].LineK1Table[0].QualifiedNonrecourse[0].f1_23[0]",
+      "page": 1,
+      "rect": [
+        230.4,
+        228.002,
+        302.4,
+        240.003
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_23[0])"
+    },
+    "f1_24_0": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].LineK1Table[0].LineK1Table[0].Recourse[0].f1_24[0]",
+      "page": 1,
+      "rect": [
+        144.0,
+        216.003,
+        215.25,
+        228.002
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_24[0])"
+    },
+    "f1_25_0": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].LineK1Table[0].LineK1Table[0].Recourse[0].f1_25[0]",
+      "page": 1,
+      "rect": [
+        230.4,
+        216.003,
+        302.4,
+        228.002
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_25[0])"
+    },
+    "c1_9_0": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].LineK1Table[0].c1_9[0]",
+      "page": 1,
+      "rect": [
+        294.4,
+        205.501,
+        302.4,
+        213.501
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c1_9[0])"
+    },
+    "line_22_more_than_one_activity_for_a": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].LineK1Table[0].c1_10[0]",
+      "page": 1,
+      "rect": [
+        294.4,
+        183.751,
+        302.4,
+        191.751
+      ],
+      "type": "checkbox",
+      "description": "Line 22: More than one activity for"
+    },
+    "f1_26_0": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].LIneLTable[0].LineLTable[0].Row1[0].f1_26[0]",
+      "page": 1,
+      "rect": [
+        194.4,
+        156.002,
+        302.4,
+        168.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_26[0])"
+    },
+    "f1_27_0": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].LIneLTable[0].LineLTable[0].Row2[0].f1_27[0]",
+      "page": 1,
+      "rect": [
+        194.4,
+        144.003,
+        302.4,
+        156.002
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_27[0])"
+    },
+    "f1_28_0": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].LIneLTable[0].LineLTable[0].Row3[0].f1_28[0]",
+      "page": 1,
+      "rect": [
+        194.4,
+        132.004,
+        302.4,
+        144.003
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_28[0])"
+    },
+    "f1_29_0": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].LIneLTable[0].LineLTable[0].Row4[0].f1_29[0]",
+      "page": 1,
+      "rect": [
+        194.4,
+        120.005,
+        302.4,
+        132.004
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_29[0])"
+    },
+    "f1_30_0": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].LIneLTable[0].LineLTable[0].Row5[0].f1_30[0]",
+      "page": 1,
+      "rect": [
+        197.7,
+        108.006,
+        300.4,
+        120.005
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_30[0])"
+    },
+    "f1_31_0": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].LIneLTable[0].LineLTable[0].Row6[0].f1_31[0]",
+      "page": 1,
+      "rect": [
+        194.4,
+        96.007,
+        302.4,
+        108.006
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_31[0])"
+    },
+    "c1_11_0": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].c1_11[0]",
+      "page": 1,
+      "rect": [
+        57.6,
+        74.0,
+        65.6,
+        82.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c1_11[0])"
+    },
+    "c1_11_1": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].c1_11[1]",
+      "page": 1,
+      "rect": [
+        100.8,
+        74.0,
+        108.8,
+        82.0
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c1_11[1])"
+    },
+    "f1_32_0": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].LineN[0].f1_32[0]",
+      "page": 1,
+      "rect": [
+        194.4,
+        48.002,
+        302.4,
+        60.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_32[0])"
+    },
+    "f1_33_0": {
+      "id": "topmostSubform[0].Page1[0].LeftCol[0].LineN[0].f1_33[0]",
+      "page": 1,
+      "rect": [
+        194.4,
+        36.0,
+        302.4,
+        47.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_33[0])"
+    },
+    "f1_34_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol1[0].f1_34[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        695.999,
+        445.65,
+        710.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_34[0])"
+    },
+    "f1_35_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol1[0].f1_35[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        671.998,
+        445.65,
+        685.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_35[0])"
+    },
+    "f1_36_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol1[0].f1_36[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        648.0,
+        445.65,
+        662.078
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_36[0])"
+    },
+    "f1_37_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol1[0].f1_37[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        623.999,
+        445.65,
+        638.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_37[0])"
+    },
+    "f1_38_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol1[0].f1_38[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        599.998,
+        445.65,
+        613.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_38[0])"
+    },
+    "f1_39_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol1[0].f1_39[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        576.0,
+        445.65,
+        590.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_39[0])"
+    },
+    "f1_40_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol1[0].f1_40[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        551.999,
+        445.65,
+        566.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_40[0])"
+    },
+    "f1_41_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol1[0].f1_41[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        527.998,
+        445.65,
+        541.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_41[0])"
+    },
+    "f1_42_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol1[0].f1_42[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        504.0,
+        445.65,
+        518.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_42[0])"
+    },
+    "f1_43_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol1[0].f1_43[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        479.999,
+        445.65,
+        494.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_43[0])"
+    },
+    "f1_44_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol1[0].f1_44[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        455.998,
+        445.65,
+        469.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_44[0])"
+    },
+    "line_19": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol1[0].f1_45[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        432.0,
+        445.65,
+        446.001
+      ],
+      "type": "text",
+      "description": "Line 19: "
+    },
+    "f1_46_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol1[0].f1_46[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        407.999,
+        445.65,
+        422.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_46[0])"
+    },
+    "f1_47_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol1[0].f1_47[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        383.998,
+        445.65,
+        397.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_47[0])"
+    },
+    "f1_48_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol1[0].f1_48[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        360.0,
+        445.65,
+        374.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_48[0])"
+    },
+    "f1_49_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol1[0].f1_49[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        335.999,
+        445.65,
+        350.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_49[0])"
+    },
+    "f1_50_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol1[0].f1_50[0]",
+      "page": 1,
+      "rect": [
+        309.6,
+        311.998,
+        331.2,
+        325.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_50[0])"
+    },
+    "f1_51_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol1[0].f1_51[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        311.998,
+        445.65,
+        325.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_51[0])"
+    },
+    "f1_52_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol1[0].f1_52[0]",
+      "page": 1,
+      "rect": [
+        309.6,
+        288.0,
+        331.2,
+        312.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_52[0])"
+    },
+    "f1_53_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol1[0].f1_53[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        288.0,
+        445.65,
+        312.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_53[0])"
+    },
+    "f1_54_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol1[0].f1_54[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        263.999,
+        445.65,
+        278.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_54[0])"
+    },
+    "line13_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol1[0].Line13[0]",
+      "page": 1,
+      "rect": [
+        309.6,
+        239.998,
+        331.2,
+        253.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (Line13[0])"
+    },
+    "f1_55_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol1[0].f1_55[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        239.998,
+        445.65,
+        253.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_55[0])"
+    },
+    "f1_56_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol1[0].f1_56[0]",
+      "page": 1,
+      "rect": [
+        309.6,
+        216.0,
+        331.2,
+        240.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_56[0])"
+    },
+    "f1_57_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol1[0].f1_57[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        216.0,
+        445.65,
+        240.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_57[0])"
+    },
+    "f1_58_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol1[0].f1_58[0]",
+      "page": 1,
+      "rect": [
+        309.6,
+        191.999,
+        331.2,
+        216.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_58[0])"
+    },
+    "f1_59_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol1[0].f1_59[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        191.999,
+        445.65,
+        216.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_59[0])"
+    },
+    "line14_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].Line14[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        695.999,
+        468.0,
+        710.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (Line14[0])"
+    },
+    "f1_60_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].f1_60[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        695.999,
+        574.0,
+        710.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_60[0])"
+    },
+    "f1_61_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].f1_61[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        671.998,
+        468.0,
+        695.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_61[0])"
+    },
+    "f1_62_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].f1_62[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        671.998,
+        574.0,
+        695.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_62[0])"
+    },
+    "line15_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].Line15[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        648.0,
+        468.0,
+        662.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (Line15[0])"
+    },
+    "f1_63_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].f1_63[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        648.0,
+        574.0,
+        662.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_63[0])"
+    },
+    "line_4a_a": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].f1_64[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        623.999,
+        468.0,
+        648.0
+      ],
+      "type": "text",
+      "description": "Line 4a: "
+    },
+    "line_4a_b": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].f1_65[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        623.999,
+        574.0,
+        648.0
+      ],
+      "type": "text",
+      "description": "Line 4a: "
+    },
+    "c1_12_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].c1_12[0]",
+      "page": 1,
+      "rect": [
+        562.0,
+        603.501,
+        570.0,
+        611.501
+      ],
+      "type": "checkbox",
+      "description": "Unlabeled (c1_12[0])"
+    },
+    "line17_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].Line17[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        576.0,
+        468.0,
+        590.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (Line17[0])"
+    },
+    "f1_79_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].f1_79[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        576.0,
+        574.0,
+        590.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_79[0])"
+    },
+    "line_5_a": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].f1_80[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        551.999,
+        468.0,
+        576.0
+      ],
+      "type": "text",
+      "description": "Line 5: "
+    },
+    "line_5_b": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].f1_81[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        551.999,
+        574.0,
+        576.0
+      ],
+      "type": "text",
+      "description": "Line 5: "
+    },
+    "f1_82_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].f1_82[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        527.998,
+        468.0,
+        551.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_82[0])"
+    },
+    "f1_83_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].f1_83[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        527.998,
+        574.0,
+        551.999
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_83[0])"
+    },
+    "line_6c_a": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].Line18[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        492.001,
+        468.0,
+        504.001
+      ],
+      "type": "text",
+      "description": "Line 6c: "
+    },
+    "line_6c_b": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].f1_84[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        492.001,
+        574.0,
+        504.0
+      ],
+      "type": "text",
+      "description": "Line 6c: "
+    },
+    "line_7_b": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].f1_85[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        468.0,
+        468.0,
+        492.001
+      ],
+      "type": "text",
+      "description": "Line 7: "
+    },
+    "line_7_c": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].f1_86[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        468.0,
+        574.0,
+        492.001
+      ],
+      "type": "text",
+      "description": "Line 7: "
+    },
+    "line_8_c": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].f1_87[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        443.999,
+        468.0,
+        468.0
+      ],
+      "type": "text",
+      "description": "Line 8: "
+    },
+    "line_8_d": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].f1_88[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        443.999,
+        574.0,
+        468.0
+      ],
+      "type": "text",
+      "description": "Line 8: "
+    },
+    "line_9a_c": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].Line19[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        419.998,
+        468.0,
+        433.999
+      ],
+      "type": "text",
+      "description": "Line 9a: "
+    },
+    "line_9a_d": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].f1_89[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        419.998,
+        574.0,
+        433.999
+      ],
+      "type": "text",
+      "description": "Line 9a: "
+    },
+    "line_9b_c": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].f1_90[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        396.0,
+        468.0,
+        420.001
+      ],
+      "type": "text",
+      "description": "Line 9b: "
+    },
+    "line_9b_d": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].f1_91[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        396.0,
+        574.0,
+        420.001
+      ],
+      "type": "text",
+      "description": "Line 9b: "
+    },
+    "line_9c_b": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].Line20[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        360.0,
+        468.0,
+        386.0
+      ],
+      "type": "text",
+      "description": "Line 9c: "
+    },
+    "line_9c_c": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].f1_92[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        360.0,
+        574.0,
+        386.0
+      ],
+      "type": "text",
+      "description": "Line 9c: "
+    },
+    "line_10_a": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].f1_93[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        335.999,
+        468.0,
+        360.0
+      ],
+      "type": "text",
+      "description": "Line 10: "
+    },
+    "line_10_b": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].f1_94[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        335.999,
+        574.0,
+        360.0
+      ],
+      "type": "text",
+      "description": "Line 10: "
+    },
+    "line_11_c": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].f1_95[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        311.998,
+        468.0,
+        335.999
+      ],
+      "type": "text",
+      "description": "Line 11: "
+    },
+    "line_11_d": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].f1_96[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        311.998,
+        574.0,
+        335.999
+      ],
+      "type": "text",
+      "description": "Line 11: "
+    },
+    "f1_97_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].f1_97[0]",
+      "page": 1,
+      "rect": [
+        446.4,
+        288.0,
+        468.0,
+        312.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_97[0])"
+    },
+    "f1_98_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].f1_98[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        288.0,
+        574.0,
+        312.001
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_98[0])"
+    },
+    "f1_66_0": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].RightCol2[0].f1_66[0]",
+      "page": 1,
+      "rect": [
+        468.0,
+        263.999,
+        574.0,
+        278.0
+      ],
+      "type": "text",
+      "description": "Unlabeled (f1_66[0])"
+    },
+    "line_22_more_than_one_activity_for_b": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].c1_13[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        182.0,
+        339.2,
+        190.0
+      ],
+      "type": "checkbox",
+      "description": "Line 22: More than one activity for"
+    },
+    "line_23_more_than_one_activity_for": {
+      "id": "topmostSubform[0].Page1[0].RightCol[0].c1_14[0]",
+      "page": 1,
+      "rect": [
+        331.2,
+        170.001,
+        339.2,
+        178.001
+      ],
+      "type": "checkbox",
+      "description": "Line 23: More than one activity for"
+    }
+  }
+}

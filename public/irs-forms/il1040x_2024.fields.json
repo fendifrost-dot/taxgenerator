@@ -1,0 +1,1279 @@
+{
+  "form": "il1040x",
+  "year": 2024,
+  "pdfFilename": "il1040x_2024.pdf",
+  "fields": {
+    "Help": {
+      "id": "Help",
+      "page": 1,
+      "rect": [
+        59.9851,
+        776.7,
+        549.913,
+        790.577
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Help)"
+    },
+    "Your first name and initial": {
+      "id": "Your first name and initial",
+      "page": 1,
+      "rect": [
+        24.1863,
+        675.091,
+        189.718,
+        688.067
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Your first name and initial)"
+    },
+    "Your last name": {
+      "id": "Your last name",
+      "page": 1,
+      "rect": [
+        189.561,
+        673.971,
+        384.009,
+        687.912
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Your last name)"
+    },
+    "Year of birth": {
+      "id": "Year of birth",
+      "page": 1,
+      "rect": [
+        385.068,
+        673.758,
+        466.241,
+        688.66
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Year of birth)"
+    },
+    "Your social security number": {
+      "id": "Your social security number",
+      "page": 1,
+      "rect": [
+        466.729,
+        673.395,
+        586.724,
+        688.61
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Your social security number)"
+    },
+    "Your spouse's first name and initial": {
+      "id": "Your spouse's first name and initial",
+      "page": 1,
+      "rect": [
+        23.6784,
+        645.875,
+        190.654,
+        661.547
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Your spouse's first name and initial)"
+    },
+    "Your spouse's last name": {
+      "id": "Your spouse's last name",
+      "page": 1,
+      "rect": [
+        191.689,
+        646.906,
+        387.56,
+        661.932
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Your spouse's last name)"
+    },
+    "Spouse year of birth": {
+      "id": "Spouse year of birth",
+      "page": 1,
+      "rect": [
+        384.979,
+        646.424,
+        465.629,
+        661.712
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Spouse year of birth)"
+    },
+    "Your spouse's social security number": {
+      "id": "Your spouse's social security number",
+      "page": 1,
+      "rect": [
+        466.991,
+        645.845,
+        585.709,
+        661.969
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Your spouse's social security number)"
+    },
+    "Mailing address (See instructions if foreign address)": {
+      "id": "Mailing address (See instructions if foreign address)",
+      "page": 1,
+      "rect": [
+        25.219,
+        618.379,
+        241.468,
+        633.37
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Mailing address (See instructions if foreign address))"
+    },
+    "Apartment number": {
+      "id": "Apartment number",
+      "page": 1,
+      "rect": [
+        241.31,
+        617.994,
+        317.677,
+        633.37
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Apartment number)"
+    },
+    "City": {
+      "id": "City",
+      "page": 1,
+      "rect": [
+        318.254,
+        618.764,
+        442.927,
+        633.37
+      ],
+      "type": "text",
+      "description": "Auto-extracted (City)"
+    },
+    "State": {
+      "id": "State",
+      "page": 1,
+      "rect": [
+        442.499,
+        618.764,
+        508.384,
+        633.37
+      ],
+      "type": "text",
+      "description": "Auto-extracted (State)"
+    },
+    "ZIP or Postal Code": {
+      "id": "ZIP or Postal Code",
+      "page": 1,
+      "rect": [
+        506.444,
+        617.223,
+        587.742,
+        633.37
+      ],
+      "type": "text",
+      "description": "Auto-extracted (ZIP or Postal Code)"
+    },
+    "Foreign Nation, if not the United States": {
+      "id": "Foreign Nation, if not the United States",
+      "page": 1,
+      "rect": [
+        24.8508,
+        588.858,
+        243.394,
+        602.99
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Foreign Nation, if not the United States)"
+    },
+    "County, (Illinois only)": {
+      "id": "County, (Illinois only)",
+      "page": 1,
+      "rect": [
+        243.099,
+        588.72,
+        343.684,
+        602.467
+      ],
+      "type": "text",
+      "description": "Auto-extracted (County, (Illinois only))"
+    },
+    "Email Address": {
+      "id": "Email Address",
+      "page": 1,
+      "rect": [
+        344.079,
+        588.719,
+        587.834,
+        602.851
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Email Address)"
+    },
+    "SSN, name, or address change": {
+      "id": "SSN, name, or address change",
+      "page": 1,
+      "rect": [
+        555.385,
+        578.882,
+        563.446,
+        588.068
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (SSN, name, or address change)"
+    },
+    "Filing status": {
+      "id": "Filing status",
+      "page": 1,
+      "rect": [
+        410.612,
+        562.818,
+        418.282,
+        571.61
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (Filing status)"
+    },
+    "Check if someone can claim you as a dependent_ See instructions - You": {
+      "id": "Check if someone can claim you as a dependent. See instructions - You",
+      "page": 1,
+      "rect": [
+        417.468,
+        547.708,
+        426.301,
+        557.701
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (Check if someone can claim you as a dependent_ See instructions - You)"
+    },
+    "Check if someone can claim you as a dependent_ See instructions - Spouse": {
+      "id": "Check if someone can claim you as a dependent. See instructions - Spouse",
+      "page": 1,
+      "rect": [
+        453.177,
+        548.382,
+        462.446,
+        556.699
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (Check if someone can claim you as a dependent_ See instructions - Spouse)"
+    },
+    "Resident": {
+      "id": "Resident",
+      "page": 1,
+      "rect": [
+        401.618,
+        533.517,
+        410.449,
+        543.074
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (Resident)"
+    },
+    "Corrected federally adjusted gross income": {
+      "id": "Corrected federally adjusted gross income",
+      "page": 1,
+      "rect": [
+        502.169,
+        488.98,
+        576.36,
+        503.226
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected federally adjusted gross income)"
+    },
+    "Corrected federally tax-exempt": {
+      "id": "Corrected federally tax-exempt",
+      "page": 1,
+      "rect": [
+        502.169,
+        477.492,
+        576.36,
+        491.083
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected federally tax-exempt)"
+    },
+    "Corrected other additions": {
+      "id": "Corrected other additions",
+      "page": 1,
+      "rect": [
+        502.169,
+        468.005,
+        576.36,
+        481.924
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected other additions)"
+    },
+    "Corrected other income": {
+      "id": "Corrected other income",
+      "page": 1,
+      "rect": [
+        502.169,
+        456.518,
+        576.36,
+        469.128
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected other income)"
+    },
+    "Corrected Social Security benefits": {
+      "id": "Corrected Social Security benefits",
+      "page": 1,
+      "rect": [
+        502.169,
+        420.648,
+        576.36,
+        431.948
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected Social Security benefits)"
+    },
+    "Corrected Illinois Income Tax": {
+      "id": "Corrected Illinois Income Tax",
+      "page": 1,
+      "rect": [
+        502.169,
+        399.596,
+        576.36,
+        410.242
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected Illinois Income Tax)"
+    },
+    "Corrected other subtractions": {
+      "id": "Corrected other subtractions",
+      "page": 1,
+      "rect": [
+        502.169,
+        388.073,
+        576.36,
+        398.719
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected other subtractions)"
+    },
+    "Corrected total subtractions": {
+      "id": "Corrected total subtractions",
+      "page": 1,
+      "rect": [
+        502.169,
+        376.551,
+        576.36,
+        387.197
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected total subtractions)"
+    },
+    "Corrected Illinois base income": {
+      "id": "Corrected Illinois base income",
+      "page": 1,
+      "rect": [
+        502.169,
+        366.028,
+        576.36,
+        376.674
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected Illinois base income)"
+    },
+    "Corrected exemption amount": {
+      "id": "Corrected exemption amount",
+      "page": 1,
+      "rect": [
+        502.169,
+        337.454,
+        576.36,
+        351.181
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected exemption amount)"
+    },
+    "Corrected 65 or older - you": {
+      "id": "Corrected 65 or older - you",
+      "page": 1,
+      "rect": [
+        160.488,
+        328.445,
+        170.085,
+        337.482
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (Corrected 65 or older - you)"
+    },
+    "Corrected 65 or older - spouse": {
+      "id": "Corrected 65 or older - spouse",
+      "page": 1,
+      "rect": [
+        209.088,
+        328.609,
+        217.049,
+        337.646
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (Corrected 65 or older - spouse)"
+    },
+    "Corrected number of persons who are 65 or older": {
+      "id": "Corrected number of persons who are 65 or older",
+      "page": 1,
+      "rect": [
+        503.081,
+        327.19,
+        577.272,
+        339.762
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected number of persons who are 65 or older)"
+    },
+    "Corrected Legally blind - you": {
+      "id": "Corrected Legally blind - you",
+      "page": 1,
+      "rect": [
+        160.488,
+        316.133,
+        170.085,
+        326.043
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (Corrected Legally blind - you)"
+    },
+    "Corrected Legally blind - spouse": {
+      "id": "Corrected Legally blind - spouse",
+      "page": 1,
+      "rect": [
+        208.434,
+        316.334,
+        217.049,
+        325.406
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (Corrected Legally blind - spouse)"
+    },
+    "Corrected number of people who are legally blind": {
+      "id": "Corrected number of people who are legally blind",
+      "page": 1,
+      "rect": [
+        502.311,
+        316.213,
+        576.502,
+        328.015
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected number of people who are legally blind)"
+    },
+    "Corrrected number of claimed dependents": {
+      "id": "Corrrected number of claimed dependents",
+      "page": 1,
+      "rect": [
+        502.696,
+        306.793,
+        576.887,
+        318.98
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrrected number of claimed dependents)"
+    },
+    "Corrected exemption allowance": {
+      "id": "Corrected exemption allowance",
+      "page": 1,
+      "rect": [
+        502.169,
+        294.211,
+        576.36,
+        306.783
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected exemption allowance)"
+    },
+    "Corrected Illinois net income": {
+      "id": "Corrected Illinois net income",
+      "page": 1,
+      "rect": [
+        502.169,
+        246.255,
+        576.36,
+        258.056
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected Illinois net income)"
+    },
+    "Corrected residents calculation": {
+      "id": "Corrected residents calculation",
+      "page": 1,
+      "rect": [
+        502.169,
+        225.465,
+        576.36,
+        236.111
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected residents calculation)"
+    },
+    "Corrected recapture of investment tax credits": {
+      "id": "Corrected recapture of investment tax credits",
+      "page": 1,
+      "rect": [
+        502.169,
+        213.664,
+        576.36,
+        224.31
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected recapture of investment tax credits)"
+    },
+    "Corrected income tax": {
+      "id": "Corrected income tax",
+      "page": 1,
+      "rect": [
+        502.169,
+        202.865,
+        576.36,
+        213.511
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected income tax)"
+    },
+    "Corrected credit from Schedule CR": {
+      "id": "Corrected credit from Schedule CR",
+      "page": 1,
+      "rect": [
+        502.554,
+        174.812,
+        576.745,
+        185.458
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected credit from Schedule CR)"
+    },
+    "Corrected Schedule ICR": {
+      "id": "Corrected Schedule ICR",
+      "page": 1,
+      "rect": [
+        502.554,
+        153.212,
+        576.745,
+        163.858
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected Schedule ICR)"
+    },
+    "Corrected credit from Schedule 1299-C": {
+      "id": "Corrected credit from Schedule 1299-C",
+      "page": 1,
+      "rect": [
+        502.554,
+        141.758,
+        576.745,
+        152.404
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected credit from Schedule 1299-C)"
+    },
+    "Corrected nonrefundable credits": {
+      "id": "Corrected nonrefundable credits",
+      "page": 1,
+      "rect": [
+        502.554,
+        131.63,
+        576.745,
+        142.276
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected nonrefundable credits)"
+    },
+    "Corrected tax after nonrefundable credits": {
+      "id": "Corrected tax after nonrefundable credits",
+      "page": 1,
+      "rect": [
+        502.554,
+        120.503,
+        576.745,
+        131.149
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected tax after nonrefundable credits)"
+    },
+    "Corrected household employment tax": {
+      "id": "Corrected household employment tax",
+      "page": 1,
+      "rect": [
+        502.717,
+        94.6705,
+        575.599,
+        106.061
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected household employment tax)"
+    },
+    "Corrected use tax": {
+      "id": "Corrected use tax",
+      "page": 1,
+      "rect": [
+        499.636,
+        73.1545,
+        573.827,
+        84.5446
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected use tax)"
+    },
+    "Corrected Compassionate Use of Medical Cannabis Program Act": {
+      "id": "Corrected Compassionate Use of Medical Cannabis Program Act",
+      "page": 1,
+      "rect": [
+        499.636,
+        61.1906,
+        573.827,
+        72.5806
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected Compassionate Use of Medical Cannabis Program Act)"
+    },
+    "Corrected total tax": {
+      "id": "Corrected total tax",
+      "page": 1,
+      "rect": [
+        499.636,
+        51.2065,
+        573.827,
+        62.5966
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected total tax)"
+    },
+    "Correted total tax from Line 23": {
+      "id": "Correted total tax from Line 23",
+      "page": 2,
+      "rect": [
+        498.426,
+        730.104,
+        572.617,
+        741.494
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Correted total tax from Line 23)"
+    },
+    "Corrected Illinois Income Tax withheld": {
+      "id": "Corrected Illinois Income Tax withheld",
+      "page": 2,
+      "rect": [
+        499.213,
+        703.167,
+        573.404,
+        714.557
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected Illinois Income Tax withheld)"
+    },
+    "Corrected estimated payments": {
+      "id": "Corrected estimated payments",
+      "page": 2,
+      "rect": [
+        498.058,
+        680.969,
+        572.249,
+        692.359
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected estimated payments)"
+    },
+    "Corrected pass-through withholding": {
+      "id": "Corrected pass-through withholding",
+      "page": 2,
+      "rect": [
+        498.058,
+        669.497,
+        572.249,
+        680.887
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected pass-through withholding)"
+    },
+    "Corrected pass-through entity tax credit": {
+      "id": "Corrected pass-through entity tax credit",
+      "page": 2,
+      "rect": [
+        498.058,
+        659.002,
+        572.249,
+        670.392
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected pass-through entity tax credit)"
+    },
+    "Corrected Earned Income Tax Credit": {
+      "id": "Corrected Earned Income Tax Credit",
+      "page": 2,
+      "rect": [
+        498.844,
+        646.495,
+        573.035,
+        657.885
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected Earned Income Tax Credit)"
+    },
+    "Corrected Child Tax credit from Schedule IL-E/EITC": {
+      "id": "Corrected Child Tax credit from Schedule IL-E/EITC",
+      "page": 2,
+      "rect": [
+        499.614,
+        635.325,
+        573.805,
+        646.715
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected Child Tax credit from Schedule IL-E/EITC)"
+    },
+    "Corrected total amount paid": {
+      "id": "Corrected total amount paid",
+      "page": 2,
+      "rect": [
+        501.155,
+        626.014,
+        575.346,
+        637.404
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected total amount paid)"
+    },
+    "Corrected total payments and refundable credit": {
+      "id": "Corrected total payments and refundable credit",
+      "page": 2,
+      "rect": [
+        501.155,
+        615.364,
+        575.346,
+        626.754
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected total payments and refundable credit)"
+    },
+    "Correct if Line 32 is greater": {
+      "id": "Correct if Line 32 is greater",
+      "page": 2,
+      "rect": [
+        500.753,
+        589.109,
+        574.945,
+        600.499
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Correct if Line 32 is greater)"
+    },
+    "Corrected if Line 24 is greater": {
+      "id": "Corrected if Line 24 is greater",
+      "page": 2,
+      "rect": [
+        500.753,
+        577.611,
+        574.945,
+        589.001
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected if Line 24 is greater)"
+    },
+    "Corrected overpayment, if any, as shown": {
+      "id": "Corrected overpayment, if any, as shown",
+      "page": 2,
+      "rect": [
+        499.598,
+        538.963,
+        573.789,
+        550.353
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected overpayment, if any, as shown)"
+    },
+    "Corrected overpayment": {
+      "id": "Corrected overpayment",
+      "page": 2,
+      "rect": [
+        499.598,
+        527.422,
+        573.789,
+        538.812
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected overpayment)"
+    },
+    "Corrected amount from Line 36": {
+      "id": "Corrected amount from Line 36",
+      "page": 2,
+      "rect": [
+        499.598,
+        516.323,
+        573.789,
+        528.484
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected amount from Line 36)"
+    },
+    "Refund method": {
+      "id": "Refund method",
+      "page": 2,
+      "rect": [
+        82.3634,
+        448.814,
+        91.4021,
+        457.214
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (Refund method)"
+    },
+    "Routing number": {
+      "id": "Routing number",
+      "page": 2,
+      "rect": [
+        151.312,
+        482.017,
+        287.073,
+        497.572
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Routing number)"
+    },
+    "Checking/Savings account": {
+      "id": "Checking/Savings account",
+      "page": 2,
+      "rect": [
+        377.543,
+        482.846,
+        391.779,
+        497.528
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (Checking/Savings account)"
+    },
+    "Account number": {
+      "id": "Account number",
+      "page": 2,
+      "rect": [
+        151.312,
+        465.061,
+        406.874,
+        479.961
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Account number)"
+    },
+    "Corrected Subtract Line 38": {
+      "id": "Corrected Subtract Line 38",
+      "page": 2,
+      "rect": [
+        499.213,
+        437.966,
+        572.896,
+        449.356
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected Subtract Line 38)"
+    },
+    "Corrected amount you owe": {
+      "id": "Corrected amount you owe",
+      "page": 2,
+      "rect": [
+        500.368,
+        404.275,
+        574.051,
+        415.665
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Corrected amount you owe)"
+    },
+    "Federal change accepted on": {
+      "id": "Federal change accepted on",
+      "page": 2,
+      "rect": [
+        58.3502,
+        364.708,
+        68.6265,
+        374.995
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (Federal change accepted on)"
+    },
+    "Federal change accepted month": {
+      "id": "Federal change accepted month",
+      "page": 2,
+      "rect": [
+        203.116,
+        364.739,
+        218.775,
+        378.675
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Federal change accepted month)"
+    },
+    "Federal change accepted day": {
+      "id": "Federal change accepted day",
+      "page": 2,
+      "rect": [
+        223.262,
+        365.216,
+        238.921,
+        379.152
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Federal change accepted day)"
+    },
+    "Federal change accepted year": {
+      "id": "Federal change accepted year",
+      "page": 2,
+      "rect": [
+        243.29,
+        364.446,
+        267.037,
+        378.382
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Federal change accepted year)"
+    },
+    "NOL accepted on": {
+      "id": "NOL accepted on",
+      "page": 2,
+      "rect": [
+        290.105,
+        363.656,
+        300.6,
+        374.163
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (NOL accepted on)"
+    },
+    "NOL change accepted month": {
+      "id": "NOL change accepted month",
+      "page": 2,
+      "rect": [
+        390.552,
+        364.739,
+        406.21,
+        378.675
+      ],
+      "type": "text",
+      "description": "Auto-extracted (NOL change accepted month)"
+    },
+    "NOL change accepted day": {
+      "id": "NOL change accepted day",
+      "page": 2,
+      "rect": [
+        410.698,
+        365.216,
+        426.356,
+        379.152
+      ],
+      "type": "text",
+      "description": "Auto-extracted (NOL change accepted day)"
+    },
+    "NOL change accepted year": {
+      "id": "NOL change accepted year",
+      "page": 2,
+      "rect": [
+        434.577,
+        364.446,
+        458.324,
+        378.382
+      ],
+      "type": "text",
+      "description": "Auto-extracted (NOL change accepted year)"
+    },
+    "State change": {
+      "id": "State change",
+      "page": 2,
+      "rect": [
+        471.323,
+        364.438,
+        480.291,
+        374.798
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (State change)"
+    },
+    "Original file month": {
+      "id": "Original file month",
+      "page": 2,
+      "rect": [
+        468.738,
+        343.364,
+        484.397,
+        357.3
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Original file month)"
+    },
+    "Original file day": {
+      "id": "Original file day",
+      "page": 2,
+      "rect": [
+        502.749,
+        342.877,
+        518.407,
+        356.813
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Original file day)"
+    },
+    "Original file year": {
+      "id": "Original file year",
+      "page": 2,
+      "rect": [
+        530.096,
+        343.647,
+        553.842,
+        357.583
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Original file year)"
+    },
+    "Check Box21": {
+      "id": "Check Box21",
+      "page": 2,
+      "rect": [
+        544.356,
+        321.881,
+        554.415,
+        332.459
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (Check Box21)"
+    },
+    "Explain": {
+      "id": "Explain",
+      "page": 2,
+      "rect": [
+        32.3295,
+        238.029,
+        585.512,
+        308.712
+      ],
+      "type": "text",
+      "description": "Auto-extracted (Explain)"
+    },
+    "YourSignatureDate": {
+      "id": "YourSignatureDate",
+      "page": 2,
+      "rect": [
+        188.723,
+        161.656,
+        256.3,
+        176.239
+      ],
+      "type": "text",
+      "description": "Auto-extracted (YourSignatureDate)"
+    },
+    "SpouseSignatureDate": {
+      "id": "SpouseSignatureDate",
+      "page": 2,
+      "rect": [
+        383.605,
+        161.656,
+        459.331,
+        177.01
+      ],
+      "type": "text",
+      "description": "Auto-extracted (SpouseSignatureDate)"
+    },
+    "DaytimeAreaCode": {
+      "id": "DaytimeAreaCode",
+      "page": 2,
+      "rect": [
+        464.99,
+        161.656,
+        485.395,
+        175.084
+      ],
+      "type": "text",
+      "description": "Auto-extracted (DaytimeAreaCode)"
+    },
+    "DaytimePhoneNumber": {
+      "id": "DaytimePhoneNumber",
+      "page": 2,
+      "rect": [
+        489.605,
+        161.656,
+        588.377,
+        175.469
+      ],
+      "type": "text",
+      "description": "Auto-extracted (DaytimePhoneNumber)"
+    },
+    "PreparerName": {
+      "id": "PreparerName",
+      "page": 2,
+      "rect": [
+        71.0833,
+        132.518,
+        252.992,
+        148.257
+      ],
+      "type": "text",
+      "description": "Auto-extracted (PreparerName)"
+    },
+    "PreparerSignatureDate": {
+      "id": "PreparerSignatureDate",
+      "page": 2,
+      "rect": [
+        385.916,
+        132.717,
+        456.635,
+        146.145
+      ],
+      "type": "text",
+      "description": "Auto-extracted (PreparerSignatureDate)"
+    },
+    "CheckBoxSelfEmployed": {
+      "id": "CheckBoxSelfEmployed",
+      "page": 2,
+      "rect": [
+        461.606,
+        146.821,
+        472.272,
+        158.368
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (CheckBoxSelfEmployed)"
+    },
+    "PreparerPTIN": {
+      "id": "PreparerPTIN",
+      "page": 2,
+      "rect": [
+        513.154,
+        133.071,
+        586.909,
+        146.884
+      ],
+      "type": "text",
+      "description": "Auto-extracted (PreparerPTIN)"
+    },
+    "PreparerFirmName": {
+      "id": "PreparerFirmName",
+      "page": 2,
+      "rect": [
+        144.909,
+        117.046,
+        384.291,
+        134.326
+      ],
+      "type": "text",
+      "description": "Auto-extracted (PreparerFirmName)"
+    },
+    "PreparerFirmFEIN": {
+      "id": "PreparerFirmFEIN",
+      "page": 2,
+      "rect": [
+        458.116,
+        118.758,
+        589.532,
+        132.571
+      ],
+      "type": "text",
+      "description": "Auto-extracted (PreparerFirmFEIN)"
+    },
+    "PreparerFirmAddress": {
+      "id": "PreparerFirmAddress",
+      "page": 2,
+      "rect": [
+        146.064,
+        103.181,
+        383.905,
+        118.535
+      ],
+      "type": "text",
+      "description": "Auto-extracted (PreparerFirmAddress)"
+    },
+    "PreparerFirmAreaCode": {
+      "id": "PreparerFirmAreaCode",
+      "page": 2,
+      "rect": [
+        465.689,
+        104.404,
+        486.094,
+        117.832
+      ],
+      "type": "text",
+      "description": "Auto-extracted (PreparerFirmAreaCode)"
+    },
+    "PreparerFirmPhoneNumber": {
+      "id": "PreparerFirmPhoneNumber",
+      "page": 2,
+      "rect": [
+        490.15,
+        104.404,
+        589.147,
+        117.832
+      ],
+      "type": "text",
+      "description": "Auto-extracted (PreparerFirmPhoneNumber)"
+    },
+    "ThirdPartyName": {
+      "id": "ThirdPartyName",
+      "page": 2,
+      "rect": [
+        69.1575,
+        65.5507,
+        301.071,
+        83.6006
+      ],
+      "type": "text",
+      "description": "Auto-extracted (ThirdPartyName)"
+    },
+    "ThirdPartyAreaCode": {
+      "id": "ThirdPartyAreaCode",
+      "page": 2,
+      "rect": [
+        307.571,
+        67.8616,
+        327.977,
+        81.2897
+      ],
+      "type": "text",
+      "description": "Auto-extracted (ThirdPartyAreaCode)"
+    },
+    "ThirdPartyPhoneNumber": {
+      "id": "ThirdPartyPhoneNumber",
+      "page": 2,
+      "rect": [
+        331.952,
+        67.8616,
+        456.9,
+        81.2897
+      ],
+      "type": "text",
+      "description": "Auto-extracted (ThirdPartyPhoneNumber)"
+    },
+    "Check if the department": {
+      "id": "Check if the department",
+      "page": 2,
+      "rect": [
+        459.646,
+        90.026,
+        471.082,
+        101.572
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (Check if the department)"
+    },
+    "Reset": {
+      "id": "Reset",
+      "page": 2,
+      "rect": [
+        235.257,
+        7.58629,
+        298.763,
+        29.553
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (Reset)"
+    },
+    "Print": {
+      "id": "Print",
+      "page": 2,
+      "rect": [
+        311.107,
+        7.58629,
+        374.613,
+        29.553
+      ],
+      "type": "checkbox",
+      "description": "Auto-extracted (Print)"
+    }
+  }
+}
