@@ -46,6 +46,10 @@ def _identity_from_config(cfg):
         'NAICS_CODE':     sc.get('naics_code', ''),
         'MADE_PAYMENTS_1099': sc.get('made_payments_requiring_1099', 'yes'),
         'FILED_1099S':    sc.get('filed_required_1099s', 'no'),
+        # Schedule C questions F and G were drawn as "Cash" / "Yes" no matter
+        # what the config said.
+        'ACCOUNTING_METHOD': sc.get('accounting_method', 'cash'),
+        'MATERIAL_PARTICIPATION': sc.get('material_participation', 'yes'),
     }
 
 
@@ -76,24 +80,30 @@ def _build_d(computed):
         'net_profit':      computed['net_profit'],
         'total_expenses':  sc.get('L28_total_expenses', 0) if sc else 0,
         'partV_total':     sc.get('part_v_total', 0) if sc else 0,
-        # Individual expense lines (legacy d-dict keys for fill_1040sc)
-        'adv':            expenses.get('L8_advertising', 0),
-        'contractLabor':  expenses.get('L11_contract_labor', 0),
-        'depreciation':   expenses.get('L13_depreciation', 0),
-        'insurance':      expenses.get('L15_insurance', 0),
-        'legalProf':      expenses.get('L17_legal_professional', 0),
-        'rent':           expenses.get('L20b_rent_other', 0),
-        'supplies':       expenses.get('L22_supplies', 0),
-        'travel':         expenses.get('L24a_travel', 0),
-        'meals50':        expenses.get('L24b_meals_50pct', 0),
-        'utilities':      expenses.get('L25_utilities', 0),
-        # Part V items (for fill_1040sc page 2)
-        'partV_software':   _find_partv(sc, 'software'),
-        'partV_education':  _find_partv(sc, 'education'),
-        'partV_mailbox_az': _find_partv(sc, 'mailbox az'),
-        'partV_mailbox_il': _find_partv(sc, 'mailbox il'),
-        'partV_domain':     _find_partv(sc, 'domain'),
-        'partV_misc':       _find_partv(sc, 'misc'),
+        # Every computed Part II line, passed straight through. This used to be
+        # a hand-picked subset of ten keys — the lines Pasta Pals happened to
+        # use — so any other line a client claimed was silently dropped from
+        # the printed form while still counting in line 28.
+        'sch_c_expenses':  dict(expenses),
+        # Part I income lines, so lines 2-6 are the client's own figures
+        # rather than hard-coded zeros.
+        'sch_c_income': {
+            'gross_receipts':     sc.get('gross_receipts', 0) if sc else 0,
+            'returns_allowances': sc.get('returns_allowances', 0) if sc else 0,
+            'L3_subtract':        sc.get('L3_subtract', 0) if sc else 0,
+            'cogs':               sc.get('cogs', 0) if sc else 0,
+            'L5_gross_profit':    sc.get('L5_gross_profit', 0) if sc else 0,
+            'L6_other_income':    sc.get('L6_other_income', 0) if sc else 0,
+            'L7_gross_income':    sc.get('L7_gross_income', 0) if sc else 0,
+        },
+        # Line 29 and line 31 differ once home-office expense is claimed.
+        'tentative_profit': sc.get('L29_tentative_profit', 0) if sc else 0,
+        'home_office':      sc.get('L30_home_office', 0) if sc else 0,
+        # Part V items verbatim (description + amount), not matched by keyword
+        # against Pasta Pals' category names.
+        'partV_items':     list(sc.get('part_v_items', []) or []),
+        # Part IV vehicle answers.
+        'vehicle':         sc.get('vehicle') or {},
         # Schedule SE / 8959
         'se_earn':       computed['se_earn'],
         'ss_tax':        computed['ss_tax'],
@@ -113,16 +123,6 @@ def _build_d(computed):
     }
 
 
-def _find_partv(sc, keyword):
-    """Find the amount of a Part V item whose description contains `keyword`."""
-    if not sc:
-        return 0
-    for it in sc.get('part_v_items', []):
-        if keyword.lower() in (it.get('description', '').lower()):
-            return it.get('amount', 0)
-    return 0
-
-
 def generate_packet(cfg, year):
     """Generate the federal packet PDF bytes for a client config + tax year.
 
@@ -130,6 +130,7 @@ def generate_packet(cfg, year):
     # Lazy imports because fill_pasta_pals_python loads PDFs
     import fill_pasta_pals_python as fpp
     from .compute import compute_individual_return
+    from .reconcile import reconcile
 
     computed = compute_individual_return(cfg, year)
     d = _build_d(computed)
@@ -166,16 +167,21 @@ def generate_packet(cfg, year):
         else:
             pkt_1040 = fpp.fill_1040(d)
 
-        parts = [
-            pkt_1040,
-            fpp.fill_1040s1(d),
-            fpp.fill_1040s2(d),
-            fpp.fill_1040sc(d),
-            fpp.fill_1040sse(d),
-            fpp.fill_8959(d),
+        named = [
+            ('1040', pkt_1040),
+            ('1040s1', fpp.fill_1040s1(d)),
+            ('1040s2', fpp.fill_1040s2(d)),
+            ('1040sc', fpp.fill_1040sc(d)),
+            ('1040sse', fpp.fill_1040sse(d)),
+            ('8959', fpp.fill_8959(d)),
         ]
-        merged = fpp.merge_pdfs(parts)
-        return merged
+        # Gate: read the pages back and prove they print the computed return.
+        # Raises ReconcileError, so no caller can write a packet that does not
+        # reconcile.
+        report = reconcile(named, computed, year,
+                           label=cfg.get('display_name') or cfg['client_id'])
+        merged = fpp.merge_pdfs([pdf for _, pdf in named])
+        return merged, report
     finally:
         _restore_identity(fpp, saved)
 
@@ -192,6 +198,7 @@ def generate_amendment_packet(original_cfg, amended_cfg, year):
     import fill_pasta_pals_python as fpp
     from fill_1040x_2024 import fill_1040x_2024
     from .compute import compute_amendment
+    from .reconcile import reconcile
 
     if year != 2024:
         raise ValueError(
@@ -227,19 +234,116 @@ def generate_amendment_packet(original_cfg, amended_cfg, year):
     fpp_identity = _identity_from_config(amended_cfg)
     saved = _set_identity(fpp, fpp_identity)
     try:
-        parts = [pkt_1040x]
+        named = [('1040x', pkt_1040x)]
         # Schedule 1 (business income) and Schedule 2 (SE / other taxes) changed.
-        parts.append(fpp.fill_1040s1(d))
-        parts.append(fpp.fill_1040s2(d))
+        named.append(('1040s1', fpp.fill_1040s1(d)))
+        named.append(('1040s2', fpp.fill_1040s2(d)))
         # Schedule C and Schedule SE — net profit was corrected.
-        parts.append(fpp.fill_1040sc(d))
-        parts.append(fpp.fill_1040sse(d))
+        named.append(('1040sc', fpp.fill_1040sc(d)))
+        named.append(('1040sse', fpp.fill_1040sse(d)))
         # Form 8959 only when additional Medicare tax actually applies.
         if corrected.get('addl_med', 0) > 0:
-            parts.append(fpp.fill_8959(d))
-        return fpp.merge_pdfs(parts)
+            named.append(('8959', fpp.fill_8959(d)))
+
+        report = reconcile(
+            named, corrected, year,
+            label=(amended_cfg.get('display_name')
+                   or amended_cfg['client_id']) + ' 1040-X')
+        report += _amendment_column_c_report(model, corrected, pkt_1040x)
+        merged = fpp.merge_pdfs([pdf for _, pdf in named])
+        return merged, report
     finally:
         _restore_identity(fpp, saved)
+
+
+def _amendment_column_c_report(model, corrected, pdf_1040x):
+    """Read Form 1040-X's three money columns back and check them.
+
+    Column C is what the IRS keys in, so a disagreement between the 1040-X and
+    the corrected schedules behind it is the one error the schedules alone
+    cannot reveal. Column B must also be C − A, since that is the arithmetic
+    the service centre re-performs.
+    """
+    import io
+    import pdfplumber
+    from fill_1040x_2024 import GRID_LEAVES
+    import fill_pasta_pals_python as fpp
+    from .reconcile import Finding, ReconcileError, parse_money, read_rect
+
+    fields = fpp.load_fields('1040x', 2024)
+    findings = []
+    out = ['', 'Form 1040-X — columns read back from the printed page:', '',
+           f'  {"line":<5} {"A as filed":>12} {"B change":>12} '
+           f'{"C corrected":>12}  {"model C":>12}  status']
+    out.append(f'  {"-"*5} {"-"*12} {"-"*12} {"-"*12}  {"-"*12}  ------')
+
+    with pdfplumber.open(io.BytesIO(pdf_1040x)) as doc:
+        page = doc.pages[0]
+        for ln in model['lines']:
+            leaves = GRID_LEAVES.get(ln['line'])
+            if not leaves:
+                continue
+            got = []
+            for leaf in leaves:
+                if leaf is None or leaf not in fields:
+                    got.append(None)
+                    continue
+                got.append(parse_money(read_rect(page, fields[leaf]['rect'])))
+            a, b, c = got
+            want_c = ln['c']
+            status = 'ok'
+
+            if want_c is None:
+                if c not in (None, 0):
+                    status = 'FAIL'
+                    findings.append(Finding(
+                        'placed', '1040x 2024',
+                        f'line {ln["line"]} column C should be blank but '
+                        f'reads {c:,}'))
+            elif c != want_c:
+                status = 'FAIL'
+                findings.append(Finding(
+                    'placed', '1040x 2024',
+                    f'line {ln["line"]} ({ln["label"]}) column C should print '
+                    f'{want_c:,} but reads {c if c is not None else "<blank>"}'))
+
+            # B must equal C − A wherever all three printed.
+            if None not in (a, b, c) and ln['b'] is not None and b != c - a:
+                status = 'FAIL'
+                findings.append(Finding(
+                    'math', '1040x 2024',
+                    f'line {ln["line"]} column B reads {b:,} but column C '
+                    f'{c:,} − column A {a:,} = {c - a:,}'))
+
+            def show(v):
+                return f'{v:,}' if isinstance(v, int) else '(blank)'
+
+            out.append(f'  {ln["line"]:<5} {show(a):>12} {show(b):>12} '
+                       f'{show(c):>12}  {show(want_c):>12}  {status}')
+
+    out.append('')
+    # Tie the 1040-X back to the schedules behind it.
+    ties = [('line 1 (AGI)', 'agi'), ('line 5 (taxable income)', 'taxable'),
+            ('line 11 (total tax)', 'total_tax')]
+    by_line = {l['line']: l for l in model['lines']}
+    key_for = {'line 1 (AGI)': '1', 'line 5 (taxable income)': '5',
+               'line 11 (total tax)': '11'}
+    out.append('Column C vs the corrected computed return:')
+    for label, computed_key in ties:
+        want = corrected.get(computed_key)
+        col_c = by_line.get(key_for[label], {}).get('c')
+        status = 'ok' if col_c == want else 'FAIL'
+        out.append(f'  - {label}: column C {col_c} vs computed {want}  {status}')
+        if status == 'FAIL':
+            findings.append(Finding(
+                'math', '1040x 2024',
+                f'column C {label} is {col_c} but the corrected return '
+                f'computes {want}'))
+    out.append('')
+
+    if findings:
+        raise ReconcileError(findings, '\n'.join(out))
+    return '\n'.join(out)
 
 
 def _set_identity_module(mod_name, identity):
