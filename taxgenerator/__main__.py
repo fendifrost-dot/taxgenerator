@@ -6,6 +6,18 @@ from pathlib import Path
 from .config import load_client, ConfigError
 from .forms import (generate_packet, generate_amendment_packet,
                     generate_il_amendment_packet)
+from .reconcile import ReconcileError
+
+
+def _write_print_check(out_dir, client_id, year, suffix, report):
+    """Save the computed-vs-printed report next to the packet.
+
+    Written whether the gate passed or failed: on failure it is the only
+    record of what went wrong, and no PDF is produced.
+    """
+    path = out_dir / f'{client_id}_{year}{suffix}_print_check.txt'
+    path.write_text(report)
+    return path
 
 
 def main(argv=None):
@@ -61,10 +73,25 @@ def main(argv=None):
         print(f"Original config: {args.original}")
 
         if args.state == 'IL':
+            # IL-1040-X has no reconciliation rules yet (federal forms first).
             pdf_bytes = generate_il_amendment_packet(original_cfg, cfg, args.year)
             default_fname = f"{cfg['client_id']}_{args.year}_IL1040X.pdf"
         else:
-            pdf_bytes = generate_amendment_packet(original_cfg, cfg, args.year)
+            try:
+                pdf_bytes, report = generate_amendment_packet(
+                    original_cfg, cfg, args.year)
+            except ReconcileError as e:
+                path = _write_print_check(out_dir, cfg['client_id'], args.year,
+                                          '_1040X', e.report)
+                print(f"\nRECONCILIATION FAILED — {len(e.findings)} finding(s). "
+                      f"No packet written.", file=sys.stderr)
+                for f in e.findings:
+                    print(f"  {f}", file=sys.stderr)
+                print(f"\nPrint check: {path}", file=sys.stderr)
+                return 1
+            path = _write_print_check(out_dir, cfg['client_id'], args.year,
+                                      '_1040X', report)
+            print(f"Print check: {path}")
             default_fname = f"{cfg['client_id']}_{args.year}_1040X.pdf"
 
         fname = args.filename or default_fname
@@ -78,7 +105,19 @@ def main(argv=None):
           f"(filing status: {cfg['filer']['filing_status']})")
     print(f"Tax year: {args.year}")
 
-    pdf_bytes = generate_packet(cfg, args.year)
+    try:
+        pdf_bytes, report = generate_packet(cfg, args.year)
+    except ReconcileError as e:
+        path = _write_print_check(out_dir, cfg['client_id'], args.year, '', e.report)
+        print(f"\nRECONCILIATION FAILED — {len(e.findings)} finding(s). "
+              f"No packet written.", file=sys.stderr)
+        for f in e.findings:
+            print(f"  {f}", file=sys.stderr)
+        print(f"\nPrint check: {path}", file=sys.stderr)
+        return 1
+
+    path = _write_print_check(out_dir, cfg['client_id'], args.year, '', report)
+    print(f"Print check: {path}")
 
     fname = args.filename or f"{cfg['client_id']}_{args.year}_RETURN.pdf"
     out_path = out_dir / fname
