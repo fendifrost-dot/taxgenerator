@@ -46,6 +46,10 @@ def _identity_from_config(cfg):
         'NAICS_CODE':     sc.get('naics_code', ''),
         'MADE_PAYMENTS_1099': sc.get('made_payments_requiring_1099', 'yes'),
         'FILED_1099S':    sc.get('filed_required_1099s', 'no'),
+        # Schedule C questions F and G were drawn as "Cash" / "Yes" no matter
+        # what the config said.
+        'ACCOUNTING_METHOD': sc.get('accounting_method', 'cash'),
+        'MATERIAL_PARTICIPATION': sc.get('material_participation', 'yes'),
     }
 
 

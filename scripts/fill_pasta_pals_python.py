@@ -55,6 +55,8 @@ NAICS_CODE = '541430'
 # forms._identity_from_config overrides these per client config.
 MADE_PAYMENTS_1099 = 'yes'
 FILED_1099S = 'no'
+ACCOUNTING_METHOD = 'cash'        # cash | accrual | other
+MATERIAL_PARTICIPATION = 'yes'    # yes | no
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -389,6 +391,17 @@ LINE_MAPS = {
     # Sch C right-column money fields (X=475) for income lines 1-7 and
     # tentative profit lines on page 1. Verified by inspecting rects.
     ('1040sc', 2024): {
+        # Questions F (accounting method), G (material participation) and
+        # I / J (1099s). Same leaves and rects in 2024 and 2025.
+        'p1.F_cash':    'c1_1_0',
+        'p1.F_accrual': 'c1_1_1',
+        'p1.F_other':   'c1_1_2',
+        'p1.G_yes':     'c1_2_0',
+        'p1.G_no':      'c1_2_1',
+        'p1.I_yes':     'c1_4_0',
+        'p1.I_no':      'c1_4_1',
+        'p1.J_yes':     'c1_5_0',
+        'p1.J_no':      'c1_5_1',
         # Header text (left/middle column)
         'p1.NAME':  'f1_1_0',  # Name proprietor
         'p1.PB':    'f1_3_0',  # Principal business (Line A)
@@ -461,6 +474,17 @@ LINE_MAPS = {
         'p2.L48':   'f2_33_0',
     },
     ('1040sc', 2025): {
+        # Questions F (accounting method), G (material participation) and
+        # I / J (1099s). Same leaves and rects in 2024 and 2025.
+        'p1.F_cash':    'c1_1_0',
+        'p1.F_accrual': 'c1_1_1',
+        'p1.F_other':   'c1_1_2',
+        'p1.G_yes':     'c1_2_0',
+        'p1.G_no':      'c1_2_1',
+        'p1.I_yes':     'c1_4_0',
+        'p1.I_no':      'c1_4_1',
+        'p1.J_yes':     'c1_5_0',
+        'p1.J_no':      'c1_5_1',
         'p1.NAME':  'f1_1_0',
         'p1.PB':    'f1_3_0',
         'p1.BIZ':   'f1_5_0',
@@ -1020,19 +1044,39 @@ def fill_1040sc(d):
     page1 += comb_draws(460.8, 547.2, 6, 663.5, NAICS_CODE)     # Box B
     page1 += comb_draws(446.4, 576.0, 9, 638.5, EIN)            # Box D EIN
 
-    # Checkboxes — F Cash, G Yes, then config-driven 1099 questions I & J.
-    # Columns: Yes x=517 / No x=553.  Rows: question I y=564, question J y=552.
-    page1.append((169, 599, 'X', 11))   # F Cash
-    page1.append((517, 588, 'X', 11))   # G Yes
-    if str(MADE_PAYMENTS_1099).lower() == 'yes':
-        page1.append((517, 564, 'X', 11))   # I Yes (made payments requiring 1099)
-        # Question J only applies when I = Yes
-        if str(FILED_1099S).lower() == 'yes':
-            page1.append((517, 552, 'X', 11))   # J Yes (filed required 1099s)
-        else:
-            page1.append((553, 552, 'X', 11))   # J No
+    # ── Questions F, G, I and J ─────────────────────────────────────────────
+    # Rect-driven like everything else (invariant 3). These used to be drawn at
+    # hard-coded x/y, and F and G were drawn as "Cash" and "Yes" regardless of
+    # what the client config said.
+    def tick(line_key):
+        rect = get_rect('1040sc', yr, line_key)
+        if rect is None:
+            raise FormFillError(
+                f"Schedule C {yr}: no leaf mapped for checkbox {line_key}.")
+        page1.append(draw_in(rect, 'X', 0, 9, align='center',
+                             label=f'1040sc {line_key}'))
+
+    method = str(ACCOUNTING_METHOD).strip().lower()
+    if method not in ('cash', 'accrual', 'other'):
+        raise FormFillError(
+            f"Schedule C {yr}: schedule_c.accounting_method is "
+            f"{ACCOUNTING_METHOD!r}; expected 'cash', 'accrual' or 'other'.")
+    tick(f'p1.F_{method}')
+
+    participation = str(MATERIAL_PARTICIPATION).strip().lower()
+    if participation not in ('yes', 'no'):
+        raise FormFillError(
+            f"Schedule C {yr}: schedule_c.material_participation is "
+            f"{MATERIAL_PARTICIPATION!r}; expected 'yes' or 'no'.")
+    tick(f'p1.G_{participation}')
+
+    if str(MADE_PAYMENTS_1099).strip().lower() == 'yes':
+        tick('p1.I_yes')
+        # Question J is asked only when I is Yes.
+        tick('p1.J_yes' if str(FILED_1099S).strip().lower() == 'yes'
+             else 'p1.J_no')
     else:
-        page1.append((553, 564, 'X', 11))   # I No — leave J blank (N/A)
+        tick('p1.I_no')   # J stays blank — not applicable
 
     # ── Part I income (right column) ────────────────────────────────────────
     # Lines 2, 4 and 6 used to be hard-coded to 0 and lines 3 and 5 to repeat

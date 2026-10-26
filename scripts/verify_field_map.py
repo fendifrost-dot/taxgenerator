@@ -57,6 +57,16 @@ ROW_EXPECT = {
     'p2.L47a_no':   'evidence to support your deduction',
     'p2.L47b_yes':  'is the evidence written',
     'p2.L47b_no':   'is the evidence written',
+    # Schedule C questions F, G, I and J — lettered, not numbered.
+    'p1.F_cash':    'Accounting method',
+    'p1.F_accrual': 'Accounting method',
+    'p1.F_other':   'Accounting method',
+    'p1.G_yes':     'materially participate',
+    'p1.G_no':      'materially participate',
+    'p1.I_yes':     'require you to file Form(s) 1099',
+    'p1.I_no':      'require you to file Form(s) 1099',
+    'p1.J_yes':     'file required Form(s) 1099',
+    'p1.J_no':      'file required Form(s) 1099',
 }
 
 _word_cache = {}
@@ -101,9 +111,15 @@ def norm(tok):
 
 def audit_entry(form, year, line_key, leaf):
     """Return (status, detail). status is 'ok' | 'bad' | 'skip'."""
+    phrase = ROW_EXPECT.get(line_key)
     m = LINE_KEY_RE.match(line_key)
-    if not m or NON_LINE_KEYS.match(line_key.split('.')[-1]):
-        return 'skip', 'not a numbered money line'
+    if phrase is None:
+        if not m or NON_LINE_KEYS.match(line_key.split('.')[-1]):
+            return 'skip', 'not a numbered money line'
+    elif m is None:
+        # Lettered question (F / G / I / J) — page from the key prefix.
+        page_no = int(line_key[1])
+        return _audit_by_phrase(form, year, line_key, leaf, page_no, phrase)
     page_no, want = int(m.group(1)), m.group(2)
 
     fields = fpp.load_fields(form, year)
@@ -116,13 +132,8 @@ def audit_entry(form, year, line_key, leaf):
 
     rect = fld['rect']
 
-    phrase = ROW_EXPECT.get(line_key)
     if phrase:
-        full = full_row(form, year, page_no, rect)
-        if phrase.lower() in full.lower():
-            return 'ok', f'[{leaf}] y={rect[1]:.0f} row "{phrase}" ✓'
-        return 'bad', (f'[{leaf}] y={rect[1]:.0f} expected row to contain '
-                       f'"{phrase}" but row reads "{full[:80]}"')
+        return _check_phrase(form, year, line_key, leaf, page_no, rect, phrase)
 
     toks = label_tokens(form, year, page_no, rect)
     texts = [norm(t['text']) for t in toks]
@@ -139,9 +150,32 @@ def audit_entry(form, year, line_key, leaf):
                    f'but row reads "{row[-70:]}"')
 
 
-def full_row(form, year, page_no, rect):
+def _audit_by_phrase(form, year, line_key, leaf, page_no, phrase):
+    fields = fpp.load_fields(form, year)
+    fld = fields.get(leaf)
+    if fld is None:
+        return 'bad', f'leaf {leaf} not present in {form}_{year}.fields.json'
+    if fld.get('page') != page_no:
+        return 'bad', (f'leaf {leaf} is on page {fld.get("page")}, '
+                       f'but key says page {page_no}')
+    return _check_phrase(form, year, line_key, leaf, page_no, fld['rect'],
+                         phrase)
+
+
+def _check_phrase(form, year, line_key, leaf, page_no, rect, phrase):
+    # Tight band: Schedule C's question rows are 12pt apart, so the default
+    # tolerance would pull in the row above as well.
+    full = full_row(form, year, page_no, rect, pad=2.0)
+    if phrase.lower() in full.lower():
+        return 'ok', f'[{leaf}] y={rect[1]:.0f} row "{phrase}" ok'
+    return 'bad', (f'[{leaf}] y={rect[1]:.0f} expected row to contain '
+                   f'"{phrase}" but row reads "{full[:80]}"')
+
+
+def full_row(form, year, page_no, rect, pad=None):
     """Every printed word on the rect's row, left to right."""
-    y_lo, y_hi = rect[1] - Y_TOL, rect[3] + Y_TOL
+    tol = Y_TOL if pad is None else pad
+    y_lo, y_hi = rect[1] - tol, rect[3] + tol
     ws = [w for w in page_words(form, year, page_no) if y_lo <= w['y'] <= y_hi]
     ws.sort(key=lambda w: w['x0'])
     return ' '.join(w['text'] for w in ws)
