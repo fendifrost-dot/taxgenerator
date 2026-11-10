@@ -740,7 +740,9 @@ def fill_1040(d):
     def put(line_key, value, x_pad=4, fs=10, align='left'):
         rect = get_rect('1040', yr, line_key)
         if rect is None:
-            return
+            raise FormFillError(
+                f"Form 1040 {yr}: no LINE_MAPS leaf for {line_key}. "
+                "Derive it with scripts/verify_field_map.py.")
         draw = draw_in(rect, value, x_pad, fs, align)
         page = page2 if line_key.startswith('p2.') else page1
         if draw is not None:
@@ -791,11 +793,12 @@ def fill_1040(d):
     put('p1.L14', fmt(d['std_ded']))     # 12 + 13 (QBI=0)
     put('p1.L15', fmt(d['taxable']))
 
-    # Page 2 lines (2025-only Lines 11-15, plus Lines 16+ for both years)
-    put('p2.L11', fmt(d['agi']))
-    put('p2.L12', fmt(d['std_ded']))
-    put('p2.L14', fmt(d['std_ded']))     # 12+13
-    put('p2.L15', fmt(d['taxable']))
+    # Page 2 lines. Lines 11-15 used to be drawn here too, as the 2025 layout
+    # put them on page 2 -- the call relied on put() quietly skipping a line
+    # whose key is absent from that year's map. That silent skip is exactly
+    # how the Schedule C figures went missing, so put() now raises and this
+    # filler is 2024-only (see the guard above). The 2025 lines are gone;
+    # fill_1040_2025.py owns that year.
     put('p2.L16', fmt(d['fed_tax']))     # Tax
     put('p2.L18', fmt(d['fed_tax']))     # Add 16+17 (17=0)
     put('p2.L22', fmt(d['fed_tax']))     # Subtract 21 from 18
@@ -826,7 +829,9 @@ def fill_1040s1(d):
     def put(line_key, value, x_pad=4, fs=10):
         rect = get_rect('1040s1', yr, line_key)
         if rect is None:
-            return
+            raise FormFillError(
+                f"Schedule 1 {yr}: no LINE_MAPS leaf for {line_key}. "
+                "Derive it with scripts/verify_field_map.py.")
         draw = draw_in(rect, value, x_pad, fs)
         page = page2 if line_key.startswith('p2.') else page1
         if draw is not None:
@@ -1029,7 +1034,9 @@ def fill_1040sc(d):
     def put(line_key, value, x_pad=4, fs=10, align='left'):
         rect = get_rect('1040sc', yr, line_key)
         if rect is None:
-            return
+            raise FormFillError(
+                f"Schedule C {yr}: no LINE_MAPS leaf for {line_key}. "
+                "Derive it with scripts/verify_field_map.py.")
         draw = draw_in(rect, value, x_pad, fs, align)
         page = page2 if line_key.startswith('p2.') else page1
         if draw is not None:
@@ -1224,7 +1231,9 @@ def fill_1040sse(d):
     def put(line_key, value, x_pad=4, fs=10, align='left'):
         rect = get_rect('1040sse', yr, line_key)
         if rect is None:
-            return
+            raise FormFillError(
+                f"Schedule SE {yr}: no LINE_MAPS leaf for {line_key}. "
+                "Derive it with scripts/verify_field_map.py.")
         draw = draw_in(rect, value, x_pad, fs, align)
         if draw is not None:
             page1.append(draw)
@@ -1266,7 +1275,9 @@ def fill_8959(d):
     def put(line_key, value, x_pad=4, fs=10):
         rect = get_rect('8959', yr, line_key)
         if rect is None:
-            return
+            raise FormFillError(
+                f"Form 8959 {yr}: no LINE_MAPS leaf for {line_key}. "
+                "Derive it with scripts/verify_field_map.py.")
         draw = draw_in(rect, value, x_pad, fs)
         if draw is not None:
             page1.append(draw)
