@@ -1,17 +1,29 @@
 # HANDOFF — verify the Schedule C print fix (Jacques Potts 2024)
 
 **For an independent reviewer. This is a verification brief, not a change
-request.** Everything described here is already implemented, committed and
-pushed. The job is to check it, not to extend it. Section 6 lists what must
-not be touched.
+request.** Everything described here is already implemented and committed. The
+job is to check it, not to extend it. Section 6 lists what must not be touched.
 
 - Repo: `https://github.com/fendifrost-dot/taxgenerator`
-- Branch: `fix/schedule-c-print-reconciliation` @ `d308462` (PR #3, open against `main`)
+- Branch: `fix/schedule-c-print-reconciliation` @ `1b79798` (PR #3 is open
+  against `main` but still shows `d308462` — later commits are local only, so
+  **review the local checkout, not a fresh clone**, until the branch is pushed)
 - Local checkout used: `/Users/gocrazyglobal/taxgenerator-repo`
 - Python 3.9.6 · pypdf 6.13.1 · pdfplumber 0.11.8 · reportlab 4.5.1
 - Read `CLAUDE.md` first. Its invariants govern this repo.
 
 **Deadline: Nov 20, 2026** — last day to ask the IRS to reverse its change.
+
+### Review history
+
+**2026-11-10 — Cursor, independent review from a separate checkout.** It ran
+the section 4 commands, reproduced the square-footage break, and found that
+the gate could pass a figure drawn into the wrong box in three ways: the label
+check's row band reached neighbouring rows, boxes sharing a row all matched
+the row's phrase equally, and the 1040-X column check read figures back
+through the same map the filler drew them with. All three are now closed —
+sections 7 and 8 record what that leaves. Jacques's packet was not affected:
+it regenerates byte-identical and three independent reads agree on it.
 
 ---
 
@@ -144,9 +156,10 @@ git checkout fix/schedule-c-print-reconciliation
 # 1. Every mapped money line matches the IRS label printed beside it.
 python3 scripts/verify_field_map.py            # expect: PASS, exit 0
 
-# 2. Full suite, including the synthetic client that uses every Part II line
-#    and three negative tests that re-introduce the shipped defects.
-python3 scripts/run_regression.py              # expect: Ran 14 tests, OK (skipped=1)
+# 2. Full suite: the synthetic client that uses every Part II line, the three
+#    negative tests that re-introduce the shipped defects, and the eight that
+#    re-introduce a wrong-box defect (GateCatchesWrongBoxDefects).
+python3 scripts/run_regression.py              # expect: Ran 23 tests, OK (skipped=1)
 
 # 3. Regenerate Jacques's packet end to end.
 python3 -m taxgenerator --amend --year 2024 \
@@ -154,6 +167,12 @@ python3 -m taxgenerator --amend --year 2024 \
   --original clients/jacques_potts_original.json
 #    expect: writes dist/jacques_potts_2024_1040X.pdf
 #    and dist/jacques_potts_2024_1040X_print_check.txt ending RESULT: PASS
+#    federal md5 7d36ea36e941d662f60dff475b53cbc5
+
+# 4. Check the 1040-X you are holding, without regenerating it: re-derives the
+#    model from the configs and locates every printed figure by the line number
+#    the form prints beside it.
+python3 scripts/crosscheck_1040x_by_printed_line.py   # expect: RESULT: PASS
 ```
 
 Worth doing by hand as well:
@@ -162,7 +181,9 @@ Worth doing by hand as well:
   — page 7 is Schedule C p1, page 8 is Parts III/IV/V.
 - **Prove the gate still bites.** Change a leaf in `LINE_MAPS` (e.g. point
   `p1.L31` at the square-footage field, reproducing the original bug) and
-  regenerate. It must fail, print findings, and leave `dist/` unwritten.
+  regenerate. It must fail, print findings, and leave `dist/` unwritten. Eight
+  such defects are covered by `GateCatchesWrongBoxDefects`; try one it does
+  not cover rather than repeating those.
 - Compare against what was actually mailed:
   `FENDI FILES/TAXES/Jacques TAXES/FINAL - Jacques 2024 Amended Returns/Jacques_Potts_2024_Form_1040X.pdf`
 
@@ -221,21 +242,21 @@ Printed Part II now sums to $68,631 and ties to line 28. Illinois
   Correct only when the client has no W-2 wages. Jacques has none, so the
   filed figure is right — but this will overstate SE tax for any client who
   does. Worth fixing before the next client, and worth a test.
-- **Form 1040-X is only partly reconciled.** Columns A/B/C are read back and
-  checked; the rest of the form is not. The print check says so explicitly
-  ("1040x: no reconciliation rules yet — not checked").
+- **Form 1040-X is only partly reconciled.** The three money columns are read
+  back off the printed page and checked, as is the Part II explanation's
+  presence; the rest of the form is not. The print check names what covers it
+  ("1040x: checked below, by the Form 1040-X column read-back").
 - **Form 4562 is not generated**, so Part IV is the only route for a client
   claiming car/truck expense who needs the disclosure.
-- **The 1040-X money grid can still drop a line silently, and the check
-  shares its authority.** `fill_1040x_2024.py` skips a line with no
-  `GRID_LEAVES` entry, a `None` leaf, or a widget it cannot find — three
-  bare `continue`s. `_amendment_column_c_report` then reads the columns back
-  *through the same `GRID_LEAVES`*, so a missing entry would be invisible on
-  both sides. This is the shared-authority problem that `_check_labels()`
-  was written to solve for Schedule C, still unsolved here. **Checked: every
-  valued line in Jacques's model has a leaf today**, so it is a latent risk
-  rather than a live defect — but it is the most likely place for the next
-  one of these.
+- ~~**The 1040-X money grid can still drop a line silently, and the check
+  shares its authority.**~~ **Closed 2026-11-10.** The filler's three bare
+  `continue`s now raise `FormFillError`, and `_amendment_column_c_report`
+  locates every figure by the line number the form prints beside it
+  (`read_1040x_grid`) instead of resolving it through `GRID_LEAVES`. The
+  AGI / taxable-income / total-tax ties used to compare the model against
+  itself and never read the page; they now read the page. Pointing line 11
+  column C at the reserved line-9 box used to report "ok" and now produces
+  four independent findings.
 - **Form 1040 itself and Form 8959 are unreconciled.** 8959 is only included
   when additional Medicare tax applies; it is absent from Jacques's packet
   because that figure is zero.
@@ -246,16 +267,24 @@ Printed Part II now sums to $68,631 and ties to line 28. Illinois
 
 In rough order of what would hurt most if wrong:
 
-1. A **leaf that points at the wrong rect but still passes the label audit** —
-   i.e. a hole in `verify_field_map.py`'s matching, particularly the
-   `ROW_EXPECT` phrase checks used for checkboxes and sub-fields, which use a
-   tight 2.0pt band because Schedule C's question rows are only 12pt apart.
+1. ~~A **leaf that points at the wrong rect but still passes the label
+   audit**~~ — **largely closed 2026-11-10.** The old rule accepted the
+   claimed line number anywhere in a band reaching 3-4 printed rows, and took
+   97 of 2,852 possible wrong boxes; it now requires the number printed
+   *nearest* the box and takes none, while all 148 correct mappings still
+   pass. Row-sharing boxes (Yes/No, Cash/Accrual/Other, the mileage boxes) are
+   bound to the option word beside them rather than the shared phrase, and the
+   three unlabelled line 43 date cells are held by their printed order. Still
+   worth attacking: forms other than Schedule C, and any box whose row carries
+   no line number at all.
 2. A **computed expense key that reaches line 28 without a registry entry** in
    some path the synthetic client does not exercise.
 3. **Any remaining silent `return` on a missing rect.** Every `put()` helper
-   in `fill_pasta_pals_python.py` was audited and now raises, but check
-   `fill_1040x`, the `put_leaf*` helpers and the Illinois filler, which take
-   different shapes and were not part of that sweep.
+   in `fill_pasta_pals_python.py` was audited and now raises, and so is the
+   1040-X money grid. Still unswept: the `put_leaf*` helpers and the Illinois
+   filler (`fill_il1040x_2024.py`), which take different shapes. The IL-1040-X
+   has no read-back gate of its own at all — it is byte-identical to what was
+   mailed, which is evidence about this packet and not about the code.
 4. A way to get a PDF written while the gate fails.
 5. 2025 regressions: the 27a/27b meanings are reversed that year and Pasta
    Pals 2025 is the only live client exercising it.
