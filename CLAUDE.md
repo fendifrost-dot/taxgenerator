@@ -63,6 +63,16 @@ src/                            ← TypeScript/React app (not currently used for
    Do not add a bypass. See "The Jacques Potts 2024 incident" below for what
    this exists to prevent.
 
+   **The gate must never share an authority with the filler.** If a check
+   resolves a figure through the same map the filler drew it with, it reads
+   back the box the filler just wrote and agrees with itself. Point the leaf at
+   the wrong box and both are wrong together. Two places had this defect and
+   both are fixed: the Form 1040-X column check (now locates every figure by
+   the line number the form prints beside it, `read_1040x_grid`) and the label
+   check (now requires the printed line number *nearest the box*, not merely
+   present somewhere near it). When adding a check, ask what it would say if
+   the map were wrong. If the answer is "ok", it is not a check.
+
 1. **2024 IS FROZEN.** The Pasta Pals 2024 return shipped to the client. Any code change that affects 2024 output must be flagged loudly. Diff md5 before declaring 2024 work done. The CLI defaults to 2025-only generation; pass `--include-2024` only if you mean it.
 
 2. **2025 is its own template, not a 2024 variant.** The IRS shifted the Form 1040 page-1 layout in 2025 (Line 11a moved, header rows shifted, SSN comb dash positions changed). Field leaf names (`f1_NN_0`) point to *different* visual positions in 2024 vs 2025. Always look up the actual rect from the year-specific `.fields.json` or directly from PDF `/Annots`. Never reuse a 2024 leaf-name assumption for 2025.
@@ -136,6 +146,29 @@ src/                            ← TypeScript/React app (not currently used for
    *are* required and might be wrong — that is the failure that costs a client.
 
 10. **Comb fields use form-specific layouts.** The 2025 Form 1040 SSN box uses 3-2-4 grouping with dashes at rect-fractions ~0.302 and ~0.588. See `comb_draws()` in `scripts/fill_1040_2025.py` for the exact `center_fracs` array.
+
+11. **A box is identified by what the form prints beside it, never by the
+    leaf name or by the map.** Leaf order is not evidence. For a numbered money
+    line, the authority is the line number printed *nearest* the box — IRS
+    templates reprint it immediately to the left, and the old 6pt band reached
+    three or four rows, so the claimed number was nearly always present and
+    usually a neighbour's. For a box that shares its row with siblings — a
+    Yes/No pair, Cash/Accrual/Other, the mileage boxes — the row's phrase
+    cannot tell the boxes apart, so each is bound to the option word printed
+    beside it, on the side the form puts it (`ROW_EXPECT` in
+    `scripts/verify_field_map.py`). For cells with no label at all, such as the
+    three line 43 date cells, the only evidence is that they run left to right
+    in the form's own order (`ORDERED_CELLS`). `GateCatchesWrongBoxDefects` in
+    `scripts/run_regression.py` re-introduces eight such defects and proves
+    each is refused; do not weaken a rule without checking those still fail.
+
+12. **A blank box is not a zero.** `parse_money('')` returns 0 because a blank
+    contributes 0 to a printed sum, which the arithmetic checks need. A
+    read-back that must distinguish "nothing printed here" from "a zero
+    printed here" uses `parse_money_strict`, which returns None. Conflating
+    them made the 1040-X column report state that figures were printed in boxes
+    that are empty — a blank can be a dropped figure, a printed zero cannot.
+
 
 ## How to add a new client
 

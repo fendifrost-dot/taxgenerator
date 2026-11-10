@@ -278,84 +278,125 @@ def _amendment_column_c_report(model, corrected, pdf_1040x):
 
     Column C is what the IRS keys in, so a disagreement between the 1040-X and
     the corrected schedules behind it is the one error the schedules alone
-    cannot reveal. Column B must also be C − A, since that is the arithmetic
+    cannot reveal. Column B must also be C - A, since that is the arithmetic
     the service centre re-performs.
-    """
-    import io
-    import pdfplumber
-    from fill_1040x_2024 import GRID_LEAVES
-    import fill_pasta_pals_python as fpp
-    from .reconcile import Finding, ReconcileError, parse_money, read_rect
 
-    fields = fpp.load_fields('1040x', 2024)
+    Every figure here is located by the line number the form prints beside it,
+    never by the leaf that drew it. The leaf-based version of this check shared
+    its authority with the filler: point a leaf at the wrong box and the check
+    read back the box the filler had just written and agreed with itself.
+    Pointing line 11 column C at the reserved line-9 box printed the total tax
+    on line 9, left line 11 empty, and still reported "ok".
+    """
+    from fill_1040x_2024 import GRID_LEAVES
+    from .reconcile import Finding, ReconcileError, read_1040x_grid
+
     findings = []
-    out = ['', 'Form 1040-X — columns read back from the printed page:', '',
+    out = ['', 'Form 1040-X — columns read back from the printed page',
+           '(located by the line number printed beside each figure, not by '
+           'the field map):', '',
            f'  {"line":<5} {"A as filed":>12} {"B change":>12} '
            f'{"C corrected":>12}  {"model C":>12}  status']
     out.append(f'  {"-"*5} {"-"*12} {"-"*12} {"-"*12}  {"-"*12}  ------')
 
-    with pdfplumber.open(io.BytesIO(pdf_1040x)) as doc:
-        page = doc.pages[0]
-        for ln in model['lines']:
-            leaves = GRID_LEAVES.get(ln['line'])
-            if not leaves:
-                continue
-            got = []
-            for leaf in leaves:
-                if leaf is None or leaf not in fields:
-                    got.append(None)
-                    continue
-                got.append(parse_money(read_rect(page, fields[leaf]['rect'])))
-            a, b, c = got
-            want_c = ln['c']
-            status = 'ok'
+    printed, labels, unplaced = read_1040x_grid(pdf_1040x)
+    if not labels:
+        findings.append(Finding(
+            'placed', '1040x 2024',
+            'no printed line numbers were found on page 1 — the template '
+            'layout is not what this check expects, so nothing was verified'))
 
-            if want_c is None:
-                if c not in (None, 0):
-                    status = 'FAIL'
-                    findings.append(Finding(
-                        'placed', '1040x 2024',
-                        f'line {ln["line"]} column C should be blank but '
-                        f'reads {c:,}'))
-            elif c != want_c:
-                status = 'FAIL'
+    def show(v):
+        return f'{v:,}' if isinstance(v, int) else '(blank)'
+
+    seen = set()
+    for ln in model['lines']:
+        line_id = ln['line']
+        a, b, c = (printed.get((line_id, k)) for k in ('a', 'b', 'c'))
+        for col in ('a', 'b', 'c'):
+            seen.add((line_id, col))
+        status = 'ok'
+
+        # A model line that carries a figure must have somewhere to print it.
+        if GRID_LEAVES.get(line_id) is None and any(
+                ln.get(k) is not None for k in ('a', 'b', 'c')):
+            status = 'FAIL'
+            findings.append(Finding(
+                'placed', '1040x 2024',
+                f'line {line_id} carries a figure but has no GRID_LEAVES '
+                'entry, so nothing could print it'))
+
+        for col, got in (('a', a), ('b', b), ('c', c)):
+            want = ln.get(col)
+            if got == want:
+                continue
+            status = 'FAIL'
+            label = f'line {line_id} column {col.upper()}'
+            if ln.get('label') and col == 'c':
+                label += f' ({ln["label"]})'
+            if want is None:
                 findings.append(Finding(
                     'placed', '1040x 2024',
-                    f'line {ln["line"]} ({ln["label"]}) column C should print '
-                    f'{want_c:,} but reads {c if c is not None else "<blank>"}'))
-
-            # B must equal C − A wherever all three printed.
-            if None not in (a, b, c) and ln['b'] is not None and b != c - a:
-                status = 'FAIL'
+                    f'{label} should be blank but reads {show(got)}'))
+            else:
                 findings.append(Finding(
-                    'math', '1040x 2024',
-                    f'line {ln["line"]} column B reads {b:,} but column C '
-                    f'{c:,} − column A {a:,} = {c - a:,}'))
+                    'placed', '1040x 2024',
+                    f'{label} should print {want:,} but reads {show(got)}'))
 
-            def show(v):
-                return f'{v:,}' if isinstance(v, int) else '(blank)'
-
-            out.append(f'  {ln["line"]:<5} {show(a):>12} {show(b):>12} '
-                       f'{show(c):>12}  {show(want_c):>12}  {status}')
-
-    out.append('')
-    # Tie the 1040-X back to the schedules behind it.
-    ties = [('line 1 (AGI)', 'agi'), ('line 5 (taxable income)', 'taxable'),
-            ('line 11 (total tax)', 'total_tax')]
-    by_line = {l['line']: l for l in model['lines']}
-    key_for = {'line 1 (AGI)': '1', 'line 5 (taxable income)': '5',
-               'line 11 (total tax)': '11'}
-    out.append('Column C vs the corrected computed return:')
-    for label, computed_key in ties:
-        want = corrected.get(computed_key)
-        col_c = by_line.get(key_for[label], {}).get('c')
-        status = 'ok' if col_c == want else 'FAIL'
-        out.append(f'  - {label}: column C {col_c} vs computed {want}  {status}')
-        if status == 'FAIL':
+        # B must equal C - A wherever all three printed.
+        if None not in (a, b, c) and b != c - a:
+            status = 'FAIL'
             findings.append(Finding(
                 'math', '1040x 2024',
-                f'column C {label} is {col_c} but the corrected return '
-                f'computes {want}'))
+                f'line {line_id} column B reads {b:,} but column C {c:,} '
+                f'- column A {a:,} = {c - a:,}'))
+
+        if (a, b, c) == (None, None, None) and all(
+                ln.get(k) is None for k in ('a', 'b', 'c')):
+            continue          # nothing expected, nothing printed
+        out.append(f'  {line_id:<5} {show(a):>12} {show(b):>12} '
+                   f'{show(c):>12}  {show(ln.get("c")):>12}  {status}')
+
+    # A figure on a line the model does not know about, or on no line at all.
+    for (line_id, col) in sorted(set(printed) - seen):
+        findings.append(Finding(
+            'stray', '1040x 2024',
+            f'line {line_id} column {col.upper()} reads '
+            f'{printed[(line_id, col)]:,}, but the model has no such line'))
+    for text, col, top in unplaced:
+        findings.append(Finding(
+            'stray', '1040x 2024',
+            f'the figure {text} printed in column {col.upper()} (y={top:.0f}) '
+            'does not sit beside any printed line number'))
+
+    out.append('')
+    # Line 9 is reserved on the 2024 revision and must stay empty.
+    reserved = [col for col in ('a', 'b', 'c') if ('9', col) in printed]
+    if reserved:
+        findings.append(Finding(
+            'placed', '1040x 2024',
+            'line 9 is reserved on this revision of the form but carries a '
+            f'figure in column {", ".join(c.upper() for c in reserved)}'))
+    out.append('Line 9 (reserved on this revision): '
+               + ('EMPTY, as it must be' if not reserved else 'CARRIES A FIGURE'))
+
+    out.append('')
+    # Tie the 1040-X back to the schedules behind it -- against the page.
+    ties = [('line 1 (AGI)', '1', 'agi'),
+            ('line 5 (taxable income)', '5', 'taxable'),
+            ('line 11 (total tax)', '11', 'total_tax')]
+    out.append('Column C read off the page vs the corrected computed return:')
+    for label, line_id, computed_key in ties:
+        want = corrected.get(computed_key)
+        col_c = printed.get((line_id, 'c'))
+        ok = col_c == want
+        out.append(f'  - {label}: page reads {show(col_c)} vs computed '
+                   f'{show(want)}  {"ok" if ok else "FAIL"}')
+        if not ok:
+            findings.append(Finding(
+                'math', '1040x 2024',
+                f'{label}: the page reads {show(col_c)} in column C but the '
+                f'corrected return computes {show(want)}'))
     out.append('')
 
     if findings:

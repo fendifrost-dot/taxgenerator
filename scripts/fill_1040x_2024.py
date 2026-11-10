@@ -326,19 +326,43 @@ def fill_1040x_2024(model, identity):
     put_check(fs_key)
 
     # ── Money grid: lines 1-22 ──
+    # Every skip here used to be silent. A figure the model computed and the
+    # form never printed is exactly the defect the IRS assessed Jacques over:
+    # the total still counted it, no visible line carried it. So the only
+    # skips left are the two that mean "nothing to print": the model has no
+    # value for this column, or the form has no box in it.
+    from fill_pasta_pals_python import FormFillError
+
     for ln in model['lines']:
         leaves = GRID_LEAVES.get(ln['line'])
-        if not leaves:
+        if leaves is None:
+            carried = [c for c in ('a', 'b', 'c') if ln.get(c) is not None]
+            if carried:
+                raise FormFillError(
+                    f"Form 1040-X 2024: line {ln['line']} carries "
+                    f"{', '.join('column ' + c.upper() for c in carried)} but "
+                    "has no GRID_LEAVES entry, so the figure would print "
+                    "nowhere. Derive the leaves with "
+                    "scripts/verify_field_map.py and add them.")
             continue
         for col, leaf in zip(('a', 'b', 'c'), leaves):
-            if leaf is None:
-                continue
             val = ln.get(col)
             if val is None:
-                continue
+                continue              # nothing to print in this column
+            if leaf is None:
+                raise FormFillError(
+                    f"Form 1040-X 2024: line {ln['line']} column "
+                    f"{col.upper()} is {val}, but GRID_LEAVES records no box "
+                    f"in that column for this line. Either the form has no "
+                    f"such box (then the model should not carry a value) or "
+                    f"the leaf is missing.")
             w = find_widget(1, leaf=leaf)
             if not w:
-                continue
+                raise FormFillError(
+                    f"Form 1040-X 2024: line {ln['line']} column "
+                    f"{col.upper()} maps to leaf {leaf}, which is not a "
+                    "widget on page 1. Re-derive it with "
+                    "scripts/verify_field_map.py.")
             draw = text_draw(w['rect'], fmt_money(val), align='right', x_pad=3)
             if draw:
                 page1.append(draw)

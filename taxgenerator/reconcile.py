@@ -109,6 +109,110 @@ def parse_money(text):
     return -val if (neg or s.lstrip().startswith('-')) else val
 
 
+def parse_money_strict(text):
+    """Like parse_money, but an EMPTY box is None, not 0.
+
+    parse_money treats a blank as 0 on purpose: a blank box contributes 0 to a
+    printed sum, which is what the arithmetic checks need. A read-back that has
+    to tell "nothing is printed here" from "a zero is printed here" needs the
+    other answer. The two are not interchangeable — a blank can be a dropped
+    figure, a printed zero cannot — and conflating them made the 1040-X column
+    report state that figures were printed in boxes that are actually empty.
+    """
+    s = (text or '').strip()
+    if s == '':
+        return None
+    return parse_money(s)
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Form 1040-X: read the money grid by printed position, not by leaf
+# ─────────────────────────────────────────────────────────────────────────────
+# The filler and the old column check both resolved a figure through
+# GRID_LEAVES, so they shared an authority: point a leaf at the wrong box and
+# the check read back the box the filler had just written, and agreed with
+# itself. Pointing line 11 column C at the reserved line-9 box printed the
+# total tax on line 9, left line 11 empty, and still reported "ok".
+#
+# These read the page instead. Our overlay draws in plain base-14 Helvetica;
+# every pre-printed glyph on an IRS template is a subset-embedded face named
+# like THSHFL+HelveticaNeueLTStd-Roman. That separates what we drew from what
+# the form says, so the form's own printed line numbers can locate our figures.
+OVERLAY_FONT = 'Helvetica'
+# Right edge of each printed money gutter on Form 1040-X (Rev. Dec 2025).
+# Verified against the template; a revision that moved them shows up as
+# unplaceable figures, which fails the gate rather than passing quietly.
+X1040X_COLS = (('a', 442.6), ('b', 507.4), ('c', 573.0))
+X1040X_COL_TOL = 2.0
+# A figure sits on the row whose line number is printed at, or just above, it.
+X1040X_ROW_ABOVE, X1040X_ROW_BELOW = 15.0, 2.0
+X1040X_NUM_RE = re.compile(r'^(\d{1,2})([ab])?$')
+X1040X_BARE_RE = re.compile(r'^([ab])$')
+
+
+def _is_overlay(word):
+    return word.get('fontname') == OVERLAY_FONT
+
+
+def read_1040x_grid(pdf_bytes):
+    """Locate Form 1040-X's printed figures by the line number beside them.
+
+    Returns (printed, labels, unplaced):
+      printed  {(line_id, column): value} for every figure our overlay drew
+      labels   [(line_id, y_top)] the form's own printed line numbers
+      unplaced [(text, column, y_top)] figures that sit on no line
+    """
+    with pdfplumber.open(io.BytesIO(pdf_bytes)) as doc:
+        words = doc.pages[0].extract_words(
+            keep_blank_chars=False, extra_attrs=['fontname', 'size'])
+
+    # The form's own line numbers, down the left margin. Line 4b prints as a
+    # bare bold "b" under 4a, so carry the stem forward.
+    labels, stem = [], None
+    for w in sorted(words, key=lambda w: w['top']):
+        if w['x0'] >= 80 or _is_overlay(w):
+            continue
+        text = w['text'].strip().rstrip('.')
+        m = X1040X_NUM_RE.match(text)
+        if m:
+            stem = m.group(1)
+            labels.append((m.group(1) + (m.group(2) or ''), w['top']))
+        elif X1040X_BARE_RE.match(text) and stem:
+            labels.append((stem + text, w['top']))
+    if not labels:
+        return {}, [], []
+
+    # The money gutters only run alongside the grid; above it the header block
+    # right-aligns an SSN comb digit into the same x.
+    grid_top = min(top for _, top in labels) - 20.0
+
+    printed, unplaced = {}, []
+    for w in words:
+        text = w['text'].strip()
+        if not _is_overlay(w) or w['top'] < grid_top:
+            continue
+        if abs(w['size'] - 10.0) >= 0.1 or not MONEY_RE.match(text):
+            continue
+        col = next((name for name, edge in X1040X_COLS
+                    if abs(w['x1'] - edge) <= X1040X_COL_TOL), None)
+        if col is None:
+            continue
+        val = parse_money_strict(text)
+        if val is None:
+            continue
+        near = [(abs(w['top'] - top), lid) for lid, top in labels
+                if top - X1040X_ROW_BELOW <= w['top'] <= top + X1040X_ROW_ABOVE]
+        if not near:
+            unplaced.append((text, col, w['top']))
+            continue
+        key = (min(near)[1], col)
+        if key in printed:
+            unplaced.append((text, col, w['top']))
+            continue
+        printed[key] = val
+    return printed, labels, unplaced
+
+
 class FormReader:
     """Reads one filled form's PDF by widget rect."""
 
@@ -321,9 +425,14 @@ def _check_labels(reader, expected, findings):
     """
     import verify_field_map
 
-    for line_key in sorted(expected):
-        leaf = reader.fpp.LINE_MAPS.get(
-            (reader.form, reader.year), {}).get(line_key)
+    line_map = reader.fpp.LINE_MAPS.get((reader.form, reader.year), {})
+    # Money lines, plus every box that shares its row with a sibling: a Yes
+    # box swapped for its No box prints the opposite answer, and nothing else
+    # in the gate would notice.
+    keys = set(expected) | {k for k in line_map
+                            if k in verify_field_map.ROW_EXPECT}
+    for line_key in sorted(keys):
+        leaf = line_map.get(line_key)
         if leaf is None:
             continue
         status, detail = verify_field_map.audit_entry(
@@ -333,6 +442,14 @@ def _check_labels(reader, expected, findings):
                 'label', f'{reader.form} {reader.year}',
                 f'{line_key} is mapped to a box that is not line '
                 f'{line_key.split(".L")[-1]} on the printed form — {detail}'))
+
+    # Cells with no label of their own are held in place by their order.
+    for name, status, detail in verify_field_map.ordered_cell_report(
+            reader.form, reader.year):
+        if status == 'bad':
+            findings.append(Finding(
+                'label', f'{reader.form} {reader.year}',
+                f'{name}: {detail}'))
 
 
 def _check_stray(reader, expected, findings):
@@ -540,9 +657,16 @@ def reconcile(parts, computed, year, label='', decisions=()):
         '1040s2': lambda: schedule_2_expected(computed, year),
     }
 
+    # Forms this gate has no per-line rules for. The 1040-X is not unchecked:
+    # it is checked below by _amendment_column_c_report, which reads its grid
+    # off the printed page. Saying "not checked" here was misleading.
+    CHECKED_ELSEWHERE = {
+        '1040x': 'checked below, by the Form 1040-X column read-back',
+    }
     for form, pdf_bytes in parts:
         if form not in builders:
-            notes.append(f'{form}: no reconciliation rules yet — not checked')
+            notes.append(f'{form}: ' + CHECKED_ELSEWHERE.get(
+                form, 'no reconciliation rules yet — NOT CHECKED'))
             continue
         expected = builders[form]()
         with FormReader(form, year, pdf_bytes) as reader:
