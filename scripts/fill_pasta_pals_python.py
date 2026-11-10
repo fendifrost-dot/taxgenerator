@@ -868,7 +868,11 @@ def fill_1040s2(d):
     def put(line_key, value, x_pad=4, fs=10):
         rect = get_rect('1040s2', yr, line_key)
         if rect is None:
-            return
+            # Silently dropping a line is what put the Jacques 2024 return in
+            # front of a math-error examiner. Stop instead.
+            raise FormFillError(
+                f"Schedule 2 {yr}: no LINE_MAPS leaf for {line_key}. "
+                "Derive it with scripts/verify_field_map.py.")
         draw = draw_in(rect, value, x_pad, fs)
         page = page2 if line_key.startswith('p2.') else page1
         if draw is not None:
@@ -925,6 +929,22 @@ def _schc_part_iv_draws(yr, d):
     config lacks the vehicle answers fails generation.
     """
     v = d.get('vehicle') or {}
+
+    # An explicit, recorded decision to leave Part IV blank. The IRS does not
+    # ask for Part IV in a math-error matter, and a corrected return whose job
+    # is to fix print defects may legitimately keep the form exactly as filed.
+    # This is never a default and never silent: it needs a written reason,
+    # which is copied into the print-check report.
+    if v.get('omitted'):
+        reason = str(v.get('reason') or '').strip()
+        if not reason:
+            raise FormFillError(
+                f"Schedule C {yr}: schedule_c.vehicle.omitted is set, so "
+                "Part IV (lines 43-47b) would print blank while line 9 claims "
+                "car/truck expense. Add schedule_c.vehicle.reason saying why. "
+                "The reason is recorded in the print-check report.")
+        return []
+
     missing = []
 
     date_parts = _parse_service_date(v.get('date_placed_in_service') or '')

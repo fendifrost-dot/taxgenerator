@@ -220,6 +220,27 @@ def _part_iv_expected(v):
     return exp
 
 
+def schedule_2_expected(computed, year):
+    """What Schedule 2 must show.
+
+    Schedule 2 carries self-employment tax and Additional Medicare Tax up to
+    Form 1040 / 1040-X total tax. It was in every packet but outside the gate,
+    so a figure landing in the wrong box here would have gone unnoticed in
+    exactly the way the Schedule C defects did.
+    """
+    exp = {}
+    se_total = computed.get('se_total', 0)
+    addl_med = computed.get('addl_med', 0)
+    sch2_total = computed.get('sch2_total', 0)
+    if se_total:
+        exp['p1.L4'] = f'{int(round(se_total)):,}'
+    if addl_med:
+        exp['p1.L11'] = f'{int(round(addl_med)):,}'
+    if sch2_total:
+        exp['p2.L21'] = f'{int(round(sch2_total)):,}'
+    return exp
+
+
 def _split_date(raw):
     s = str(raw).strip()
     for sep, order in (('-', 'ymd'), ('/', 'mdy')):
@@ -498,7 +519,7 @@ def _check_cross_form(printed, findings, notes):
 # ─────────────────────────────────────────────────────────────────────────────
 # Entry point
 # ─────────────────────────────────────────────────────────────────────────────
-def reconcile(parts, computed, year, label=''):
+def reconcile(parts, computed, year, label='', decisions=()):
     """Check each filled form against the computed return.
 
     parts: list of (form_name, pdf_bytes) in packet order.
@@ -510,11 +531,13 @@ def reconcile(parts, computed, year, label=''):
     rows = []
     notes = []
     printed = {}
+    decisions = list(decisions)
 
     builders = {
         '1040sc': lambda: schedule_c_expected(computed['sch_c'], year),
         '1040s1': lambda: schedule_1_expected(computed, year),
         '1040sse': lambda: schedule_se_expected(computed, year),
+        '1040s2': lambda: schedule_2_expected(computed, year),
     }
 
     for form, pdf_bytes in parts:
@@ -537,13 +560,14 @@ def reconcile(parts, computed, year, label=''):
 
     _check_cross_form(printed, findings, notes)
 
-    report = _format_report(label, year, rows, notes, findings)
+    report = _format_report(label, year, rows, notes, findings,
+                            decisions)
     if findings:
         raise ReconcileError(findings, report)
     return report
 
 
-def _format_report(label, year, rows, notes, findings):
+def _format_report(label, year, rows, notes, findings, decisions=()):
     out = []
     out.append('=' * 78)
     out.append(f'PRINT CHECK — {label or "return"} {year}')
@@ -563,6 +587,11 @@ def _format_report(label, year, rows, notes, findings):
         out.append('Arithmetic performed on the printed figures:')
         for n in notes:
             out.append(f'  - {n}')
+        out.append('')
+    if decisions:
+        out.append('Recorded decisions (deliberate omissions, with reasons):')
+        for dec in decisions:
+            out.append(f'  - {dec}')
         out.append('')
     if findings:
         out.append(f'RESULT: FAIL — {len(findings)} finding(s). '

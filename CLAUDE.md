@@ -115,7 +115,27 @@ src/                            ← TypeScript/React app (not currently used for
    Missing fields raise `FormFillError` naming each one. **These answers are the
    taxpayer's; never guess them.**
 
-8. **Comb fields use form-specific layouts.** The 2025 Form 1040 SSN box uses 3-2-4 grouping with dashes at rect-fractions ~0.302 and ~0.588. See `comb_draws()` in `scripts/fill_1040_2025.py` for the exact `center_fracs` array.
+   Part IV may instead be left blank by an explicit, reasoned decision:
+
+   ```json
+   "vehicle": { "omitted": true, "reason": "why Part IV is not completed" }
+   ```
+
+   `omitted` without a `reason` is an error. The reason is copied into the
+   print-check report under "Recorded decisions" so a reviewer sees that the
+   blank is deliberate. Use this when the IRS has not asked for Part IV and the
+   form as filed had it blank — see invariant 9.
+
+9. **Never volunteer what the IRS did not ask for.** Satisfy exactly what a
+   notice demands and nothing more. Do not add a schedule, disclosure or
+   optional answer because a form instruction mentions it, and never make such
+   an item a blocker on delivering a client's packet. Jacques's 474C was a
+   math-error notice: it asked for nothing and the assessment came from lines 9
+   and 23 failing to print. Part IV was treated as a prerequisite anyway and
+   cost two weeks against a 60-day deadline. Point the rigor at fields that
+   *are* required and might be wrong — that is the failure that costs a client.
+
+10. **Comb fields use form-specific layouts.** The 2025 Form 1040 SSN box uses 3-2-4 grouping with dashes at rect-fractions ~0.302 and ~0.588. See `comb_draws()` in `scripts/fill_1040_2025.py` for the exact `center_fracs` array.
 
 ## How to add a new client
 

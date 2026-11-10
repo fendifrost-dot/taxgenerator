@@ -118,15 +118,45 @@ class Jacques2024Amendment(unittest.TestCase):
         self.amended = load_client(CLIENTS / 'jacques_potts.json')
 
     def test_part_iv_is_required_and_not_invented(self):
-        """Line 9 is claimed, so generation must refuse until Fendi supplies
-        the vehicle answers — it must never guess them."""
+        """With no vehicle block at all, generation must refuse and name every
+        missing field — it must never guess the taxpayer's answers."""
+        amended = copy.deepcopy(self.amended)
+        amended['years'][2024]['schedule_c'].pop('vehicle', None)
         with self.assertRaises(fpp.FormFillError) as ctx:
-            generate_amendment_packet(self.original, self.amended, 2024)
+            generate_amendment_packet(self.original, amended, 2024)
         msg = str(ctx.exception)
         for field in ('date_placed_in_service', 'business_miles',
                       'commuting_miles', 'other_miles',
                       'available_for_personal_use'):
             self.assertIn(field, msg)
+
+    def test_omitting_part_iv_requires_a_written_reason(self):
+        """A blank Part IV is allowed, but only as a recorded decision."""
+        amended = copy.deepcopy(self.amended)
+        amended['years'][2024]['schedule_c']['vehicle'] = {'omitted': True}
+        with self.assertRaises(fpp.FormFillError) as ctx:
+            generate_amendment_packet(self.original, amended, 2024)
+        self.assertIn('reason', str(ctx.exception))
+
+    def test_part_iv_omitted_as_filed_reconciles(self):
+        """The shipping configuration: Part IV blank, as on the filed return,
+        because the IRS did not ask for it. The reason must reach the report."""
+        pdf, report = generate_amendment_packet(
+            self.original, self.amended, 2024)
+        self.assertIn('RESULT: PASS', report)
+        self.assertIn('Recorded decisions', report)
+        self.assertIn('Part IV', report)
+        # The four figures the IRS changed still print where it can see them.
+        self.assertIn('p1.L9                  40,200         40,200  ok', report)
+        self.assertIn('p1.L31                  2,869          2,869  ok', report)
+
+    def test_schedule_2_is_now_read_back(self):
+        """Schedule 2 carries SE tax to total tax and used to sit outside the
+        gate entirely."""
+        pdf, report = generate_amendment_packet(
+            self.original, self.amended, 2024)
+        self.assertIn('1040s2', report)
+        self.assertIn('p1.L4', report)
 
     def test_reconciles_once_vehicle_answers_exist(self):
         amended = copy.deepcopy(self.amended)

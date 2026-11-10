@@ -179,11 +179,27 @@ def generate_packet(cfg, year):
         # Raises ReconcileError, so no caller can write a packet that does not
         # reconcile.
         report = reconcile(named, computed, year,
-                           label=cfg.get('display_name') or cfg['client_id'])
+                           label=cfg.get('display_name') or cfg['client_id'],
+                           decisions=_recorded_decisions(computed))
         merged = fpp.merge_pdfs([pdf for _, pdf in named])
         return merged, report
     finally:
         _restore_identity(fpp, saved)
+
+
+def _recorded_decisions(computed):
+    """Deliberate omissions the config asked for, for the print-check report.
+
+    These are preparer decisions, not defects: the gate cannot tell a box left
+    blank on purpose from one left blank by a bug, so the reason is carried
+    into the report where a reviewer will see it.
+    """
+    out = []
+    v = (computed.get('sch_c') or {}).get('vehicle') or {}
+    if v.get('omitted'):
+        out.append('Schedule C Part IV (lines 43-47b) left blank: '
+                   + str(v.get('reason') or '').strip())
+    return out
 
 
 def generate_amendment_packet(original_cfg, amended_cfg, year):
@@ -248,7 +264,8 @@ def generate_amendment_packet(original_cfg, amended_cfg, year):
         report = reconcile(
             named, corrected, year,
             label=(amended_cfg.get('display_name')
-                   or amended_cfg['client_id']) + ' 1040-X')
+                   or amended_cfg['client_id']) + ' 1040-X',
+            decisions=_recorded_decisions(corrected))
         report += _amendment_column_c_report(model, corrected, pkt_1040x)
         merged = fpp.merge_pdfs([pdf for _, pdf in named])
         return merged, report

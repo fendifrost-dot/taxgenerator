@@ -58,6 +58,10 @@
   "years": {
     "2024": {
       "schedule_c": {
+        "vehicle": {
+          "omitted": true,
+          "reason": "Part IV was blank on the return as filed. The IRS did not request vehicle information in the Letter 474C math-error matter, so none is volunteered; the corrected return changes only the print defects."
+        },
         "gross_receipts": 71500,
         "returns_allowances": 0,
         "cogs": 0,
