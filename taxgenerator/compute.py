@@ -45,12 +45,16 @@ def compute_schedule_c(year_data):
         'L24b_meals_50pct':      sc.get('meals_50pct', 0),
         'L25_utilities':         sc.get('utilities', 0),
         'L26_wages':             sc.get('wages', 0),
-        'L27a_energy_efficient': sc.get('energy_efficient_deduction', 0),
+        # Lines 27a/27b are deliberately NOT keyed by line number: the IRS
+        # swapped their meanings between 2024 (27a = other, 27b = energy
+        # efficient) and 2025 (the reverse). The per-year registry
+        # SCHC_PART_II_LINES decides which line each one prints on.
+        'energy_efficient_f7205': sc.get('energy_efficient_deduction', 0),
     }
 
     part_v_items = sc.get('part_v_other', [])
     part_v_total = sum(it.get('amount', 0) for it in part_v_items)
-    expense_lines['L27b_other_partv'] = part_v_total
+    expense_lines['other_expenses_partv'] = part_v_total
 
     total_expenses = sum(expense_lines.values())
     home_office = sc.get('home_office_simplified', 0)
@@ -74,6 +78,9 @@ def compute_schedule_c(year_data):
         'L31_net_profit': net_profit,
         'part_v_items': part_v_items,
         'part_v_total': part_v_total,
+        # Part IV vehicle answers, passed through untouched. Required by the
+        # filler when line 9 is nonzero and no Form 4562 is generated.
+        'vehicle': sc.get('vehicle') or {},
     }
 
 

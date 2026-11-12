@@ -53,6 +53,26 @@ src/                            ← TypeScript/React app (not currently used for
 
 ## Critical invariants
 
+0. **Nothing ships that has not been read back off the page.** Every generate
+   and every amendment runs the reconciliation gate in `taxgenerator/reconcile.py`
+   before a PDF is written. The gate reopens the output, reads the text that
+   actually landed inside each widget rect, checks the rect really is that
+   line's box on the printed form, and redoes the form's arithmetic on what it
+   read. Any mismatch raises `ReconcileError`, **nothing is written to `dist/`**,
+   and a `{client}_{year}_print_check.txt` report is left behind saying why.
+   Do not add a bypass. See "The Jacques Potts 2024 incident" below for what
+   this exists to prevent.
+
+   **The gate must never share an authority with the filler.** If a check
+   resolves a figure through the same map the filler drew it with, it reads
+   back the box the filler just wrote and agrees with itself. Point the leaf at
+   the wrong box and both are wrong together. Two places had this defect and
+   both are fixed: the Form 1040-X column check (now locates every figure by
+   the line number the form prints beside it, `read_1040x_grid`) and the label
+   check (now requires the printed line number *nearest the box*, not merely
+   present somewhere near it). When adding a check, ask what it would say if
+   the map were wrong. If the answer is "ok", it is not a check.
+
 1. **2024 IS FROZEN.** The Pasta Pals 2024 return shipped to the client. Any code change that affects 2024 output must be flagged loudly. Diff md5 before declaring 2024 work done. The CLI defaults to 2025-only generation; pass `--include-2024` only if you mean it.
 
 2. **2025 is its own template, not a 2024 variant.** The IRS shifted the Form 1040 page-1 layout in 2025 (Line 11a moved, header rows shifted, SSN comb dash positions changed). Field leaf names (`f1_NN_0`) point to *different* visual positions in 2024 vs 2025. Always look up the actual rect from the year-specific `.fields.json` or directly from PDF `/Annots`. Never reuse a 2024 leaf-name assumption for 2025.
@@ -65,7 +85,90 @@ src/                            ← TypeScript/React app (not currently used for
 
 4. **Pre-printed form values are not redrawn.** Schedule SE Line 7 has the SS wage base ($168,600 / $176,100) pre-printed in the IRS template. The fill code MUST NOT draw over it.
 
-5. **Comb fields use form-specific layouts.** The 2025 Form 1040 SSN box uses 3-2-4 grouping with dashes at rect-fractions ~0.302 and ~0.588. See `comb_draws()` in `scripts/fill_1040_2025.py` for the exact `center_fracs` array.
+5. **Schedule C lines 27a and 27b mean different things in different years.**
+   The IRS swapped them:
+
+   | Year | 27a | 27b |
+   |---|---|---|
+   | 2024 | Other expenses (from line 48) | Energy efficient comml. bldgs (Form 7205) |
+   | 2025 | Energy efficient comml. bldgs (Form 7205) | Other expenses (from line 48) |
+
+   Verified three ways on each template: the printed label beside the box, the
+   Part V header's cross-reference, and line 48's "Enter here and on line 27x".
+   Because of this, `compute_schedule_c` keys those two expenses **semantically**
+   (`other_expenses_partv`, `energy_efficient_f7205`), never by line number, and
+   `SCHC_PART_II_LINES[year]` in `fill_pasta_pals_python.py` decides which line
+   each prints on. Never assume 27a means "other".
+
+6. **Every computed Schedule C expense prints, or generation fails.**
+   `fill_1040sc` draws Part II from the computed expense dict through
+   `SCHC_PART_II_LINES`, not from a hand-written list of lines. A computed
+   expense with no line in the registry, or a line with no leaf in `LINE_MAPS`,
+   raises `FormFillError`. A figure must never be dropped from the page while
+   still counting in line 28.
+
+7. **Schedule C Part IV is required when line 9 is claimed.** If car/truck
+   expense is nonzero and no Form 4562 is produced, the filler needs a
+   `years.{year}.schedule_c.vehicle` block:
+
+   ```json
+   "vehicle": {
+     "date_placed_in_service": "YYYY-MM-DD",   // or MM/DD/YYYY — line 43
+     "business_miles": 0, "commuting_miles": 0, "other_miles": 0,  // line 44a/b/c
+     "available_for_personal_use": "yes",      // line 45
+     "another_vehicle_available": "no",        // line 46
+     "have_evidence": "yes",                   // line 47a
+     "evidence_written": "yes"                 // line 47b (only if 47a = yes)
+   }
+   ```
+
+   Missing fields raise `FormFillError` naming each one. **These answers are the
+   taxpayer's; never guess them.**
+
+   Part IV may instead be left blank by an explicit, reasoned decision:
+
+   ```json
+   "vehicle": { "omitted": true, "reason": "why Part IV is not completed" }
+   ```
+
+   `omitted` without a `reason` is an error. The reason is copied into the
+   print-check report under "Recorded decisions" so a reviewer sees that the
+   blank is deliberate. Use this when the IRS has not asked for Part IV and the
+   form as filed had it blank — see invariant 9.
+
+9. **Never volunteer what the IRS did not ask for.** Satisfy exactly what a
+   notice demands and nothing more. Do not add a schedule, disclosure or
+   optional answer because a form instruction mentions it, and never make such
+   an item a blocker on delivering a client's packet. Jacques's 474C was a
+   math-error notice: it asked for nothing and the assessment came from lines 9
+   and 23 failing to print. Part IV was treated as a prerequisite anyway and
+   cost two weeks against a 60-day deadline. Point the rigor at fields that
+   *are* required and might be wrong — that is the failure that costs a client.
+
+10. **Comb fields use form-specific layouts.** The 2025 Form 1040 SSN box uses 3-2-4 grouping with dashes at rect-fractions ~0.302 and ~0.588. See `comb_draws()` in `scripts/fill_1040_2025.py` for the exact `center_fracs` array.
+
+11. **A box is identified by what the form prints beside it, never by the
+    leaf name or by the map.** Leaf order is not evidence. For a numbered money
+    line, the authority is the line number printed *nearest* the box — IRS
+    templates reprint it immediately to the left, and the old 6pt band reached
+    three or four rows, so the claimed number was nearly always present and
+    usually a neighbour's. For a box that shares its row with siblings — a
+    Yes/No pair, Cash/Accrual/Other, the mileage boxes — the row's phrase
+    cannot tell the boxes apart, so each is bound to the option word printed
+    beside it, on the side the form puts it (`ROW_EXPECT` in
+    `scripts/verify_field_map.py`). For cells with no label at all, such as the
+    three line 43 date cells, the only evidence is that they run left to right
+    in the form's own order (`ORDERED_CELLS`). `GateCatchesWrongBoxDefects` in
+    `scripts/run_regression.py` re-introduces eight such defects and proves
+    each is refused; do not weaken a rule without checking those still fail.
+
+12. **A blank box is not a zero.** `parse_money('')` returns 0 because a blank
+    contributes 0 to a printed sum, which the arithmetic checks need. A
+    read-back that must distinguish "nothing printed here" from "a zero
+    printed here" uses `parse_money_strict`, which returns None. Conflating
+    them made the 1040-X column report state that figures were printed in boxes
+    that are empty — a blank can be a dropped figure, a printed zero cannot.
+
 
 ## How to add a new client
 
@@ -86,7 +189,51 @@ src/                            ← TypeScript/React app (not currently used for
 5. **Critical:** if Form 1040 page 1 layout shifted (it did in 2025), build a year-specific filler module like `scripts/fill_1040_2025.py`. Don't try to make one filler handle both layouts.
 6. Visually verify by rendering at high res (`pdftoppm -r 300`) and zooming into header/income/tax sections.
 
+## The Jacques Potts 2024 incident (why the gate exists)
+
+Jacques's 2024 Form 1040-X was mailed in June 2026 from commits 653ab88 /
+3d09a6b. The **computation was right** — total expenses $68,631, net profit
+$2,869. The **printing was not**:
+
+| Defect | Cause |
+|---|---|
+| Lines 9 ($40,200) and 23 ($1,015) blank | `fill_1040sc` drew a hard-coded subset of Part II — the ten lines Pasta Pals happened to use — and `_build_d` only forwarded those ten keys |
+| Part V total on 27b instead of 27a | `compute.py` keyed the Part V total as `L27b_*`, which is the 2025 line, not the 2024 one |
+| Line 48 blank | the 2024 branch searched page 2 heuristically for a rect that does not exist |
+| Part V listed Pasta Pals' categories | descriptions were a hard-coded list, matched to the client's amounts by keyword |
+| Net profit $2,869 in the line-30 square-footage box, line 31 blank | `LINE_MAPS[('1040sc', 2024)]` mapped `p1.L30`/`p1.L31` to `f1_43_0`/`f1_44_0`, which are the simplified-method square-footage boxes; the money boxes are `f1_45_0`/`f1_46_0` |
+| Half-SE deduction on Schedule 1 line 24g, line 26 blank | `p2.L26` mapped to `f2_22_0` (line 24g); line 26 is `f2_31_0`. The 2025 map had already been fixed; 2024 had not |
+| Part IV blank though line 9 was claimed | no config fields and no filler code existed |
+
+The printed Part II lines added to $27,416, not $68,631. The IRS added up what
+it could see, refigured the profit at $44,354, and issued a math-error
+assessment (Letter 474C, 21 Sep 2026; CP22A for $13,052.54, 5 Oct 2026).
+
+Every one of these is a *printing* defect that no amount of checking the
+computation would have caught. That is why invariant 0 exists: the pipeline now
+reads its own output back before writing it, and `scripts/verify_field_map.py`
+proves each leaf against the label printed next to it on the IRS template.
+
+Note: gross receipts $71,500 less the printed $27,416 is $44,084, while the IRS
+used $44,354 — a $270 difference that is still unexplained. Do not code around
+it; it needs the IRS's own computation from the notice.
+
 ## Verification workflow
+
+Before anything is filed:
+
+```bash
+# 1. Every mapped line still matches the label printed on the IRS template
+python3 scripts/verify_field_map.py
+
+# 2. Full regression: synthetic all-lines client (2024 + 2025), Pasta Pals
+#    2025, the Jacques amendment, and negative tests proving the gate still
+#    catches each defect above
+python3 scripts/run_regression.py
+
+# 3. Audit a packet that was already produced and mailed (safe on frozen output)
+python3 scripts/audit_filed_packet.py path/to/packet.pdf --year 2024
+```
 
 When you change anything in the fill pipeline:
 
@@ -213,7 +360,12 @@ python3 -m taxgenerator --amend --state IL \
 5. **State returns** — Illinois IL-1040-X (amendments) now implemented (see "State amendments — Illinois" above; TY2024 only, `state_il.py` + `fill_il1040x_2024.py`). Still TODO: IL full original returns (IL-1040), other tax years, and other states (a general state engine is a later, larger task). AZ Form 140 has stub code in `src/` but the Python pipeline doesn't touch it.
 6. **Bring Python wins back to TypeScript path** — port rect-driven positioning + per-year LINE_MAPS to `src/lib/irsForms/` so the React UI can produce filings without going through Python.
 7. **PDF parser for client intake** — many clients send 1099s / W-2s as PDFs. Auto-extract values into a draft client config.
-8. **Snapshot regression tests** — render every supported client × year combo and compare image hashes against committed baselines. Catches drift after any LINE_MAPS edit.
+8. ~~**Snapshot regression tests**~~ — done, differently and better:
+   `scripts/run_regression.py` generates each client × year and puts it through
+   the reconciliation gate, which compares *values read back from the page*
+   rather than image hashes (an image hash tells you something moved, not what
+   or where). Still open: an image-diff pass would additionally catch a value
+   that lands in the right rect but is clipped or overlapped.
 
 ## Things to avoid
 
@@ -227,3 +379,19 @@ python3 -m taxgenerator --amend --state IL \
 
 - `README.md` — Lovable boilerplate, doesn't reflect actual project state. Replace at some point.
 - `CURSOR_HANDOFF.md`, `CURSOR_FOLLOWUP.md` — historical handoff docs from when Cursor was driving the work. Both describe a Schedule C / Form 1040 mapping situation that has since been rebuilt. Archive when convenient.
+
+## Known gaps (deliberate, not oversights)
+
+- **Schedule SE line 9** is drawn as the full social-security wage base. That is
+  "line 7 minus line 8d" only while line 8d (W-2 social-security wages) is zero,
+  which the config cannot even express today. `_check_schedule_se_math` in the
+  gate re-derives line 10 from the printed lines 6 and 9, so a future client with
+  W-2 wages fails the gate rather than filing a wrong Schedule SE.
+- **Form 1040, Schedule 2 and Form 8959 have no reconciliation rules yet.** The
+  gate says so in the print-check report rather than passing them silently.
+  Schedule C, Schedule 1, Schedule SE and the 1040-X grid are covered.
+- **Schedule C questions F/G/I/J checkboxes** are still drawn at hard-coded
+  coordinates in `fill_1040sc`, against invariant 3. They render correctly but
+  should move to rect-driven `LINE_MAPS` entries like Part IV's did.
+- **Form 4562** is not generated, so Part IV is the only route for a client
+  claiming car/truck expense.
